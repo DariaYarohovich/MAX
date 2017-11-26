@@ -1,0 +1,49 @@
+$black: #000000;
+$dark-grey: #25262a;
+$warm-grey: #999999;
+$sunflower-yellow: #ffd001;
+$brownish-grey: #6e6e6e;
+$light-gold: #ffd557;
+$warm-grey-two: #888888;
+$white: #ffffff;
+$charcoal-grey: #464649;
+$dark: #171d2a;
+$marigold: #ffc401;
+$charcoal: #333433;
+$brownish-grey-two: #6a6a6a;
+$white-two: #eaeaea;
+$white-three: #ebebeb;
+$greyish-brown: #505050;
+$white-four: #f8f8f8;
+$light-gold-two: #ffe259;
+$pale-orange: #ffa751;
+$cool-grey: #a1a6b0;
+$black-two: #151515;
+$greyish: #b1b1b1;
+$white-five: #e0e0e0;
+$gunmetal: #4c515b;
+
+@mixin AvenirNext-Bold($fontSze: 14px, $lineHeight: 1.2) {
+  font-size: $fontSze;
+  line-height: $lineHeight;
+}
+
+@mixin AvenirNext-DemiBold($fontSze: 16px, $lineHeight: 1.2) {
+  font-size: $fontSze;
+  line-height: $lineHeight;
+}
+
+@mixin AvenirNext-Regular($fontSze: 14px, $lineHeight: 1.2) {
+  font-size: $fontSze;
+  line-height: $lineHeight;
+}
+
+@mixin HelveticaNeue-Bold($fontSze: 16px, $lineHeight: 1.2) {
+  font-size: $fontSze;
+  line-height: $lineHeight;
+}
+
+@mixin HelveticaNeue($fontSze: 16px, $lineHeight: 1.2) {
+  font-size: $fontSze;
+  line-height: $lineHeight;
+}

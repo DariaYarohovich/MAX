@@ -1,0 +1,33 @@
+h1 {
+  margin: 0;
+  @include AvenirNext-Bold(34px, 1.4);
+}
+
+p {
+  margin: 0;
+  @include HelveticaNeue();
+}
+
+button {
+  border: none;
+  padding: 12px 30px;
+  background-color: $sunflower-yellow;
+  border-radius: 4px;
+  @include AvenirNext-Bold(16px, 1.3);
+  color: $dark-grey;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  width: 80%;
+}
+
+.container {
+  padding: 40px 125px;
+}
