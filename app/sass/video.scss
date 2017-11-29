@@ -1,0 +1,7 @@
+.video-block {
+  @include shadowVideo;
+
+  video {
+    width: 100%;
+  }
+}

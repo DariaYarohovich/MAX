@@ -14,45 +14,105 @@
         <img src="#">
     </div>
     <div class="header__user-block">
-        <img src="#">
+        <img src="img/default.jpg">
         <p class="header__user-name">John Doe</p>
     </div>
 </header>
 <div class="wrap">
     <section class="navigation">
-        <ul>
-            <li>Members Home</li>
-            <li>Technique Of The Week</li>
-            <li>Practitioner
-                <ul>
-                    <li>P1</li>
-                    <li>P2</li>
-                    <li>P3</li>
-                    <li>P4</li>
-                    <li>P5</li>
+        <ul class="navigation__list navigation__list_first">
+            <li class="navigation__item navigation__item_active"><a href="#">Members Home</a></li>
+            <li class="navigation__item"><a href="#">Technique Of The Week</a></li>
+            <li class="navigation__item navigation__item_active-parent">Practitioner
+                <ul class="navigation__list navigation__list_second">
+                    <li class="navigation__item"><a href="#">P1</a></li>
+                    <li class="navigation__item"><a href="#">P2</a></li>
+                    <li class="navigation__item navigation__item_active"><a href="#">P3</a></li>
+                    <li class="navigation__item"><a href="#">P4</a></li>
+                    <li class="navigation__item"><a href="#">P5</a></li>
                 </ul>
             </li>
-            <li>Graduates</li>
-            <li>Subjects</li>
-            <li>Combat Mindset/mental Training</li>
-            <li>Masterclass Seminar</li>
-            <li>Theory And Lectures</li>
-            <li>Firearms As Non-lethal Weapons</li>
-            <li>Anti-carjacking And Road Rage</li>
+            <li class="navigation__item"><a href="#">Graduates</a></li>
+            <li class="navigation__item"><a href="#">Subjects</a></li>
+            <li class="navigation__item"><a href="#">Combat Mindset/mental Training</a></li>
+            <li class="navigation__item"><a href="#">Masterclass Seminar</a></li>
+            <li class="navigation__item"><a href="#">Theory And Lectures</a></li>
+            <li class="navigation__item"><a href="#">Firearms As Non-lethal Weapons</a></li>
+            <li class="navigation__item navigation__item_active"><a href="#">Anti-carjacking And Road Rage</a></li>
         </ul>
-        <ul>
-            <li>Blog</li>
-            <li>Forums</li>
-            <li>KMG Events</li>
+        <ul class="navigation__list navigation__list_bottom">
+            <li class="navigation__item"><a href="#">Blog</a></li>
+            <li class="navigation__item"><a href="#">Forums</a></li>
+            <li class="navigation__item"><a href="#">KMG Events</a></li>
         </ul>
     </section>
     <section class="content">
         <div class="container members-home">
             <div class="members-home__latest">
                 <p class="members-home__block-title">Latest from Eyal</p>
+                <div class="members-home__latest-wrap">
+                    <div class="members-home__latest-item">
+                        <video src="video/small2.mp4" type="video/mp4" controls></video>
+                        <div class="members-home__latest-text">
+                            <p class="members-home__latest-date">October 10, 2017</p>
+                            <p class="members-home__latest-title">
+                                <span>Video title video title video title</span>
+                            </p>
+                            <button class="btn btn__members-home">Watch video</button>
+                        </div>
+                    </div>
+                    <div class="members-home__latest-item">
+                        <video src="video/small2.mp4" type="video/mp4" controls></video>
+                        <div class="members-home__latest-text">
+                            <p class="members-home__latest-date">October 10, 2017</p>
+                            <p class="members-home__latest-title">
+                                <span>Video title video title video title</span>
+                            </p>
+                            <button class="btn btn__members-home">Watch video</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="members-home__subjects">
                 <p class="members-home__block-title">Subjects</p>
+                <div class="members-home__subjects-wrap">
+                    <div class="subject">
+                        <div class="subject__main">
+                            <div class="subject__text-block">
+                                <p class="subject__title">Practitioner Level Training</p>
+                                <p class="subject__desc">Striving to the Fighter Level. Emphasizing on finishing modes and continuation to the Fighter Level.</p>
+                                <button class="btn__subject">+ Training Videos</button>
+                            </div>
+                            <div class="subject__video-block">
+                                <video src="video/small2.mp4" type="video/mp4"></video>
+                            </div>
+                        </div>
+                        <div class="subject__sub">
+                            <div class="subject__sub-wrap">
+                                <div class="subject__sub-item">
+                                    <p class="subject__sub-item-title">Lorem ipsum</p>
+                                    <div class="subject__sub-item-img"></div>
+                                </div>
+                                <div class="subject__sub-item">
+                                    <p class="subject__sub-item-title">Lorem ipsum</p>
+                                    <div class="subject__sub-item-img"></div>
+                                </div>
+                                <div class="subject__sub-item">
+                                    <p class="subject__sub-item-title">Lorem ipsum</p>
+                                    <div class="subject__sub-item-img"></div>
+                                </div>
+                                <div class="subject__sub-item">
+                                    <p class="subject__sub-item-title">Lorem ipsum</p>
+                                    <div class="subject__sub-item-img"></div>
+                                </div>
+                                <div class="subject__sub-item">
+                                    <p class="subject__sub-item-title">Lorem ipsum</p>
+                                    <div class="subject__sub-item-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="footer">

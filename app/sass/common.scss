@@ -1,6 +1,7 @@
 h1 {
   margin: 0;
-  @include AvenirNext-Bold(34px, 1.4);
+  @include AvenirNext-Bold(34px, 1.2);
+  color: $black;
 }
 
 p {
@@ -8,7 +9,7 @@ p {
   @include HelveticaNeue();
 }
 
-button {
+.btn {
   border: none;
   padding: 12px 30px;
   background-color: $sunflower-yellow;
@@ -17,6 +18,38 @@ button {
   color: $dark-grey;
   text-transform: uppercase;
   cursor: pointer;
+
+  &__members-home {
+    background-color: rgba($sunflower-yellow, 0.73);
+    padding: 3px 5px;
+    padding-left: 10px;
+    @include AvenirNext-Bold(14px, 1);
+    color: $dark-grey;
+    text-transform: none;
+    border-radius: 0;
+  }
+
+  &__subject {
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: $sunflower-yellow;
+    @include HelveticaNeue-Bold(18px, 1);
+    text-transform: none;
+
+    &_video {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      border-bottom: 1px solid $charcoal;
+      color: $charcoal;
+      @include AvenirNext-Bold(16px, 1);
+    }
+  }
 }
 
 .wrap {
@@ -30,4 +63,15 @@ button {
 
 .container {
   padding: 40px 125px;
+}
+
+.title-block {
+  &__ribbon {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px;
+    background-color: $sunflower-yellow;
+    @include AvenirNext-Bold(14px, 1);
+    color: $dark-grey;
+  }
 }

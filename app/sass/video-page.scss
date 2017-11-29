@@ -1,0 +1,35 @@
+.video-page {
+  &__video-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    .title-block {
+      width: 30%;
+    }
+
+    .video-block {
+      width: 65%;
+    }
+  }
+
+  &__desc-block {
+    margin-bottom: 50px;
+  }
+
+  &__desc-title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba($black, 0.1);
+    @include AvenirNext-Bold(20px, 1.1);
+    color: $charcoal;
+  }
+
+  &__desc-text {
+    margin: 15px 0;
+    @include AvenirNext-Regular(16px, 1.2);
+  }
+
+  &__tabs {
+    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
+  }
+}

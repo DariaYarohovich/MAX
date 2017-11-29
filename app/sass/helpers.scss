@@ -47,3 +47,11 @@ $gunmetal: #4c515b;
   font-size: $fontSze;
   line-height: $lineHeight;
 }
+
+@mixin shadow() {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+@mixin shadowVideo() {
+  box-shadow: 0 32px 44px 0 rgba(0, 0, 0, 0.5);
+}

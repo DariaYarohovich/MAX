@@ -8,9 +8,17 @@
 
   &__user-block {
     display: flex;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
   }
 
   &__user-name {
+    margin-left: 15px;
     color: $light-gold;
     text-transform: uppercase;
   }
