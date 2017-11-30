@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 15px;
+  padding: 22px 15px 19px;
   border-bottom: 2px solid $sunflower-yellow;
   background-color: $dark-grey;
   box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.3);
@@ -13,6 +13,10 @@
 
   &__img {
     width: 100%;
+  }
+
+  &__buttons-block {
+    margin-right: 100px;
   }
 
   &__btn {
@@ -68,6 +72,10 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
+  }
+
+  &__right-logo {
+    width: 94px;
   }
   
 }

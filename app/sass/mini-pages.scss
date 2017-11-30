@@ -1,0 +1,114 @@
+.mini-page {
+    display: flex;
+
+    &__left-column {
+        position: relative;
+        z-index: -1;
+    }
+
+    &__side-img {
+        display: block;
+        height: calc(100vh - 94.08px);
+        display: block;
+        border: none;
+
+    }
+
+    &__right-column {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 94.08px);
+        width: 100%;
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__footer {
+        padding-top: 21px;
+        padding-bottom: 26px;
+        text-align: center;
+        border-top: 1px solid rgba(151, 151, 151, 0.18);
+    }
+
+    &__footer-logo {
+        width: 198px;
+        margin-bottom: 10px;
+    }
+
+    &__footer-desc {
+        font-size: 14px;
+        text-align: center;
+        color: $warm-grey;
+    }
+}
+
+.curriculum {
+    width: 682px;
+    margin: 9% auto 10px;
+    line-height: 1.35;
+    font-family: 'AvenirNext';
+
+    &__img {
+        height: 257px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__desc {
+        margin-bottom: 30px;
+        font-size: 24px;
+        text-align: center;
+        color: $dark-grey;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__img {
+        margin-right: 30px;
+    }
+
+    &__text {
+        width: 353px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: left;
+        color: $dark-grey;
+    }
+
+    &__str {
+        margin-bottom: 29px;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    &__btn {
+        padding: 15px 20px;
+        width: 256px;
+        border: 1px solid transparent;
+
+        border-radius: 4px;
+        background: $sunflower-yellow url('../img/icons/download.svg') no-repeat calc(100% - 20px) center;
+        background-size: 16px 19px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        color: $dark-grey;
+        text-shadow: 0 2px 26px rgba(122, 99, 0, 0.44);
+        @include trans(0.3s);
+
+        &:hover {
+            cursor: pointer;
+            background-position: calc(100% - 20px) calc(50% + 3px);
+            border-color: #25262a;
+        }
+    }
+}
