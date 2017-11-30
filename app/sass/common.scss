@@ -29,11 +29,15 @@ p {
   &__members-home {
     background-color: rgba($sunflower-yellow, 0.73);
     padding: 3px 5px;
-    padding-left: 10px;
+    padding-left: 20px;
     @include AvenirNext-Bold(14px, 1);
     color: $dark-grey;
     text-transform: none;
     border-radius: 0;
+    background-image: url("../img/icons/play-black.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 7px center;
   }
 
   &__subject {

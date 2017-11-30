@@ -15,6 +15,7 @@
     position: relative;
     top: 0;
     width: 49%;
+    height: 240px;
     border-radius: 4px;
     @include shadow;
     overflow: hidden;
@@ -26,8 +27,7 @@
     }
 
     video {
-      width: 100%;
-
+      height: 100%;
     }
   }
 
@@ -67,6 +67,7 @@
     z-index: 2;
     display: flex;
     border-radius: 4px;
+    overflow: hidden;
     @include shadow;
   }
 
@@ -103,6 +104,7 @@
     position: relative;
     top: -5px;
     padding: 30px 40px;
+    padding-top: 80px;
     border-radius: 4px;
     @include shadow;
     background-color: $dark-grey;
@@ -119,7 +121,7 @@
       &::before {
         content: '';
         position: absolute;
-        top: 25px;
+        top: -13px;
         width: 100%;
         height: 1px;
         background-color: $charcoal-grey;
@@ -128,13 +130,14 @@
       &::after {
         content: '';
         position: absolute;
-        top: 21px;
+        top: -17px;
         left: 50%;
         transform: translateX(-50%);
         width: 9px;
         height: 9px;
         border-radius: 50%;
         background-color: $charcoal-grey;
+        box-shadow: 0 0 0 4px transparent, 0 0 0 2px transparent;
       }
 
       &:first-child {
@@ -152,16 +155,63 @@
 
       &-title {
         position: absolute;
-        top: 0;
+        top: -40px;
         width: 100%;
         @include AvenirNext-Bold(14px, 1);
         text-transform: uppercase;
         color: rgba($white, 0.6);
         text-align: center;
+        transition: all 0.3s ease-in-out;
       }
 
       &-img {
         height: 120px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 0;
+        filter: grayscale(100%);
+        opacity: 0.6;
+        transition: all 0.3s ease-in-out;
+
+        &_1 {
+          background-image: url("../img/badges/p1.png");
+        }
+
+        &_2 {
+          background-image: url("../img/badges/p2.png");
+        }
+
+        &_3 {
+          background-image: url("../img/badges/p3.png");
+        }
+
+        &_4 {
+          background-image: url("../img/badges/p4.png");
+        }
+
+        &_5 {
+          background-image: url("../img/badges/p5.png");
+        }
+      }
+
+      &:hover {
+        .subject__sub-item-title {
+          color: $sunflower-yellow;
+        }
+
+        .subject__sub-item-img {
+          filter: grayscale(0%);
+          opacity: 1;
+        }
+
+        &::after {
+          top: -20px;
+          background-color: $sunflower-yellow;
+          border: 3px solid $dark-grey;
+          border-radius: 50%;
+          box-shadow: 0 0 0 4px $charcoal-grey, 0 0 0 2px $dark-grey;
+          transition: all 0.3s ease-in-out;
+        }
       }
     }
   }
