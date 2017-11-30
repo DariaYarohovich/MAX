@@ -5,21 +5,69 @@
   padding: 25px 15px;
   border-bottom: 2px solid $sunflower-yellow;
   background-color: $dark-grey;
+  box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.3);
+
+  &__img-block {
+    width: 218px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 9px 19px 8px 19px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &_login {
+      color: $greyish;
+
+      &:hover {
+        @include trans();
+        @include inversion($greyish, #25262a);
+      }
+    }
+
+    &_signup {
+      border-radius: 4px;
+      box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
+      border: solid 1px $sunflower-yellow;
+      color: $sunflower-yellow;
+
+      &:hover {
+        @include trans();
+        @include inversion($sunflower-yellow, #25262a);
+      }
+    }
+  }
 
   &__user-block {
     display: flex;
     align-items: center;
+  }
 
-    img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
+  &__user-img {
+    @include round(28px);
+    border-radius: 50%;
   }
 
   &__user-name {
     margin-left: 15px;
     color: $light-gold;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
   }
+  
 }
