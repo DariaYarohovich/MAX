@@ -198,3 +198,39 @@
         }
     }
 }
+
+.confirmation {
+    width: 68%;
+    margin: auto;
+    margin-top: 25%;
+    text-align: center;
+    line-height: 1.35;
+
+    &__title {
+        margin-bottom: 26px;
+        padding-bottom: 25px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 1px;
+            width: 114px;
+            background: rgba(151, 151, 151, 0.34);
+        }
+    }
+
+    &__desc {
+        font-size: 22px;
+        text-align: center;
+        color: $dark-grey;
+    }
+
+    &__marked {
+        font-weight: bold;
+        border-bottom: 1px solid $sunflower-yellow;
+    }
+}
