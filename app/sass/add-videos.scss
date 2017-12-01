@@ -1,0 +1,48 @@
+.add-videos {
+
+  &__wrap {
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 48%;
+    margin-right: 4%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &-video {
+      width: 45%;
+      height: 100%;
+      border-radius: 4px;
+      @include shadow;
+    }
+
+    &-desc {
+      width: 52%;
+
+      b {
+        margin-bottom: 5px;
+        @include HelveticaNeue-Bold(18px, 1.2);
+        color: $dark-grey;
+      }
+
+      p {
+        margin-bottom: 5px;
+        @include HelveticaNeue(16px, 1.2);
+        color: $black-two;
+      }
+    }
+  }
+}
