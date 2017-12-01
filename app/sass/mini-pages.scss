@@ -3,7 +3,6 @@
 
     &__left-column {
         position: relative;
-        z-index: -1;
     }
 
     &__side-img {
@@ -12,6 +11,46 @@
         display: block;
         border: none;
 
+    }
+
+    &__get-acc {
+        position: absolute;
+        bottom: 9.7%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 253px;
+        text-align: center;
+    }
+
+    &__get-acc-title {
+        margin-bottom: 13px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: $white;
+    }
+
+    &__get-acc-btn {
+        box-sizing: border-box;
+        padding: 15px 69px;
+        border-radius: 4px;
+        box-shadow: 0 15px 24px 0 rgba(0, 0, 0, 0.35);
+        border: solid 1px $sunflower-yellow;
+        background: transparent;
+
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.75;
+        text-align: left;
+        color: $sunflower-yellow;
+        text-transform: uppercase;
+        @include trans(0.3s);
+
+        &:hover {
+            cursor: pointer;
+            background: $sunflower-yellow;
+            color: white;
+        }
     }
 
     &__right-column {
@@ -234,3 +273,95 @@
         border-bottom: 1px solid $sunflower-yellow;
     }
 }
+
+.login-form {
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 10px;
+    width: 470px;
+    line-height: 1.375;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 6px;
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__desc {
+        margin-bottom: 42px;
+        font-size: 22px;
+        text-align: center;
+        color: $dark-grey;
+    }
+
+    &__input-area {
+        &_password {
+            position: relative;
+        }
+    }
+
+    &__new-pass {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 14px;
+        text-align: left;
+        color: $cool-grey;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: left;
+        color: $dark-grey;
+    }
+
+    &__input {
+        box-sizing: border-box;
+        margin-bottom: 26px;
+        padding: 12.5px 16px;
+        width: 100%;
+        height: 50px;
+        border-radius: 3px;
+        border: solid 1px #becbd8;
+
+        opacity: 0.4;
+        font-family: AvenirNext;
+        font-size: 18px;
+        text-align: left;
+        color: $gunmetal;
+
+        &:last-of-type {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__btn {
+        padding: 10.5px 64px;
+        border-radius: 4px;
+        background-color: $sunflower-yellow;
+        border: solid 1px $sunflower-yellow;
+
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.75;
+        text-align: left;
+        color: $dark-grey;
+        @include trans(0.3s);
+
+        &:hover {
+            border-color: $dark-grey;
+            cursor: pointer;
+        }
+    }
+}
+

@@ -19,8 +19,8 @@
         </a>
 
         <div class="header__buttons-block">
-            <button class="header__btn header__btn_login">Login</button>
-            <button class="header__btn header__btn_signup">Pricing & Signup</button>
+            <button class="header__btn header__btn_login header__btn_lower-case">Don’t have an account?</button>
+            <button class="header__btn header__btn_signup">Get Started</button>
         </div>
 
         <div class="header__user-block">
@@ -30,22 +30,33 @@
     <div class="mini-page">
         <div class="mini-page__left-column">
             <img src="img/photos/eyal-sidebar.jpg" alt="" class="mini-page__side-img">
+
+            <div class="mini-page__get-acc">
+                <p class="mini-page__get-acc-title">Don’t have an account?</p>
+                <button class="mini-page__get-acc-btn">Get Started</button>
+            </div>
         </div>
         <div class="mini-page__right-column">
             <section class="mini-page__content">
                 
-                <div class="optin-email">
-                    <div class="optin-email__box">
-                        <h1 class="optin-email__title">We already have your email on file.</h1>
-                        <p class="optin-email__desc">You have previously signed up to receive training material from Eyal. You are all set! </p>
-                    </div>
+                <div class="login-form">
+                    <h1 class="login-form__title">Sign in to MaxKravMaga.</h1>
+                    <p class="login-form__desc">Enter your details below.</p>
 
-                    <div class="option-email__box-second">
-                        <h2 class="optin-email__sub-title">Ready for the full length instructional videos?</h2>
-                        <p class="optin-email__desc-second">Join krav maga students, instructors, martial artists, military / law enforcement personnel and self defense beginners from all over the world and become a member of eyal yanilov's maxkravmaga today!</p>
-                    </div>
+                    <form action="#" method="POST" class="login-form__form">
+                        <div class="login-form__input-area">
+                            <label for="email" class="login-form__label">Email Address</label>
+                            <input type="email" id="email" class="login-form__input" placeholder="Enter your email" autofocus autocomplete="on">
+                        </div>
 
-                    <button class="optin-email__btn">View Pricing and Signup</button>
+                        <div class="login-form__input-area login-form__input-area_password">
+                            <label for="password" class="login-form__label">Password</label>
+                            <input type="password" id="password"  class="login-form__input" placeholder="Enter your password" autocomplete="on">
+                            <a href="#" class="login-form__new-pass">Forgot password?</a>
+                        </div>
+
+                        <button class="login-form__btn" type="submit">Sign In</button>
+                    </form>
                 </div>
 
             </section>

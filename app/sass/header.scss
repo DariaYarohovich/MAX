@@ -43,6 +43,10 @@
       }
     }
 
+    &_lower-case {
+      text-transform: none;
+    }
+
     &_signup {
       border-radius: 4px;
       box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
