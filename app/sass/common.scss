@@ -25,6 +25,7 @@ p {
   color: $dark-grey;
   text-transform: uppercase;
   cursor: pointer;
+  line-height: 1;
 
   &__members-home {
     background-color: rgba($sunflower-yellow, 0.73);
@@ -60,6 +61,10 @@ p {
       color: $charcoal;
       @include AvenirNext-Bold(16px, 1);
     }
+  }
+
+  &_leave-reply {
+    text-transform: none;
   }
 }
 

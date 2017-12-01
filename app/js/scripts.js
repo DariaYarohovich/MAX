@@ -20,3 +20,6 @@
     }
 })();
 
+$( function() {
+    $( "#video-tabs" ).tabs();
+} );

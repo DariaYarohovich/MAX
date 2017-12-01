@@ -6,6 +6,7 @@
     <title>MAX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -111,8 +112,13 @@
                         by moving away, or pushing the opponent backwards.</p>
                     <button class="btn__subject btn__subject_video">+ Show more</button>
                 </div>
-                <div class="video-page__tabs">
-                    <div class="syllabus">
+                <div class="video-page__tabs" id="video-tabs">
+                    <ul>
+                        <li><a href="#video-tabs-1">Syllabus</a></li>
+                        <li><a href="#video-tabs-2">Discussion</a></li>
+                        <li><a href="#video-tabs-3">Additional Videos</a></li>
+                    </ul>
+                    <div class="syllabus" id="video-tabs-1">
                         <header class="syllabus__header">
                             <div class="syllabus__header-fade">
                                 <div class="syllabus__header-img">
@@ -178,81 +184,120 @@
                             </div>
                         </div>
                     </div>
-                    <div class="discussion">
-                        <ul class="discussion__list">
-                            <li class="discussion__item-wrap">
-                                <div class="discussion__item">
-                                    <div class="discussion__item-bio">
-                                        <img src="img/default.jpg" class="discussion__item-img">
-                                        <div class="discussion__item-info">
-                                            <p class="discussion__item-author">John Doe</p>
-                                            <p class="discussion__item-date">12 Feb 2016</p>
-                                        </div>
-                                    </div>
-                                    <p class="discussion__item-text">
-                                        Improving trainees abilities to prevent and release from different grabs
-                                        Striving to the Fighter Level. Emphasizing on finishing modes and continuation
-                                        to the Fighter Level. Improving trainees abilities to prevent and release
-                                    </p>
-                                    <button class="discussion__item-btn">Reply</button>
-                                </div>
-                                <ul class="discussion__list_nested">
-                                    <li class="discussion__item-wrap">
-                                        <div class="discussion__item">
-                                            <div class="discussion__item-bio">
-                                                <img src="img/default.jpg" class="discussion__item-img">
-                                                <div class="discussion__item-info">
-                                                    <p class="discussion__item-author">John Doe</p>
-                                                    <p class="discussion__item-date">12 Feb 2016</p>
-                                                </div>
+                    <div class="discussion" id="video-tabs-2">
+                        <div class="discussion__wrap">
+                            <ul class="discussion__list">
+                                <li class="discussion__item-wrap">
+                                    <div class="discussion__item">
+                                        <div class="discussion__item-bio">
+                                            <img src="img/default.jpg" class="discussion__item-img">
+                                            <div class="discussion__item-info">
+                                                <p class="discussion__item-author">John Doe</p>
+                                                <p class="discussion__item-date">12 Feb 2016</p>
                                             </div>
-                                            <p class="discussion__item-text">
-                                                Improving trainees abilities to prevent and release from different grabs
-                                                Striving to the Fighter Level. Emphasizing on finishing modes and continuation
-                                                to the Fighter Level. Improving trainees abilities to prevent and release
-                                            </p>
-                                            <button class="discussion__item-btn">Reply</button>
                                         </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="discussion__item-wrap">
-                                <div class="discussion__item">
-                                    <div class="discussion__item-bio">
-                                        <img src="img/default.jpg" class="discussion__item-img">
-                                        <div class="discussion__item-info">
-                                            <p class="discussion__item-author">John Doe</p>
-                                            <p class="discussion__item-date">12 Feb 2016</p>
-                                        </div>
+                                        <p class="discussion__item-text">
+                                            Improving trainees abilities to prevent and release from different grabs
+                                            Striving to the Fighter Level. Emphasizing on finishing modes and continuation
+                                            to the Fighter Level. Improving trainees abilities to prevent and release
+                                        </p>
+                                        <button class="discussion__item-btn">Reply</button>
                                     </div>
-                                    <p class="discussion__item-text">
-                                        Improving trainees abilities to prevent and release from different grabs
-                                        Striving to the Fighter Level. Emphasizing on finishing modes and continuation
-                                        to the Fighter Level. Improving trainees abilities to prevent and release
-                                    </p>
-                                    <button class="discussion__item-btn">Reply</button>
-                                </div>
-                            </li>
-                            <li class="discussion__item-wrap">
-                                <div class="discussion__item">
-                                    <div class="discussion__item-bio">
-                                        <img src="img/default.jpg" class="discussion__item-img">
-                                        <div class="discussion__item-info">
-                                            <p class="discussion__item-author">John Doe</p>
-                                            <p class="discussion__item-date">12 Feb 2016</p>
+                                    <ul class="discussion__list_nested">
+                                        <li class="discussion__item-wrap">
+                                            <div class="discussion__item">
+                                                <div class="discussion__item-bio">
+                                                    <img src="img/default.jpg" class="discussion__item-img">
+                                                    <div class="discussion__item-info">
+                                                        <p class="discussion__item-author">John Doe</p>
+                                                        <p class="discussion__item-date">12 Feb 2016</p>
+                                                    </div>
+                                                </div>
+                                                <p class="discussion__item-text">
+                                                    Improving trainees abilities to prevent and release from different grabs
+                                                    Striving to the Fighter Level. Emphasizing on finishing modes and continuation
+                                                    to the Fighter Level. Improving trainees abilities to prevent and release
+                                                </p>
+                                                <button class="discussion__item-btn">Reply</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="discussion__item-wrap">
+                                    <div class="discussion__item">
+                                        <div class="discussion__item-bio">
+                                            <img src="img/default.jpg" class="discussion__item-img">
+                                            <div class="discussion__item-info">
+                                                <p class="discussion__item-author">John Doe</p>
+                                                <p class="discussion__item-date">12 Feb 2016</p>
+                                            </div>
                                         </div>
+                                        <p class="discussion__item-text">
+                                            Improving trainees abilities to prevent and release from different grabs
+                                            Striving to the Fighter Level. Emphasizing on finishing modes and continuation
+                                            to the Fighter Level. Improving trainees abilities to prevent and release
+                                        </p>
+                                        <button class="discussion__item-btn">Reply</button>
                                     </div>
-                                    <p class="discussion__item-text">
-                                        Improving trainees abilities to prevent and release from different grabs
-                                        Striving to the Fighter Level. Emphasizing on finishing modes and continuation
-                                        to the Fighter Level. Improving trainees abilities to prevent and release
-                                    </p>
-                                    <button class="discussion__item-btn">Reply</button>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="discussion__item-wrap">
+                                    <div class="discussion__item">
+                                        <div class="discussion__item-bio">
+                                            <img src="img/default.jpg" class="discussion__item-img">
+                                            <div class="discussion__item-info">
+                                                <p class="discussion__item-author">John Doe</p>
+                                                <p class="discussion__item-date">12 Feb 2016</p>
+                                            </div>
+                                        </div>
+                                        <p class="discussion__item-text">
+                                            Improving trainees abilities to prevent and release from different grabs
+                                            Striving to the Fighter Level. Emphasizing on finishing modes and continuation
+                                            to the Fighter Level. Improving trainees abilities to prevent and release
+                                        </p>
+                                        <button class="discussion__item-btn">Reply</button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="discussion__btn" type="button">Load more comments</button>
+                            <div class="discussion__leave-reply">
+                                <p class="discussion__leave-reply-title">Leave a reply</p>
+                                <textarea rows="6"></textarea>
+                                <button class="btn btn_leave-reply" type="button">Submit Comment</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="add-videos"></div>
+                    <div class="add-videos" id="video-tabs-3">
+                        <div class="add-videos__wrap">
+                            <div class="add-videos__item">
+                                <video class="add-videos__item-video" type="mp4" src="video/small2.mp4"></video>
+                                <div class="add-videos__item-desc">
+                                    <b class="add-videos__item-title">P1 Lecture/Theory I</b>
+                                    <p class="add-videos__item-text">Additional P1 Video</p>
+                                </div>
+                            </div>
+                            <div class="add-videos__item">
+                                <video class="add-videos__item-video" type="mp4" src="video/small2.mp4"></video>
+                                <div class="add-videos__item-desc">
+                                    <b class="add-videos__item-title">P1 Lecture/Theory I</b>
+                                    <p class="add-videos__item-text">Additional P1 Video</p>
+                                </div>
+                            </div>
+                            <div class="add-videos__item">
+                                <video class="add-videos__item-video" type="mp4" src="video/small2.mp4"></video>
+                                <div class="add-videos__item-desc">
+                                    <b class="add-videos__item-title">P1 Lecture/Theory I</b>
+                                    <p class="add-videos__item-text">Additional P1 Video</p>
+                                </div>
+                            </div>
+                            <div class="add-videos__item">
+                                <video class="add-videos__item-video" type="mp4" src="video/small2.mp4"></video>
+                                <div class="add-videos__item-desc">
+                                    <b class="add-videos__item-title">P1 Lecture/Theory I</b>
+                                    <p class="add-videos__item-text">Additional P1 Video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <footer class="footer">
@@ -264,6 +309,8 @@
         </section>
     </div>
 
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
