@@ -9,7 +9,6 @@
     },
     "rules": {
         "indent": [
-            "error",
             "tab"
         ],
         "quotes": [

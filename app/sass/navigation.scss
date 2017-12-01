@@ -41,6 +41,10 @@
     }
 
     &_second {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+
       .navigation__item_active {
         position: relative;
 
@@ -83,8 +87,32 @@
       text-decoration: none;
     }
 
+    &_parent {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 20px;
+        right: -7px;
+        width: 13px;
+        height: 7px;
+        background: url('../img/icons/arrow-expand.svg') no-repeat center;
+        @include trans(0.3s);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
     &_active-parent {
       color: $light-gold !important;
+
+      &::after {
+        transform: rotate(180deg);
+      }
     }
   }
 }
+
