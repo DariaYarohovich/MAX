@@ -1,4 +1,6 @@
 .syllabus {
+  background-color: $white;
+
   &_common-video {
     @include shadow;
   }

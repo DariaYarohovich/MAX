@@ -53,6 +53,11 @@
   }
 
   /*VIDEO PAGE COMMON*/
+  &_common-video {
+    position: relative;
+    z-index: 1;
+  }
+
   &__desc-wrap {
     display: flex;
     justify-content: space-between;

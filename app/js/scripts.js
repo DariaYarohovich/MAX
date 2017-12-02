@@ -56,3 +56,14 @@ $( function() {
     $( "#video-tabs" ).tabs();
 } );
 
+// Slider
+var videoSlider = new Swiper ('.swiper-container', {
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 5
+})
+
