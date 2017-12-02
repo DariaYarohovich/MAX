@@ -1,0 +1,58 @@
+.yellow-box {
+    position: relative;
+    z-index: 2;
+    @include childToCenter();
+    padding-top: 46px;
+    padding-bottom: 37px;
+    width: 100%;
+    background-color: $sunflower-yellow;
+    box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
+    line-height: 1.375;
+
+    &__text {
+        margin-right: 148px;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 4px;
+        font-size: 23px;
+        font-weight: bold;
+        text-align: left;
+        color: $dark-grey;
+    }
+
+    &__desc {
+        font-size: 18px;
+        text-align: left;
+        color: $dark-grey;
+    }
+
+    &__btn {
+        display: inline-block;
+        position: relative;
+        border-radius: 4px;
+        border: solid 2px $black;
+        background: transparent;
+        padding: 15px 48px 15px 40px;
+        @include trans(0.3s);
+    
+        &::after {
+          content: '→';
+          position: absolute;
+          top: 14px;
+          right: 20px;
+          @include trans(0.3s);
+      }
+    
+      &:hover {
+          background: black;
+          color: $sunflower-yellow;
+          cursor: pointer;
+    
+          &::after {
+              right: 16px;
+          }
+        }
+      }
+}

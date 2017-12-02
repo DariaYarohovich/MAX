@@ -1,0 +1,57 @@
+.promo-face {
+    padding-top: 76px;
+    padding-bottom: 88px;
+    background: url("../img/photos/eyal-profile.jpg") no-repeat left center;
+    background-size: contain;
+    text-align: center;
+
+    &__title {
+        margin: 0 auto 10px;
+        width: 559px;
+        font-size: 44px;
+        font-weight: bold;
+        line-height: 1.18;
+        text-align: center;
+        color: $dark-grey;
+    }
+
+    &__desc {
+        margin: 0 auto 30px;
+        width: 673px;
+        font-size: 18px;
+        text-align: center;
+        color: $dark-grey;
+    }
+
+    &__btn {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 18px 48px 18px 38px;
+        border-radius: 100px;
+        background-color: $sunflower-yellow;
+        border: 1px solid transparent;
+
+        font-size: 18px;
+        font-weight: 600;
+        text-align: left;
+        color: $dark-grey;
+
+        &::after {
+            content: '→';
+            position: absolute;
+            top: 17px;
+            right: 20px;
+            @include trans(0.3s);
+        }
+      
+        &:hover {
+            border-color: $dark-grey;   
+            cursor: pointer;
+      
+            &::after {
+                right: 16px;
+            }
+          }
+    }
+}

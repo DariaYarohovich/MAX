@@ -11,4 +11,30 @@
     margin-bottom: 15px;
     @include AvenirNext-Regular(22px, 1.2);
   }
+
+  &__btn {
+    display: inline-block;
+    position: relative;
+    border: 1px solid transparent;
+    padding: 16.8px 40px 14.8px 35px;
+    @include trans(0.3s);
+
+    &::after {
+      content: '→';
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 20px;
+      @include trans(0.3s);
+  }
+
+  &:hover {
+      border: 1px solid $dark-grey;
+      cursor: pointer;
+
+      &::after {
+          right: 16px;
+      }
+    }
+  }
 }
