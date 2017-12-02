@@ -61,13 +61,16 @@ $( function() {
 } );
 
 // Slider
-var videoSlider = new Swiper ('.swiper-container', {
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    slidesPerView: 5
-})
-
++(() => {
+    if (document.querySelector('.swiper-container')) {
+        const videoSlider = new Swiper ('.swiper-container', {
+            
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                slidesPerView: 5
+            })
+    }
+})();
