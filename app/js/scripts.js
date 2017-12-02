@@ -46,8 +46,10 @@
     collapseBtn.addEventListener("click", () => {
         if (collapseArea.style.maxHeight) {
             collapseArea.style.maxHeight = null;
+            collapseBtn.innerText = "+ Show more"
         } else {
             collapseArea.style.maxHeight = collapseArea.scrollHeight + "px";
+            collapseBtn.innerText = "- Show less"
         }
     });
 })();
