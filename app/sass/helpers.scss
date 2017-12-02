@@ -26,16 +26,22 @@ $gunmetal: #4c515b;
 @mixin AvenirNext-Bold($fontSze: 14px, $lineHeight: 1.2) {
   font-size: $fontSze;
   line-height: $lineHeight;
+  font-family: "AvenirNext";
+  font-weight: bold;
 }
 
 @mixin AvenirNext-DemiBold($fontSze: 16px, $lineHeight: 1.2) {
   font-size: $fontSze;
   line-height: $lineHeight;
+  font-family: "AvenirNext";
+  font-weight: 600;
 }
 
 @mixin AvenirNext-Regular($fontSze: 14px, $lineHeight: 1.2) {
   font-size: $fontSze;
   line-height: $lineHeight;
+  font-family: "AvenirNext";
+  font-weight: 400;
 }
 
 @mixin HelveticaNeue-Bold($fontSze: 16px, $lineHeight: 1.2) {
