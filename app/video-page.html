@@ -32,63 +32,37 @@
     <div class="wrap">
         <section class="navigation">
             <ul class="navigation__list navigation__list_first">
-                <li class="navigation__item navigation__item_active">
-                    <a href="#">Members Home</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#">Technique Of The Week</a>
-                </li>
-                <li class="navigation__item navigation__item_active-parent">Practitioner
+                <li class="navigation__item navigation__item_active"><a href="#">Members Home</a></li>
+                <li class="navigation__item"><a href="#">Technique Of The Week</a></li>
+                <li class="navigation__item navigation__item_parent">Practitioner
                     <ul class="navigation__list navigation__list_second">
-                        <li class="navigation__item">
-                            <a href="#">P1</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a href="#">P2</a>
-                        </li>
-                        <li class="navigation__item navigation__item_active">
-                            <a href="#">P3</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a href="#">P4</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a href="#">P5</a>
-                        </li>
-                    </ul>
+                        <li class="navigation__item"><a href="#">P1</a></li>
+                        <li class="navigation__item"><a href="#">P2</a></li>
+                        <li class="navigation__item  navigation__item_active"><a href="#">P3</a></li>
+                        <li class="navigation__item"><a href="#">P4</a></li>
+                        <li class="navigation__item"><a href="#">P5</a></li>
+                    </ul> 
                 </li>
-                <li class="navigation__item">
-                    <a href="#">Graduates</a>
+                <li class="navigation__item navigation__item_parent">Graduates
+                    <ul class="navigation__list navigation__list_second">
+                        <li class="navigation__item"><a href="#">P1</a></li>
+                        <li class="navigation__item"><a href="#">P2</a></li>
+                        <li class="navigation__item"><a href="#">P3</a></li>
+                        <li class="navigation__item"><a href="#">P4</a></li>
+                        <li class="navigation__item"><a href="#">P5</a></li>
+                    </ul> 
                 </li>
-                <li class="navigation__item">
-                    <a href="#">Subjects</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#">Combat Mindset/mental Training</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#">Masterclass Seminar</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#">Theory And Lectures</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#">Firearms As Non-lethal Weapons</a>
-                </li>
-                <li class="navigation__item navigation__item_active">
-                    <a href="#">Anti-carjacking And Road Rage</a>
-                </li>
+                <li class="navigation__item"><a href="#">Subjects</a></li>
+                <li class="navigation__item"><a href="#">Combat Mindset/mental Training</a></li>
+                <li class="navigation__item"><a href="#">Masterclass Seminar</a></li>
+                <li class="navigation__item"><a href="#">Theory And Lectures</a></li>
+                <li class="navigation__item"><a href="#">Firearms As Non-lethal Weapons</a></li>
+                <li class="navigation__item navigation__item_active"><a href="#">Anti-carjacking And Road Rage</a></li>
             </ul>
             <ul class="navigation__list navigation__list_bottom">
-                <li class="navigation__item">
-                    <a href="#">Blog</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#">Forums</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#">KMG Events</a>
-                </li>
+                <li class="navigation__item"><a href="#">Blog</a></li>
+                <li class="navigation__item"><a href="#">Forums</a></li>
+                <li class="navigation__item"><a href="#">KMG Events</a></li>
             </ul>
         </section>
         <section class="content">
@@ -99,18 +73,32 @@
                         <h1>A. Spinning Attacks, Strikes and Kicks</h1>
                     </div>
                     <div class="video-block">
-                        <video src="video/small2.mp4" controls></video>
+                        <video>
+                            <source src="video/small2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-block__cap video-block__cap_box"></div>
                     </div>
                 </div>
                 <div class="video-page__desc-block">
-                    <p class="video-page__desc-title">Video transcript</p>
-                    <p class="video-page__desc-text">Defending against a result of stick attack directed towards the leg or the knee area. Like in the regular
-                        technique against the baseball swing from the side bursting forward, heel toe, you turn the body
-                        and burst forward strongly. If you manage to see that the attack is low, at the last moment you can
-                        lift your front hand, absorb the attack on the leg, thigh, and grab the hand holding the weapon,
-                        or the weapon itself. Counter attack as early as possible with the rear hand, and then create distance
-                        by moving away, or pushing the opponent backwards.</p>
-                    <button class="btn__subject btn__subject_video">+ Show more</button>
+                    <div class="video-page__desc-texts collapse-area">
+                        <p class="video-page__desc-title">Video transcript</p>
+                        <p class="video-page__desc-text">Defending against a result of stick attack directed towards the leg or the knee area. Like in the regular
+                            technique against the baseball swing from the side bursting forward, heel toe, you turn the body
+                            and burst forward strongly. If you manage to see that the attack is low, at the last moment you can
+                            lift your front hand, absorb the attack on the leg, thigh, and grab the hand holding the weapon,
+                            or the weapon itself. Counter attack as early as possible with the rear hand, and then create distance
+                            by moving away, or pushing the opponent backwards.
+                        </p>
+                            <p class="video-page__desc-text">Defending against a result of stick attack directed towards the leg or the knee area. Like in the regular
+                                technique against the baseball swing from the side bursting forward, heel toe, you turn the body
+                                and burst forward strongly. If you manage to see that the attack is low, at the last moment you can
+                                lift your front hand, absorb the attack on the leg, thigh, and grab the hand holding the weapon,
+                                or the weapon itself. Counter attack as early as possible with the rear hand, and then create distance
+                                by moving away, or pushing the opponent backwards.
+                            </p>
+                    </div>
+                    <button class="btn__subject btn__subject_video collapse-btn">+ Show more</button>
                 </div>
                 <div class="video-page__tabs" id="video-tabs">
                     <ul>
@@ -145,7 +133,11 @@
                                         </ol>
                                     </div>
                                     <div class="syllabus__item-video">
-                                        <video type="video/mp4" src="video/small2.mp4"></video>
+                                        <video>
+                                            <source src="video/small2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <div class="video-block__cap video-block__cap_round"></div>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +154,11 @@
                                         </ol>
                                     </div>
                                     <div class="syllabus__item-video">
-                                        <video type="video/mp4" src="video/small2.mp4"></video>
+                                        <video>
+                                            <source src="video/small2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <div class="video-block__cap video-block__cap_round"></div>
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +174,11 @@
                                         </ol>
                                     </div>
                                     <div class="syllabus__item-video">
-                                        <video type="video/mp4" src="video/small2.mp4"></video>
+                                        <video>
+                                            <source src="video/small2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <div class="video-block__cap video-block__cap_round"></div>
                                     </div>
                                 </div>
                             </div>

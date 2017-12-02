@@ -83,6 +83,7 @@
       padding: 35px 0;
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
       border-bottom: 1px solid rgba($black, 0.18);
     }
 
@@ -110,9 +111,10 @@
     }
 
     &-video {
+      position: relative;
       display: flex;
       align-items: center;
-      width: 30%;
+      width: 34%;
 
       video {
         width: 100%;

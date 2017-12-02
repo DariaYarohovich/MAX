@@ -76,3 +76,9 @@ $gunmetal: #4c515b;
   border-color: $secondary-color;
   color: $secondary-color;
 }
+
+@mixin childToCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -12,7 +12,7 @@
 
 <header class="header">
     <div class="header__img-block">
-        <img src="#">
+        <img src="img/logos/logo.png" class="header__img">
     </div>
     <div class="header__user-block">
         <img src="img/default.jpg" class="header__user-img">
@@ -24,16 +24,24 @@
         <ul class="navigation__list navigation__list_first">
             <li class="navigation__item navigation__item_active"><a href="#">Members Home</a></li>
             <li class="navigation__item"><a href="#">Technique Of The Week</a></li>
-            <li class="navigation__item navigation__item_active-parent">Practitioner
+            <li class="navigation__item navigation__item_parent">Practitioner
                 <ul class="navigation__list navigation__list_second">
                     <li class="navigation__item"><a href="#">P1</a></li>
                     <li class="navigation__item"><a href="#">P2</a></li>
-                    <li class="navigation__item navigation__item_active"><a href="#">P3</a></li>
+                    <li class="navigation__item  navigation__item_active"><a href="#">P3</a></li>
                     <li class="navigation__item"><a href="#">P4</a></li>
                     <li class="navigation__item"><a href="#">P5</a></li>
-                </ul>
+                </ul> 
             </li>
-            <li class="navigation__item"><a href="#">Graduates</a></li>
+            <li class="navigation__item navigation__item_parent">Graduates
+                <ul class="navigation__list navigation__list_second">
+                    <li class="navigation__item"><a href="#">P1</a></li>
+                    <li class="navigation__item"><a href="#">P2</a></li>
+                    <li class="navigation__item"><a href="#">P3</a></li>
+                    <li class="navigation__item"><a href="#">P4</a></li>
+                    <li class="navigation__item"><a href="#">P5</a></li>
+                </ul> 
+            </li>
             <li class="navigation__item"><a href="#">Subjects</a></li>
             <li class="navigation__item"><a href="#">Combat Mindset/mental Training</a></li>
             <li class="navigation__item"><a href="#">Masterclass Seminar</a></li>
@@ -82,33 +90,39 @@
                             <div class="subject__text-block">
                                 <p class="subject__title">Practitioner Level Training</p>
                                 <p class="subject__desc">Striving to the Fighter Level. Emphasizing on finishing modes and continuation to the Fighter Level.</p>
-                                <button class="btn__subject">+ Training Videos</button>
+                                <button class="btn__subject collapse-btn">+ Training Videos</button>
                             </div>
                             <div class="subject__video-block">
-                                <video src="video/small2.mp4" type="video/mp4"></video>
+                                <video>
+                                    <source src="video/small2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="video-block__cap video-block__cap_box"></div>
                             </div>
                         </div>
-                        <div class="subject__sub">
-                            <div class="subject__sub-wrap">
-                                <div class="subject__sub-item">
-                                    <p class="subject__sub-item-title">P1 Training</p>
-                                    <div class="subject__sub-item-img subject__sub-item-img_1"></div>
-                                </div>
-                                <div class="subject__sub-item">
-                                    <p class="subject__sub-item-title">P2 Training</p>
-                                    <div class="subject__sub-item-img subject__sub-item-img_2"></div>
-                                </div>
-                                <div class="subject__sub-item">
-                                    <p class="subject__sub-item-title">P3 Training</p>
-                                    <div class="subject__sub-item-img subject__sub-item-img_3"></div>
-                                </div>
-                                <div class="subject__sub-item">
-                                    <p class="subject__sub-item-title">P4 Training</p>
-                                    <div class="subject__sub-item-img subject__sub-item-img_4"></div>
-                                </div>
-                                <div class="subject__sub-item">
-                                    <p class="subject__sub-item-title">P5 Training</p>
-                                    <div class="subject__sub-item-img subject__sub-item-img_5"></div>
+                        <div class="collapse-area subject__collapse-wrap">
+                            <div class="subject__sub">
+                                <div class="subject__sub-wrap">
+                                    <div class="subject__sub-item">
+                                        <p class="subject__sub-item-title">P1 Training</p>
+                                        <div class="subject__sub-item-img subject__sub-item-img_1"></div>
+                                    </div>
+                                    <div class="subject__sub-item">
+                                        <p class="subject__sub-item-title">P2 Training</p>
+                                        <div class="subject__sub-item-img subject__sub-item-img_2"></div>
+                                    </div>
+                                    <div class="subject__sub-item">
+                                        <p class="subject__sub-item-title">P3 Training</p>
+                                        <div class="subject__sub-item-img subject__sub-item-img_3"></div>
+                                    </div>
+                                    <div class="subject__sub-item">
+                                        <p class="subject__sub-item-title">P4 Training</p>
+                                        <div class="subject__sub-item-img subject__sub-item-img_4"></div>
+                                    </div>
+                                    <div class="subject__sub-item">
+                                        <p class="subject__sub-item-title">P5 Training</p>
+                                        <div class="subject__sub-item-img subject__sub-item-img_5"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

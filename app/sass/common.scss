@@ -59,6 +59,7 @@ p {
       left: 0;
       border-bottom: 1px solid $charcoal;
       color: $charcoal;
+      font-weight: bold;
       @include AvenirNext-Bold(16px, 1);
     }
   }
@@ -90,4 +91,16 @@ p {
     @include AvenirNext-Bold(14px, 1);
     color: $dark-grey;
   }
+}
+
+.collapse-btn {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.collapse-area {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }

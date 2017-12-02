@@ -51,6 +51,7 @@
     width: auto;
 
     span {
+      display: block;
       padding: 0 5px;
       background-color: rgba($dark, 0.73);
       color: $white;
@@ -82,8 +83,10 @@
 
   &__video-block {
     width: 57%;
+    position: relative;
 
     video {
+      display: block;
       width: 100%;
     }
   }
@@ -97,6 +100,10 @@
     margin-bottom: 10px;
     @include HelveticaNeue(16px, 1.1);
     opacity: 0.6;
+  }
+
+  &__collapse-wrap {
+    margin-top: -5px;
   }
 
   /*SUB-BLOCK*/

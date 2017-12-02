@@ -15,6 +15,10 @@
 
   &__desc-block {
     margin-bottom: 50px;
+
+    & > .video-page__desc-texts {
+      max-height: 177px;
+    }
   }
 
   &__desc-title {
@@ -22,11 +26,14 @@
     border-bottom: 1px solid rgba($black, 0.1);
     @include AvenirNext-Bold(20px, 1.1);
     color: $charcoal;
+    font-weight: bold;
   }
 
   &__desc-text {
     margin: 15px 0;
-    @include AvenirNext-Regular(16px, 1.2);
+    font-size: 16px;
+    line-height: 1.357;
+    color: $brownish-grey-two;
   }
 
   &__tabs {
