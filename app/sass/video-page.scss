@@ -11,6 +11,18 @@
     .video-block {
       width: 65%;
     }
+
+    &_common {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 80px;
+
+      .title-block {
+        width: 50%;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+    }
   }
 
   &__desc-block {
@@ -38,6 +50,46 @@
 
   &__tabs {
     box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  /*VIDEO PAGE COMMON*/
+  &__desc-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    .video-page__desc-block {
+      width: 63%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__connect-block {
+    width: 33%;
+    background-color: $dark-grey;
+    background-image: url("../img/photos/get-started-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+    &-fade {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      background-color: rgba($dark-grey, 0.6);
+      padding: 30px;
+      color: $white;
+    }
+  }
+
+  &__connect-desc {
+    margin-bottom: 15px;
+    @include AvenirNext-Regular(20px, 1.37);
   }
 }
 

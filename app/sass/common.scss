@@ -26,6 +26,7 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   line-height: 1;
+  text-decoration: none;
 
   &__members-home {
     background-color: rgba($sunflower-yellow, 0.73);
@@ -76,6 +77,10 @@ p {
 
 .content {
   width: 80%;
+
+  &_common {
+    width: 100%;
+  }
 }
 
 .container {
