@@ -1,4 +1,8 @@
 .syllabus {
+  &_common-video {
+    @include shadow;
+  }
+
   &__header {
     background-color: $dark-grey;
     background-image: url("../img/photos/get-started-bg.jpg");
@@ -13,12 +17,20 @@
       padding: 20px 40px;
       padding-bottom: 10px;
       color: $white;
+
+      &_common-video {
+        padding-top: 10px;
+      }
     }
 
     &-img {
       position: relative;
       bottom: -30px;
       width: 17%;
+
+      &_common-video {
+        width: 11%;
+      }
 
       img {
         width: 100%;
@@ -28,6 +40,14 @@
     &-text-block {
       width: 80%;
       padding: 30px 0;
+
+      &_common-video {
+        width: 86%;
+
+        .syllabus__header-text {
+          width: 80%;
+        }
+      }
     }
 
     &-title {
