@@ -20,20 +20,23 @@
     }
 })();
 
-// videos 
+// videos caps
 +(() => {
     const videoBlocksCaps = document.querySelectorAll(".video-block__cap");
+    const videoBlocks = document.getElementsByTagName("video");
 
     for (let i = 0; i < videoBlocksCaps.length; i++) {
-        let videoBlockCap = videoBlocksCaps[i];
+        const videoBlockCap = videoBlocksCaps[i];
+        const video = videoBlockCap.previousElementSibling;
 
         videoBlockCap.addEventListener("click", () => {
             videoBlockCap.style = "display: none";
-
-            const video = videoBlockCap.previousElementSibling;
-            video.setAttribute("controls", "");
             video.play();
-            video.volume = 0.5;
+        });
+
+        video.addEventListener("click", () => {
+            video.pause();
+            videoBlockCap.style = "display: block";
         });
     }
 })();
@@ -77,5 +80,27 @@ $( function() {
                 },
                 slidesPerView: 5
             })
+    }
+})();
+
+// Syllabus video blocks hightlight
++(() => {
+    const syllabusBlocks = document.querySelectorAll(".syllabus__item");
+
+    for (let i = 0; i < syllabusBlocks.length; i++) {
+        const block = syllabusBlocks[i];
+
+        block.addEventListener("click", (e) => {
+
+            if (e.target.classList.contains("video-block__cap")) {
+                syllabusBlocks.forEach((item) => {
+                    if  (item.classList.contains("syllabus__item_active")) {
+                        item.classList.remove("syllabus__item_active");
+                    }
+                });
+
+                block.classList.add("syllabus__item_active");
+            }
+        });
     }
 })();

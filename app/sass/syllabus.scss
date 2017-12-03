@@ -157,6 +157,9 @@
       background-color: rgba($sunflower-yellow, 0.19);
       border-top: 1px solid $sunflower-yellow;
       border-bottom: 1px solid $sunflower-yellow;
+      position: relative;
+      z-index: 2;
+      margin-top: -1px;
 
       &:first-child {
         border-top: none;
