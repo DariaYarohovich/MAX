@@ -138,6 +138,11 @@
       display: flex;
       align-items: center;
       width: 34%;
+      @include trans(0.3s);
+
+      &:hover {
+        transform: scale(1.03);
+      }
 
       video {
         width: 100%;
