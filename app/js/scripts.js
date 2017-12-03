@@ -40,11 +40,15 @@
 
 // collapse block
 +(() => {
-    const collapseBtn = document.querySelector(".collapse-btn");
-    const collapseArea = document.querySelector(".collapse-area");
+    const collapseBtns = document.querySelectorAll(".collapse-btn");
+    const collapseAreas = document.querySelectorAll(".collapse-area");
 
-    if (collapseBtn && collapseArea) {
-        collapseBtn.addEventListener("click", () => {
+    if (collapseBtns && collapseAreas) {
+       for (let i = 0; i < collapseBtns.length; i++) {
+           const collapseBtn = collapseBtns[i];
+           const collapseArea = collapseAreas[i];
+
+           collapseBtn.addEventListener("click", () => {
             if (collapseArea.style.maxHeight) {
                 collapseArea.style.maxHeight = null;
                 collapseBtn.innerText = "+ Show more"
@@ -53,6 +57,7 @@
                 collapseBtn.innerText = "- Show less"
             }
         });
+       }
     }
 })();
 

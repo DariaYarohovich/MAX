@@ -47,6 +47,7 @@ $gunmetal: #4c515b;
 @mixin HelveticaNeue-Bold($fontSze: 16px, $lineHeight: 1.2) {
   font-size: $fontSze;
   line-height: $lineHeight;
+  font-weight: bold;
 }
 
 @mixin HelveticaNeue($fontSze: 16px, $lineHeight: 1.2) {
