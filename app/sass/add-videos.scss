@@ -59,7 +59,7 @@
       p {
         margin-bottom: 5px;
         @include HelveticaNeue(16px, 1.2);
-        color: $black-two;
+        color: rgba(21, 21, 21, 0.6);
       }
     }
   }

@@ -20,7 +20,7 @@
     }
 })();
 
-// videos caps
+// videos
 +(() => {
     const videoBlocksCaps = document.querySelectorAll(".video-block__cap");
     const videoBlocks = document.getElementsByTagName("video");
@@ -64,9 +64,11 @@
     }
 })();
 
-$( function() {
-    $( "#video-tabs" ).tabs();
-} );
+
+$( "#video-tabs" ).tabs({
+    show: { effect: "fade", duration: 600 }
+  });
+
 
 // Slider
 +(() => {
