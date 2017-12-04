@@ -87,6 +87,12 @@ p {
   width: 1180px;
   margin: 0 auto;
   padding: 40px 0;
+
+  &_partial {
+    box-sizing: border-box;
+    margin: 0 125px;
+    width: auto;
+  }
 }
 
 .title-block {
@@ -146,6 +152,11 @@ video {
 @media (max-width: $lg) {
   .container {
     width: 935px;
+
+    &_partial {
+      width: 935px;
+      margin: 0 auto;
+    }
   }
 
   .content {
@@ -156,6 +167,10 @@ video {
 @media (max-width: $md) {
   .container {
     width: 92.5%;
+
+    &_partial {
+      width: 92.5%;
+    }
   }
 }
 
@@ -163,5 +178,15 @@ video {
   .container {
     width: 100%;
     padding: 0 15px;
+
+    &_partial {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 }

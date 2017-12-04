@@ -38,3 +38,27 @@
     }
   }
 }
+
+@media (max-width: $sm) {
+  .home {
+    &__subtitle {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    &__proceed {
+      font-size: 16px;
+    }
+
+    &__btn {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 25px;
+      font-size: 14px;
+
+      &::after {
+        right: 38%;
+      }
+    }
+  }
+}
