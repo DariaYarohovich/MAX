@@ -36,6 +36,7 @@
         background: transparent;
         padding: 15px 48px 15px 40px;
         @include trans(0.3s);
+        font-weight: bold;
     
         &::after {
           content: '→';

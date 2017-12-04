@@ -29,6 +29,11 @@
       background-size: 11.7% 15.5%;
     }
 
+    &_box-min {
+      background: rgba(0, 0, 0, 0.2) url("../img/icons/play.svg") no-repeat center;
+      background-size: 63px 44px;
+    }
+
     &_round {
       background: rgba(0, 0, 0, 0.2) url("../img/icons/play-round-icon.svg") no-repeat center;
       background-size: 40px 40px;

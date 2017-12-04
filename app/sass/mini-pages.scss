@@ -61,13 +61,16 @@
     }
 
     &__content {
+        display: flex;
         flex: 1;
+        height: calc(100vh - 94.08px - 120px);
+        align-items: center;
     }
 }
 
 .curriculum {
     width: 682px;
-    margin: 9% auto 10px;
+    margin: auto;
     line-height: 1.35;
     font-family: 'AvenirNext';
 
@@ -136,7 +139,7 @@
 
 .optin-email {
     width: 78%;
-    margin: 9.2% auto 10px;
+    margin: auto;
     line-height: 1.375;
     text-align: center;
 
@@ -223,7 +226,6 @@
 .confirmation {
     width: 68%;
     margin: auto;
-    margin-top: 25%;
     text-align: center;
     line-height: 1.35;
 
@@ -258,8 +260,6 @@
 
 .login-form {
     margin: auto;
-    margin-top: 20%;
-    margin-bottom: 10px;
     width: 470px;
     line-height: 1.375;
     text-align: center;

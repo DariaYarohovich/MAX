@@ -64,12 +64,6 @@
     }
 })();
 
-
-$( "#video-tabs" ).tabs({
-    show: { effect: "fade", duration: 600 }
-  });
-
-
 // Slider
 +(() => {
     if (document.querySelector('.swiper-container')) {
