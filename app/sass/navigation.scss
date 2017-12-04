@@ -116,3 +116,8 @@
   }
 }
 
+@media (max-width: $lg) {
+  .navigation {
+    display: none;
+  }
+}

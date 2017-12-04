@@ -84,7 +84,9 @@ p {
 }
 
 .container {
-  padding: 40px 125px;
+  width: 1180px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
 .title-block {
@@ -138,5 +140,28 @@ p {
 video {
   &:hover {
     cursor: pointer;
+  }
+}
+
+@media (max-width: $lg) {
+  .container {
+    width: 935px;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: $md) {
+  .container {
+    width: 92.5%;
+  }
+}
+
+@media (max-width: $sm) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
   }
 }

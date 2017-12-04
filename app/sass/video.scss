@@ -97,3 +97,9 @@
     }
   }
 }
+
+@media (max-width: $sm) {
+  .video-block {
+    margin: 0 -15px;
+  }
+}
