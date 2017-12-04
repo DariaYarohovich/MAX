@@ -81,5 +81,37 @@
   &__right-logo {
     width: 94px;
   }
+
+  &__mobile-menu {
+    display: none;
+  }
   
+}
+
+@media (max-width: $sm) {
+  .header {
+    padding: 20px 15px 27px 15px;
+
+    &__img-block {
+      width: 147px;
+    }
+
+    &__buttons-block {
+      display: none;
+    }
+
+    &__user-block {
+      display: none;
+    }
+
+    &__mobile-menu {
+      display: block;
+      font-size: 0;
+      width: 22px;
+      height: 15px;
+      background: url('../img/icons/menu.svg') no-repeat center;
+      background-size: contain;
+      border: none;
+    }
+  }
 }
