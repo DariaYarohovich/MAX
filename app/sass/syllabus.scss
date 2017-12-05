@@ -122,6 +122,7 @@
 
     &-title {
       display: block;
+      font-size: 18px;
     }
 
     &-note {
@@ -188,6 +189,141 @@
       .syllabus__item-wrap {
         border-bottom: none;
       }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .syllabus {
+    &__header-img {
+      width: 14%;
+    }
+
+    &__header-fade {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__header-text-block {
+      width: 83%;
+      padding: 20px 0;
+      padding-top: 40px;
+    }
+
+    &__header-text {
+      width: 80%;
+      line-height: 1.4;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .syllabus {
+
+    &__header-fade {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &__header-text {
+      width: 100%;
+    }
+
+    &__item-text {
+      width: 65%;
+    }
+
+    &__item-video {
+      width: 30%;
+    }
+
+    &__header-img {
+      width: 17%;
+    }
+
+    &__header-text-block {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .syllabus {
+
+    /*header*/
+    &__header {
+      margin-bottom: 15px;
+    }
+
+    &__header-text-block {
+      width: 78%;
+    }
+
+    &__header-img {
+      width: 19%;
+    }
+
+    &__header-title {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    &__header-text {
+      display: none;
+    }
+
+
+    /*item*/
+    &__item {
+      padding: 0 15px;
+      padding-left: 40px;
+
+      &::before {
+        left: 17px;
+      }
+
+      &::after {
+        left: 13px;
+      }
+    }
+
+    &__item-wrap {
+      flex-wrap: wrap;
+      padding: 25px 0;
+    }
+
+    &__item-text {
+      width: 100%
+    }
+
+    &__item-video {
+      width: 100%
+    }
+
+    &__item-title {
+      font-size: 16px;
+    }
+
+    &__item-list {
+      font-size: 14px;
+    }
+
+    /*common video page*/
+    &_common-video {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .syllabus {
+    &__header-text-block {
+      width: 70%;
+    }
+
+    &__header-img {
+      width: 27%;
     }
   }
 }

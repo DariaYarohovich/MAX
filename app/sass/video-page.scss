@@ -49,6 +49,10 @@
     font-size: 16px;
     line-height: 1.357;
     color: $brownish-grey-two;
+
+    &_cut {
+      width: 75%;
+    }
   }
 
   &__tabs {
@@ -141,3 +145,115 @@
   border-color: $sunflower-yellow !important;
   color: $dark-grey !important;
 }
+
+@media (max-width: $lg) {
+  .video-page {
+    &__video-block {
+      &_common_1 {
+        .title-block {
+          width: 65%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .video-page {
+    &__desc-text_cut {
+      width: 100%;
+    }
+
+    &__video-block {
+      &_common_1 {
+        .title-block {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .video-page {
+    padding-bottom: 0;
+    
+    &__video-block {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+
+      .title-block {
+        width: 100%;
+      }
+
+      .video-block {
+        width: calc( 100% + 30px );
+        box-shadow: none;
+      }
+
+      &_common_1 {
+        .title-block {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__desc-wrap {
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+
+      .video-page__desc-block {
+        width: 100%;
+      }
+    }
+
+    &__connect-block {
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    &__desc-block {
+      margin-bottom: 0;
+  
+      & > .video-page__desc-texts.collapse-area_video-page {
+        max-height: 0;
+      }
+    }
+
+    &__desc-title {
+      padding: 0;
+      font-size: 16px;
+      line-height: 40px;
+    }
+
+    &__desc-text {
+      font-size: 14px;
+    }
+
+    &__tabs {
+      margin-left: -15px;
+      margin-right: -15px;
+      box-shadow: none;
+    }
+
+    &__connect-desc {
+      text-align: center;
+    }
+  }
+
+  .ui-tabs .ui-tabs-nav li a {
+    padding: 15px !important;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $xs) {
+  .ui-tabs .ui-tabs-nav li a {
+    padding: 13px !important;
+    font-size: 13px;
+  }
+}
+
+
+

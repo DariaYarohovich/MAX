@@ -74,7 +74,18 @@
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
-                slidesPerView: 5
+                slidesPerView: 5,
+                breakpoints: {
+                    1439: {
+                      slidesPerView: 4
+                    },
+                    1023: {
+                        slidesPerView: 3
+                    },
+                    767: {
+                        slidesPerView: 1
+                    }
+                }
             })
     }
 })();
