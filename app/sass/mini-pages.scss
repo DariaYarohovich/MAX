@@ -66,6 +66,10 @@
         height: calc(100vh - 94.08px - 120px);
         align-items: center;
     }
+
+    &__mobile-top-img {
+        display: none;
+    }
 }
 
 .curriculum {
@@ -95,6 +99,10 @@
 
     &__img {
         margin-right: 30px;
+    }
+
+    &__mobile-title {
+        display: none;
     }
 
     &__text {
@@ -464,6 +472,175 @@
 
 @media (max-width: $sm) {
     .mini-page {
+        line-height: 1.375;
+
+        &__left-column {
+            display: none;
+        }
+
+        &__mobile-top-img {
+            display: block;
+            width: 100%;
+        }
+
+        &__content {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 15px;
+        }
+    }
+
+    .curriculum {
         
+        &__title {
+            margin-top: 22px;
+            font-size: 18px;
+        }
+
+        &__desc {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__img {
+            display: block;
+            margin: auto;
+            width: 50%;
+            height: auto;
+        }
+
+        &__mobile-title {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: $black;
+        }
+
+        &__text {
+            padding: 0 12px 0 17px;
+            font-size: 16px;
+        }
+
+        &__str {
+            font-size: 14px;
+        }
+
+        &__btn {
+            margin-bottom: 48px;
+            width: 100%;
+            padding: 13px 10px 13px 29px;
+            font-size: 14px;
+            background-size: 13px 15px;
+        }
+    }
+
+    .confirmation {
+        margin-bottom: 51px;
+        width: 100%;
+
+        &__title {
+            margin-top: 15px;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 2.28;
+            text-align: center;
+        }
+
+        &__desc {
+            line-height: 1.375;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    .login-form {
+        &__title {
+            margin-bottom: 0;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 2;
+        }
+
+        &__desc {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        &__input {
+            height: 50px;
+            font-size: 14px;
+        }
+
+        &__input-area {
+            &_password {
+                margin-bottom: 42px;
+            }
+        }
+
+        &__new-pass {
+            top: 86px;
+            left: 0;
+        }
+
+        &__btn {
+            margin-bottom: 64px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+
+    .optin-email {
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+
+        &__box {
+            box-sizing: border-box;
+            border-radius: 0;
+            margin-bottom: 26px;
+            padding: 21px 25px 15px 34px;
+        }
+
+        &__title {
+            line-height: 1.375;
+            margin-bottom: 7px;
+            font-size: 18px;
+        }
+
+        &__desc {
+            line-height: 1.375;
+            font-size: 16px;
+        }
+
+        &__box-second {
+            margin: 0 25px 0 34px;
+        }
+
+        &__sub-title {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 1.375;
+        }
+
+        &__desc-second {
+            margin-bottom: 23px;
+            font-size: 16px;
+            line-height: 1.375;
+        }
+
+        &__btn {
+            margin: 0 15px 38px;
+            width: 290px;
+        }
     }
 }

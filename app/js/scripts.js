@@ -100,3 +100,20 @@
         });
     }
 })();
+
+//to make all mobile footers are dark
++(() => {
+    const toDimmer = () => {
+        const footer = document.querySelector("footer");
+        if (document.documentElement.clientWidth < 768) {
+            footer.classList.add("footer_dark");
+        } else {
+            if (footer.classList.contains("footer_dark")) {
+                footer.classList.remove("footer_dark");
+            }
+        }
+    }
+
+    toDimmer();
+    window.addEventListener("resize", () => toDimmer());
+})();

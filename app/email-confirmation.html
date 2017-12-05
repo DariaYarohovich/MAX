@@ -34,18 +34,21 @@
             <img src="img/photos/eyal-sidebar.jpg" alt="" class="mini-page__side-img">
         </div>
         <div class="mini-page__right-column">
+            <img src="img/photos/Banner3.jpg" alt="" class="mini-page__mobile-top-img">
             <section class="mini-page__content">
-                
                 <div class="confirmation">
                     <h1 class="confirmation__title">You’re almost done!</h1>
                     <p class="confirmation__desc">We've just sent you an email that contains a confirmation link.</p>
                     <p class="confirmation__desc"><span class="confirmation__marked">Check your inbox</span>
                         and click on the confirmation link in that email.</p>
                 </div>
-
             </section>
             <footer class="footer">
-                <img src="img/logos/logo-footer.png" alt="logo footer" class="footer__logo">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/logos/logo-footer.png">
+                    <source media="(max-width: 767px)" srcset="img/logos/logo.png">
+                    <img src="img/logos/logo-footer.png" alt="" class="footer__logo">
+                </picture>
                 <p class="footer__text">© 2017 MaxKravMaga.com All Rights Reserved. Reproduction without permission prohibited. </p>
             </footer>
         </div>
