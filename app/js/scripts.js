@@ -104,7 +104,7 @@
 //to make all mobile footers are dark
 +(() => {
     const toDimmer = () => {
-        const footer = document.querySelector("footer");
+        const footer = document.querySelector(".footer");
         if (document.documentElement.clientWidth < 768) {
             footer.classList.add("footer_dark");
         } else {
@@ -116,4 +116,21 @@
 
     toDimmer();
     window.addEventListener("resize", () => toDimmer());
+})();
+
+// mobile menu
++(() => {
+    const openBtn = document.querySelector(".header__mobile-menu");
+    const mobileMenu = document.querySelector(".navigation-mobile");
+
+    if (openBtn && mobileMenu) {
+        openBtn.addEventListener("click", () => {
+            mobileMenu.style = "left: 0";
+        });
+
+        const closeBtn = document.querySelector(".navigation-mobile__close");
+        closeBtn.addEventListener("click", () => {
+            mobileMenu.style = "left: -320px";
+        });
+    }
 })();

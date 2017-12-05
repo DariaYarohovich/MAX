@@ -1,5 +1,13 @@
-.navigation {
+.navigation-wrapper {
   width: 20%;
+}
+
+.navigation-mobile {
+  display: none;
+}
+
+.navigation {
+  height: 100%;
   padding: 30px;
   background-color: $dark-grey;
 
@@ -117,7 +125,84 @@
 }
 
 @media (max-width: $lg) {
-  .navigation {
+  .navigation-wrapper {
     display: none;
+  }
+
+  .navigation-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -320px;
+    min-height: 100%;
+    height: auto;
+    width: 320px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.17);
+    @include trans(0.3s);
+    
+    &__header {
+      padding: 26px 20px 25px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $dark-grey;
+      border-bottom: solid 2px $sunflower-yellow;
+    }
+
+    &__logo {
+      width: 147px;
+    }
+
+    &__close {
+      width: 22px;
+      height: 22px;
+      border: none;
+      background: url('../img/icons/close.svg') no-repeat center;
+      background-size: contain;
+      font-size: 0;
+    }
+  }
+
+  .navigation {
+    padding: 0;
+
+    &__list{
+      &_first {
+        border-left: none;
+      }
+
+      &_bottom {
+        & > .navigation__item {
+          padding: 24px 10px 24px 32px;
+        }
+      }
+
+      &_second {
+        & > .navigation__item {
+          border: none;
+        }
+      }
+    }
+
+    &__item {
+      padding: 24px 10px 24px 32px;
+      border-bottom: solid 1px $charcoal-grey;
+      font-family: HelveticaNeue, "AvenirNext";
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.55;
+      text-align: left;
+      color: $brownish-grey;
+
+      &_parent {
+        &::after {
+          top: 31px;
+          right: 31px;
+          width: 21px;
+          height: 21px;
+          background-size: contain;
+        }
+      }
+    }
   }
 }
