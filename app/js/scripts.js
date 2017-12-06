@@ -83,9 +83,12 @@
                         slidesPerView: 3
                     },
                     767: {
-                        slidesPerView: 1
+                        slidesPerView: 2,
+                        initialSlide: 1
                     }
-                }
+                },
+                centeredSlides: true,
+                initialSlide: 2
             })
     }
 })();
