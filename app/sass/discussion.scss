@@ -64,6 +64,7 @@
       background-color: transparent;
       padding-left: 25px;
       @include AvenirNext-Regular(14px, 1);
+      font-size: 14px !important;
       color: $warm-grey-two;
       cursor: pointer;
       background-image: url("../img/icons/reply.svg");
@@ -96,6 +97,22 @@
     textarea {
       width: 100%;
       margin: 15px 0;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .discussion {
+    &__wrap {
+      padding: 15px;
+    }
+
+    &__item-text {
+      font-size: 16px;
+    }
+
+    &__leave-reply-title {
+      font-size: 16px;
     }
   }
 }

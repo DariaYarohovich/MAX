@@ -54,6 +54,10 @@ p {
     @include HelveticaNeue-Bold(18px, 1);
     text-transform: none;
 
+    .sm {
+      display: none;
+    }
+
     &_video {
       position: relative;
       top: 0;
@@ -183,16 +187,76 @@ video {
       width: 92.5%;
     }
   }
+
+  .btn {
+    &__subject {
+      left: 25px;
+      font-size: 16px;
+
+      &_video {
+        left: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: $sm) {
   .container {
+    box-sizing: border-box;
     width: 100%;
-    padding: 0 15px;
+    padding: 20px 15px;
 
     &_partial {
+      box-sizing: border-box;
       width: 100%;
-      padding: 0 15px;
+      padding: 20px 15px;
+    }
+  }
+
+  .btn {
+    &__members-home {
+      font-size: 12px;
+    }
+
+    &__subject {
+      left: 15px;
+      bottom: 20px;
+      font-size: 12px;
+
+      &_video {
+        left: 0;
+      }
+
+      &_video-cut {
+        left: -15px;
+        right: -15px;
+        width: calc( 100% + 30px );
+        padding: 10px 15px;
+        border-bottom: none;
+        background-color: #ececec;
+        text-align: right;
+        color: $warm-grey-two;
+      }
+
+      .md {
+        display: none;
+      }
+
+      .sm {
+        display: inline;
+      }
+    }
+
+    &_leave-reply {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .title-block {
+    &__ribbon {
+      padding: 5px;
+      font-size: 12px;
     }
   }
 

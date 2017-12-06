@@ -15,11 +15,10 @@
     position: relative;
     top: 0;
     width: 49%;
-    height: 240px;
     border-radius: 4px;
-    @include shadow;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    @include shadow;
 
     &:hover {
       top: -10px;
@@ -28,6 +27,7 @@
 
     img {
       width: 100%;
+      vertical-align: top;
     }
   }
 
@@ -74,6 +74,7 @@
 
   &__text-block {
     position: relative;
+    z-index: 1;
     width: 43%;
     padding: 25px 40px;
     padding-bottom: 55px;
@@ -84,10 +85,13 @@
   &__video-block {
     width: 57%;
     position: relative;
+    z-index: 0;
 
     video {
       display: block;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -138,6 +142,19 @@
       background: url('../img/icons/arrow-collapse.svg') no-repeat center;
       background-size: contain;
       transform: rotate(90deg);
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .members-home {
+    &__latest-text {
+      right: 30%;
+    }
+  }
+  .subject {
+    &__text-block {
+      padding: 25px;
     }
   }
 }
@@ -207,6 +224,11 @@
     &__desc {
       font-size: 14px;
       line-height: 1.29;
+    }
+
+    &__video-block {
+      width: 100%;
+      order: -1;
     }
   }
 }

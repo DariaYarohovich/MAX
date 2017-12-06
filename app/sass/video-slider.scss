@@ -248,3 +248,11 @@
 .swiper-button-prev.swiper-button-disabled {
   opacity: 0.6;
 }
+
+@media (max-width: $sm) {
+  .video-slider {
+    &__item-desc {
+      display: none;
+    }
+  }
+}
