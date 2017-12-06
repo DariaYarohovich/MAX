@@ -56,3 +56,27 @@
           }
     }
 }
+
+@media(max-width: $sm) {
+    .promo-face {
+        padding-top: 34px;
+        padding-bottom: 26px;
+        background-size: auto 100%;
+
+        &__title {
+            width: 83%;
+            font-size: 22px;
+        }
+
+        &__desc {
+            margin-bottom: 15px;
+            width: 88%;
+            font-size: 18px;
+            line-height: 1.46;
+        }
+
+        &__btn {
+            padding: 18px 42px 18px 32px;
+        }
+    }
+}

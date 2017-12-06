@@ -165,9 +165,25 @@
     }
 
     &__video-block {
+      align-items: flex-start;
+
+      .video-block {
+        width: 58%;
+      }
+
+      .title-block {
+        width: 39%;
+      }
+
       &_common_1 {
+        align-items: center;
+
         .title-block {
           width: 85%;
+        }
+
+        .video-block {
+          width: 65%;
         }
       }
     }

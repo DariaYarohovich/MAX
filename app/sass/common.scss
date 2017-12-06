@@ -238,6 +238,12 @@ video {
         color: $warm-grey-two;
       }
 
+      &_intact {
+        position: static;
+        font-size: 12px;
+        line-height: 16px;
+      }
+
       .md {
         display: none;
       }
@@ -263,14 +269,6 @@ video {
   h1 {
     margin-bottom: 10px;
     font-size: 18px;
-  }
-
-  .btn {
-    &__subject {
-      position: static;
-      font-size: 12px;
-      line-height: 16px;
-    }
   }
 
   .mobile {

@@ -101,5 +101,22 @@
 @media (max-width: $sm) {
   .video-block {
     margin: 0 -15px;
+
+    &__cap {
+      &_box {
+        background-size: 65px 46px;
+      }
+    }
+
+    &__cap-content {
+      flex-direction: column;
+      top: 10%;
+      bottom: 5%;
+    }
+
+    &__signup-price {
+      width: 270px;
+      text-align: center;
+    }
   }
 }

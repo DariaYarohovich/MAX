@@ -155,6 +155,10 @@
       & .header__btn_signup {
         display: none;
       }
+
+      & .header__btn_login {
+        border: 1px solid;
+      }
     }
 
   }
