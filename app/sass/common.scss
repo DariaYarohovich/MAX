@@ -144,6 +144,16 @@ p {
   transition: max-height 0.2s ease-out;
 }
 
+.mobile {
+  &__hidden {
+    display: block;
+  }
+
+  &__visible {
+    display: none;
+  }
+}
+
 video {
   &:hover {
     cursor: pointer;
@@ -189,5 +199,23 @@ video {
   h1 {
     margin-bottom: 10px;
     font-size: 18px;
+  }
+
+  .btn {
+    &__subject {
+      position: static;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  .mobile {
+    &__hidden {
+      display: none;
+    }
+  
+    &__visible {
+      display: block;
+    }
   }
 }

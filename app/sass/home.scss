@@ -41,6 +41,10 @@
 
 @media (max-width: $sm) {
   .home {
+    &__title {
+      margin-top: 16px;
+    }
+
     &__subtitle {
       margin-bottom: 15px;
       font-size: 18px;
@@ -52,12 +56,13 @@
 
     &__btn {
       box-sizing: border-box;
-      width: 100%;
+      width: 290px;
       margin-bottom: 25px;
       font-size: 14px;
+      text-transform: initial;
 
       &::after {
-        right: 38%;
+        right: 24%;
       }
     }
   }

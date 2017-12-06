@@ -105,8 +105,108 @@
   &__collapse-wrap {
     margin-top: -5px;
   }
+
+  &__arrow-link-wrapper {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  &__arrow-link {
+    display: block;
+    position: relative;
+    padding-left: 17px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 4.14;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: solid 1px $charcoal-grey;
+    background-color: $dark-grey;
+    text-decoration: none;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 24px;
+      right: 25px;
+      width: 15px;
+      height: 15px;
+      background: url('../img/icons/arrow-collapse.svg') no-repeat center;
+      background-size: contain;
+      transform: rotate(90deg);
+    }
+  }
 }
 
 @media (max-width: $sm) {
+  .members-home {
 
+    &__block-title {
+      margin-bottom: 0;
+      font-size: 16px;
+      line-height: 2.56;
+    }
+
+    &__latest {
+      margin-top: 19px;
+    }
+
+    &__latest-wrap {
+      margin-bottom: 21px;
+      flex-direction: column;
+    }
+
+    &__latest-item {
+      margin-bottom: 10px;
+      width: 100%;
+      height: auto;
+      box-shadow: none;
+
+      & img {
+        display: block;
+      }
+    }
+
+    &__latest-title {
+      line-height: 1.2;
+    }
+    
+    &__latest-text {
+      right: 15%;
+      line-height: 1.2;
+    }
+  }
+
+  .subject {
+    margin-bottom: 29px;
+
+    &__main {
+      flex-direction: column;
+    }
+
+    &__text-block {
+      padding: 11px 17px 18px 17px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    &__video-block {
+      width: 100%;
+      order: -1;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      line-height: 1.29;
+    }
+  }
 }
