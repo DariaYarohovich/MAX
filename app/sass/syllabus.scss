@@ -6,6 +6,8 @@
   }
 
   &__header {
+    position: relative;
+    z-index: 1;
     background-color: $dark-grey;
     background-image: url("../img/photos/get-started-bg.jpg");
     background-repeat: no-repeat;
@@ -61,6 +63,11 @@
     &-text {
       @include HelveticaNeue(16px, 1.2);
     }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 0;
   }
 
   &__item {
@@ -251,9 +258,6 @@
   .syllabus {
 
     /*header*/
-    &__header {
-      margin-bottom: 15px;
-    }
 
     &__header-text-block {
       width: 78%;
@@ -284,6 +288,12 @@
 
       &::after {
         left: 15px;
+      }
+
+      &:first-child {
+        .syllabus__item-wrap {
+          padding-top: 40px;
+        }
       }
     }
 
