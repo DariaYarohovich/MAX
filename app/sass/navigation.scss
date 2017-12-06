@@ -4,6 +4,7 @@
 
 .navigation-mobile {
   display: none;
+  z-index: 3;
 }
 
 .navigation {
@@ -87,7 +88,7 @@
   &__item {
     padding: 8px 0;
     margin-bottom: 5px;
-    color: $white;
+    background: #25262a;
     @include HelveticaNeue-Bold(14px, 1.4);
 
     a {
@@ -134,8 +135,8 @@
     position: absolute;
     top: 0;
     left: -320px;
-    min-height: 100%;
-    height: auto;
+    height: 100%;
+    overflow: auto;
     width: 320px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.17);
     @include trans(0.3s);
@@ -160,6 +161,15 @@
       background: url('../img/icons/close.svg') no-repeat center;
       background-size: contain;
       font-size: 0;
+    }
+
+    & .navigation__item {
+      background-color: $dark-grey;
+      margin: 0;
+    }
+
+    & .navigation__list_first {
+      margin: 0;
     }
   }
 
