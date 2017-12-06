@@ -1,9 +1,12 @@
 .promo-face {
-    padding-top: 76px;
-    padding-bottom: 88px;
     background: url("../img/photos/eyal-profile.jpg") no-repeat left center;
     background-size: contain;
     text-align: center;
+
+    &__fade {
+        padding-top: 76px;
+        padding-bottom: 88px;
+    }
 
     &__title {
         margin: 0 auto 10px;
@@ -59,8 +62,6 @@
 
 @media(max-width: $sm) {
     .promo-face {
-        padding-top: 34px;
-        padding-bottom: 26px;
         background-size: auto 100%;
 
         &__title {
@@ -77,6 +78,12 @@
 
         &__btn {
             padding: 18px 42px 18px 32px;
+        }
+
+        &__fade {
+            padding-top: 34px;
+            padding-bottom: 26px;
+            background-color: rgba($white, 0.7);
         }
     }
 }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+<header class="header header_unlock">
+    <div class="header__img-block">
+        <img src="img/logos/logo.png" class="header__img">
+    </div>
+    <div class="header__user-block">
+        <img src="img/default.jpg" class="header__user-img">
+        <p class="header__user-name">John Doe</p>
+    </div>
+
+    <button class="header__mobile-menu">Mobile menu</button>
+</header>
+<div class="wrap">
+    <div class="navigation-wrapper">
+        <section class="navigation">
+            <ul class="navigation__list navigation__list_first">
+                <li class="navigation__item navigation__item_active"><a href="#">Members Home</a></li>
+                <li class="navigation__item"><a href="#">Technique Of The Week</a></li>
+                <li class="navigation__item navigation__item_parent">Practitioner
+                    <ul class="navigation__list navigation__list_second">
+                        <li class="navigation__item"><a href="#">P1</a></li>
+                        <li class="navigation__item"><a href="#">P2</a></li>
+                        <li class="navigation__item  navigation__item_active"><a href="#">P3</a></li>
+                        <li class="navigation__item"><a href="#">P4</a></li>
+                        <li class="navigation__item"><a href="#">P5</a></li>
+                    </ul> 
+                </li>
+                <li class="navigation__item navigation__item_parent">Graduates
+                    <ul class="navigation__list navigation__list_second">
+                        <li class="navigation__item"><a href="#">P1</a></li>
+                        <li class="navigation__item"><a href="#">P2</a></li>
+                        <li class="navigation__item"><a href="#">P3</a></li>
+                        <li class="navigation__item"><a href="#">P4</a></li>
+                        <li class="navigation__item"><a href="#">P5</a></li>
+                    </ul> 
+                </li>
+                <li class="navigation__item"><a href="#">Subjects</a></li>
+                <li class="navigation__item"><a href="#">Combat Mindset/mental Training</a></li>
+                <li class="navigation__item"><a href="#">Masterclass Seminar</a></li>
+                <li class="navigation__item"><a href="#">Theory And Lectures</a></li>
+                <li class="navigation__item"><a href="#">Firearms As Non-lethal Weapons</a></li>
+                <li class="navigation__item"><a href="#">Anti-carjacking And Road Rage</a></li>
+            </ul>
+            <ul class="navigation__list navigation__list_bottom">
+                <li class="navigation__item"><a href="#">Blog</a></li>
+                <li class="navigation__item"><a href="#">Forums</a></li>
+                <li class="navigation__item"><a href="#">KMG Events</a></li>
+            </ul>
+        </section>
+    </div>
+    <section class="content">
+        <div class="container container_partial home">
+            <h1 class="home__title">Welcome to MaxKravMaga!</h1>
+            <p class="home__subtitle">Here’s a word from Eyal</p>
+            <div class="video-block">
+                <video>
+                    <source src="video/small2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-block__cap video-block__cap_box"></div>
+            </div>
+            <p class="home__proceed">Proceed to members area:</p>
+            <a class="btn home__btn" href="members-home.html">Members home</a>
+        </div>
+        <footer class="footer">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="img/logos/logo-footer.png">
+                <source media="(max-width: 1439px)" srcset="img/logos/logo.png">
+                <img src="img/logos/logo-footer.png" alt="" class="footer__logo">
+            </picture>
+            <p class="footer__text">© 2017 MaxKravMaga.com All Rights Reserved. Reproduction without permission prohibited. </p>
+        </footer>
+    </section>
+</div>
+
+<div class="navigation-mobile">
+    <div class="navigation-mobile__header">
+        <img src="img/logos/logo.png" alt="" class="navigation-mobile__logo">
+        <button type="button" class="navigation-mobile__close">Close</button>
+    </div>
+    <section class="navigation">
+        <ul class="navigation__list navigation__list_first">
+            <li class="navigation__item navigation__item_active"><a href="#">Members Home</a></li>
+            <li class="navigation__item"><a href="#">Technique Of The Week</a></li>
+            <li class="navigation__item navigation__item_parent">Practitioner
+                <ul class="navigation__list navigation__list_second">
+                    <li class="navigation__item"><a href="#">P1</a></li>
+                    <li class="navigation__item"><a href="#">P2</a></li>
+                    <li class="navigation__item  navigation__item_active"><a href="#">P3</a></li>
+                    <li class="navigation__item"><a href="#">P4</a></li>
+                    <li class="navigation__item"><a href="#">P5</a></li>
+                </ul> 
+            </li>
+            <li class="navigation__item navigation__item_parent">Graduates
+                <ul class="navigation__list navigation__list_second">
+                    <li class="navigation__item"><a href="#">P1</a></li>
+                    <li class="navigation__item"><a href="#">P2</a></li>
+                    <li class="navigation__item"><a href="#">P3</a></li>
+                    <li class="navigation__item"><a href="#">P4</a></li>
+                    <li class="navigation__item"><a href="#">P5</a></li>
+                </ul> 
+            </li>
+            <li class="navigation__item"><a href="#">Subjects</a></li>
+            <li class="navigation__item"><a href="#">Combat Mindset/mental Training</a></li>
+            <li class="navigation__item"><a href="#">Masterclass Seminar</a></li>
+            <li class="navigation__item"><a href="#">Theory And Lectures</a></li>
+            <li class="navigation__item"><a href="#">Firearms As Non-lethal Weapons</a></li>
+            <li class="navigation__item"><a href="#">Anti-carjacking And Road Rage</a></li>
+        </ul>
+        <ul class="navigation__list navigation__list_bottom">
+            <li class="navigation__item"><a href="#">Blog</a></li>
+            <li class="navigation__item"><a href="#">Forums</a></li>
+            <li class="navigation__item"><a href="#">KMG Events</a></li>
+        </ul>
+    </section>
+</div>
+
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

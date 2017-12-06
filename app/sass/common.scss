@@ -263,6 +263,22 @@ video {
     &__ribbon {
       padding: 5px;
       font-size: 12px;
+
+      &_level {
+        margin-bottom: 10px;
+      }
+
+      &-img {
+        display: none;
+      }
+    }
+
+    &__img-bg {
+      padding-left: 60px;
+      background-image: url('../img/badges/p1.png');
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: auto 100%;
     }
   }
 

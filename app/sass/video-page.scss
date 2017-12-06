@@ -68,7 +68,7 @@
   &__desc-wrap {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 
     .video-page__desc-block {
       width: 63%;
@@ -193,6 +193,10 @@
 @media (max-width: $sm) {
   .video-page {
     padding-bottom: 0;
+
+    &_common-video_3 {
+      padding-top: 0;
+    }
     
     &__video-block {
       flex-wrap: wrap;

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MAX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="libs/lity/dist/lity.min.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <header class="header header_unlock">
+        <a href="/" class="header__img-block">
+            <img src="img/logos/logo.png" class="header__img">
+        </a>
+
+        <div class="header__user-block">
+            <img src="img/default.jpg" class="header__user-img">
+            <p class="header__user-name">John Doe</p>
+        </div>
+
+        <button class="header__mobile-menu">Mobile menu</button>
+    </header>
+    <div class="wrap">
+        <div class="navigation-wrapper">
+            <section class="navigation">
+                <ul class="navigation__list navigation__list_first">
+                    <li class="navigation__item navigation__item_active"><a href="#">Members Home</a></li>
+                    <li class="navigation__item"><a href="#">Technique Of The Week</a></li>
+                    <li class="navigation__item navigation__item_parent">Practitioner
+                        <ul class="navigation__list navigation__list_second">
+                            <li class="navigation__item"><a href="#">P1</a></li>
+                            <li class="navigation__item"><a href="#">P2</a></li>
+                            <li class="navigation__item  navigation__item_active"><a href="#">P3</a></li>
+                            <li class="navigation__item"><a href="#">P4</a></li>
+                            <li class="navigation__item"><a href="#">P5</a></li>
+                        </ul> 
+                    </li>
+                    <li class="navigation__item navigation__item_parent">Graduates
+                        <ul class="navigation__list navigation__list_second">
+                            <li class="navigation__item"><a href="#">P1</a></li>
+                            <li class="navigation__item"><a href="#">P2</a></li>
+                            <li class="navigation__item"><a href="#">P3</a></li>
+                            <li class="navigation__item"><a href="#">P4</a></li>
+                            <li class="navigation__item"><a href="#">P5</a></li>
+                        </ul> 
+                    </li>
+                    <li class="navigation__item"><a href="#">Subjects</a></li>
+                    <li class="navigation__item"><a href="#">Combat Mindset/mental Training</a></li>
+                    <li class="navigation__item"><a href="#">Masterclass Seminar</a></li>
+                    <li class="navigation__item"><a href="#">Theory And Lectures</a></li>
+                    <li class="navigation__item"><a href="#">Firearms As Non-lethal Weapons</a></li>
+                    <li class="navigation__item"><a href="#">Anti-carjacking And Road Rage</a></li>
+                </ul>
+                <ul class="navigation__list navigation__list_bottom">
+                    <li class="navigation__item"><a href="#">Blog</a></li>
+                    <li class="navigation__item"><a href="#">Forums</a></li>
+                    <li class="navigation__item"><a href="#">KMG Events</a></li>
+                </ul>
+            </section>
+        </div>
+        <section class="content">
+            <div class="container container_partial video-page">
+                <div class="video-page__video-block">
+                    <div class="title-block">
+                        <p class="title-block__ribbon">P3 Training</p>
+                        <h1>A. Spinning Attacks, Strikes and Kicks</h1>
+                    </div>
+                    <div class="video-block">
+                        <video>
+                            <source src="video/small2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-block__cap video-block__cap_box"></div>
+                    </div>
+                </div>
+                <div class="video-page__desc-block">
+                    <div class="video-page__desc-texts collapse-area collapse-area_video-page">
+                        <p class="video-page__desc-title">Video transcript</p>
+                        <p class="video-page__desc-text video-page__desc-text_cut">Defending against a result of stick attack directed towards the leg or the knee area. Like in the regular
+                            technique against the baseball swing from the side bursting forward, heel toe, you turn the body
+                            and burst forward strongly. If you manage to see that the attack is low, at the last moment you can
+                            lift your front hand, absorb the attack on the leg, thigh, and grab the hand holding the weapon,
+                            or the weapon itself. Counter attack as early as possible with the rear hand, and then create distance
+                            by moving away, or pushing the opponent backwards.
+                        </p>
+                            <p class="video-page__desc-text _cut">Defending against a result of stick attack directed towards the leg or the knee area. Like in the regular
+                                technique against the baseball swing from the side bursting forward, heel toe, you turn the body
+                                and burst forward strongly. If you manage to see that the attack is low, at the last moment you can
+                                lift your front hand, absorb the attack on the leg, thigh, and grab the hand holding the weapon,
+                                or the weapon itself. Counter attack as early as possible with the rear hand, and then create distance
+                                by moving away, or pushing the opponent backwards.
+                            </p>
+                    </div>
+                    <button class="btn__subject btn__subject_video btn__subject_video-cut collapse-btn">
+                        <span class="md">+ Show more</span>
+                        <span class="sm">+ Video transcript</span>
+                    </button>
+                </div>
+                <div class="video-page__tabs" id="video-tabs">
+                    <ul>
+                        <li><a href="#video-tabs-1">Syllabus</a></li>
+                        <li><a href="#video-tabs-2">Discussion</a></li>
+                        <li><a href="#video-tabs-3">Additional Videos</a></li>
+                    </ul>
+                    <div class="syllabus" id="video-tabs-1">
+                        <header class="syllabus__header">
+                            <div class="syllabus__header-fade">
+                                <div class="syllabus__header-img">
+                                    <img src="img/badges/p1.png">
+                                </div>
+                                <div class="syllabus__header-text-block">
+                                    <h2 class="syllabus__header-title">Official KMG P1 Training Syllabus</h2>
+                                    <p class="syllabus__header-text">Improving trainees abilities to prevent and release from different grabs Striving to the Fighter
+                                        Level. Emphasizing on finishing modes and continuation to the Fighter Level. Improving trainees
+                                        abilities to prevent and release.</p>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="syllabus__content">
+                            <div class="syllabus__item">
+                                <div class="syllabus__item-wrap">
+                                    <div class="syllabus__item-text">
+                                        <b class="syllabus__item-title">A. Spinning Attacks, Strikes and Kicks</b>
+                                        <ol class="syllabus__item-list">
+                                            <li>Spinning back elbow (horizontal)</li>
+                                            <li>Spinning back hammer strike (horizontal)</li>
+                                            <li>Spinning defensive back kick. Including series and combinations.</li>
+                                            <li>Spinning regular back kick.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="syllabus__item-video">
+                                        <video>
+                                            <source src="video/small2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <div class="video-block__cap video-block__cap_box-min"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="syllabus__item">
+                                <div class="syllabus__item-wrap">
+                                    <div class="syllabus__item-text">
+                                        <p class="syllabus__item-note">Notes & Extra Curriculum</p>
+                                        <b class="syllabus__item-title">A. Spinning Attacks, Strikes and Kicks</b>
+                                        <ol class="syllabus__item-list">
+                                            <li>Spinning back elbow (horizontal)</li>
+                                            <li>Spinning back hammer strike (horizontal)</li>
+                                            <li>Spinning defensive back kick. Including series and combinations.</li>
+                                            <li>Spinning regular back kick.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="syllabus__item-video">
+                                        <video>
+                                            <source src="video/small2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <div class="video-block__cap video-block__cap_box-min"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="syllabus__item">
+                                <div class="syllabus__item-wrap">
+                                    <div class="syllabus__item-text">
+                                        <b class="syllabus__item-title">A. Spinning Attacks, Strikes and Kicks</b>
+                                        <ol class="syllabus__item-list">
+                                            <li>Spinning back elbow (horizontal)</li>
+                                            <li>Spinning back hammer strike (horizontal)</li>
+                                            <li>Spinning defensive back kick. Including series and combinations.</li>
+                                            <li>Spinning regular back kick.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="syllabus__item-video">
+                                        <video>
+                                            <source src="video/small2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <div class="video-block__cap video-block__cap_box-min"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discussion" id="video-tabs-2">
+                        <div class="discussion__wrap">
+                            <ul class="discussion__list">
+                                <li class="discussion__item-wrap">
+                                    <div class="discussion__item">
+                                        <div class="discussion__item-bio">
+                                            <img src="img/default.jpg" class="discussion__item-img">
+                                            <div class="discussion__item-info">
+                                                <p class="discussion__item-author">John Doe</p>
+                                                <p class="discussion__item-date">12 Feb 2016</p>
+                                            </div>
+                                        </div>
+                                        <p class="discussion__item-text">
+                                            Improving trainees abilities to prevent and release from different grabs
+                                            Striving to the Fighter Level. Emphasizing on finishing modes and continuation
+                                            to the Fighter Level. Improving trainees abilities to prevent and release
+                                        </p>
+                                        <button class="discussion__item-btn">Reply</button>
+                                    </div>
+                                    <ul class="discussion__list_nested">
+                                        <li class="discussion__item-wrap">
+                                            <div class="discussion__item">
+                                                <div class="discussion__item-bio">
+                                                    <img src="img/default.jpg" class="discussion__item-img">
+                                                    <div class="discussion__item-info">
+                                                        <p class="discussion__item-author">John Doe</p>
+                                                        <p class="discussion__item-date">12 Feb 2016</p>
+                                                    </div>
+                                                </div>
+                                                <p class="discussion__item-text">
+                                                    Improving trainees abilities to prevent and release from different grabs
+                                                    Striving to the Fighter Level. Emphasizing on finishing modes and continuation
+                                                    to the Fighter Level. Improving trainees abilities to prevent and release
+                                                </p>
+                                                <button class="discussion__item-btn">Reply</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="discussion__item-wrap">
+                                    <div class="discussion__item">
+                                        <div class="discussion__item-bio">
+                                            <img src="img/default.jpg" class="discussion__item-img">
+                                            <div class="discussion__item-info">
+                                                <p class="discussion__item-author">John Doe</p>
+                                                <p class="discussion__item-date">12 Feb 2016</p>
+                                            </div>
+                                        </div>
+                                        <p class="discussion__item-text">
+                                            Improving trainees abilities to prevent and release from different grabs
+                                            Striving to the Fighter Level. Emphasizing on finishing modes and continuation
+                                            to the Fighter Level. Improving trainees abilities to prevent and release
+                                        </p>
+                                        <button class="discussion__item-btn">Reply</button>
+                                    </div>
+                                </li>
+                                <li class="discussion__item-wrap">
+                                    <div class="discussion__item">
+                                        <div class="discussion__item-bio">
+                                            <img src="img/default.jpg" class="discussion__item-img">
+                                            <div class="discussion__item-info">
+                                                <p class="discussion__item-author">John Doe</p>
+                                                <p class="discussion__item-date">12 Feb 2016</p>
+                                            </div>
+                                        </div>
+                                        <p class="discussion__item-text">
+                                            Improving trainees abilities to prevent and release from different grabs
+                                            Striving to the Fighter Level. Emphasizing on finishing modes and continuation
+                                            to the Fighter Level. Improving trainees abilities to prevent and release
+                                        </p>
+                                        <button class="discussion__item-btn">Reply</button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="discussion__btn" type="button">Load more comments</button>
+                            <div class="discussion__leave-reply">
+                                <p class="discussion__leave-reply-title">Leave a reply</p>
+                                <textarea rows="6"></textarea>
+                                <button class="btn btn_leave-reply" type="button">Submit Comment</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-videos" id="video-tabs-3">
+                        <div class="add-videos__wrap">
+                            <div class="add-videos__item">
+                                <a href="https://youtu.be/T5wlfMKLMk4" class="add-videos__item-video" data-lity>
+                                    <img src="img/photos/get-started-bg.jpg" alt="" class="add-videos__item-video-cap">
+                                </a>
+                                <div class="add-videos__item-desc">
+                                    <b class="add-videos__item-title">P1 Lecture/Theory I</b>
+                                    <p class="add-videos__item-text">Additional P1 Video</p>
+                                </div>
+                            </div>
+                            <div class="add-videos__item">
+                                <a href="https://youtu.be/T5wlfMKLMk4" class="add-videos__item-video" data-lity>
+                                    <img src="img/photos/get-started-bg.jpg" alt="" class="add-videos__item-video-cap">
+                                </a>
+                                <div class="add-videos__item-desc">
+                                    <b class="add-videos__item-title">P1 Lecture/Theory I</b>
+                                    <p class="add-videos__item-text">Additional P1 Video</p>
+                                </div>
+                            </div>
+                            <div class="add-videos__item">
+                                <a href="https://youtu.be/T5wlfMKLMk4" class="add-videos__item-video" data-lity>
+                                    <img src="img/photos/get-started-bg.jpg" alt="" class="add-videos__item-video-cap">
+                                </a>
+                                <div class="add-videos__item-desc">
+                                    <b class="add-videos__item-title">P1 Lecture/Theory I</b>
+                                    <p class="add-videos__item-text">Additional P1 Video</p>
+                                </div>
+                            </div>
+                            <div class="add-videos__item">
+                                <a href="https://youtu.be/T5wlfMKLMk4" class="add-videos__item-video" data-lity>
+                                    <img src="img/photos/get-started-bg.jpg" alt="" class="add-videos__item-video-cap">
+                                </a>
+                                <div class="add-videos__item-desc">
+                                    <b class="add-videos__item-title">P1 Lecture/Theory I</b>
+                                    <p class="add-videos__item-text">Additional P1 Video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="img/logos/logo-footer.png">
+                    <source media="(max-width: 1439px)" srcset="img/logos/logo.png">
+                    <img src="img/logos/logo-footer.png" alt="" class="footer__logo">
+                </picture>
+                <p class="footer__text">© 2017 MaxKravMaga.com All Rights Reserved. Reproduction without permission prohibited. </p>
+            </footer>
+        </section>
+    </div>
+    <div class="navigation-mobile">
+        <div class="navigation-mobile__header">
+            <img src="img/logos/logo.png" alt="" class="navigation-mobile__logo">
+            <button type="button" class="navigation-mobile__close">Close</button>
+        </div>
+        <section class="navigation">
+            <ul class="navigation__list navigation__list_first">
+                <li class="navigation__item navigation__item_active"><a href="#">Members Home</a></li>
+                <li class="navigation__item"><a href="#">Technique Of The Week</a></li>
+                <li class="navigation__item navigation__item_parent">Practitioner
+                    <ul class="navigation__list navigation__list_second">
+                        <li class="navigation__item"><a href="#">P1</a></li>
+                        <li class="navigation__item"><a href="#">P2</a></li>
+                        <li class="navigation__item  navigation__item_active"><a href="#">P3</a></li>
+                        <li class="navigation__item"><a href="#">P4</a></li>
+                        <li class="navigation__item"><a href="#">P5</a></li>
+                    </ul> 
+                </li>
+                <li class="navigation__item navigation__item_parent">Graduates
+                    <ul class="navigation__list navigation__list_second">
+                        <li class="navigation__item"><a href="#">P1</a></li>
+                        <li class="navigation__item"><a href="#">P2</a></li>
+                        <li class="navigation__item"><a href="#">P3</a></li>
+                        <li class="navigation__item"><a href="#">P4</a></li>
+                        <li class="navigation__item"><a href="#">P5</a></li>
+                    </ul> 
+                </li>
+                <li class="navigation__item"><a href="#">Subjects</a></li>
+                <li class="navigation__item"><a href="#">Combat Mindset/mental Training</a></li>
+                <li class="navigation__item"><a href="#">Masterclass Seminar</a></li>
+                <li class="navigation__item"><a href="#">Theory And Lectures</a></li>
+                <li class="navigation__item"><a href="#">Firearms As Non-lethal Weapons</a></li>
+                <li class="navigation__item"><a href="#">Anti-carjacking And Road Rage</a></li>
+            </ul>
+            <ul class="navigation__list navigation__list_bottom">
+                <li class="navigation__item"><a href="#">Blog</a></li>
+                <li class="navigation__item"><a href="#">Forums</a></li>
+                <li class="navigation__item"><a href="#">KMG Events</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $( "#video-tabs" ).tabs({
+            show: { effect: "fade", duration: 600 }
+        });
+    </script>
+    <script src="libs/lity/dist/lity.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
