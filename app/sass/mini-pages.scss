@@ -478,6 +478,10 @@
             display: none;
         }
 
+        &__right-column {
+            min-height: calc(100vh - 78.61px);
+        }
+
         &__mobile-top-img {
             display: block;
             width: 100%;
@@ -509,7 +513,7 @@
         &__img {
             display: block;
             margin: auto;
-            width: 50%;
+            width: 70%;
             height: auto;
         }
 

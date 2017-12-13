@@ -78,6 +78,7 @@ p {
 .wrap {
   width: 100%;
   display: flex;
+  margin-top: 85px;
 }
 
 .content {
@@ -164,7 +165,7 @@ video {
   }
 }
 
-@media (max-width: $lg) {
+@media (max-width: 1200px) {
   .container {
     width: 935px;
 
@@ -172,6 +173,10 @@ video {
       width: 935px;
       margin: 0 auto;
     }
+  }
+
+  .wrap {
+    margin-top: 0;
   }
 
   .content {
@@ -182,10 +187,17 @@ video {
 @media (max-width: $md) {
   .container {
     width: 92.5%;
+    flex: 1;
 
     &_partial {
       width: 92.5%;
     }
+  }
+  
+  .content {
+    min-height: calc(100vh - 78.61px);
+    display: flex;
+    flex-direction: column;
   }
 
   .btn {

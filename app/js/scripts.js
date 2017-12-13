@@ -119,7 +119,7 @@
 +(() => {
     const toDimmer = () => {
         const footer = document.querySelector(".footer");
-        if (document.documentElement.clientWidth < 768) {
+        if (document.documentElement.clientWidth < 1200) {
             footer.classList.add("footer_dark");
         } else {
             if (footer.classList.contains("footer_dark")) {
@@ -136,15 +136,21 @@
 +(() => {
     const openBtn = document.querySelector(".header__mobile-menu");
     const mobileMenu = document.querySelector(".navigation-mobile");
+    const overlay = document.querySelector(".navigation-mobile__overlay");
+    const body = document.querySelector("body");
 
     if (openBtn && mobileMenu) {
         openBtn.addEventListener("click", () => {
-            mobileMenu.style = "left: 0";
+            mobileMenu.classList.add("navigation-mobile_opened");
+            overlay.classList.add("navigation-mobile__overlay_opened");
+            body.style = "overflow: hidden";
         });
 
         const closeBtn = document.querySelector(".navigation-mobile__close");
         closeBtn.addEventListener("click", () => {
-            mobileMenu.style = "left: -320px";
+            mobileMenu.classList.remove("navigation-mobile_opened");
+            overlay.classList.remove("navigation-mobile__overlay_opened");
+            body.style = null;
         });
     }
 })();

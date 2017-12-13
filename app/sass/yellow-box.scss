@@ -43,7 +43,8 @@
         &::after {
           content: '→';
           position: absolute;
-          top: 14px;
+          top: 49%;
+          transform: translate(0, -50%);
           right: 20px;
           @include trans(0.3s);
       }

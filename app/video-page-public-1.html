@@ -252,16 +252,30 @@
             </div>
         </section>
 
-        <footer class="footer footer_dark">
+        <footer class="footer">
             <picture>
-                <source media="(min-width: 1440px)" srcset="img/logos/logo.png">
-                <source media="(max-width: 1439px)" srcset="img/logos/logo.png">
+                <source media="(min-width: 1200px)" srcset="img/logos/logo-footer.png">
+                <source media="(max-width: 1199px)" srcset="img/logos/logo.png">
                 <img src="img/logos/logo-footer.png" alt="" class="footer__logo">
             </picture>
             <p class="footer__text">© 2017 MaxKravMaga.com All Rights Reserved. Reproduction without permission prohibited. </p>
         </footer>
     </section>
 </div>
+<div class="navigation-mobile">
+    <div class="navigation-mobile__header">
+        <img src="img/logos/logo.png" alt="" class="navigation-mobile__logo">
+        <button type="button" class="navigation-mobile__close">Close</button>
+    </div>
+    <section class="navigation">
+        <ul class="navigation__list navigation__list_first">
+            <li class="navigation__item navigation__item_active"><a href="#">Login</a></li>
+            <li class="navigation__item"><a href="#">Signup</a></li>
+            <li class="navigation__item"><a href="#">About</a></li>
+        </ul>
+    </section>
+</div>
+<div class="navigation-mobile__overlay"></div>
 
 <script src="libs/jquery/dist/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>

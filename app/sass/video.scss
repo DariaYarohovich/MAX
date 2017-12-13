@@ -9,6 +9,7 @@
   video {
     width: 100%;
     display: block;
+    margin-bottom: -1px;
   }
 
   &__cap {
@@ -27,6 +28,16 @@
     &_box {
       background: rgba(0, 0, 0, 0.2) url("../img/icons/play.svg") no-repeat center;
       background-size: 11.7% 15.5%;
+    }
+
+    &_box-blurred {
+      background-color:rgba(0, 0, 0, 0.2);
+      background:
+      url("../img/icons/play.svg"),
+      url("../img/photos/blurred.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 11.7% 15.5%, cover;
     }
 
     &_box-min {

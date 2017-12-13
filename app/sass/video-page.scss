@@ -6,6 +6,7 @@
 
     .title-block {
       width: 30%;
+      padding-top: 25px;
     }
 
     .video-block {
@@ -63,6 +64,7 @@
   &_common-video {
     position: relative;
     z-index: 1;
+    padding-top: 55px;
   }
 
   &__desc-wrap {
@@ -160,6 +162,11 @@
 
 @media (max-width: $md) {
   .video-page {
+
+    &_common-video {
+      padding-top: 20px;
+    }
+
     &__desc-text_cut {
       width: 100%;
     }
@@ -204,6 +211,7 @@
 
       .title-block {
         width: 100%;
+        padding-top: 0;
       }
 
       .video-block {

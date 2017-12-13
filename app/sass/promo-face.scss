@@ -60,6 +60,39 @@
     }
 }
 
+@media(max-width: $lg) {
+    .promo-face {
+        &__fade {
+            width: 673px;
+            margin-left: calc(50% - 200px);
+        }
+    }
+}
+
+@media(max-width: $md) {
+    .promo-face {
+
+        &__fade {
+            padding-top: 76px;
+            padding-bottom: 88px;
+            width: 60%;
+            margin-right: 4%;
+            margin-left: auto;
+        }
+
+        &__title {
+            width: auto;
+            font-size: 34px;
+            line-height: 1.24;
+        }
+
+        &__desc {
+            width: auto;
+        }
+
+    }
+}
+
 @media(max-width: $sm) {
     .promo-face {
         background-size: auto 100%;
@@ -81,6 +114,7 @@
         }
 
         &__fade {
+            width: 100%;
             padding-top: 34px;
             padding-bottom: 26px;
             background-color: rgba($white, 0.7);
