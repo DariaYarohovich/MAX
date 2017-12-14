@@ -3,6 +3,10 @@
 
     &__left-column {
         position: relative;
+        width: 40%;
+        height: calc(100vh - 86.08px);
+        background: url("../img/photos/eyal-sidebar.jpg") no-repeat center;
+        background-size: cover;
     }
 
     &__side-img {
@@ -18,7 +22,7 @@
         bottom: 9.7%;
         left: 50%;
         transform: translate(-50%, 0);
-        width: 253px;
+        width: 80%;
         text-align: center;
     }
 
@@ -32,16 +36,17 @@
 
     &__get-acc-btn {
         box-sizing: border-box;
-        padding: 15px 69px;
+        padding: 15px 0;
+        width: 100%;
         border-radius: 4px;
         box-shadow: 0 15px 24px 0 rgba(0, 0, 0, 0.35);
         border: solid 1px $sunflower-yellow;
         background: transparent;
+        text-align: center;
 
         font-size: 16px;
         font-weight: bold;
         line-height: 1.75;
-        text-align: left;
         color: $sunflower-yellow;
         text-transform: uppercase;
         @include trans(0.3s);
@@ -355,6 +360,35 @@
     }
 }
 
+/* IPads*/
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    .mini-page {
+        &__left-column {
+            position: relative;
+            height: calc(100vh - 100.08px);
+            width: 50%;
+        }
+    }
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    .mini-page {
+        &__left-column {
+            position: relative;
+            height: calc(100vh - 100.08px);
+            width: 70%;
+        }
+    }
+}
+
 @media (max-width: $lg) {
     .mini-page {
         &__side-img {
@@ -414,10 +448,6 @@
         &__side-img {
             width: 263px;
             height: calc(100vh - 94.08px);
-        }
-
-        &__get-acc-btn {
-            padding: 10px 47px;
         }
     }
 
