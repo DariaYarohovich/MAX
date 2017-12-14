@@ -40,6 +40,17 @@
       background-size: 11.7% 15.5%, cover;
     }
 
+    &_box-image {
+      background-color:rgba(0, 0, 0, 0.2);
+      background:
+      url("../img/icons/play.svg"),
+      url("../img/photos/get-started-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 63px 44px, cover;
+      border-radius: 4px;
+    }
+
     &_box-min {
       background: rgba(0, 0, 0, 0.2) url("../img/icons/play.svg") no-repeat center;
       background-size: 63px 44px;
