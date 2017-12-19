@@ -31,6 +31,8 @@
     }
 
     &_box-blurred {
+      height: 411px;
+      width: 100%;
       background-color:rgba(0, 0, 0, 0.2);
       background:
       url("../img/icons/play.svg"),
@@ -116,6 +118,16 @@
       cursor: pointer;
       background: black;
       border-color: black;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .video-block {
+    &__cap {
+      &_box-blurred {
+        height: 331px;
+      }
     }
   }
 }

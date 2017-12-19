@@ -9,7 +9,8 @@
 
   &__overlay {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: 10;
@@ -22,9 +23,12 @@
 }
 
 .navigation {
+  position: fixed;
   padding: 30px;
+  padding-bottom: 100px;
   background-color: $dark-grey;
-  height: 100%;
+  height: 100vh;
+  overflow: auto;
   box-sizing: border-box;
 
   &__list {
@@ -171,8 +175,9 @@
 
   .navigation-mobile {
     display: block;
-    position: absolute;
+    position: fixed;
     left: -40%;
+    top: 0;
     height: 100vh;
     overflow: auto;
     width: 40%;
@@ -221,6 +226,7 @@
   .navigation {
     padding: 0;
     height: 100%;
+    width: 40%;
 
     &__list{
       &_first {
@@ -283,5 +289,9 @@
     a {
       font-size: 22px;
     }
+  }
+
+  .navigation {
+    width: 100%;
   }
 }

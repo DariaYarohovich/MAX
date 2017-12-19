@@ -96,7 +96,6 @@
 @media (max-width: 1200px) {
   .header {
     padding: 20px 15px 27px 15px;
-    position: static;
 
     &_unlock {
       & > .header__user-block {
@@ -110,7 +109,7 @@
       }
 
       & > .header__img-block {
-        margin-left: 50px;
+        margin-left: 78px;
       }
     }
 

@@ -329,6 +329,12 @@
         }
       }
 
+      &:last-child {
+        &::before {
+          bottom: 24px;
+        }
+      }
+
       &_active {
         &::after {
           left: 15px;
