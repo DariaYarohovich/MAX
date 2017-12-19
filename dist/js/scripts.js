@@ -101,7 +101,8 @@
                 }
             },
             centeredSlides: true,
-            initialSlide: 2
+            initialSlide: 2,
+            loop: true
         });
     }
 }();
@@ -137,10 +138,10 @@
     var toDimmer = function toDimmer() {
         var footer = document.querySelector(".footer");
         if (document.documentElement.clientWidth < 1200) {
-            footer.classList.add("footer_dark");
+            footer.classList.add("footer_dark-mobile");
         } else {
-            if (footer.classList.contains("footer_dark")) {
-                footer.classList.remove("footer_dark");
+            if (footer.classList.contains("footer_dark-mobile")) {
+                footer.classList.remove("footer_dark-mobile");
             }
         }
     };
@@ -157,19 +158,22 @@
     var mobileMenu = document.querySelector(".navigation-mobile");
     var overlay = document.querySelector(".navigation-mobile__overlay");
     var body = document.querySelector("body");
+    var closeBtn = document.querySelector(".navigation-mobile__close");
 
-    if (openBtn && mobileMenu) {
+    if (openBtn && mobileMenu && overlay && closeBtn) {
+        var closeSideBar = function closeSideBar() {
+            mobileMenu.classList.remove("navigation-mobile_opened");
+            overlay.classList.remove("navigation-mobile__overlay_opened");
+            body.style = null;
+        };
+
         openBtn.addEventListener("click", function () {
             mobileMenu.classList.add("navigation-mobile_opened");
             overlay.classList.add("navigation-mobile__overlay_opened");
             body.style = "overflow: hidden";
         });
 
-        var closeBtn = document.querySelector(".navigation-mobile__close");
-        closeBtn.addEventListener("click", function () {
-            mobileMenu.classList.remove("navigation-mobile_opened");
-            overlay.classList.remove("navigation-mobile__overlay_opened");
-            body.style = null;
-        });
+        closeBtn.addEventListener("click", closeSideBar);
+        overlay.addEventListener("click", closeSideBar);
     }
 }();
