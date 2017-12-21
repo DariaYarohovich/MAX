@@ -20,7 +20,7 @@
     }
 })();
 
-// videos
+// videos html5
 +(() => {
     const videoBlocksCaps = document.querySelectorAll(".video-block__cap");
     const videoBlocks = document.getElementsByTagName("video");
@@ -51,13 +51,20 @@
            const collapseBtn = collapseBtns[i];
            const collapseArea = collapseAreas[i];
 
-           collapseBtn.addEventListener("click", () => {
+           collapseBtn.addEventListener("click", (e) => {
             if (collapseArea.style.maxHeight) {
                 collapseArea.style.maxHeight = null;
-                collapseBtn.innerText = "+ Show more"
+
+                if (e.target.innerText === "- Training Videos") {
+                    e.target.innerText = "+ Training Videos"
+                }
+                
             } else {
                 collapseArea.style.maxHeight = collapseArea.scrollHeight + "px";
-                collapseBtn.innerText = "- Show less"
+                
+                if (e.target.innerText === "+ Training Videos") {
+                    e.target.innerText = "- Training Videos"
+                }
             }
         });
        }
@@ -66,7 +73,9 @@
 
 // Slider
 +(() => {
-    if (document.querySelector('.swiper-container')) {
+    const sliderElem = document.querySelector('.video-slider');
+
+    if (sliderElem) {
         const videoSlider = new Swiper ('.swiper-container', {
             
                 // Navigation arrows
@@ -91,6 +100,14 @@
                 initialSlide: 2,
                 loop: true
             })
+
+        sliderElem.addEventListener("mouseover", () => {
+            videoSlider.slides[videoSlider.activeIndex].classList.remove('swiper-slide-active');
+        });
+
+        sliderElem.addEventListener("mouseout", () => {
+            videoSlider.slides[videoSlider.activeIndex].classList.add('swiper-slide-active');
+        });
     }
 })();
 

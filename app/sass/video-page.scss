@@ -2,7 +2,7 @@
   &__video-block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 
     .title-block {
       width: 30%;
@@ -10,7 +10,7 @@
     }
 
     .video-block {
-      width: 65%;
+      width: 64%;
     }
 
     &_common {
@@ -31,10 +31,6 @@
 
   &__desc-block {
     margin-bottom: 50px;
-
-    & > .video-page__desc-texts {
-      max-height: 177px;
-    }
   }
 
   &__desc-title {
@@ -116,6 +112,14 @@
 
 .ui-tabs .ui-tabs-panel {
   padding: 0;
+}
+
+.ui-tabs-panel .syllabus__header {
+  border-radius: 0;
+}
+
+.ui-tabs-panel .syllabus__header-fade {
+  border-radius: 0;
 }
 
 .ui-tabs .ui-tabs-nav {

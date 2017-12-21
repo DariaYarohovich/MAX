@@ -71,10 +71,6 @@
         height: calc(100vh - 94.08px - 120px);
         align-items: center;
     }
-
-    &__mobile-top-img {
-        display: none;
-    }
 }
 
 .curriculum {
@@ -84,11 +80,15 @@
     font-family: 'AvenirNext';
 
     &__img {
-        height: 257px;
+        height: 285px;
     }
 
     &__title {
         text-align: center;
+    }
+
+    &__text-block {
+        margin-top: 40px;
     }
 
     &__desc {
@@ -144,8 +144,8 @@
 
         &:hover {
             cursor: pointer;
-            background-position: calc(100% - 20px) calc(50% + 3px);
-            border-color: #25262a;
+            transform: scale(1.03);
+	        box-shadow: rgba(115, 94, 0, 0.24) 10px 16px 40px 0;
         }
     }
 }
@@ -226,12 +226,9 @@
         }
 
         &:hover {
-            border: 1px solid $dark-grey;
+            transform: scale(1.03);
+	        box-shadow: rgba(115, 94, 0, 0.24) 10px 16px 40px 0;
             cursor: pointer;
-
-            &::after {
-                right: 18px;
-            }
         }
     }
 }
@@ -354,7 +351,8 @@
         @include trans(0.3s);
 
         &:hover {
-            border-color: $dark-grey;
+            transform: scale(1.03);
+	        box-shadow: rgba(115, 94, 0, 0.24) 10px 16px 40px 0;
             cursor: pointer;
         }
     }
@@ -417,6 +415,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
         &__img {
             display: none;
+        }
+
+        &__text-block {
+            margin-top: 0;
         }
         
         &__text {
@@ -512,11 +514,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
             min-height: calc(100vh - 78.61px);
         }
 
-        &__mobile-top-img {
-            display: block;
-            width: 100%;
-        }
-
         &__content {
             width: 100%;
             box-sizing: border-box;
@@ -575,7 +572,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     .confirmation {
-        margin-bottom: 51px;
+        padding-bottom: 51px;
         width: 100%;
 
         &__title {

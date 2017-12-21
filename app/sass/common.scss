@@ -28,6 +28,12 @@ p {
   cursor: pointer;
   line-height: 1;
   text-decoration: none;
+  @include trans();
+
+  &:hover {
+    transform: scale(1.02);
+	  box-shadow: rgba(115, 94, 0, 0.24) 10px 16px 40px 0;
+  }
 
   &__members-home {
     background-color: rgba($sunflower-yellow, 0.73);
@@ -162,6 +168,15 @@ p {
 video {
   &:hover {
     cursor: pointer;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    &_home {
+      margin: auto;
+      width: 773px;
+    }
   }
 }
 

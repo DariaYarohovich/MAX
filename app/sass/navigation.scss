@@ -225,7 +225,7 @@
 
   .navigation {
     padding: 0;
-    height: 100%;
+    height: calc(100% - 78px);
     width: 40%;
 
     &__list{
