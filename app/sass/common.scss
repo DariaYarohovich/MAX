@@ -16,7 +16,9 @@ p {
   margin: 0;
   @include HelveticaNeue();
 }
-
+*{
+  outline: none;
+}
 .btn {
   border: none;
   padding: 12px 30px;

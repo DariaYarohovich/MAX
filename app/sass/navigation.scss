@@ -27,8 +27,9 @@
   padding: 30px;
   padding-bottom: 100px;
   background-color: $dark-grey;
-  height: 100vh;
-  overflow: auto;
+  height: calc(100vh - 85px);
+  overflow-y: auto;
+  overflow-x: hidden;
   box-sizing: border-box;
 
   &__list {
@@ -227,7 +228,8 @@
     padding: 0;
     height: calc(100% - 78px);
     width: 40%;
-
+    top: 79px;
+    bottom: 0;
     &__list{
       &_first {
         border-left: none;
