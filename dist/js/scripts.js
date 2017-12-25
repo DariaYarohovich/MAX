@@ -25,7 +25,7 @@
     }
 }();
 
-// videos
+// videos html5
 +function () {
     var videoBlocksCaps = document.querySelectorAll(".video-block__cap");
     var videoBlocks = document.getElementsByTagName("video");
@@ -60,13 +60,19 @@
             var collapseBtn = collapseBtns[i];
             var collapseArea = collapseAreas[i];
 
-            collapseBtn.addEventListener("click", function () {
+            collapseBtn.addEventListener("click", function (e) {
                 if (collapseArea.style.maxHeight) {
                     collapseArea.style.maxHeight = null;
-                    collapseBtn.innerText = "+ Show more";
+
+                    if (e.target.innerText === "- Training Videos") {
+                        e.target.innerText = "+ Training Videos";
+                    }
                 } else {
                     collapseArea.style.maxHeight = collapseArea.scrollHeight + "px";
-                    collapseBtn.innerText = "- Show less";
+
+                    if (e.target.innerText === "+ Training Videos") {
+                        e.target.innerText = "- Training Videos";
+                    }
                 }
             });
         };
@@ -79,7 +85,9 @@
 
 // Slider
 +function () {
-    if (document.querySelector('.swiper-container')) {
+    var sliderElem = document.querySelector('.video-slider');
+
+    if (sliderElem) {
         var videoSlider = new Swiper('.swiper-container', {
 
             // Navigation arrows
@@ -103,6 +111,14 @@
             centeredSlides: true,
             initialSlide: 2,
             loop: true
+        });
+
+        sliderElem.addEventListener("mouseover", function () {
+            videoSlider.slides[videoSlider.activeIndex].classList.remove('swiper-slide-active');
+        });
+
+        sliderElem.addEventListener("mouseout", function () {
+            videoSlider.slides[videoSlider.activeIndex].classList.add('swiper-slide-active');
         });
     }
 }();

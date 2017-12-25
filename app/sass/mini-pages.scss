@@ -5,7 +5,7 @@
         position: relative;
         width: 40%;
         height: calc(100vh - 86.08px);
-        background: url("../img/photos/eyal-sidebar.jpg") no-repeat center;
+        background: url("../img/photos/eyal-sidebar.jpg") no-repeat center top;
         background-size: cover;
     }
 
@@ -498,6 +498,18 @@ and (-webkit-min-device-pixel-ratio: 2) {
             &:last-of-type {
                 margin-bottom: 20px;
             }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-height: 630px) {
+    .mini-page {
+        &__left-column { 
+            height: 600px;
+        }
+
+        &__right-column {
+            height: auto;
         }
     }
 }

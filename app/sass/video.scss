@@ -5,6 +5,16 @@
   width: 100%;
   overflow: hidden;
 }
+
+#p426679_jwplayer_display_icon {
+    background: rgba(0, 0, 0, 0.2) url("../img/icons/play.svg") no-repeat center !important;
+    width: 95px !important;
+    height: 65px !important;
+}
+
+#p426679_jwplayer_display_iconBackground {
+  background: none!important;
+}
  
 /* 16x9 Aspect Ratio */
 .intrinsic-container-16x9 {
