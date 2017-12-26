@@ -61,17 +61,19 @@
             var collapseArea = collapseAreas[i];
 
             collapseBtn.addEventListener("click", function (e) {
+                var target = e.target;
+
                 if (collapseArea.style.maxHeight) {
                     collapseArea.style.maxHeight = null;
 
-                    if (e.target.innerText === "- Training Videos") {
-                        e.target.innerText = "+ Training Videos";
+                    if (target.innerText.indexOf('-') !== -1) {
+                        target.innerText = "+" + target.innerText.slice(1);
                     }
                 } else {
                     collapseArea.style.maxHeight = collapseArea.scrollHeight + "px";
 
-                    if (e.target.innerText === "+ Training Videos") {
-                        e.target.innerText = "- Training Videos";
+                    if (target.innerText.indexOf('+') !== -1) {
+                        target.innerText = "-" + target.innerText.slice(1);
                     }
                 }
             });

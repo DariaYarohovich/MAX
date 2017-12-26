@@ -30,7 +30,7 @@
   }
 
   &__desc-block {
-    margin-bottom: 50px;
+    display: none;
   }
 
   &__desc-title {
@@ -246,10 +246,12 @@
     }
 
     &__desc-block {
-      margin-bottom: 0;
+      margin-bottom: 20px;
+      display: block;
   
-      & > .video-page__desc-texts.collapse-area_video-page {
-        max-height: 0;
+      & > .video-page__desc-texts.collapse-area {
+        max-height: 111px;
+        margin-bottom: 6px;
       }
     }
 

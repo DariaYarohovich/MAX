@@ -27,10 +27,8 @@
 .footer-links {
   position: relative;
   z-index: 2;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
   display: flex;
-  padding-top: 53px;
-  padding-bottom: 10px;
   background-color: #25262a;
 
   color: rgba(255, 255, 255, 0.7);
@@ -44,7 +42,9 @@
   &__navigation-area {
     box-sizing: border-box;
     margin-left: 10%;
-    margin-right: 3%;
+    margin-right: 0;
+    padding-top: 53px;
+    padding-bottom: 10px;
     flex-grow: 2;
     display: flex;
     justify-content: space-between;
@@ -75,7 +75,11 @@
   }
 
   &__offer {
+    padding-top: 53px;
+    padding-bottom: 10px;
     flex-grow: 1;
+    background: url('../img/photos/footer-syllabus.png') no-repeat 234px center;
+    background-size: auto 185px;
   }
 
   &__offer-desc {
@@ -157,6 +161,7 @@
   .footer-links {
     padding-top: 13px;
     padding-bottom: 6px;
+    display: none;
 
     &__offer {
       display: none;
