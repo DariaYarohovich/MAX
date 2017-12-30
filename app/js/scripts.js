@@ -57,15 +57,23 @@
             if (collapseArea.style.maxHeight) {
                 collapseArea.style.maxHeight = null;
 
-                if (target.innerText.indexOf('-') !== -1) {
-                    target.innerText = "+" + target.innerText.slice(1);
+                if (target.innerText.indexOf('- Show less') !== -1) {
+                    target.innerText = "+ Show more";
+                }
+
+                if (target.innerText.indexOf('- Training Videos') !== -1) {
+                    target.innerText = "+ Training Videos";
                 }
                 
             } else {
                 collapseArea.style.maxHeight = collapseArea.scrollHeight + "px";
                 
-                if (target.innerText.indexOf('+') !== -1) {
-                    target.innerText = "-" + target.innerText.slice(1);
+                if (target.innerText.indexOf('+ Show more') !== -1) {
+                    target.innerText = "- Show less";
+                }
+
+                if (target.innerText.indexOf('+ Training Videos') !== -1) {
+                    target.innerText = "- Training Videos";
                 }
             }
         });
