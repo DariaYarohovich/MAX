@@ -13,6 +13,7 @@ let gulp = require("gulp"),
 	gutil = require("gulp-util"),
 	replace = require("gulp-replace"),
 	sourcemaps = require("gulp-sourcemaps"),
+	concat = require("gulp-concat"),
 	wait = require("gulp-wait");
 
 
@@ -20,11 +21,16 @@ gulp.task("sass", function () {
 	return gulp.src("app/sass/main.scss")
         .pipe(wait(1500))
         .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sourcemaps.write())
-        .pipe(autoprefixer(["last 15 versions", "> 1%", "ie 8", "ie 7"], { cascade: true }))
-        .pipe(gulp.dest("app/css"))
-        .pipe(browserSync.reload({ stream: true }));
+        .pipe(sass({
+		includePaths: [
+			'app/sass/'
+		    ]
+	}))
+	.pipe(autoprefixer(["last 15 versions", "> 1%", "ie 8", "ie 7"], { cascade: true }))
+	.pipe(concat('main.css'))
+	.pipe(sourcemaps.write(''))
+	.pipe(gulp.dest("app/css"))
+	.pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task("stylesMove", function () {
@@ -32,12 +38,7 @@ gulp.task("stylesMove", function () {
         .pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("fixImgPaths", function () {
-	return gulp.src("dist/css/main.css")
-        .pipe(gulp.dest("dist/css"));
-});
-
-gulp.task("cssMin", ["stylesMove", "fixImgPaths"], function () {
+gulp.task("cssMin", ["stylesMove"], function () {
 	return gulp.src("dist/css/main.css")
         .pipe(cssnano())
         .pipe(rename({ suffix: ".min" }))

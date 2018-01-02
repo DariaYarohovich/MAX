@@ -1,17 +1,20 @@
 /* Mounting point for all scss files */
-@import "helpers";
-@import "common";
-@import "header";
-@import "footer";
-@import "navigation";
-@import "home";
-@import "members-home";
-@import "video";
-@import "video-page";
-@import "syllabus";
-@import "mini-pages";
-@import "discussion";
-@import "add-videos";
-@import "video-slider";
-@import "yellow-box";
-@import "promo-face";
+@import "base/helpers";
+@import "base/common";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+@import "pages/home";
+@import "pages/members-home";
+@import "pages/mini-pages";
+@import "pages/video-page";
+
+@import "components/video";
+@import "components/syllabus";
+@import "components/discussion";
+@import "components/add-videos";
+@import "components/video-slider";
+@import "components/yellow-box";
+@import "components/promo-face";
