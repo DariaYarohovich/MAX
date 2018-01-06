@@ -44,6 +44,44 @@
     }
 }
 
+.home-long-quote {
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    &__img {
+        width: 285px;
+        height: 285px;
+        margin-right: 28px;
+    }
+
+    &__img-capture {
+        display: none;
+    }
+
+    &__text-block {
+        width: 665px;
+    }
+
+    &__text {
+        margin-bottom: 16px;
+        font-size: 28px;
+        color: $charcoal;
+    }
+
+    &__signature {
+        font-size: 20px;
+        font-weight: 900;
+        font-style: italic;
+        color: $charcoal;
+    }
+}
+
 @media (max-width: $lg) {
     .home-long-top {
         min-height: 500px;
@@ -72,10 +110,30 @@
             height: 450px;
         }
     }
+
+    .home-long-quote {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &__img {
+            width: 255px;
+            height: 255px;
+            margin-right: 21px;
+        }
+
+        &__text {
+            font-size: 22px;
+        }
+
+        &__signature {
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width: $md) {
     .home-long-top {
+        margin-bottom: -32px;
         padding: 0;
         padding-top: 37px;
         text-align: center;
@@ -101,6 +159,65 @@
             left: 50%;
             transform: translate(-50%, 0);
             height: 400px;
+        }
+
+        &__btn {
+            box-sizing: border-box;
+            width: 277px;
+            height: 65px;
+            padding: 0;
+            line-height: 65px;
+        }
+    }
+
+    .home-long-quote {
+        padding-top: 58px;
+        padding-bottom: 33px;
+        text-align: center;
+        background-color: $dark-grey;
+
+        &__wrapper {
+            flex-flow: column;
+            align-items: center;
+        }
+
+        &__img-block {
+            order: 2;
+            display: flex;
+            text-align: left;
+            color: #fff;
+        }
+
+        &__img {
+            width: 90px;
+            height: 90px;
+            margin-right: 13px;
+        }
+
+        &__img-capture {
+            display: block;
+        }
+
+        &__img-name {
+            font-weight: bold;
+        }
+
+        &__img-signature {
+            width: 56px;
+            height: 31px;
+        }
+
+        &__text-block {
+            width: 78.6%;
+        }
+
+        &__text {
+            margin-bottom: 33px;
+            color: #fff;
+        }
+
+        &__signature {
+            display: none;
         }
     }
 }
@@ -134,6 +251,21 @@
         &__btn {
             margin-bottom: 0;
             width: 277px;
+        }
+    }
+
+    .home-long-quote {
+        padding-top: 50px;
+        padding-bottom: 25px;
+
+        &__text-block {
+            width: 90%;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.22;
         }
     }
 }
