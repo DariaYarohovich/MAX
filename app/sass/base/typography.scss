@@ -1,0 +1,67 @@
+body {
+    font-family: "AvenirNext";
+}
+
+h1 {
+    margin: 0;
+    @include AvenirNext-Bold(34px, 1.2);
+    color: $black;
+}
+  
+p {
+    margin: 0;
+    @include HelveticaNeue();
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+.title-54 {
+    font-family: "AvenirNext";
+    font-size: 54px;
+    line-height: 1.22;
+    font-weight: bold;
+    color: $dark;
+}
+
+.title-44 {
+    font-family: "AvenirNext";
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 1.18;
+    color: $dark-grey;
+}
+
+
+@media (max-width: $lg) {
+    .title-54 {
+        font-size: 34px;
+        line-height: 1.35;
+    }
+
+    .title-44 {
+        font-size: 34px;
+        line-height: 1.35;
+    }
+}
+
+@media (max-width: $md) {
+    .title-44 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: $sm) {
+  h1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .title-54 {
+      font-size: 26px;
+      line-height: 1.23;
+  }
+
+  .title-44 {
+      font-size: 24px;
+  }
+}

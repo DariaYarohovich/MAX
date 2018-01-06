@@ -1,15 +1,18 @@
 /* Mounting point for all scss files */
 @import "base/helpers";
 @import "base/common";
+@import "base/grid";
+@import "base/typography";
 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
 
-@import "pages/home";
 @import "pages/members-home";
 @import "pages/mini-pages";
 @import "pages/video-page";
+@import "pages/home";
+@import "pages/home-long";
 
 @import "components/video";
 @import "components/syllabus";

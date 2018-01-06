@@ -1,0 +1,139 @@
+.home-long-top {
+    position: relative;
+    min-height: 700px;
+    padding: 40px 0;
+    overflow: hidden;
+
+    &__text-block {
+        display: inline-block;
+        width: 557px;
+    }
+
+    &__title {
+        margin-bottom: 13px;
+    }
+
+    &__desc {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    &__btn {
+        text-transform: none;
+        font-size: 20px;
+    
+        &::after {
+            right: 13px;
+        }
+
+        &:hover {
+            &:after {
+                right: 10px;
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 42px;
+        left: calc(50% + 100px);
+    }
+
+    &__img-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: $lg) {
+    .home-long-top {
+        min-height: 500px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+
+        &__text-block {
+            width: 458px;
+        }
+
+        &__title {
+            margin-bottom: 22px;
+        }
+
+        &__desc {
+            margin-bottom: 21px;
+            font-size: 22px;
+        }
+
+        &__btn {
+            font-size: 18px;
+        }
+
+        &__img {
+            left: calc(50% + 22px);
+            height: 450px;
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .home-long-top {
+        padding: 0;
+        padding-top: 37px;
+        text-align: center;
+
+        &__text-block {
+            width: 100%;
+        }
+
+        &__title {
+            width: 604px;
+            margin: auto;
+            margin-bottom: 13px;
+        }
+
+        &__desc {
+            width: 468px;
+            margin: auto;
+            margin-bottom: 452px;
+        }
+
+        &__img {
+            top: 223px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .home-long-top {
+        min-height: 0;
+        padding-top: 22px;
+
+        &__title {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        &__desc {
+            width: 100%;
+            margin-bottom: 18px;
+            font-size: 18px;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__img-mobile {
+            display: block;
+            margin: 0 auto 20px;
+            width: 90%;
+        }
+
+        &__btn {
+            margin-bottom: 0;
+            width: 277px;
+        }
+    }
+}

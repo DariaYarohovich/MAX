@@ -1,0 +1,134 @@
+.wrap {
+    width: 100%;
+    display: flex;
+    margin-top: 85px;
+  }
+  
+.content {
+    width: 80%;
+
+    &_common {
+        width: 100%;
+    }
+}
+
+// used for max part 1. Layout with sidebar
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    &_partial {
+        box-sizing: border-box;
+        margin: 0 125px;
+        width: auto;
+    }
+}
+
+// used for max part 2. Full width layout
+.centering {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0; 
+    max-width: 1170px;
+    
+    // background: pink;
+    // border: 1px solid;
+    // min-height: 300px;
+}
+
+// added for block margin above for fixed header
+.fixed-header-margin {
+    margin-top: 94.4px;
+}
+
+@media (max-width: $lg) {
+    .centering {
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 1201px) {
+    .container {
+        &_home {
+            margin: auto;
+            width: 773px;
+        }
+    }
+}
+  
+
+@media (max-width: 1200px) {
+    .container {
+        width: 935px;
+
+        &_partial {
+            width: 935px;
+            margin: 0 auto;
+        }
+    }
+
+    .wrap {
+        margin-top: 91px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .fixed-header-margin {
+        margin-top: 100.4px;
+    }
+}
+
+
+@media (max-width: $md) {
+    .container {
+        width: 92.5%;
+        flex: 1;
+
+        &_partial {
+            width: 92.5%;
+        }
+    }
+    
+    .content {
+        min-height: calc(100vh - 78.61px);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .centering {
+        width: 93%;
+    }
+}
+
+
+@media (max-width: $sm) {
+    .container {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 15px;
+    
+        &_partial {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 20px 15px;
+        }
+    }
+    
+    .wrap {
+        margin-top: 78px;
+    }
+
+    .centering {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .fixed-header-margin {
+        margin-top: 79px;
+    }
+}
+

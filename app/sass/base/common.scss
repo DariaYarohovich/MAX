@@ -1,24 +1,13 @@
 body {
   position: relative;
-  margin: 1px;
+  margin: 0;
   padding: 0;
-  font-family: "AvenirNext";
 }
 
-
-h1 {
-  margin: 0;
-  @include AvenirNext-Bold(34px, 1.2);
-  color: $black;
-}
-
-p {
-  margin: 0;
-  @include HelveticaNeue();
-}
 *{
   outline: none;
 }
+
 .btn {
   border: none;
   padding: 12px 30px;
@@ -83,31 +72,7 @@ p {
   }
 }
 
-.wrap {
-  width: 100%;
-  display: flex;
-  margin-top: 85px;
-}
 
-.content {
-  width: 80%;
-
-  &_common {
-    width: 100%;
-  }
-}
-
-.container {
-  width: 1180px;
-  margin: 0 auto;
-  padding: 40px 0;
-
-  &_partial {
-    box-sizing: border-box;
-    margin: 0 125px;
-    width: auto;
-  }
-}
 
 .title-block {
   h1 {
@@ -173,50 +138,8 @@ video {
   }
 }
 
-@media (min-width: 1201px) {
-  .container {
-    &_home {
-      margin: auto;
-      width: 773px;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    width: 935px;
-
-    &_partial {
-      width: 935px;
-      margin: 0 auto;
-    }
-  }
-
-  .wrap {
-    margin-top: 91px;
-  }
-
-  .content {
-    width: 100%;
-  }
-}
 
 @media (max-width: $md) {
-  .container {
-    width: 92.5%;
-    flex: 1;
-
-    &_partial {
-      width: 92.5%;
-    }
-  }
-  
-  .content {
-    min-height: calc(100vh - 78.61px);
-    display: flex;
-    flex-direction: column;
-  }
-
   .btn {
     &__subject {
       left: 25px;
@@ -230,22 +153,6 @@ video {
 }
 
 @media (max-width: $sm) {
-  .container {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 20px 15px;
-
-    &_partial {
-      box-sizing: border-box;
-      width: 100%;
-      padding: 20px 15px;
-    }
-  }
-
-  .wrap {
-    margin-top: 78px;
-  }
-
   .btn {
     &__members-home {
       font-size: 12px;
@@ -312,11 +219,6 @@ video {
       background-position: 0 center;
       background-size: auto 100%;
     }
-  }
-
-  h1 {
-    margin-bottom: 10px;
-    font-size: 18px;
   }
 
   .mobile {
