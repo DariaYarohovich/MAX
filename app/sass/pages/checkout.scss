@@ -1,0 +1,347 @@
+.checkout {
+    display: flex;
+    justify-content: space-between;
+
+    &__form-wrap {
+        width: 63%;
+    }
+
+    &__desc {
+        width: 35%;
+    }
+
+    &__form {
+        width: 80%;
+        margin-top: 40px;
+
+        &-block {
+            padding: 0;
+            border: none;
+
+            &:first-child {
+                margin-bottom: 35px;
+            }
+
+            .input:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-block_yellow {
+            padding: 25px;
+            background-color: rgba($sunflower-yellow, 0.15);
+            border: 1px solid $sunflower-yellow;
+            border-radius: 4px;
+            @include shadowBlock;
+        }
+    }
+
+    &__block-title {
+        margin-bottom: 17px;
+        @include AvenirNext-Bold(24px, 1);
+        color: $dark-grey;
+    }
+
+    &__setting {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        border-top: 1px solid $white-two;
+    }
+
+    &__setting-name {
+        @include AvenirNext-Regular(18px);
+        color: $dark;
+
+        &_yellow {
+            @include AvenirNext-Bold(18px);
+            color: $sunflower-yellow;
+        }
+    }
+
+    &__setting-mark {
+        align-self: center;
+        margin-right: 20px;
+        padding: 8px 12px;
+        border-radius: 10px;
+        background-color: $sunflower-yellow;
+        @include AvenirNext-Bold(11px);
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    &__secure {
+        display: flex;
+        justify-content: center;
+        color: $green-grass;
+        @include AvenirNext-DemiBold(16px, 1);
+
+        span {
+            padding-left: 20px;
+            background-image: url('../../img/icons/lock-green.png');
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            background-size: auto 100%;
+        }
+    }
+
+    &__encr {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        color: $brownish-grey-two;
+        @include AvenirNext-Regular(16px, 1);
+    }
+
+    &__payment-systems {
+        margin-top: 20px;
+        text-align: end;
+    }
+}
+
+// RIGHT PART
+.block-border {
+    margin-bottom: 35px;
+    padding: 35px;
+    border-radius: 4px;
+    @include shadowBlock;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &_yellow {
+        border: 1px solid $sunflower-yellow;
+    }
+}
+
+//ACCESS
+.checkout {
+    &__access-title {
+        @include AvenirNext-Bold(18px, 1.2);
+        color: $dark-grey;
+        text-align: center;
+    }
+
+    &__access-adv-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__access-adv-item {
+        display: flex;
+        align-items: center;
+        width: 48%;
+        margin-bottom: 20px;
+        padding-left: 60px;
+        box-sizing: border-box;
+        background-image: url('../../img/icons/group-69.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 53px auto;
+
+        &:last-child,
+        &:nth-last-child(2)  {
+            margin-bottom: 0;
+        }
+
+        span {
+            padding: 15px 0;
+            @include AvenirNext-Bold(15px, 1.2);
+            color: $dark-grey;
+            font-style: italic;
+        }
+    }
+}
+
+//GUARANTEE
+.checkout {
+    &__guarantee {
+        color: $dark-grey;
+    }
+
+    &__guarantee-title {
+        margin-bottom: 15px;
+        @include AvenirNext-Bold(22px, 1.2);
+        text-align: center;
+    }
+
+    &__guarantee-desc {
+        margin-bottom: 15px;
+        @include AvenirNext-Regular(18px, 1.4);
+    }
+
+    &__sign {
+        &-name {
+            margin-bottom: 7px;
+            @include AvenirNext-Bold(18px, 1.1);
+            font-style: italic;
+        }
+
+        &-position {
+            @include AvenirNext-Regular(18px, 1.1);
+            font-style: italic;
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .checkout {
+        &__form-wrap {
+            width: 65%;
+        }
+
+        &__desc {
+            width: 30%;
+        }
+
+        &__form {
+            width: 100%;
+        }
+
+        &__block-title {
+            font-size: 18px;
+        }
+    }
+
+    // RIGHT PART
+    .checkout {
+        &__access-adv-item {
+            width: 100%;
+            margin-bottom: 15px;
+            padding-left: 70px;
+            background-size: 49px auto;
+            
+            &:nth-last-child(2) {
+                margin-bottom: 15px;
+            }
+
+            span {
+                padding: 20px 0;
+            }
+        }
+    }
+
+    //GUARANTEE
+    .checkout {
+        &__guarantee-title {
+            font-size: 18px;
+        }
+
+        &__guarantee-desc {
+            font-size: 16px;
+        }
+
+        &__sign {
+            &-name {
+                font-size: 16px;
+            }
+
+            &-position {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .checkout {
+        flex-wrap: wrap;
+
+        h1 {
+            text-align: center;
+        }
+
+        &__form-wrap {
+            width: 100%;
+        }
+
+        &__desc {
+            width: 100%;
+        }
+
+        &__form {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    // RIGHT PART
+    .checkout {
+        &__access{
+            display: none;
+        }
+    }
+
+    //GUARANTEE
+    .checkout {
+        &__guarantee {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .checkout {
+
+        h1 {
+            text-align: left;
+            font-size: 24px;
+        }
+
+        &__form {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        &__block-title {
+            font-size: 16px;
+        }
+
+        &__setting-name {
+            font-size: 16px;
+        }
+
+        &__setting-mark {
+            display: none;
+        }
+
+        &__form-block_yellow {
+            .input__field {
+                font-size: 14px;
+            }
+        }
+
+        &__payment-systems {
+            text-align: center;
+        }
+    }
+
+    //GUARANTEE
+    .checkout {
+        &__guarantee {
+            position: relative;
+            display: block;
+            border: none;
+            box-shadow: none;
+            padding: 0;
+            padding-top: 50px;
+            text-align: center;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-40px);
+                display: block;
+                height: 1px;
+                width: 80px;
+                background-color: $white-five;
+              }
+        }
+    }
+}

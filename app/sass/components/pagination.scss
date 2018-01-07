@@ -1,0 +1,62 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin: 0 35px;
+    border-top: 1px solid $white-five;
+    color: $dark-grey;
+
+    &__prev {
+        padding-left: 25px;
+        @include AvenirNext-Bold(14px, 1);
+    }
+
+    &__next {
+        padding-right: 25px;
+        @include AvenirNext-Bold(14px, 1);
+    }
+
+    &__pages {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__page {
+        padding: 5px 7px;
+        @include AvenirNext-Bold(16px, 1);
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &_active {
+            color: rgba($dark-grey, 0.3) !important;
+            background-color: #f7f7f7;
+            border: 1px solid $white-three;
+            border-radius: 2px;
+            cursor: default;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .pagination {
+        padding: 15px;
+        margin: 0;
+
+        &__prev {
+            font-size: 12px;
+        }
+    
+        &__next {
+            font-size: 12px;
+        }
+  
+        &__page {
+            font-size: 14px;
+        }
+    }
+}

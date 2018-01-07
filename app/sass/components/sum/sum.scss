@@ -1,0 +1,82 @@
+.sum {
+    display: flex;
+    @include AvenirNext-Regular(34px);
+    color: $brownish-grey-two;
+
+    &_centered {
+        justify-content: center;
+        color: $dark-grey;
+    }
+
+    &_old {
+        align-items: center;
+        margin-right: 25px;
+        font-size: 24px;
+
+        .sum__amount {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 12px;
+                left: -7%;
+                width: 110%;
+                height: 1px;
+                background-color: $black;
+                transform: rotate(-25deg);
+            }
+        }
+    }
+
+    &__currency {
+        font-size: 14px;
+        align-self: flex-start;
+
+        &_30 {
+            font-size: 30px;
+        }
+    }
+
+    &__period {
+        font-size: 12px;
+        align-self: flex-end;
+
+        &_22 {
+            font-size: 22px;
+        }
+    }
+
+    &__amount {
+        &_yellow {
+            @include AvenirNext-Bold(34px);
+            color: $sunflower-yellow;
+        }
+
+        &_68 {
+            font-size: 69px;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .sum {
+        font-size: 28px;
+
+        &_old {
+            margin-right: 10px;
+        }
+
+        &__amount {
+            font-size: 18px;
+
+            &::before {
+                top: 9px;
+            }
+
+            &_68 {
+                font-size: 69px;
+            }
+        }
+    }
+}

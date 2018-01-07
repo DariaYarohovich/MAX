@@ -23,6 +23,12 @@ $greyish: #b1b1b1;
 $white-five: #e0e0e0;
 $gunmetal: #4c515b;
 $pinkish-grey: #bababa;
+$goldish: #987c00;
+$blue: #0009c0;
+$green: #97ff00;
+$green-grass: #45b460;
+$red: #ff0112;
+$sky-blue: #01b7ff;
 
 $xs: 375px;
 $sm: 767px;
@@ -67,6 +73,10 @@ $lg: 1439px;
 
 @mixin shadowVideo() {
   box-shadow: 0 32px 44px 0 rgba(0, 0, 0, 0.5);
+}
+
+@mixin shadowBlock() {
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.08);
 }
 
 @mixin square($side) {

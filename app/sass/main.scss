@@ -13,12 +13,23 @@
 @import "pages/video-page";
 @import "pages/home";
 @import "pages/home-long";
+@import "pages/forums";
+@import "pages/tec-review";
+@import "pages/checkout";
+@import "pages/pricing";
 
 @import "components/video";
 @import "components/syllabus";
+@import "components/tabs/tabs";
 @import "components/discussion";
-@import "components/add-videos";
+@import "components/add-videos/add-videos";
 @import "components/video-slider";
 @import "components/yellow-box";
 @import "components/promo-face";
 @import "components/logos-line/logos-line";
+@import "components/pagination";
+@import "components/input";
+@import "components/sum/sum";
+@import "components/discount-mark/discount-mark";
+@import "components/plan/plan";
+@import "components/materials/materials";

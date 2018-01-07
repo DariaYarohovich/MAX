@@ -52,10 +52,6 @@
     }
   }
 
-  &__tabs {
-    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
-  }
-
   /*VIDEO PAGE COMMON*/
   &_common-video {
     position: relative;
@@ -102,54 +98,6 @@
     margin-bottom: 15px;
     @include AvenirNext-Regular(20px, 1.37);
   }
-}
-
-/*TABS*/
-.ui-widget.ui-widget-content {
-  border: none;
-  padding: 0;
-}
-
-.ui-tabs .ui-tabs-panel {
-  padding: 0;
-}
-
-.ui-tabs-panel .syllabus__header {
-  border-radius: 0;
-}
-
-.ui-tabs-panel .syllabus__header-fade {
-  border-radius: 0;
-}
-
-.ui-tabs .ui-tabs-nav {
-  background-color: #fff;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
-  padding: 0;
-}
-
-.ui-tabs .ui-tabs-nav li {
-  border: none;
-  background-color: transparent;
-
-  a {
-    position: relative;
-    bottom: -1px;
-    padding: 20px 25px !important;
-    padding-bottom: 17px;
-    border-bottom: 3px solid transparent;
-    @include HelveticaNeue-Bold(16px, 1);
-    color: $warm-grey-two;
-    outline: none;
-  }
-}
-
-.ui-state-active a,
-.ui-state-active a:link,
-.ui-state-active a:visited {
-  border-color: $sunflower-yellow !important;
-  color: $dark-grey !important;
 }
 
 @media (max-width: $lg) {
@@ -265,27 +213,9 @@
       font-size: 14px;
     }
 
-    &__tabs {
-      margin-left: -15px;
-      margin-right: -15px;
-      box-shadow: none;
-    }
-
     &__connect-desc {
       text-align: center;
     }
-  }
-
-  .ui-tabs .ui-tabs-nav li a {
-    padding: 15px !important;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: $xs) {
-  .ui-tabs .ui-tabs-nav li a {
-    padding: 13px !important;
-    font-size: 13px;
   }
 }
 

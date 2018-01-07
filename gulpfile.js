@@ -90,8 +90,8 @@ gulp.task("img", function () {
 });
 
 gulp.task("watch", ["sass", "browser-sync"], function () {
-	gulp.watch("app/sass/**/*.scss", ["sass"]);
-	gulp.watch("app/*.html", browserSync.reload);
+	gulp.watch("app/sass/**/**/*.scss", ["sass"]);
+	gulp.watch("app/**/**/**/*.html", browserSync.reload);
 	gulp.watch("app/js/**/*.js", browserSync.reload);
 });
 
