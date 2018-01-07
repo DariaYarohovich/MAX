@@ -2081,6 +2081,87 @@ p {
     font-size: 20px;
     color: #25262a; }
 
+.more-things {
+  padding-top: 97px;
+  padding-bottom: 113px; }
+  .more-things__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .more-things__text {
+    margin-right: 38.5px; }
+  .more-things__img-wrapper {
+    position: relative; }
+    .more-things__img-wrapper::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 60px;
+      width: 5px;
+      background: #ffd001; }
+    .more-things__img-wrapper::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 5px;
+      width: 60px;
+      background: #ffd001; }
+    .more-things__img-wrapper_second {
+      position: relative; }
+      .more-things__img-wrapper_second::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 60px;
+        width: 5px;
+        background: #ffd001; }
+      .more-things__img-wrapper_second::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 5px;
+        width: 60px;
+        background: #ffd001; }
+      .more-things__img-wrapper_second::before {
+        top: initial;
+        left: initial;
+        bottom: 0;
+        right: 0; }
+      .more-things__img-wrapper_second::after {
+        top: initial;
+        left: initial;
+        bottom: 0;
+        right: 0; }
+  .more-things__img {
+    display: block;
+    padding: 17.5px;
+    width: 262px;
+    height: 378px; }
+  .more-things__title {
+    margin-top: 0;
+    margin-bottom: 31px; }
+  .more-things__desc {
+    margin-bottom: 1em;
+    font-size: 20px;
+    color: #4d5059;
+    position: relative;
+    padding-left: 24px; }
+    .more-things__desc::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border: solid 3px #ffd001; }
+    .more-things__desc::before {
+      top: 7px; }
+
 @media (max-width: 1439px) {
   .home-long-top {
     min-height: 500px;
@@ -2132,7 +2213,15 @@ p {
       height: 366px; }
     .who-is__title {
       margin-top: 0;
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+  .more-things {
+    padding-top: 83px;
+    padding-bottom: 90px; }
+    .more-things__text {
+      margin-right: 30.5px; }
+    .more-things__title {
+      padding-right: 16px;
+      margin-bottom: 12px; } }
 
 @media (max-width: 1023px) {
   .home-long-top {
@@ -2228,7 +2317,20 @@ p {
       width: 258px;
       height: 338px; }
     .who-is__title {
-      margin-bottom: 18px; } }
+      margin-bottom: 18px; }
+  .more-things {
+    padding-top: 53px;
+    padding-bottom: 25px; }
+    .more-things__text {
+      margin-right: 23px; }
+    .more-things__img {
+      width: 224px;
+      height: 323px; }
+    .more-things__title {
+      padding-right: 0;
+      margin-bottom: 32px; }
+    .more-things__desc {
+      font-size: 16px; } }
 
 @media (max-width: 767px) {
   .home-long-top {
@@ -2358,7 +2460,50 @@ p {
     .who-is__title {
       margin-bottom: 24px; }
     .who-is__desc {
-      display: none; } }
+      display: none; }
+  .more-things {
+    padding-top: 0;
+    padding-bottom: 79px; }
+    .more-things__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .more-things__text {
+      margin-right: 0; }
+    .more-things__img-wrapper {
+      width: 100%; }
+      .more-things__img-wrapper::before {
+        content: none; }
+      .more-things__img-wrapper::after {
+        content: none; }
+      .more-things__img-wrapper_second::before {
+        content: none; }
+      .more-things__img-wrapper_second::after {
+        content: none; }
+    .more-things__img {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin-top: -20px; }
+    .more-things__text {
+      margin: 0 -20px;
+      padding: 10px 20px 40px 20px;
+      background-color: #25262a; }
+    .more-things__title {
+      display: none; }
+    .more-things__desc {
+      font-size: 16px;
+      color: #fff; }
+      .more-things__desc::before {
+        top: 5px; } }
 
 .intrinsic-container {
   position: relative;

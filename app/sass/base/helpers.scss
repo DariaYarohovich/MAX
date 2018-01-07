@@ -112,8 +112,8 @@ $lg: 1439px;
   &::after {
       content: " ";
       position: absolute;
-      top: $position1;
-      left: $position2;
+      top: $position2;
+      left: $position1;
       height: $size2;
       width: $size1;
       background: $color;
