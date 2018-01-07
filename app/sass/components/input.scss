@@ -68,3 +68,20 @@
         }
     }
 }
+
+@media (max-width: $sm) {
+    .input {
+    
+        &__label-add {
+            display: none;
+        }
+
+        &_exp {
+            width: 60%;
+        }
+    
+        &_cvc {
+            width: 35%;
+        }
+    }
+}

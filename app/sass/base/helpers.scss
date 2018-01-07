@@ -74,6 +74,10 @@ $lg: 1439px;
   box-shadow: 0 32px 44px 0 rgba(0, 0, 0, 0.5);
 }
 
+@mixin shadowBlock() {
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.08);
+}
+
 @mixin square($side) {
   width: $side;
   height: $side;
