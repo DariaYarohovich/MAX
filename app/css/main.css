@@ -1962,6 +1962,98 @@ p {
     font-style: italic;
     color: #333433; }
 
+.home-long-stat {
+  padding-top: 70px;
+  padding-bottom: 75px; }
+  .home-long-stat__top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 66px; }
+  .home-long-stat__title {
+    padding-top: 35px;
+    padding-left: 54px;
+    margin: 0;
+    width: 435px;
+    position: relative; }
+    .home-long-stat__title::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 60px;
+      width: 5px;
+      background: #ffd001; }
+    .home-long-stat__title::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 5px;
+      width: 60px;
+      background: #ffd001; }
+  .home-long-stat__photo {
+    position: relative;
+    width: 643px;
+    height: 398px;
+    background: url("../../img/photos/home-long-stat__photo.png") no-repeat center;
+    background-size: contain; }
+    .home-long-stat__photo::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 240px;
+      width: 184px;
+      height: 78px;
+      background: url("../../img/arrows/and-growing-weekly.svg") no-repeat center;
+      background-size: contain; }
+  .home-long-stat__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+  .home-long-stat__item {
+    width: 47%;
+    margin-bottom: 35px; }
+  .home-long-stat__item-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #25262a;
+    font-weight: bold;
+    position: relative;
+    padding-left: 24px; }
+    .home-long-stat__item-title::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border: solid 3px #ffd001; }
+  .home-long-stat__item-desc {
+    margin: 0;
+    font-size: 20px;
+    color: #4c515b; }
+  .home-long-stat__mobile-stat {
+    display: none; }
+  .home-long-stat__mobile-yellow {
+    display: none; }
+
 @media (max-width: 1439px) {
   .home-long-top {
     min-height: 500px;
@@ -1990,7 +2082,20 @@ p {
     .home-long-quote__text {
       font-size: 22px; }
     .home-long-quote__signature {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .home-long-stat {
+    padding-top: 20px;
+    padding-bottom: 30px; }
+    .home-long-stat__top {
+      margin-bottom: 45px; }
+    .home-long-stat__title {
+      margin-top: 30px;
+      padding-left: 37px;
+      width: 340px; }
+    .home-long-stat__photo {
+      margin-right: -40px;
+      width: 570px;
+      height: 353px; } }
 
 @media (max-width: 1023px) {
   .home-long-top {
@@ -2065,7 +2170,19 @@ p {
       margin-bottom: 33px;
       color: #fff; }
     .home-long-quote__signature {
-      display: none; } }
+      display: none; }
+  .home-long-stat {
+    padding: 0 0 30px 0; }
+    .home-long-stat__top {
+      margin-bottom: 20px; }
+    .home-long-stat__title {
+      width: 276px;
+      margin-top: 19px; }
+    .home-long-stat__photo {
+      width: 450px;
+      height: 280px; }
+      .home-long-stat__photo::after {
+        content: none; } }
 
 @media (max-width: 767px) {
   .home-long-top {
@@ -2095,7 +2212,81 @@ p {
     .home-long-quote__text {
       margin-bottom: 20px;
       font-size: 18px;
-      line-height: 1.22; } }
+      line-height: 1.22; }
+  .home-long-stat {
+    padding-bottom: 0;
+    background: rgba(0, 0, 0, 0.64); }
+    .home-long-stat__title {
+      padding: 0;
+      color: #fff; }
+      .home-long-stat__title::before {
+        content: none; }
+      .home-long-stat__title::after {
+        content: none; }
+    .home-long-stat__photo {
+      display: none; }
+    .home-long-stat__list {
+      margin-bottom: 16px; }
+    .home-long-stat__item {
+      margin-bottom: 0;
+      width: 100%; }
+    .home-long-stat__item-title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: normal; }
+      .home-long-stat__item-title::before {
+        top: 6px; }
+    .home-long-stat__item-desc {
+      display: none; }
+    .home-long-stat__mobile-stat {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      border-top: solid 1px rgba(255, 255, 255, 0.3); }
+    .home-long-stat__mobile-stat-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 20px 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 33%;
+      border-right: solid 1px rgba(255, 255, 255, 0.3); }
+      .home-long-stat__mobile-stat-block:last-child {
+        border-right: none; }
+    .home-long-stat__mobile-stat-number {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffd001; }
+    .home-long-stat__mobile-stat-caption {
+      opacity: 0.8;
+      font-family: 'AvenirNext';
+      font-size: 10px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase; }
+    .home-long-stat__mobile-yellow {
+      display: block;
+      height: 53px;
+      background: #ffd001 url("../../img/arrows/and-growing-weekly.svg") no-repeat center -4px;
+      background-size: 180px 45px; } }
 
 .intrinsic-container {
   position: relative;
@@ -3283,10 +3474,9 @@ p {
     border-top: solid 5px #ffd001;
     border-bottom: solid 5px #ffd001; }
     .logos-line__wrapper {
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
     .logos-line__logo {
       height: 26px;
       max-width: 33%;

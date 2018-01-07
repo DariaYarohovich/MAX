@@ -95,3 +95,42 @@ $lg: 1439px;
   justify-content: center;
   align-items: center;
 }
+
+@mixin angle($position1: 0, $position2: 0, $size1: 60px, $size2: 5px, $color: $sunflower-yellow) {
+  position: relative;
+
+  &::before {
+      content: " ";
+      position: absolute;
+      top: $position1;
+      left: $position2;
+      height: $size1;
+      width: $size2;
+      background: $color;
+  }
+
+  &::after {
+      content: " ";
+      position: absolute;
+      top: $position1;
+      left: $position2;
+      height: $size2;
+      width: $size1;
+      background: $color;
+  }
+}
+
+@mixin square($side: 6px, $color: $sunflower-yellow, $thickness: 3px) {
+  position: relative;
+  padding-left: $side + $thickness * 2 + 12px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: $side;
+    height: $side;
+    border: solid $thickness $color;
+  }
+}
