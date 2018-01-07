@@ -60,50 +60,6 @@
         }
     }
 
-    &__setting-desc {
-        display: flex;
-        @include AvenirNext-Regular(34px);
-        color: $brownish-grey-two;
-
-        &_old {
-            align-items: center;
-            margin-right: 25px;
-            font-size: 24px;
-
-            .checkout__setting-amount {
-                position: relative;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 12px;
-                    left: -7%;
-                    width: 110%;
-                    height: 1px;
-                    background-color: $black;
-                    transform: rotate(-25deg);
-                }
-            }
-        }
-
-        .currency {
-            font-size: 14px;
-            align-self: flex-start;
-        }
-
-        .date{
-            font-size: 12px;
-            align-self: flex-end;
-        }
-    }
-
-    &__setting-amount {
-        &_yellow {
-            @include AvenirNext-Bold(34px);
-            color: $sunflower-yellow;
-        }
-    }
-
     &__setting-mark {
         align-self: center;
         margin-right: 20px;
@@ -166,26 +122,6 @@
         @include AvenirNext-Bold(18px, 1.2);
         color: $dark-grey;
         text-align: center;
-    }
-
-    &__access-mark {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    &__access-mark-block {
-        padding: 5px;
-        border: 1px solid $dark-grey;
-        @include AvenirNext-Bold(12px, 1);
-        color: $dark-grey;
-
-        &_yellow {
-            border-right: none;
-            background-color: $sunflower-yellow;
-        }
     }
 
     &__access-adv-list {
@@ -367,22 +303,6 @@
 
         &__setting-name {
             font-size: 16px;
-        }
-
-        &__setting-desc {
-            font-size: 28px;
-
-            &_old {
-                margin-right: 10px;
-                
-                .checkout__setting-amount {
-                    font-size: 18px;
-
-                    &::before {
-                        top: 9px;
-                    }
-                }
-            }
         }
 
         &__setting-mark {

@@ -1,0 +1,25 @@
+.discount-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    &__block {
+        padding: 5px;
+        border: 1px solid $dark-grey;
+        @include AvenirNext-Bold(12px, 1);
+        color: $dark-grey;
+    
+        &_yellow {
+            border-right: none;
+            background-color: $sunflower-yellow;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .discount-mark {
+        display: none;
+    }
+}
