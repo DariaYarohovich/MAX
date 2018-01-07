@@ -155,6 +155,38 @@
     }
 }
 
+.who-is { 
+    padding-top: 63px;
+    padding-bottom: 70px;
+    
+    background: #ffd901; // temporary
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        display: block;
+        margin-right: 44.5px;
+        width: 347px;
+        height: 456px;
+    }
+
+    &__title {
+        margin-top: 8px;
+        margin-bottom: 22px;
+        font-weight: normal;
+    }
+
+    &__desc {
+        margin-bottom: 1em;
+        font-size: 20px;
+        color: $dark-grey;
+    }
+
+}
+
 @media (max-width: $lg) {
     .home-long-top {
         min-height: 500px;
@@ -218,9 +250,25 @@
         }
 
         &__photo {
-            margin-right: -40px;
+            margin-right: -25px;
             width: 570px;
             height: 353px;
+        }
+    }
+
+    .who-is {
+        padding-top: 60px;
+        padding-bottom: 90px;
+
+        &__img {
+            margin-right: 24px;
+            width: 279px;
+            height: 366px;
+        }
+
+        &__title {
+            margin-top: 0;
+            margin-bottom: 10px;
         }
     }
 }
@@ -337,6 +385,21 @@
         }
 
 
+    }
+
+    .who-is {
+        padding-top: 38px;
+        padding-bottom: 127px;
+
+        &__img {
+            margin-right: 44px;
+            width: 258px;
+            height: 338px;
+        }
+
+        &__title {
+            margin-bottom: 18px;
+        }
     }
 }
 
@@ -475,6 +538,32 @@
             height: 53px;
             background: $sunflower-yellow url('../../img/arrows/and-growing-weekly.svg') no-repeat center -4px;
             background-size: 180px 45px;
+        }
+    }
+
+    .who-is {
+        padding-top: 26px;
+        padding-bottom: 107px;
+        background: #fff;
+
+        &__wrapper {
+            flex-flow: column;
+            align-items: center;
+        }
+
+        &__img {
+            order: 2;
+            margin-right: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        &__title {
+            margin-bottom: 24px;
+        }
+
+        &__desc {
+            display: none;
         }
     }
 }

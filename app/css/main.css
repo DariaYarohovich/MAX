@@ -2054,6 +2054,33 @@ p {
   .home-long-stat__mobile-yellow {
     display: none; }
 
+.who-is {
+  padding-top: 63px;
+  padding-bottom: 70px;
+  background: #ffd901; }
+  .who-is__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .who-is__img {
+    display: block;
+    margin-right: 44.5px;
+    width: 347px;
+    height: 456px; }
+  .who-is__title {
+    margin-top: 8px;
+    margin-bottom: 22px;
+    font-weight: normal; }
+  .who-is__desc {
+    margin-bottom: 1em;
+    font-size: 20px;
+    color: #25262a; }
+
 @media (max-width: 1439px) {
   .home-long-top {
     min-height: 500px;
@@ -2093,9 +2120,19 @@ p {
       padding-left: 37px;
       width: 340px; }
     .home-long-stat__photo {
-      margin-right: -40px;
+      margin-right: -25px;
       width: 570px;
-      height: 353px; } }
+      height: 353px; }
+  .who-is {
+    padding-top: 60px;
+    padding-bottom: 90px; }
+    .who-is__img {
+      margin-right: 24px;
+      width: 279px;
+      height: 366px; }
+    .who-is__title {
+      margin-top: 0;
+      margin-bottom: 10px; } }
 
 @media (max-width: 1023px) {
   .home-long-top {
@@ -2182,7 +2219,16 @@ p {
       width: 450px;
       height: 280px; }
       .home-long-stat__photo::after {
-        content: none; } }
+        content: none; }
+  .who-is {
+    padding-top: 38px;
+    padding-bottom: 127px; }
+    .who-is__img {
+      margin-right: 44px;
+      width: 258px;
+      height: 338px; }
+    .who-is__title {
+      margin-bottom: 18px; } }
 
 @media (max-width: 767px) {
   .home-long-top {
@@ -2286,7 +2332,33 @@ p {
       display: block;
       height: 53px;
       background: #ffd001 url("../../img/arrows/and-growing-weekly.svg") no-repeat center -4px;
-      background-size: 180px 45px; } }
+      background-size: 180px 45px; }
+  .who-is {
+    padding-top: 26px;
+    padding-bottom: 107px;
+    background: #fff; }
+    .who-is__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .who-is__img {
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2;
+      margin-right: 0;
+      width: 100%;
+      height: auto; }
+    .who-is__title {
+      margin-bottom: 24px; }
+    .who-is__desc {
+      display: none; } }
 
 .intrinsic-container {
   position: relative;
