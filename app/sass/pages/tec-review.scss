@@ -1,0 +1,18 @@
+.tec-review {
+    &__title {
+        font-size: 28px;
+    }
+    
+    &__date {
+        @include AvenirNext-Bold(12px);
+    }
+}
+
+@media (max-width: $sm) {
+    .tec-review {
+        &__title {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    }
+}

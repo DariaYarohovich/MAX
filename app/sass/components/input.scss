@@ -1,0 +1,70 @@
+.input {
+    margin-bottom: 20px;
+
+    &__label {
+        display: block;
+        margin-bottom: 6px;
+        @include AvenirNext-Bold(14px, 1);
+        color: $brownish-grey-two;
+        text-transform: uppercase;
+
+        &_small {
+            text-transform: none;
+        }
+    }
+
+    &__field {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 15px;
+        border: 1px solid $white-two;
+        border-radius: 3px;
+        @include AvenirNext-Regular(18px, 1);
+        color: $brownish-grey-two;
+
+        &::placeholder {
+            color: rgba($brownish-grey-two, 0.5);
+        }
+    }
+
+    &__warn {
+        display: block;
+        margin-top: 7px;
+        @include AvenirNext-Regular(16px, 1);
+        color: $brownish-grey-two;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .input {
+            margin-bottom: 0;
+        }
+    }
+
+    &_exp {
+        width: 65%;
+    }
+
+    &_cvc {
+        width: 30%;
+    }
+}
+
+@media (max-width: $md) {
+    .input {
+    
+        &__label {
+            font-size: 12px;
+
+            &_small {
+                font-size: 14px;
+            }
+        }
+    
+        &__field {
+            font-size: 16px;
+        }
+    }
+}

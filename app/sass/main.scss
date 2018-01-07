@@ -10,11 +10,17 @@
 @import "pages/members-home";
 @import "pages/mini-pages";
 @import "pages/video-page";
+@import "pages/forums";
+@import "pages/tec-review";
+@import "pages/checkout";
 
 @import "components/video";
 @import "components/syllabus";
+@import "components/tabs/tabs";
 @import "components/discussion";
-@import "components/add-videos";
+@import "components/add-videos/add-videos";
 @import "components/video-slider";
 @import "components/yellow-box";
 @import "components/promo-face";
+@import "components/pagination";
+@import "components/input";
