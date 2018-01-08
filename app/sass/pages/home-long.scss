@@ -246,6 +246,32 @@
 
 }
 
+.home-long-quote-two {
+    padding: 115px 0;
+    background: url('../../img/photos/home-long-quote-two.jpg') no-repeat center;
+    background-size: cover;
+
+    &__text-container {
+        margin: 0 auto;
+        width: 750px;
+    }
+
+    &__text {
+        margin-bottom: 34px;
+        padding-left: 17px;
+        font-size: 28px;
+        font-style: italic;
+        color: #fff;
+        border-left: solid 2px $sunflower-yellow;
+    }
+
+    &__caption {
+        font-size: 22px;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
 @media (max-width: $lg) {
     .home-long-top {
         min-height: 500px;
@@ -497,6 +523,24 @@
             font-size: 16px;
         }
     }
+
+    .home-long-quote-two {
+        padding: 38px 0;
+    
+        &__text-container {
+            width: 600px;
+        }
+    
+        &__text {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            font-size: 24px;
+        }
+    
+        &__caption {
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width: $sm) {
@@ -722,6 +766,32 @@
 
             &::before {
                 top: 5px;
+            }
+        }
+    }
+
+    .home-long-quote-two {
+        padding: 50px 0 40px 0;
+    
+        &__text-container {
+            box-sizing: border-box;
+            width: 100%;
+        }
+    
+        &__text {
+            margin-bottom: 22px;
+            padding-left: 17px;
+            font-size: 18px;
+            line-height: 1.22;
+        }
+    
+        &__caption {
+            font-size: 14px;
+            font-weight: normal;
+
+            & span {
+                display: block;
+                font-weight: bold;
             }
         }
     }
