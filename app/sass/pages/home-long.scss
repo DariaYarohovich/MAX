@@ -272,6 +272,94 @@
     }
 }
 
+.two-cats {
+    padding-top: 74px;
+    padding-bottom: 40px;
+
+    &__title {
+        margin: 0 auto 22px;
+        width: 70%;
+        text-align: center;
+    }
+
+    &__desc {
+        margin: 0 auto 70px;
+        width: 56.5%;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    &__cat {
+        display: flex;
+        justify-content: space-between;
+
+        &_second {
+            flex-flow: row-reverse nowrap;
+        }
+    }
+
+    &__img-wrapper {
+        width: 48%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__cat-text {
+        width: 46%;
+    }
+
+    &__cat-title {
+        margin-top: 30px;
+        margin-bottom: 1em;
+        font-size: 22px;
+        font-weight: bold;
+        @include square();
+    }
+
+    &__cat-desc {
+        font-size: 20px;
+    }
+}
+
+.five-levels {
+    position: relative;
+    padding: 111px 0 146px;
+    display: flex;
+    @include childToCenter();
+    border-top: solid 4px $sunflower-yellow;
+    background-color: $dark-grey;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 73px;
+        transform: translate(-50%, 0);
+        @include round(10px);
+        background: $sunflower-yellow; 
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 1px;
+        height: 73px;
+        transform: translate(-50%, 0);
+        background: $sunflower-yellow; 
+    }
+    
+    &__title {
+        display: inline-block;
+        width: 736px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
 @media (max-width: $lg) {
     .home-long-top {
         min-height: 500px;
@@ -368,6 +456,58 @@
         &__title {
             padding-right: 16px;
             margin-bottom: 12px;
+        }
+    }
+
+    .two-cats {
+        padding-top: 53px;
+        padding-bottom: 40px;
+    
+        &__title {
+            margin: 0 auto 14px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        &__desc {
+            margin: 0 auto 70px;
+            width: 64%;
+            text-align: center;
+            font-size: 22px;
+        }
+    
+        &__img-wrapper {
+            width: 42%;
+        }
+    
+        &__img {
+            width: 100%;
+        }
+    
+        &__cat-text {
+            width: 55%;
+        }
+    
+        &__cat-title {
+            margin-top: 30px;
+            margin-bottom: 1em;
+            font-size: 22px;
+            font-weight: bold;
+            @include square();
+        }
+    
+        &__cat-desc {
+            font-size: 18px;
+        }
+    }
+
+    .five-levels {
+        padding-top: 87px;
+        padding-bottom: 142px;
+        
+        &__title {
+            display: inline-block;
+            width: 80%;
         }
     }
 }
@@ -539,6 +679,47 @@
     
         &__caption {
             font-size: 18px;
+        }
+    }
+
+    .two-cats {
+        padding-top: 35px;
+        padding-bottom: 80px;
+    
+        &__desc {
+            margin: 0 auto 55px;
+            width: 80%;
+            font-size: 18px;
+        }
+    
+        &__img-wrapper {
+            width: 50%;
+        }
+    
+        &__img {
+            width: 100%;
+        }
+    
+        &__cat-text {
+            width: 48%;
+        }
+    
+        &__cat-title {
+            margin-top: 0;
+            font-size: 18px;
+        }
+    
+        &__cat-desc {
+            font-size: 16px;
+        }
+    }
+
+    .five-levels {
+        padding-top: 55px;
+        padding-bottom: 124px;
+        
+        &__title {
+            width: 94%;
         }
     }
 }
@@ -793,6 +974,67 @@
                 display: block;
                 font-weight: bold;
             }
+        }
+    }
+
+    .two-cats {
+        padding-top: 35px;
+        padding-bottom: 0;
+    
+        &__title {
+            margin: 0 auto 20px;
+            text-align: left;
+        }
+    
+        &__desc {
+            margin: 0 auto 20px;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        &__cat {
+            flex-flow: column-reverse;
+            padding-bottom: 25px;
+        }
+    
+        &__img-wrapper {
+            width: 100%;
+        }
+    
+        &__img {
+            width: 100%;
+        }
+    
+        &__cat-text {
+            width: 100%;
+        }
+    
+        &__cat-title {
+            margin-top: 0;
+            font-size: 16px;
+            color: $dark-grey;
+        }
+    
+        &__cat-desc {
+            display: none;
+        }
+    }
+
+    .five-levels {
+        padding-top: 42px;
+        padding-bottom: 117px;
+
+        &::before {
+            bottom: 50px;
+        }
+    
+        &::after {
+            height: 50px;
+        }
+        
+        &__title {
+            width: 86%;
         }
     }
 }
