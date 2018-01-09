@@ -182,6 +182,32 @@ video {
   }
 }
 
+.bonus-text {
+  padding: 10px 0;
+  text-align: center;
+
+  span {
+    position: relative;
+    display: inline-block;
+    transform: rotate(-15deg);
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $sunflower-yellow;
+    }
+  }
+
+  &_pricing {
+    margin-bottom: 10px;
+  }
+}
+
 
 @media (max-width: $md) {
   .btn {
@@ -276,6 +302,12 @@ video {
   
     &__visible {
       display: block;
+    }
+  }
+
+  .bonus-text {
+    &_pricing {
+      display: none;
     }
   }
 }
