@@ -144,3 +144,28 @@ $lg: 1439px;
     border: solid $thickness $color;
   }
 }
+
+@mixin imgAbove($paddingTop: 60px, $imgPath: 'plus.svg') {
+  position: relative;
+  padding-top: $paddingTop;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 45px;
+    background: url('../../img/sales-pages/' + $imgPath) no-repeat center;
+    background-size: contain;
+  }
+
+  @media (max-width: $sm) {
+    padding-top: 40px;
+
+    &::before {
+      width: 80px;
+    }
+  }
+}
