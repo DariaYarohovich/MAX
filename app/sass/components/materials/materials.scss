@@ -3,6 +3,12 @@
     color: $dark-grey;
     @include AvenirNext-Bold(28, 1.2);
 
+    // custom styles for materials component on the home-long page
+    &_home-long {
+        @include imgAbove();
+        padding-top: 20px;
+    }
+
     &__title {
         margin-bottom: 60px;
         font-size: 28px;
@@ -31,6 +37,10 @@
         justify-content: flex-start;
         flex-wrap: wrap;
 
+        &_2 {
+            justify-content: space-between;
+        }
+
         &_4 {
             justify-content: space-between;
         }
@@ -38,6 +48,10 @@
 
     &__item {
         margin-top: 60px;
+
+        &_2 {
+            width: 49%;
+        }
 
         &_3 {
             width: 32%;
@@ -91,6 +105,11 @@
 
 @media (max-width: $lg) {
     .materials {
+
+        // custom styles for materials component on the home-long page
+        &_home-long {
+            padding-top: 40px;
+        }
     
         &__title {
             margin-bottom: 40px;
@@ -133,6 +152,21 @@
 
 @media (max-width: $sm) {
     .materials {
+        $this: &;
+
+        // custom styles for materials component on the home-long page
+        &_home-long {
+            padding-top: 50px;
+
+            #{$this}__item-img {
+                margin-bottom: 7px;
+            }
+
+            #{$this}__item-title {
+                padding-left: 0;
+                width: 92%;
+            }
+        }
     
         &__title {
             margin-bottom: 25px;
