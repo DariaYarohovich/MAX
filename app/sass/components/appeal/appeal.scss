@@ -4,7 +4,7 @@
     color: $charcoal;
 
     &_bordered {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -52,6 +52,10 @@
         &_centered {
             text-align: center;
         }
+
+        &_xs {
+            display: none;
+        }
     }
 }
 
@@ -91,6 +95,73 @@
                 height: calc(100% + 5px) !important;
                 margin-top: -5px;
                 margin-left: -40px;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .appeal {
+
+        &_bordered {
+            margin-bottom: 0;
+        }
+
+        &__content {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 25px;
+        }
+    
+        &__title {
+            font-size: 18px;
+            text-align: center;
+    
+            &_bold {
+                font-size: 18px;
+            }
+        }
+
+        &__text {
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-align: center;
+    
+            &_bold {
+                font-size: 16px;
+            }
+        }
+    
+        &__img {
+            display: none;
+        }
+
+        &__signup {
+            &_lg {
+                display: none;
+            }
+    
+            &_xs {
+                display: flex;
+                padding-bottom: 0;
+                padding-right: 0;
+            }
+        }
+
+        &__signup-img-xs {
+            width: 66px;
+            height: 66px;
+            margin-right: 10px;
+        }
+
+        &__signup-desc-xs {
+            width: calc( 100% - 76px );
+            padding-top: 5px;
+            padding-bottom: 30px;
+            font-size: 14px;
+
+            b {
+                display: block;
             }
         }
     }
