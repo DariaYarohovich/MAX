@@ -8,8 +8,21 @@
         font-size: 28px;
         text-align: center;
 
-        &_bonus {
-            border-bottom: 2px solid $sunflower-yellow;
+        &_underline {
+
+            span {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $sunflower-yellow;
+                  }
+            }
         }
     }
 
@@ -49,11 +62,19 @@
                 font-size: 20px;
             }
         }
+
+        .materials__title {
+            display: none;
+        }
     }
 
     &__item-img {
         margin-bottom: 25px;
         text-align: center;
+
+        img {
+            width: 100%;
+        }
     }
 
     &__item-title {
@@ -72,7 +93,7 @@
     .materials {
     
         &__title {
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             font-size: 24px;
         }
 
@@ -101,12 +122,38 @@
     }
 }
 
+@media (max-width: $md) {
+    .materials {
+    
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+}
+
 @media (max-width: $sm) {
     .materials {
     
         &__title {
             margin-bottom: 25px;
             font-size: 18px;
+
+            &_underline {
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+
+            &_outer {
+                margin-bottom: 55px;
+                text-transform: uppercase;
+
+                span {
+    
+                    &::after {
+                        display: none;
+                      }
+                }
+            }
         }
 
         &__item {
@@ -117,6 +164,10 @@
 
             &:last-child {
                 margin-bottom: 0;
+            }
+
+            .materials__title {
+                display: block;
             }
         }
 

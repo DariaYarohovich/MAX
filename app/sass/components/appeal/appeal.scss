@@ -1,0 +1,97 @@
+.appeal {
+    display: flex;
+    justify-content: space-between;
+    color: $charcoal;
+
+    &_bordered {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        background-color: rgba($sunflower-yellow, 0.1);
+        border: 1px solid $sunflower-yellow;
+    }
+
+    &__content {
+        padding: 50px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        @include AvenirNext-Bold(22px, 1.2);
+
+        &_bold {
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        @include AvenirNext-Regular(18px, 1.2);
+
+        &_bold {
+            @include AvenirNext-Bold(18px, 1.2);
+        }
+    }
+
+    &__img {
+        img {
+            height: calc(100% + 10px) !important;
+            margin-top: -10px;
+            margin-left: -10px;
+        }
+    }
+
+    &__signup {
+        padding: 20px 0;
+        padding-right: 120px;
+        @include AvenirNext-Regular(18px, 1.2);
+
+        &_centered {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .appeal {
+    
+        &_bordered {
+            width: 100%;
+        }
+    
+        &__content {
+            padding: 35px;
+        }
+    
+        &__signup {
+    
+            &_centered {
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .appeal {
+    
+        &__title {
+            font-size: 20px;
+    
+            &_bold {
+                font-size: 24px;
+            }
+        }
+    
+        &__img {
+            img {
+                height: calc(100% + 5px) !important;
+                margin-top: -5px;
+                margin-left: -40px;
+            }
+        }
+    }
+}
