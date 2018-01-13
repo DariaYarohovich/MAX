@@ -2389,6 +2389,158 @@ p {
     font-weight: bold;
     border-bottom: solid 2px #ffd001; }
 
+.level-program_covering {
+  margin-bottom: -120px; }
+
+.level-program__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .level-program__wrapper_reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-flow: row-reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse; }
+
+.level-program__text-area {
+  width: 41%; }
+
+.level-program__title {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 27px; }
+  .level-program__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 60px;
+    background-color: #ffd001; }
+
+.level-program__desc {
+  font-size: 22px;
+  color: #25262a; }
+
+.level-program__desc-list-item {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #25262a;
+  position: relative;
+  padding-left: 24px; }
+  .level-program__desc-list-item::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border: solid 3px #ffd001; }
+
+.level-program__img-area {
+  width: 51%; }
+
+.level-program__img {
+  width: 100%; }
+
+.included-levels {
+  margin-bottom: 63px;
+  padding-top: 38px;
+  padding-bottom: 44px;
+  background-color: #25262a;
+  -webkit-box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4); }
+  .included-levels__title {
+    margin-left: 40px;
+    margin-bottom: 38px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+    position: relative;
+    padding-left: 24px; }
+    .included-levels__title::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border: solid 3px #ffd001; }
+    .included-levels__title_reverse {
+      display: block;
+      margin-left: -webkit-calc(100% - 392px);
+      margin-left: calc(100% - 392px); }
+  .included-levels__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .included-levels__level {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20%;
+    border-right: 1px solid rgba(151, 151, 151, 0.29); }
+    .included-levels__level:last-child {
+      border-right: none; }
+  .included-levels__level-title {
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+    text-transform: uppercase;
+    color: #ffd001; }
+  .included-levels__level-img {
+    margin-bottom: 12px;
+    height: 150px;
+    width: auto; }
+  .included-levels__level-param {
+    padding-left: 33px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 2.33;
+    color: #e0e0e0;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: 8px center; }
+    .included-levels__level-param_preparation {
+      background-image: url("../img/icons/slider-level.svg"); }
+    .included-levels__level-param_videos {
+      background-image: url("../img/icons/slider-play.svg"); }
+    .included-levels__level-param_tech {
+      background-image: url("../img/icons/slider-techniques.svg"); }
+    .included-levels__level-param_time {
+      background-image: url("../img/icons/slider-time.svg"); }
+    .included-levels__level-param_text {
+      padding: 0 20px;
+      text-align: center;
+      text-transform: none;
+      font-weight: normal; }
+
 @media (max-width: 1439px) {
   .home-long-top {
     min-height: 500px;
