@@ -1,0 +1,345 @@
+.five-levels {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include childToCenter();
+    border-top: solid 4px $sunflower-yellow;
+
+    .container {
+        padding: 0;
+    }
+    
+    &__title {
+        position: relative;
+        display: inline-block;
+        padding-top: 111px;
+        padding-bottom: 146px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        background-color: $dark-grey;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+          ), url('../img/sales-pages/video-training-system@2x.jpg');
+        background-size: cover;
+        background-color: rgba($dark-grey, 0.5);
+
+        span {
+            display: block;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 70px;;
+            transform: translate(-50%, 0);
+            @include round(10px);
+            background: $sunflower-yellow; 
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 1px;
+            height: 70px;
+            transform: translate(-50%, 0);
+            background: $sunflower-yellow; 
+        }
+    }
+
+    &__content {
+        position: relative;
+        width: 100%;
+        background-color: $white;
+        padding-top: 70px;
+        padding-bottom: 50px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            transform: translate(-50%, 0);
+            background: $greyish; 
+        }
+
+        &_xs {
+            display: none;
+        }
+    }
+
+    &__item {
+        position: relative;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        padding-right: 100px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            right: -4px;
+            top: 0;
+            @include round(10px);
+            background: $sunflower-yellow; 
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            right: 0px;
+            top: 4px;;
+            width: 90px;
+            height: 1px;
+            border-top: 2px dashed $greyish;
+        }
+
+        &_even {
+            left: 50%;
+            padding-right: 0;
+            padding-left: 100px;
+
+            &::before {
+                left: -5px;
+                top: calc( 50% - 4px ); 
+            }
+
+            &::after {
+                top: 50%;
+                left: 0;
+                border-top: none;
+                border-bottom: 2px dashed $greyish;
+            }
+        }
+
+        &_2,
+        &_4,
+        &_6,
+        &_8,
+        &_10 {
+            top: -80px;
+        }
+    }
+
+    &__item-title {
+        @include AvenirNext-Bold(24px, 1.1);
+        color: $dark-grey;
+    }
+
+    &__item-text {
+        @include AvenirNext-Regular(16px, 1.2);
+        color: rgba($dark-grey, 0.8);
+    }
+
+    &__item-desc {
+        width: calc( 100% - 120px );
+    }
+
+    &__item-img {
+        width: 100px;
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            @include shadowBlock;
+        }
+    }
+}
+
+@media (max-width:$lg) {
+    .five-levels {
+        
+        &__title {
+            display: inline-block;
+            width: 100%;
+            padding-top: 87px;
+            padding-bottom: 142px;
+        }
+
+        &__item-title {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .five-levels {
+
+        &__content {
+            padding-bottom: 0;
+        }
+        
+        &__title {
+            width: 100%;
+            padding-top: 55px;
+            padding-bottom: 124px;
+
+            span {
+                width: 85%;
+            }
+        }
+
+        &__item-title {
+            font-size: 18px;
+        }
+
+        &__item-text {
+            display: none;
+        }
+
+        &__item-img {
+            width: 80px;
+        }
+
+        &__item-desc {
+            width: calc( 100% - 95px);
+        }
+
+        &__item {
+            padding-right: 80px;
+            top: -30px;
+    
+            &::after {
+                width: 70px;
+            }
+    
+            &_even {
+                padding-left: 80px;
+                padding-right: 0;
+            }
+    
+            &_2 {
+                top: 0;
+                margin-top: -130px;
+            }
+
+            &_3 {
+                top: 30px;
+                margin-top: -20px;
+            }
+
+            &_4 {
+                top: -75px;
+            }
+
+            &_5 {
+                top: -55px;
+            }
+
+            &_6 {
+                top: -150px;
+            }
+
+            &_7 {
+                top: -125px;
+            }
+
+            &_8 {
+                top: -215px;
+            }
+
+            &_9 {
+                top: -185px;
+            }
+
+            &_10 {
+                top: -275px;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .five-levels {
+
+        &::before {
+            bottom: 50px;
+        }
+    
+        &::after {
+            height: 50px;
+        }
+        
+        &__title {
+            width: 100%;
+            padding-top: 42px;
+            padding-bottom: 117px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.43)), url('../img/sales-pages/video-training-system@2x.jpg');
+            background-size: cover;
+        }
+
+        &__content {
+            &_md {
+                display: none;
+            }
+
+            &_xs {
+                display: block;
+                padding: 20px;
+                padding-top: 0;
+                background-color: $dark-grey;
+            }
+        }
+
+        &__content-xs-title {
+            margin-bottom: 20px;
+            @include AvenirNext-Bold(18px, 1.1);
+            color: $white;
+            text-align: center;
+        }
+
+        &__content-xs-content {
+            display: flex;
+        }
+
+        &__content-xs-item {
+            padding-top: 30px;
+        }
+
+        &__content-xs-img {
+            width: 20%;
+            transform: scale(1.25);
+
+            img {
+                width: 100%;
+            }
+
+            &_1 {
+                position: relative;
+                z-index: 5;
+            }
+
+            &_2 {
+                position: relative;
+                z-index: 4;
+            }
+
+            &_3 {
+                position: relative;
+                z-index: 3;
+            }
+
+            &_4 {
+                position: relative;
+                z-index: 2;
+            }
+
+            &_5 {
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+}

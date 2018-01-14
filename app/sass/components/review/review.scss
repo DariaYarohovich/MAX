@@ -1,8 +1,12 @@
 .review {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 70px;
     color: $charcoal;
+
+    &_pricing {
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
 
     &__item {
         margin-bottom: 50px;
@@ -53,7 +57,9 @@
             width: 22px;
             height: 22px;
             margin-right: 5px;
-            background-color: $sunflower-yellow;
+            background-image: url('../img/sales-pages/icons/star.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
 
             &:last-child {
                 margin-right: 0;
@@ -132,7 +138,10 @@
 @media (max-width: $md) {
     .review {
         width: 90%;
-        margin-bottom: 50px;
+        &_pricing {
+            margin-top: 70px;
+            margin-bottom: 40px;
+        }
     
         &__title {
             margin-bottom: 25px;
@@ -148,7 +157,11 @@
 @media (max-width: $sm) {
     .review {
         width: 100%;
-        margin-bottom: 30px;
+
+        &_pricing {
+            margin-top: 60px;
+            margin-bottom: 25px;
+        }
     
         &__item {
             margin-bottom: 50px;

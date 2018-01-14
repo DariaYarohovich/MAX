@@ -5,15 +5,26 @@
     margin-top: 15px;
     margin-bottom: 15px;
 
+    &_left {
+        justify-content: flex-start;
+    }
+
     &__block {
         padding: 5px;
         border: 1px solid $dark-grey;
         @include AvenirNext-Bold(12px, 1);
         color: $dark-grey;
+        text-transform: uppercase;
     
         &_yellow {
             border-right: none;
             background-color: $sunflower-yellow;
+        }
+
+        &_blue {
+            border-right: none;
+            background-color: $dark-blue;
+            color: $white;
         }
     }
 }
