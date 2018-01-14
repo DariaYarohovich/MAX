@@ -553,6 +553,10 @@
     background-color: $dark-grey;
     box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
 
+    &__mobile-yellow-top {
+        display: none;
+    }
+
     &__title {
         margin-left: 40px;
         margin-bottom: 38px;
@@ -568,6 +572,10 @@
         }
     }
 
+    &__title-mobile {
+        display: none;
+    }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -577,6 +585,7 @@
         display: flex;
         flex-flow: column;
         align-items: center;
+        justify-content: flex-end;
         width: 20%;
         border-right: 1px solid rgba(151, 151, 151, 0.29);
 
@@ -586,6 +595,7 @@
     }
 
     &__level-title {
+        flex-grow: 1;
         margin-bottom: 12px;
         text-align: center;
         font-size: 14px;
@@ -635,6 +645,91 @@
             text-transform: none;
             font-weight: normal;
         }
+    }
+
+    &__yellow-box {
+        position: relative;
+        bottom: -45px;
+        padding: 20px 0;
+        background-color: $sunflower-yellow;
+        box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    &__yellow-box-text {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        color: $dark-grey;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -39px;
+            left: -53px;
+            transform: rotate(13deg);
+            width: 54px;
+            height: 58px;
+            background: url(../../img/sales-pages/white-arrow@2x.png) no-repeat center;
+            background-size: contain;
+        }
+    }
+}
+
+.kmg-syllabus {
+    padding-top: 0;
+    margin-bottom: 110px;
+
+    &__wrapper {
+        width: 906px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 17px;
+        text-align: center;
+        @include imgAbove();
+    }
+
+    &__desc {
+        margin-bottom: 38px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    &__type {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 55px;
+    }
+
+    &__type-mobile {
+        display: none;
+    }
+
+    &__type-text {
+        width: 28.5%;
+        margin-top: 46px;
+    }
+
+    &__type-title {
+        font-size: 22px;
+        font-weight: bold;
+        color: $dark-grey;
+    }
+
+    &__type-desc {
+        font-size: 20px;
+        color: #4d5059;
+    }
+
+    &__type-img-wrapper {
+        width: 66.7%;
+    }
+
+    &__type-img {
+        width: 100%;
     }
 }
 
@@ -892,6 +987,90 @@
         }
     
     
+    }
+
+    .level-program {
+        &__text-area {
+            width: 43%;
+        }
+    
+        &__title {
+            margin-top: 70px;
+        }
+    }
+
+    .included-levels {
+        margin-bottom: 95px;
+        padding-top: 38px;
+        padding-bottom: 44px;
+    
+        &__title {
+            margin-left: 18px;
+            margin-bottom: 28px;
+    
+            &_reverse {
+                margin-left: calc(100% - 372px);
+            }
+        }
+    
+        &__level-title {
+            margin-bottom: 29px;
+        }
+    
+        &__level-img {
+            margin-bottom: 25px;
+            height: 118px;
+        }
+
+        &__level-param {
+            &_text {
+                padding: 0 10px;
+                font-size: 13px;
+            }
+        }
+    
+        &__yellow-box {
+            position: relative;
+            bottom: -63px;
+            padding: 20px 0;
+            background-color: $sunflower-yellow;
+            box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
+        }
+    
+        &__yellow-box-text {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            color: $dark-grey;
+    
+            &::before {
+                content: none;
+            }
+        }
+    }
+    
+    .kmg-syllabus {
+        padding-top: 0;
+        margin-bottom: 50px;
+    
+        &__wrapper {
+            width: 100%;
+        }
+    
+        &__title {
+            margin-bottom: 13px;
+        }
+    
+        &__desc {
+            margin-bottom: 48px;
+            font-size: 22px;
+        }
+    
+        &__type {
+            margin-bottom: 29px;
+        }
     }
 }
 
@@ -1202,6 +1381,107 @@
         }
     
     
+    }
+
+    .level-program {
+
+        &_covering {
+            margin-bottom: -75px;
+        }
+  
+        &__text-area {
+            width: 41%;
+        }
+    
+        &__title {
+            margin-top: 5px;
+        }
+    
+        &__desc {
+            font-size: 18px;
+        }
+    
+        &__desc-list-item {
+            font-size: 18px;
+            line-height: 1.35;
+
+            &::before {
+                top: 6px;
+            }
+        }
+    }
+
+    .included-levels {
+        margin-bottom: 54px;
+        padding-top: 38px;
+
+        &__title {
+            margin-left: 0;
+            font-size: 18px;
+                
+            &_reverse {
+                margin-left: calc(100% - 294px);
+            }
+        }
+
+        &__level-title {
+            margin-bottom: 15px;
+        }
+    
+        &__level-img {
+            margin-bottom: 15px;
+        }
+    }
+
+    .kmg-syllabus {
+        margin-bottom: 15px;
+    
+        &__wrapper {
+            width: 100%;
+        }
+    
+        &__title {
+            margin-bottom: 10px;
+        }
+    
+        &__desc {
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 32px;
+            font-size: 18px;
+            text-align: center;
+        }
+    
+        &__type {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column;
+            margin-bottom: 55px;
+        }
+    
+        &__type-text {
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 17px;
+            text-align: center;
+        }
+    
+        &__type-title {
+            font-size: 18px;
+        }
+    
+        &__type-desc {
+            font-size: 16px;
+        }
+    
+        &__type-img-wrapper {
+            margin: 0 auto;
+            width: 80%;
+        }
+    
+        &__type-img {
+            width: 100%;
+        }
     }
 }
 
@@ -1626,6 +1906,151 @@
     
         &__last-phrase {
             display: none;
+        }
+    }
+    
+    .level-program {
+        &_covering {
+            margin-bottom: -40px;
+        }
+    
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column;
+            align-items: center;
+    
+            &_reverse {
+                flex-flow: column;
+            }
+        }
+    
+        &__text-area {
+            width: 100%;
+        }
+    
+        &__title {
+            padding-bottom: 0;
+            margin-bottom: 10px;
+            font-size: 24px;
+            text-align: center;
+    
+            &::after {
+                content: none;
+            }
+        }
+    
+        &__desc {
+            display: none;
+        }
+    
+        &__desc-list-item {
+           display: none;
+        }
+    
+        &__img-area {
+            width: 200px;
+        }
+    
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .included-levels {
+        margin-bottom: 39px;
+        padding-top: 0;
+        padding-bottom: 44px;
+        background-color: $dark-grey;
+        box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
+
+        &__mobile-yellow-top {
+            display: block;
+            height: 30px;
+            background-color: $sunflower-yellow;
+        }
+
+        &__title {
+            display: none;
+
+            &_reverse {
+                display: none;
+            }
+        }
+
+        &__title-mobile {
+            display: block;
+            margin-top: 17px;
+            margin-bottom: 9px;
+
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 2;
+            text-align: center;
+            text-transform: uppercase;
+            color: $sunflower-yellow;
+        }
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__level {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: flex-end;
+            width: 20%;
+            border-right: none;
+        }
+
+        &__level-title {
+            display: none;
+        }
+
+        &__level-img {
+            margin-bottom: -60px;
+            height: 118px;
+            width: auto;
+        }
+
+        &__level-param {
+            display: none;
+        }
+
+        &__yellow-box {
+            display: none;
+        }
+    }
+
+    .kmg-syllabus {
+        margin-bottom: 20px;
+    
+        &__title {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+    
+        &__desc {
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-align: left;
+            color: $dark;
+        }
+    
+        &__type {
+            display: none;
+        }
+
+        &__type-mobile {
+            display: block;
+            width: 100%;
+        }
+
+        &__type-img {
+            width: 100%;
         }
     }
 }
