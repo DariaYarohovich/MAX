@@ -770,6 +770,151 @@
     }
 }
 
+.phone {
+    margin-bottom: 75px;
+    padding-top: 72px;
+    background-color: $dark-grey;
+    box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
+
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 45px;
+        width: 55%;
+        text-align: center;
+        color: #fff;
+        @include imgAbove(60px, 'plus-white.svg');
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__update {
+        width: 30.7%;
+        color: #fff;
+    }
+
+    &__update-title {
+        display: inline-block;
+        margin-bottom: 21px;
+        padding: 1px 10px;
+        font-size: 22px;
+        font-weight: bold;
+        color: $dark-grey;
+        background-color: $sunflower-yellow;
+    }
+
+    &__update-text {
+        margin-bottom: 52px;
+        font-size: 22px;
+    }
+
+    &__update-quote {
+        margin-bottom: 53px;
+        padding-left: 22px;
+        font-size: 22px;
+        font-style: italic;
+        border-left: solid 1px $sunflower-yellow;
+    }
+
+    &__device {
+        display: flex;
+        justify-content: space-between;
+        width: 64%;
+    }
+
+    &__device-img-wrapper {
+        position: relative;
+        z-index: 2;
+        width: 422px;
+    }
+
+    &__device-img {
+        display: block;
+        width: 100%;
+    }
+
+    &__device-desc {
+        margin-top: 25px;
+        width: 235px;
+    }
+
+    &__device-desc-phrase {
+        position: relative;
+        margin-bottom: 35px;
+        padding-left: 18px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7.5px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: $sunflower-yellow;
+            border-radius: 50%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 12.5px;
+            left: -200px;
+            width: 200px;
+            height: 1px;
+            background-color: $sunflower-yellow;
+        }
+    }
+
+    &__yellow-box {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding-top: 54px;
+        padding-bottom: 33px;
+        background-color: $sunflower-yellow;
+    }
+
+    &__yellow-box-text {
+        margin-bottom: 22px;
+        width: 65%;
+        text-align: center;
+        color: $charcoal;
+
+        &_mobile {
+            display: none;
+        }
+    }
+
+    &__yellow-box-caption {
+        display: flex;
+    }
+
+    &__yellow-box-img-wrapper {
+        margin-right: 18px;
+        width: 103px;
+    }
+
+    &__yellow-box-signature {
+        width: 100%;
+    }
+
+    &__yellow-box-info {
+        font-size: 18px;
+        font-style: italic;
+        color: $charcoal;
+    }
+    
+    &__yellow-box-name {
+        font-weight: bold;
+    }
+}
+
 @media (max-width: $lg) {
     .home-long-top {
         min-height: 500px;
@@ -1117,6 +1262,53 @@
     
         &__type {
             margin-bottom: 29px;
+        }
+    }
+
+    .phone {
+        padding-top: 36px;
+        margin-bottom: 30px;
+    
+        &__title {
+            margin: 0 auto;
+            margin-bottom: 15px;
+            width: 60%;
+       }
+    
+        &__content {
+            align-items: flex-start;
+        }
+    
+        &__update {
+            margin-top: 52px;
+            width: auto;
+            color: #fff;
+        }
+    
+        &__update-title {
+            margin-bottom: 25px;
+        }
+    
+        &__update-text {
+            margin-bottom: 41px;
+            font-size: 18px;
+        }
+    
+        &__update-quote {
+            padding-left: 40px;
+        }
+    
+        &__device-desc {
+            display: none;
+        }
+    
+        &__yellow-box {
+            padding-top: 31px;
+            padding-bottom: 39px;
+        }
+    
+        &__yellow-box-text {
+            width: 70%;
         }
     }
 }
@@ -1537,6 +1729,40 @@
     
         &__type-img {
             width: 100%;
+        }
+    }
+
+    .phone {
+        margin-bottom: 20px;
+    
+        &__title {
+            margin-bottom: 28px;
+        }
+    
+        &__update {
+            margin-top: 22px;
+        }
+    
+        &__update-title {
+            margin-bottom: 16px;
+        }
+    
+        &__update-text {
+            margin-bottom: 25px;
+        }
+    
+        &__update-quote {
+            font-size: 24px;
+            padding-left: 17px;
+        }
+    
+        &__yellow-box {
+            padding-top: 28px;
+            padding-bottom: 34px;
+        }
+    
+        &__yellow-box-text {
+            width: 95%;
         }
     }
 }
@@ -2125,5 +2351,86 @@
         &__type-img {
             width: 100%;
         }
+    }
+
+    .phone {
+        padding-top: 30px;
+        margin-bottom: 31px;
+
+        &__title {
+            padding-top: 50px;
+            margin-bottom: 14px;
+            width: 100%;
+            text-align: left;
+        }
+
+        &__content {
+            flex-flow: column;
+        }
+
+        &__update {
+            margin-top: 0;
+        }
+
+        &__update-title {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        &__update-desc {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        &__update-quote {
+            display: none;
+        }
+
+        &__device {
+            width: 100%;
+        }
+
+        &__device-img-wrapper {
+            width: 100%;
+        }
+
+        &__yellow-box {
+            padding-top: 15px;
+            padding-bottom: 17px;
+        }
+
+        &__yellow-box-text {
+            display: none;
+
+            &_mobile {
+                display: block;
+                width: 86.5%;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-style: italic;
+                text-align: center;
+                color: $dark-grey;
+            }
+        }
+
+        &__yellow-box-caption {
+            margin: 0 auto;
+            width: 277px;
+        }
+        
+        &__yellow-box-img-wrapper {
+            margin-right: 20px;
+            width: 56px;
+        }
+
+        &__yellow-box-name {
+            font-size: 14px;
+        }
+
+        &__yellow-box-position {
+            font-size: 14px;
+        }
+
     }
 }

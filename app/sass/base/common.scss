@@ -8,6 +8,10 @@ body {
   outline: none;
 }
 
+.yellow {
+  color: $sunflower-yellow;
+}
+
 .btn {
   border: none;
   padding: 12px 30px;
@@ -98,8 +102,6 @@ body {
     }
   }
 }
-
-
 
 .title-block {
   h1 {
