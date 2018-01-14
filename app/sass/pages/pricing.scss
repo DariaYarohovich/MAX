@@ -1,4 +1,6 @@
 .pricing {
+    padding: 0;
+
     h1 {
         width: 65%;
         margin: 0 auto;
@@ -19,6 +21,9 @@
 
 @media (max-width: $sm) {
     .pricing {
+        padding: 0 20px;
+        padding-bottom: 20px;
+        
         h1 {
             font-size: 26px;
         }

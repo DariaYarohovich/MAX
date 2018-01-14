@@ -4,9 +4,8 @@
     color: $charcoal;
 
     &_bordered {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
-        margin-top: 30px;
         margin-bottom: 30px;
         border-radius: 4px;
         background-color: rgba($sunflower-yellow, 0.1);
@@ -14,6 +13,7 @@
     }
 
     &__content {
+        width: 65%;
         padding: 50px;
     }
 
@@ -37,7 +37,10 @@
     }
 
     &__img {
+        width: 30%;
+
         img {
+            width: 100%;
             height: calc(100% + 10px) !important;
             margin-top: -10px;
             margin-left: -10px;
@@ -49,8 +52,29 @@
         padding-right: 120px;
         @include AvenirNext-Regular(18px, 1.2);
 
+        span {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 103px;
+                height: 57px;
+                margin-left: 10px;
+                background-image: url('../img/sales-pages/signature.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+
         &_centered {
             text-align: center;
+        }
+
+        &_xs {
+            display: none;
         }
     }
 }
@@ -90,7 +114,93 @@
             img {
                 height: calc(100% + 5px) !important;
                 margin-top: -5px;
-                margin-left: -40px;
+                margin-left: -47px;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .appeal {
+
+        &_bordered {
+            margin-bottom: 0;
+        }
+
+        &__content {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 25px;
+        }
+    
+        &__title {
+            font-size: 18px;
+            text-align: center;
+    
+            &_bold {
+                font-size: 18px;
+            }
+        }
+
+        &__text {
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-align: center;
+    
+            &_bold {
+                font-size: 16px;
+            }
+        }
+    
+        &__img {
+            display: none;
+        }
+
+        &__signup {
+            &_lg {
+                display: none;
+            }
+    
+            &_xs {
+                display: flex;
+                padding-bottom: 0;
+                padding-right: 0;
+            }
+        }
+
+        &__signup-img-xs {
+            width: 66px;
+            height: 66px;
+            margin-right: 10px;
+            overflow: hidden;
+
+            img {
+                width: 90%;
+            }
+        }
+
+        &__signup-desc-xs {
+            position: relative;
+            width: calc( 100% - 76px );
+            padding-top: 5px;
+            padding-bottom: 30px;
+            font-size: 14px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 49px;
+                height: 27px;
+                margin-left: 0;
+                background-image: url('../img/sales-pages/signature.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            b {
+                display: block;
             }
         }
     }

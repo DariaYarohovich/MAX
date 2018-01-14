@@ -16,10 +16,19 @@
         font-size: 18px;
         font-weight: bold;
         color: $pinkish-grey;
+
+        &_wide {
+            width: 245px;
+            margin-right: 20px;
+        }
     }
 
     &__logo {
         height: 45px;
+
+        &_cut {
+            max-width: 18%;
+        }
     }
 }
 
@@ -38,6 +47,13 @@
         &__title {
             margin-bottom: 18px;
             color: $dark-grey;
+
+            &_wide {
+                width: 100%;
+                margin-right: 0;
+                color: $pinkish-grey;
+                text-align: center;
+            }
         }
         
         &__wrapper {
@@ -52,6 +68,10 @@
         padding: 20px 0 0 0;
         border-top: solid 5px $sunflower-yellow;
         border-bottom: solid 5px $sunflower-yellow;
+
+        &_pricing {
+            display: none;
+        }
 
         &__wrapper {
             justify-content: space-around;

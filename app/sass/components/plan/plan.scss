@@ -2,8 +2,14 @@
     display: flex;
     justify-content: center;
     padding: 15px 0;
+    margin-bottom: 80px;
+
+    &_margin-bottom-long {
+        margin-bottom: 180px;
+    }
 
     &__item {
+        box-sizing: border-box;
         width: 390px;
         padding: 35px;
         margin-top: 15px;
@@ -57,14 +63,37 @@
     &__switch {
         display: none;
     }
+
+    &__item_year {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -73px;
+            right: -150px;
+            width: 270px;
+            height: 85px;
+            background-image: url('../img/sales-pages/7-months-free.svg');
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 @media (max-width: $md) {
     .plan {
+        margin-bottom: 50px;
     
         &__item {
            width: auto;
            flex-grow: 1;
+        }
+
+        &__item_year {
+    
+            &::after {
+                right: 0;
+            }
         }
     }
 }
@@ -72,6 +101,8 @@
 @media (max-width: $sm) {
     .plan {
         flex-wrap: wrap;
+        margin-bottom: 20px;
+        padding-bottom: 0;
     
         &__item {
            width: 100%;
@@ -89,6 +120,7 @@
 
         &__switch {
             position: relative;
+            z-index: 1;
             display: flex;
             margin-bottom: -20px;
             padding: 3px;
@@ -106,6 +138,24 @@
                     background-color: $white;
                     color: $dark-grey;
                 }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -30px;
+                right: -53px;
+                width: 55px;
+                height: 55px;
+                background-image: url('../img/sales-pages/save-60.svg');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__item_year {
+    
+            &::after {
+                display: none;
             }
         }
     }

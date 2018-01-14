@@ -83,11 +83,13 @@
     }
 
     &__item-img {
+        height: 215px;
         margin-bottom: 25px;
-        text-align: center;
+        overflow: hidden;
 
         img {
-            width: 100%;
+            height: 100%;
+            width: auto;
         }
     }
 
@@ -143,6 +145,7 @@
 
 @media (max-width: $md) {
     .materials {
+        padding: 25px 0;
     
         &__title {
             margin-bottom: 30px;
@@ -152,6 +155,7 @@
 
 @media (max-width: $sm) {
     .materials {
+        padding: 15px 0;
         $this: &;
 
         // custom styles for materials component on the home-long page
@@ -178,7 +182,7 @@
             }
 
             &_outer {
-                margin-bottom: 55px;
+                margin-bottom: 45px;
                 text-transform: uppercase;
 
                 span {
@@ -186,6 +190,25 @@
                     &::after {
                         display: none;
                       }
+                }
+            }
+
+            &_bonus {
+
+                span {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        right: -20px;
+                        top: 20px;
+                        width: 110px;
+                        height: 90px;
+                        background-image: url("../img/sales-pages/limited-time.svg");
+                        background-repeat: no-repeat;
+                        transform: rotate(30deg);
+                    }
                 }
             }
         }
@@ -212,9 +235,12 @@
         &__item-title {
             width: 75%;
             margin: 0 auto;
-            padding-left: 30px;
+            padding-left: 23px;
             font-size: 16px;
             line-height: 1.2;
+            background-image: url("../img/sales-pages/icons/checkmark.svg");
+            background-repeat: no-repeat;
+            position: 0 0;
         }
     
         &__item-desc {
