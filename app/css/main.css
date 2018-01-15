@@ -2781,12 +2781,13 @@ p {
     font-weight: bold; }
 
 .bonus {
-  padding-top: 60px; }
+  padding-top: 60px;
+  margin-bottom: 85px; }
   .bonus__bg {
     position: relative;
     background-image: url("../../img/sales-pages/devices-and-boxes/combat-set@2x.png");
     background-repeat: no-repeat;
-    background-size: 1100px;
+    background-size: 1050px;
     background-position: -webkit-calc(50% - 125px) 273px;
     background-position: calc(50% - 125px) 273px; }
   .bonus__top-wrapper {
@@ -2851,6 +2852,8 @@ p {
     margin-bottom: 43px;
     margin-left: 50%;
     width: 50%; }
+  .bonus__top-title {
+    margin-bottom: 30px; }
   .bonus__top-text {
     margin-bottom: 1.5em;
     font-size: 18px;
@@ -2865,16 +2868,103 @@ p {
     padding-top: 30px;
     padding-bottom: 35px;
     background-color: #ffd001; }
-  .bonus__bg-receiver-text {
+  .bonus__bg-receiver-content {
     display: inline-block;
     margin-left: 50%;
-    width: 50%;
+    width: 50%; }
+  .bonus__bg-receiver-text {
     font-size: 28px;
     line-height: 1.35;
     color: #25262a; }
   .bonus__colorful {
     height: 216px;
     background-color: #25262a; }
+  .bonus__photo-line {
+    display: block;
+    width: 100%;
+    height: 320px; }
+  .bonus_second {
+    margin-bottom: 25px; }
+    .bonus_second .bonus__bg {
+      background-image: url("../../img/sales-pages/devices-and-boxes/masterclass-set@2x.png");
+      background-position: -webkit-calc(50% + 184px) 33px;
+      background-position: calc(50% + 184px) 33px; }
+    .bonus_second .bonus__top {
+      margin-right: 44%;
+      margin-left: 0;
+      width: 56%; }
+    .bonus_second .bonus__top-title {
+      margin-bottom: 30px; }
+    .bonus_second .bonus__bg-receiver {
+      background-color: #202c3a; }
+    .bonus_second .bonus__bg-receiver-content {
+      margin-left: 0;
+      margin-right: 50%; }
+    .bonus_second .bonus__bg-receiver-text {
+      color: #fff; }
+      .bonus_second .bonus__bg-receiver-text b {
+        border-bottom: 1px solid #ffd001; }
+    .bonus_second .bonus__photo-line {
+      background: url("../../img/sales-pages/masterclass-photos@2x.jpg") no-repeat center;
+      background-size: cover; }
+  .bonus_third .bonus__title::before {
+    left: 16px; }
+  .bonus_third .bonus__bg {
+    padding-top: 100px;
+    background-image: url("../../img/sales-pages/devices-and-boxes/carjacking-set@2x.png");
+    background-position: -webkit-calc(50% - 125px) 14px;
+    background-position: calc(50% - 125px) 14px; }
+  .bonus_third .bonus__top {
+    margin-left: 45%;
+    width: 55%; }
+  .bonus_third .bonus__top-title {
+    margin-bottom: 20px; }
+  .bonus_third .bonus__bg-receiver {
+    background-color: #66010d; }
+  .bonus_third .bonus__bg-receiver-content {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 95px; }
+  .bonus_third .bonus__bg-receiver-text {
+    color: #fff; }
+  .bonus_third .bonus__photo-line {
+    background: url("../../img/sales-pages/carjacking-photos@2x.jpg") no-repeat center;
+    background-size: cover; }
+  .bonus_fourth {
+    margin-bottom: 76px; }
+    .bonus_fourth .bonus__desc {
+      width: 90%; }
+    .bonus_fourth .bonus__bg {
+      background-image: url("../../img/sales-pages/devices-and-boxes/firearms-set@2x.png");
+      background-position: -webkit-calc(50% + 184px) 193px;
+      background-position: calc(50% + 184px) 193px; }
+    .bonus_fourth .bonus__top {
+      margin-right: 50%;
+      margin-left: 0;
+      margin-bottom: 1em;
+      width: 50%; }
+    .bonus_fourth .bonus__top-text {
+      margin-bottom: 1em;
+      font-size: 20px;
+      position: relative;
+      padding-left: 24px; }
+      .bonus_fourth .bonus__top-text::before {
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        border: solid 3px #ffd001; }
+    .bonus_fourth .bonus__bg-receiver {
+      background-color: #1a231c; }
+    .bonus_fourth .bonus__bg-receiver-content {
+      margin-left: 0;
+      margin-right: 40%;
+      width: 60%; }
+    .bonus_fourth .bonus__bg-receiver-text {
+      color: #fff; }
 
 @media (max-width: 1439px) {
   .home-long-top {
@@ -3088,7 +3178,7 @@ p {
       margin-bottom: 29px; }
   .phone {
     padding-top: 36px;
-    margin-bottom: 30px; }
+    margin-bottom: 60px; }
     .phone__title {
       margin: 0 auto;
       margin-bottom: 15px;
@@ -3115,7 +3205,86 @@ p {
       padding-top: 31px;
       padding-bottom: 39px; }
     .phone__yellow-box-text {
-      width: 70%; } }
+      width: 70%; }
+  .bonus {
+    padding-top: 60px;
+    margin-bottom: 65px; }
+    .bonus__bg {
+      background-size: 900px;
+      background-position: -webkit-calc(50% - 87px) 242px;
+      background-position: calc(50% - 87px) 242px; }
+    .bonus__title {
+      margin-bottom: 10px;
+      font-size: 28px; }
+      .bonus__title::before {
+        width: 94px;
+        height: 26px;
+        top: -24px;
+        left: -54px; }
+      .bonus__title::after {
+        width: 110px;
+        height: 93px;
+        top: -67px;
+        right: -94px; }
+    .bonus__top {
+      margin-bottom: 20px; }
+    .bonus__bg-receiver {
+      padding-top: 20px;
+      padding-bottom: 25px; }
+    .bonus__bg-receiver-text {
+      font-size: 22px; }
+    .bonus__photo-line {
+      display: block;
+      height: 183px;
+      width: 100%; }
+    .bonus_second {
+      margin-bottom: 0; }
+      .bonus_second .bonus__bg {
+        background-size: 900px;
+        background-position: -webkit-calc(50% + 120px) 33px;
+        background-position: calc(50% + 120px) 33px; }
+      .bonus_second .bonus__photo-line {
+        background: url("../../img/sales-pages/masterclass-photos@2x.jpg") no-repeat center;
+        background-size: cover; }
+    .bonus_third {
+      margin-bottom: 40px; }
+      .bonus_third .bonus__bg {
+        padding-top: 80px;
+        background-size: 850px;
+        background-position: -webkit-calc(50% - 80px) 0px;
+        background-position: calc(50% - 80px) 0px; }
+      .bonus_third .bonus__top {
+        margin-left: 47%;
+        width: 53%; }
+      .bonus_third .bonus__bg-receiver-content {
+        margin-top: 33px;
+        margin-bottom: 12px;
+        margin-left: 47%;
+        width: 53%; }
+      .bonus_third .bonus__bg-receiver-text {
+        color: #fff;
+        text-align: center;
+        font-size: 28px; }
+      .bonus_third .bonus__photo-line {
+        background: url("../../img/sales-pages/carjacking-photos@2x.jpg") no-repeat center;
+        background-size: cover; }
+    .bonus_fourth {
+      margin-bottom: 60px; }
+      .bonus_fourth .bonus__bg {
+        background-position: -webkit-calc(50% + 155px) 138px;
+        background-position: calc(50% + 155px) 138px; }
+      .bonus_fourth .bonus__top {
+        margin-right: 42%;
+        width: 56%; }
+      .bonus_fourth .bonus__top-text {
+        margin-bottom: 1em;
+        font-size: 18px; }
+      .bonus_fourth .bonus__bg-receiver-content {
+        margin-left: 0;
+        margin-right: 42%;
+        width: 56%; }
+      .bonus_fourth .bonus__bg-receiver-text {
+        font-size: 28px; } }
 
 @media (max-width: 1023px) {
   .home-long-top {
@@ -3394,7 +3563,93 @@ p {
       padding-top: 28px;
       padding-bottom: 34px; }
     .phone__yellow-box-text {
-      width: 95%; } }
+      width: 95%; }
+  .bonus {
+    padding-top: 60px;
+    margin-bottom: 30px;
+    overflow: hidden; }
+    .bonus__bg {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      min-height: 820px;
+      background-position: -webkit-calc(50% + 158px) 225px;
+      background-position: calc(50% + 158px) 225px; }
+    .bonus__desc {
+      width: 85%; }
+    .bonus__top {
+      display: none; }
+    .bonus__top-text {
+      display: none; }
+    .bonus__bg-receiver {
+      height: auto; }
+    .bonus__bg-receiver-content {
+      width: 100%;
+      margin: 0; }
+    .bonus__bg-receiver-text {
+      display: block;
+      margin: 100px auto 10px;
+      width: 95%;
+      text-align: center; }
+    .bonus__photo-line {
+      height: 140px; }
+    .bonus_first .bonus__bg-receiver-text {
+      font-size: 0; }
+    .bonus_second {
+      margin-bottom: 30px; }
+      .bonus_second .bonus__bg {
+        min-height: 870px;
+        background-position: -webkit-calc(50% - 143px) 181px;
+        background-position: calc(50% - 143px) 181px; }
+      .bonus_second .bonus__top {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center; }
+    .bonus_third {
+      margin-bottom: 40px; }
+      .bonus_third .bonus__bg {
+        padding-top: 0;
+        background-position: -webkit-calc(50% + 158px) 175px;
+        background-position: calc(50% + 158px) 175px; }
+      .bonus_third .bonus__top {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center; }
+      .bonus_third .bonus__bg-receiver-content {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        margin: 0; }
+      .bonus_third .bonus__bg-receiver-text {
+        color: #fff;
+        text-align: center;
+        font-size: 24px; }
+    .bonus_fourth {
+      margin-bottom: 30px; }
+      .bonus_fourth .bonus__bg {
+        background-size: 850px;
+        background-position: -webkit-calc(50% - 143px) 135px;
+        background-position: calc(50% - 143px) 135px; }
+      .bonus_fourth .bonus__bg-receiver-content {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        margin: 0; }
+      .bonus_fourth .bonus__bg-receiver-text {
+        width: 85%;
+        font-size: 24px; } }
 
 @media (max-width: 800px) {
   .skewed-video__text {

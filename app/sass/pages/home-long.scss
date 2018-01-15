@@ -879,13 +879,15 @@
 }
 
 .bonus {
+    $this: &;
     padding-top: 60px;
+    margin-bottom: 85px;
 
     &__bg {
         position: relative;
         background-image: url('../../img/sales-pages/devices-and-boxes/combat-set@2x.png');
         background-repeat: no-repeat;
-        background-size: 1100px;
+        background-size: 1050px;
         background-position: calc(50% - 125px) 273px;
     }
 
@@ -960,6 +962,10 @@
         width: 50%;
     }
 
+    &__top-title {
+        margin-bottom: 30px;
+    }
+
     &__top-text {
         margin-bottom: 1.5em;
         font-size: 18px;
@@ -980,19 +986,153 @@
         background-color: $sunflower-yellow;
     }
 
-    &__bg-receiver-text {
+    &__bg-receiver-content {
         display: inline-block;
         margin-left: 50%;
         width: 50%;
+    }
 
+    &__bg-receiver-text {
         font-size: 28px;
         line-height: 1.35;
         color: $dark-grey;
     }
 
-    &__colorful { // temporary styles here
+    &__colorful { 
         height: 216px;
         background-color: $dark-grey;
+    }
+
+    &__photo-line {
+        display: block;
+        width: 100%;
+        height: 320px;
+    }
+
+    // styles for bonus block modifiers
+    &_second {
+        margin-bottom: 25px;
+
+        #{$this}__bg {
+            background-image: url('../../img/sales-pages/devices-and-boxes/masterclass-set@2x.png');
+            background-position: calc(50% + 184px) 33px;
+        }
+
+        #{$this}__top {
+            margin-right: 44%;
+            margin-left: 0;
+            width: 56%;
+        }
+
+        #{$this}__top-title {
+           margin-bottom: 30px;
+        }
+
+        #{$this}__bg-receiver {
+            background-color: #202c3a;
+        }
+
+        #{$this}__bg-receiver-content {
+            margin-left: 0;
+            margin-right: 50%;
+        }
+
+        #{$this}__bg-receiver-text {
+            color: #fff;
+
+            & b {
+                border-bottom: 1px solid $sunflower-yellow;
+            }
+        }
+
+        #{$this}__photo-line {
+            background: url('../../img/sales-pages/masterclass-photos@2x.jpg') no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &_third {
+        #{$this}__title {
+            &::before {
+                left: 16px;
+            }
+        }
+
+        #{$this}__bg {
+            padding-top: 100px;
+            background-image: url('../../img/sales-pages/devices-and-boxes/carjacking-set@2x.png');
+            background-position: calc(50% - 125px) 14px
+        }
+
+        #{$this}__top {
+            margin-left: 45%;
+            width: 55%;
+        }
+
+        #{$this}__top-title {
+           margin-bottom: 20px;
+        }
+
+        #{$this}__bg-receiver {
+            background-color: #66010d;
+        }
+
+        #{$this}__bg-receiver-content {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            margin-top: 95px;
+            
+        }
+
+        #{$this}__bg-receiver-text {
+            color: #fff;
+        }
+
+        #{$this}__photo-line {
+            background: url('../../img/sales-pages/carjacking-photos@2x.jpg') no-repeat center;
+            background-size: cover;
+        }
+    }
+    
+    &_fourth {
+        margin-bottom: 76px;
+
+        #{$this}__desc {
+            width: 90%;
+        }
+
+        #{$this}__bg {
+            background-image: url('../../img/sales-pages/devices-and-boxes/firearms-set@2x.png');
+            background-position: calc(50% + 184px) 193px;
+        }
+
+        #{$this}__top {
+            margin-right: 50%;
+            margin-left: 0;
+            margin-bottom: 1em;
+            width: 50%;
+        }
+
+        #{$this}__top-text {
+            margin-bottom: 1em;
+            font-size: 20px;
+            @include square();
+        }
+
+        #{$this}__bg-receiver {
+            background-color: #1a231c;
+        }
+
+        #{$this}__bg-receiver-content {
+            margin-left: 0;
+            margin-right: 40%;
+            width: 60%;
+        }
+
+        #{$this}__bg-receiver-text {
+            color: #fff;
+        }
     }
 }
 
@@ -1338,7 +1478,7 @@
 
     .phone {
         padding-top: 36px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     
         &__title {
             margin: 0 auto;
@@ -1380,6 +1520,131 @@
     
         &__yellow-box-text {
             width: 70%;
+        }
+    }
+
+    .bonus {
+        $this: &;
+        padding-top: 60px;
+        margin-bottom: 65px;
+    
+        &__bg {
+            background-size: 900px;
+            background-position: calc(50% - 87px) 242px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            font-size: 28px;
+
+            &::before {
+                width: 94px;
+                height: 26px;
+                top: -24px;
+                left: -54px;
+            }
+
+            &::after {
+                width: 110px;
+                height: 93px;
+                top: -67px;
+                right: -94px;
+            }
+        }
+    
+        &__top {
+            margin-bottom: 20px;
+        }
+    
+        &__bg-receiver {
+            padding-top: 20px;
+            padding-bottom: 25px;
+        }
+    
+        &__bg-receiver-text {
+            font-size: 22px;
+        }
+
+        &__photo-line {
+            display: block;
+            height: 183px;
+            width: 100%;
+        }
+    
+        // styles for bonus block modifiers
+        &_second {
+            margin-bottom: 0;
+    
+            #{$this}__bg {
+                background-size: 900px;
+                background-position: calc(50% + 120px) 33px;
+            }
+    
+            #{$this}__photo-line {
+                background: url('../../img/sales-pages/masterclass-photos@2x.jpg') no-repeat center;
+                background-size: cover;
+            }
+        }
+    
+        &_third {
+            margin-bottom: 40px;
+
+            #{$this}__bg {
+                padding-top: 80px;
+                background-size: 850px;
+                background-position: calc(50% - 80px) 0px;
+            }
+    
+            #{$this}__top {
+                margin-left: 47%;
+                width: 53%;
+            }
+    
+            #{$this}__bg-receiver-content {
+                margin-top: 33px;
+                margin-bottom: 12px;
+                margin-left: 47%;
+                width: 53%;
+            }
+    
+            #{$this}__bg-receiver-text {
+                color: #fff;
+                text-align: center;
+                font-size: 28px;
+            }
+    
+            #{$this}__photo-line {
+                background: url('../../img/sales-pages/carjacking-photos@2x.jpg') no-repeat center;
+                background-size: cover;
+            }
+        }
+        
+        &_fourth {
+            margin-bottom: 60px;
+    
+            #{$this}__bg {
+                background-position: calc(50% + 155px) 138px;
+            }
+    
+            #{$this}__top {
+                margin-right: 42%;
+                width: 56%;
+            }
+    
+            #{$this}__top-text {
+                margin-bottom: 1em;
+                font-size: 18px;
+            }
+    
+            #{$this}__bg-receiver-content {
+                margin-left: 0;
+                margin-right: 42%;
+                width: 56%;
+            }
+    
+            #{$this}__bg-receiver-text {
+                font-size: 28px;
+            }
         }
     }
 }
@@ -1825,6 +2090,127 @@
     
         &__yellow-box-text {
             width: 95%;
+        }
+    }
+
+    .bonus {
+        $this: &;
+        padding-top: 60px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    
+        &__bg {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            min-height: 820px;
+            background-position: calc(50% + 158px) 225px;
+        }
+
+        &__desc {
+            width: 85%;
+        }
+    
+        &__top {
+            display: none;
+        }
+
+        &__top-text {
+            display: none;
+        }
+    
+        &__bg-receiver {
+            height: auto;
+        }
+
+        &__bg-receiver-content {
+            width: 100%;
+            margin: 0;
+        }
+    
+        &__bg-receiver-text {
+            display: block;
+            margin: 100px auto 10px;
+            width: 95%;
+            text-align: center;
+        }
+
+        &__photo-line {
+            height: 140px;
+        }
+    
+        // styles for bonus block modifiers
+        &_first {
+            #{$this}__bg-receiver-text {
+                font-size: 0;
+            }
+        }
+
+        &_second {
+            margin-bottom: 30px;
+    
+            #{$this}__bg {
+                min-height: 870px;
+                background-position: calc(50% - 143px) 181px;
+            }
+
+            #{$this}__top {
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+        }
+    
+        &_third {
+            margin-bottom: 40px;
+
+            #{$this}__bg {
+                padding-top: 0;
+                background-position: calc(50% + 158px) 175px;
+            }
+
+            #{$this}__top {
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+    
+            #{$this}__bg-receiver-content {
+                margin-top: 0;
+                margin-bottom: 0;
+                width: 100%;
+                margin: 0;
+            }
+    
+            #{$this}__bg-receiver-text {
+                color: #fff;
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+        
+        &_fourth {
+            margin-bottom: 30px;
+    
+            #{$this}__bg {
+                background-size: 850px;
+                background-position: calc(50% - 143px) 135px;
+            }
+    
+            #{$this}__bg-receiver-content {
+                margin-top: 0;
+                margin-bottom: 0;
+                width: 100%;
+                margin: 0;
+            }
+    
+            #{$this}__bg-receiver-text {
+                width: 85%;
+                font-size: 24px;
+            }
         }
     }
 }
