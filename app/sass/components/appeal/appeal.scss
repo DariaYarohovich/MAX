@@ -3,6 +3,10 @@
     justify-content: space-between;
     color: $charcoal;
 
+    &_landing {
+        margin-bottom: 50px;
+    }
+
     &_bordered {
         width: 85%;
         margin: 0 auto;
@@ -13,7 +17,7 @@
     }
 
     &__content {
-        width: 65%;
+        width: calc( 100% - 400px );
         padding: 50px;
     }
 
@@ -37,11 +41,10 @@
     }
 
     &__img {
-        width: 30%;
+        width: 338px;
 
         img {
             width: 100%;
-            height: calc(100% + 10px) !important;
             margin-top: -10px;
             margin-left: -10px;
         }
@@ -109,10 +112,15 @@
                 font-size: 24px;
             }
         }
+
+        &__content {
+            width: calc( 100% - 300px );
+        }
     
         &__img {
+            width: 280px;
+
             img {
-                height: calc(100% + 5px) !important;
                 margin-top: -5px;
                 margin-left: -47px;
             }
