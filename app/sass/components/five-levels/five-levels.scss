@@ -176,9 +176,16 @@
 
 @media (max-width: $md) {
     .five-levels {
+        position: relative;
+        z-index: -1;
+        margin-bottom: -160px;
 
         &__content {
             padding-bottom: 0;
+
+            &::after {
+                height: 80%;
+            }
         }
         
         &__title {
@@ -263,6 +270,7 @@
 
 @media (max-width: $sm) {
     .five-levels {
+        margin-bottom: 30px;
 
         &::before {
             bottom: 50px;
