@@ -9,7 +9,21 @@
     }
 
     &__item {
-        margin-bottom: 50px;
+        position: relative;
+        margin-bottom: 27px;
+        padding-bottom: 31px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+    
+            width: 97px;
+            height: 2px;
+            background-color: transparentize(#979797, .3);
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -18,7 +32,7 @@
 
     &__title {
         margin-bottom: 25px;
-        @include AvenirNext-Bold(34px, 1.2);
+        @include AvenirNext-Bold(34px, 1.35);
         font-style: italic;
         text-align: center;
 
@@ -29,8 +43,10 @@
     }
 
     &__text {
+        margin: 0 auto;
         margin-bottom: 20px;
-        @include AvenirNext-Regular(20px, 1.2);
+        width: 80.4%;
+        @include AvenirNext-Regular(20px, 1.35);
         text-align: center;
     }
 
@@ -77,29 +93,20 @@
     }
 }
 
+.review-wrapper {
+    &_home-long {
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: $lg) {
     .review {
         width: 85%;
     
         &__item {
             position: relative;
-            margin-bottom: 70px;
-
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: -35px;
-                left: calc(50% - 50px);
-                height: 1px;
-                width: 100px;
-                background-color: #cccccc;
-            }
-    
-            &:last-child {
-                &::after {
-                    display: none;
-                }
-            }
+            padding-bottom: 39px;
+            margin-bottom: 26px;
         }
     
         &__title {
@@ -108,6 +115,7 @@
         }
     
         &__text {
+            width: 100%;
             font-size: 18px;
         }
 
@@ -164,12 +172,8 @@
         }
     
         &__item {
-            margin-bottom: 50px;
-
-            &::after {
-                content: '';
-                bottom: -25px;
-            }
+            margin-bottom: 18px;
+            padding-bottom: 26px;
         }
     
         &__title {

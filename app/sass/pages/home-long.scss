@@ -1326,6 +1326,10 @@
     }
 }
 
+.home-long-mobile-btn {
+    display: none;
+}
+
 @media (max-width: $lg) {
     .home-long-top {
         min-height: 500px;
@@ -3256,7 +3260,7 @@
         }
         
         &_fourth {
-            margin-bottom: 30px;
+            margin-bottom: 0;
     
             #{$this}__bg {
                 min-height: 396px;
@@ -3383,5 +3387,16 @@
         &__desc {
             display: none;
         }
+    }
+
+    .home-long-mobile-btn {
+        display: inline-block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding-top: 22px;
+        padding-bottom: 21px;
+        box-sizing: border-box;
+        width: 90%;
+        text-align: center;
     }
 }
