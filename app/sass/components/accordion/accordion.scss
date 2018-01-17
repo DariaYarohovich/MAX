@@ -1,0 +1,158 @@
+.accordion-block {
+    width: 768px;
+    margin: auto;
+
+    &__title {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+}
+  
+  
+.accordion,
+.accordion * {
+  box-sizing: border-box;
+}
+
+.accordion {
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.5
+}
+
+
+/*----- Section Titles -----*/
+
+.accordion-section-title {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 19px 30px 18px 22px;
+  width: 100%;
+
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: $dark-grey;
+
+  border-radius: 4px;
+  background-color: rgba(217, 217, 217, 0.13);
+  border: solid 1px rgba(151, 151, 151, 0.13);
+  transition: all linear 0.15s;
+}
+
+.accordion-section-title.active {
+  border-bottom: none;
+}
+
+/*----- Section Content -----*/
+
+.accordion-section-content {
+  display: none;
+  background: #fff;
+}
+
+.accordion-section-content.open p {
+  padding: 0 20px 10px;
+}
+
+.active,
+.open {
+  display: block;
+}
+
+.arrow {
+  transition: all .5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  transform: translate(0, -50%);
+
+  width: 22px;
+  height: 22px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 2px;
+    background: $dark-grey;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 12px;
+    background: $dark-grey;
+  }
+}
+
+.accordion-section-title.active .arrow {
+  transition: all .5s ease-in-out;
+
+  &::after {
+    content: none;
+  }
+}
+
+.accordion-mobile-link {
+  display: none;
+}
+
+@media (max-width: $lg) {
+  .accordion-block {
+    width: 90%;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .accordion-section {
+    &:nth-child(n + 6) {
+      display: none;
+    }
+  }
+
+  .accordion-section-title {
+    margin-bottom: 0;
+    padding: 15px 36px 12px 12px;
+    font-size: 16px;
+  }
+
+  .arrow {
+    top: 16px;
+    right: 9px;
+    transform: none;
+  }
+
+  .accordion-section-content > p {
+    margin-top: 0;
+  }
+
+  .accordion-mobile-link {
+    display: block;
+    margin-bottom: 0;
+    padding: 15px 36px 12px 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: $dark-grey;
+
+    border-radius: 4px;
+    background-color: rgba(217, 217, 217, 0.13);
+    border: solid 1px rgba(151, 151, 151, 0.13);
+  }
+}
