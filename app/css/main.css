@@ -8190,109 +8190,117 @@ p {
     font-size: 22px; } }
 
 @media (max-width: 1023px) {
-  .five-levels__content {
-    padding-bottom: 0; }
-  .five-levels__title {
-    width: 100%;
-    padding-top: 55px;
-    padding-bottom: 124px; }
-    .five-levels__title span {
-      width: 85%; }
-  .five-levels__item-title {
-    font-size: 18px; }
-  .five-levels__item-text {
-    display: none; }
-  .five-levels__item-img {
-    width: 80px; }
-  .five-levels__item-desc {
-    width: -webkit-calc( 100% - 95px);
-    width: calc( 100% - 95px); }
-  .five-levels__item {
-    padding-right: 80px;
-    top: -30px; }
-    .five-levels__item::after {
-      width: 70px; }
-    .five-levels__item_even {
-      padding-left: 80px;
-      padding-right: 0; }
-    .five-levels__item_2 {
-      top: 0;
-      margin-top: -130px; }
-    .five-levels__item_3 {
-      top: 30px;
-      margin-top: -20px; }
-    .five-levels__item_4 {
-      top: -75px; }
-    .five-levels__item_5 {
-      top: -55px; }
-    .five-levels__item_6 {
-      top: -150px; }
-    .five-levels__item_7 {
-      top: -125px; }
-    .five-levels__item_8 {
-      top: -215px; }
-    .five-levels__item_9 {
-      top: -185px; }
-    .five-levels__item_10 {
-      top: -275px; } }
+  .five-levels {
+    position: relative;
+    z-index: -1;
+    margin-bottom: -160px; }
+    .five-levels__content {
+      padding-bottom: 0; }
+      .five-levels__content::after {
+        height: 80%; }
+    .five-levels__title {
+      width: 100%;
+      padding-top: 55px;
+      padding-bottom: 124px; }
+      .five-levels__title span {
+        width: 85%; }
+    .five-levels__item-title {
+      font-size: 18px; }
+    .five-levels__item-text {
+      display: none; }
+    .five-levels__item-img {
+      width: 80px; }
+    .five-levels__item-desc {
+      width: -webkit-calc( 100% - 95px);
+      width: calc( 100% - 95px); }
+    .five-levels__item {
+      padding-right: 80px;
+      top: -30px; }
+      .five-levels__item::after {
+        width: 70px; }
+      .five-levels__item_even {
+        padding-left: 80px;
+        padding-right: 0; }
+      .five-levels__item_2 {
+        top: 0;
+        margin-top: -130px; }
+      .five-levels__item_3 {
+        top: 30px;
+        margin-top: -20px; }
+      .five-levels__item_4 {
+        top: -75px; }
+      .five-levels__item_5 {
+        top: -55px; }
+      .five-levels__item_6 {
+        top: -150px; }
+      .five-levels__item_7 {
+        top: -125px; }
+      .five-levels__item_8 {
+        top: -215px; }
+      .five-levels__item_9 {
+        top: -185px; }
+      .five-levels__item_10 {
+        top: -275px; } }
 
 @media (max-width: 767px) {
-  .five-levels::before {
-    bottom: 50px; }
-  .five-levels::after {
-    height: 50px; }
-  .five-levels__title {
-    width: 100%;
-    padding-top: 42px;
-    padding-bottom: 117px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.43))), url("../img/sales-pages/video-training-system@2x.jpg");
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.43)), url("../img/sales-pages/video-training-system@2x.jpg");
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.43)), url("../img/sales-pages/video-training-system@2x.jpg");
-    background-size: cover; }
-  .five-levels__content_md {
-    display: none; }
-  .five-levels__content_xs {
-    display: block;
-    padding: 20px;
-    padding-top: 0;
-    background-color: #25262a; }
-  .five-levels__content-xs-title {
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 1.1;
-    font-family: "AvenirNext";
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center; }
-  .five-levels__content-xs-content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  .five-levels__content-xs-item {
-    padding-top: 30px; }
-  .five-levels__content-xs-img {
-    width: 20%;
-    -webkit-transform: scale(1.25);
-        -ms-transform: scale(1.25);
-            transform: scale(1.25); }
-    .five-levels__content-xs-img img {
-      width: 100%; }
-    .five-levels__content-xs-img_1 {
-      position: relative;
-      z-index: 5; }
-    .five-levels__content-xs-img_2 {
-      position: relative;
-      z-index: 4; }
-    .five-levels__content-xs-img_3 {
-      position: relative;
-      z-index: 3; }
-    .five-levels__content-xs-img_4 {
-      position: relative;
-      z-index: 2; }
-    .five-levels__content-xs-img_5 {
-      position: relative;
-      z-index: 1; } }
+  .five-levels {
+    margin-bottom: 30px; }
+    .five-levels::before {
+      bottom: 50px; }
+    .five-levels::after {
+      height: 50px; }
+    .five-levels__title {
+      width: 100%;
+      padding-top: 42px;
+      padding-bottom: 117px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.43))), url("../img/sales-pages/video-training-system@2x.jpg");
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.43)), url("../img/sales-pages/video-training-system@2x.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.43)), url("../img/sales-pages/video-training-system@2x.jpg");
+      background-size: cover; }
+    .five-levels__content_md {
+      display: none; }
+    .five-levels__content_xs {
+      display: block;
+      padding: 20px;
+      padding-top: 0;
+      background-color: #25262a; }
+    .five-levels__content-xs-title {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 1.1;
+      font-family: "AvenirNext";
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center; }
+    .five-levels__content-xs-content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    .five-levels__content-xs-item {
+      padding-top: 30px; }
+    .five-levels__content-xs-img {
+      width: 20%;
+      -webkit-transform: scale(1.25);
+          -ms-transform: scale(1.25);
+              transform: scale(1.25); }
+      .five-levels__content-xs-img img {
+        width: 100%; }
+      .five-levels__content-xs-img_1 {
+        position: relative;
+        z-index: 5; }
+      .five-levels__content-xs-img_2 {
+        position: relative;
+        z-index: 4; }
+      .five-levels__content-xs-img_3 {
+        position: relative;
+        z-index: 3; }
+      .five-levels__content-xs-img_4 {
+        position: relative;
+        z-index: 2; }
+      .five-levels__content-xs-img_5 {
+        position: relative;
+        z-index: 1; } }
 
 .accordion-block {
   width: 768px;
