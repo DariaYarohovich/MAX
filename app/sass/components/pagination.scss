@@ -7,14 +7,39 @@
     border-top: 1px solid $white-five;
     color: $dark-grey;
 
+    &__nav {
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 9px;
+            height: 9px;
+            border-top: 2px solid rgba(0, 0, 0, 0.6);
+            border-left: 2px solid rgba(0, 0, 0, 0.6);
+        }
+    }
+
     &__prev {
         padding-left: 25px;
         @include AvenirNext-Bold(14px, 1);
+
+        &::before {
+            left: 0;
+            transform: rotate(-45deg);
+        }
     }
 
     &__next {
         padding-right: 25px;
         @include AvenirNext-Bold(14px, 1);
+
+        &::before {
+            right: 0;
+            transform: rotate(135deg);
+        }
     }
 
     &__pages {
@@ -46,6 +71,15 @@
     .pagination {
         padding: 15px;
         margin: 0;
+
+        &__nav {
+    
+            &::before {
+                top: 2px;
+                width: 6px;
+                height: 6px;
+            }
+        }
 
         &__prev {
             font-size: 12px;

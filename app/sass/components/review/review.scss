@@ -181,6 +181,12 @@
             }
         }
 
+        &__text {
+            box-sizing: border-box;
+            height: 120px;
+            overflow: hidden;
+        }
+
         &__author {
             justify-content: flex-start;
         }
