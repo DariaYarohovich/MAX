@@ -3,6 +3,14 @@
     justify-content: space-between;
     margin-top: 30px;
 
+    &__header {
+        height: 190px;
+        background-image: url('../img/sales-pages/eyal-serious-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: 1px 20%;
+        background-size: cover;
+    }
+
     &__row {
         display: flex;
         justify-content: space-between;
@@ -94,21 +102,21 @@
     }
 
     &__name {
-        width: 43%;
+        width: 46%;
     }
 
     &__users {
-        width: 12%;
+        width: 11%;
         text-align: center;
     }
 
     &__replies {
-        width: 12%;
+        width: 11%;
         text-align: center;
     }
 
     &__last-post {
-        width: 27%;
+        width: 26%;
         text-align: center;
 
         .forum__person-info {
@@ -179,6 +187,33 @@
         &_green {
             background-color: $green;
             color: $black;
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .forum {
+        &__categories {
+            width: 22%;
+        }
+
+        &__latest {
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .forum {
+        flex-wrap: wrap;
+
+        &__categories {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__latest {
+            width: 100%;
         }
     }
 }

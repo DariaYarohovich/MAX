@@ -210,3 +210,14 @@ $(document).ready(function() {
       e.preventDefault();
     });
 });
+
+//text truncate
+jQuery(document).ready(function( $ ) {
+
+    if ($(document).width() < 768 ) {
+        $(".review__text").dotdotdot({
+            
+        });
+    }
+ 
+ });

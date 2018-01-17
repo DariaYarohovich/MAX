@@ -38,8 +38,13 @@
 
     &__block-title {
         margin-bottom: 17px;
+        @include square;
         @include AvenirNext-Bold(24px, 1);
         color: $dark-grey;
+
+        &::before {
+            top: 7px;
+        }
     }
 
     &__setting {
@@ -142,6 +147,20 @@
         background-position: 0 center;
         background-size: 53px auto;
 
+        &_2 {
+            background-image: url('../../img/sales-pages/icons/globe-icon.svg');
+        }
+
+        &_3 {
+            background-image: url('../../img/sales-pages/icons/stars-icon.svg');
+            background-size: 60px auto;
+        }
+
+        &_4 {
+            background-image: url('../../img/sales-pages/icons/lightening-icon.svg');
+            background-size: auto 85%;
+        }
+
         &:last-child,
         &:nth-last-child(2)  {
             margin-bottom: 0;
@@ -152,6 +171,15 @@
             @include AvenirNext-Bold(15px, 1.2);
             color: $dark-grey;
             font-style: italic;
+        }
+    }
+
+    &__access-img {
+        margin-left: -35px;
+        margin-right: -25px;
+
+        img {
+            width: 100%;
         }
     }
 }
@@ -181,8 +209,17 @@
         }
 
         &-position {
+            margin-bottom: 10px;
             @include AvenirNext-Regular(18px, 1.1);
             font-style: italic;
+        }
+
+        &-img {
+            width: 103px;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -203,6 +240,10 @@
 
         &__block-title {
             font-size: 18px;
+
+            &::before {
+                top: 3px;
+            }
         }
     }
 
@@ -213,6 +254,14 @@
             margin-bottom: 15px;
             padding-left: 70px;
             background-size: 49px auto;
+
+            &_3 {
+                background-size: 60px auto;
+            }
+
+            &_4 {
+                background-size: auto 45px;
+            }
             
             &:nth-last-child(2) {
                 margin-bottom: 15px;
@@ -342,6 +391,10 @@
                 width: 80px;
                 background-color: $white-five;
               }
+        }
+
+        &__sign-img {
+            margin: 0 auto;
         }
     }
 }

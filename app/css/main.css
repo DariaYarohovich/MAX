@@ -4580,6 +4580,12 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 30px; }
+  .forum__header {
+    height: 190px;
+    background-image: url("../img/sales-pages/eyal-serious-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 1px 20%;
+    background-size: cover; }
   .forum__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4663,15 +4669,15 @@ p {
       padding-top: 20px;
       padding-bottom: 20px; }
   .forum__name {
-    width: 43%; }
+    width: 46%; }
   .forum__users {
-    width: 12%;
+    width: 11%;
     text-align: center; }
   .forum__replies {
-    width: 12%;
+    width: 11%;
     text-align: center; }
   .forum__last-post {
-    width: 27%;
+    width: 26%;
     text-align: center; }
     .forum__last-post .forum__person-info {
       margin-top: 10px; }
@@ -4739,6 +4745,23 @@ p {
       background-color: #97ff00;
       color: #000000; }
 
+@media (max-width: 1023px) {
+  .forum__categories {
+    width: 22%; }
+  .forum__latest {
+    width: 75%; } }
+
+@media (max-width: 767px) {
+  .forum {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .forum__categories {
+      width: 100%;
+      margin-bottom: 30px; }
+    .forum__latest {
+      width: 100%; } }
+
 .tec-review__title {
   font-size: 28px; }
 
@@ -4786,11 +4809,23 @@ p {
               box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.08); }
   .checkout__block-title {
     margin-bottom: 17px;
+    position: relative;
+    padding-left: 24px;
     font-size: 24px;
     line-height: 1;
     font-family: "AvenirNext";
     font-weight: bold;
     color: #25262a; }
+    .checkout__block-title::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border: solid 3px #ffd001; }
+    .checkout__block-title::before {
+      top: 7px; }
   .checkout__setting {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4924,6 +4959,14 @@ p {
   background-repeat: no-repeat;
   background-position: 0 center;
   background-size: 53px auto; }
+  .checkout__access-adv-item_2 {
+    background-image: url("../../img/sales-pages/icons/globe-icon.svg"); }
+  .checkout__access-adv-item_3 {
+    background-image: url("../../img/sales-pages/icons/stars-icon.svg");
+    background-size: 60px auto; }
+  .checkout__access-adv-item_4 {
+    background-image: url("../../img/sales-pages/icons/lightening-icon.svg");
+    background-size: auto 85%; }
   .checkout__access-adv-item:last-child, .checkout__access-adv-item:nth-last-child(2) {
     margin-bottom: 0; }
   .checkout__access-adv-item span {
@@ -4934,6 +4977,12 @@ p {
     font-weight: bold;
     color: #25262a;
     font-style: italic; }
+
+.checkout__access-img {
+  margin-left: -35px;
+  margin-right: -25px; }
+  .checkout__access-img img {
+    width: 100%; }
 
 .checkout__guarantee {
   color: #25262a; }
@@ -4962,11 +5011,17 @@ p {
   font-style: italic; }
 
 .checkout__sign-position {
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 1.1;
   font-family: "AvenirNext";
   font-weight: 400;
   font-style: italic; }
+
+.checkout__sign-img {
+  width: 103px; }
+  .checkout__sign-img img {
+    width: 100%; }
 
 @media (max-width: 1439px) {
   .checkout__form-wrap {
@@ -4977,11 +5032,17 @@ p {
     width: 100%; }
   .checkout__block-title {
     font-size: 18px; }
+    .checkout__block-title::before {
+      top: 3px; }
   .checkout__access-adv-item {
     width: 100%;
     margin-bottom: 15px;
     padding-left: 70px;
     background-size: 49px auto; }
+    .checkout__access-adv-item_3 {
+      background-size: 60px auto; }
+    .checkout__access-adv-item_4 {
+      background-size: auto 45px; }
     .checkout__access-adv-item:nth-last-child(2) {
       margin-bottom: 15px; }
     .checkout__access-adv-item span {
@@ -5052,7 +5113,9 @@ p {
       display: block;
       height: 1px;
       width: 80px;
-      background-color: #e0e0e0; } }
+      background-color: #e0e0e0; }
+  .checkout__sign-img {
+    margin: 0 auto; } }
 
 .pricing {
   padding: 0; }
@@ -6757,18 +6820,39 @@ p {
   margin: 0 35px;
   border-top: 1px solid #e0e0e0;
   color: #25262a; }
+  .pagination__nav {
+    position: relative;
+    cursor: pointer; }
+    .pagination__nav::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 9px;
+      height: 9px;
+      border-top: 2px solid rgba(0, 0, 0, 0.6);
+      border-left: 2px solid rgba(0, 0, 0, 0.6); }
   .pagination__prev {
     padding-left: 25px;
     font-size: 14px;
     line-height: 1;
     font-family: "AvenirNext";
     font-weight: bold; }
+    .pagination__prev::before {
+      left: 0;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
   .pagination__next {
     padding-right: 25px;
     font-size: 14px;
     line-height: 1;
     font-family: "AvenirNext";
     font-weight: bold; }
+    .pagination__next::before {
+      right: 0;
+      -webkit-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+              transform: rotate(135deg); }
   .pagination__pages {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6800,6 +6884,10 @@ p {
   .pagination {
     padding: 15px;
     margin: 0; }
+    .pagination__nav::before {
+      top: 2px;
+      width: 6px;
+      height: 6px; }
     .pagination__prev {
       font-size: 12px; }
     .pagination__next {
@@ -7038,6 +7126,18 @@ p {
       margin: 0;
       margin-left: -5px;
       border-color: #ffd001; }
+    .plan__item-btn span {
+      position: relative; }
+      .plan__item-btn span::after {
+        content: '→';
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        right: -25px;
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in; }
   .plan__item-name {
     margin-bottom: 15px;
     font-size: 19px;
@@ -7480,6 +7580,11 @@ p {
       font-size: 18px; }
       .review__title span {
         text-decoration: none; }
+    .review__text {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      height: 120px;
+      overflow: hidden; }
     .review__author {
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
