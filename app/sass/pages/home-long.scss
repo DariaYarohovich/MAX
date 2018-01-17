@@ -36,7 +36,8 @@
     &__img {
         position: absolute;
         top: 42px;
-        left: calc(50% + 100px);
+        left: calc(50% + 100px); 
+        height: 600px;
     }
 
     &__img-mobile {
@@ -274,7 +275,6 @@
 
 .two-cats {
     padding-top: 74px;
-    padding-bottom: 40px;
 
     &__title {
         margin: 0 auto 22px;
@@ -291,7 +291,8 @@
 
     &__cat {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-bottom: 50px;
 
         &_second {
             flex-flow: row-reverse nowrap;
@@ -299,7 +300,7 @@
     }
 
     &__img-wrapper {
-        width: 48%;
+        width: 40%;
     }
 
     &__img {
@@ -341,6 +342,7 @@
     &__img {
         display: block;
         width: 404px;
+        height: 783px;
         margin-right: 50px;
     }
 
@@ -471,6 +473,8 @@
     }
 
     &__img {
+        width: 1027px;
+        height: 633px;
         margin-bottom: -20px;
         margin-right: -130px;
         margin-left: -130px;
@@ -1326,8 +1330,10 @@
     }
 }
 
-.home-long-mobile-btn {
-    display: none;
+.home-long-mobile {
+    &__wrapper {
+        display: none;
+    }
 }
 
 @media (max-width: $lg) {
@@ -1455,7 +1461,7 @@
         }
     
         &__cat-text {
-            width: 55%;
+            width: 44%;
         }
     
         &__cat-title {
@@ -2206,6 +2212,7 @@
             margin: 0;
             margin-bottom: -30px;
             width: 100%;
+            height: auto;
         }
     
         &__desc {
@@ -2784,6 +2791,7 @@
         &__cat {
             flex-flow: column-reverse;
             padding-bottom: 25px;
+            margin-bottom: 0;
         }
     
         &__img-wrapper {
@@ -2815,7 +2823,6 @@
 
         &__wrapper {
             flex-flow: column;
-            perspective: 800px;
         }
     
         &__text {
@@ -2829,8 +2836,6 @@
         &__img-mobile {
             display: block;
             width: 100%;
-            transform: rotateY(15deg);
-            @include shadowBlock();
         }
     
         &__title {
@@ -3389,14 +3394,20 @@
         }
     }
 
-    .home-long-mobile-btn {
-        display: inline-block;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        padding-top: 22px;
-        padding-bottom: 21px;
-        box-sizing: border-box;
-        width: 90%;
-        text-align: center;
+    .home-long-mobile {
+        &__wrapper {
+            display: flex;
+        }
+
+        &__btn {
+            display: inline-block;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            padding-top: 22px;
+            padding-bottom: 21px;
+            box-sizing: border-box;
+            width: 90%;
+            text-align: center;
+        }
     }
 }

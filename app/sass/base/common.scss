@@ -239,10 +239,6 @@ video {
 }
 
 @media (max-width: $sm) {
-  main {
-    text-align: center;
-  }
-
   .btn {
     &__members-home {
       font-size: 12px;
