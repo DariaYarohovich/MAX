@@ -2,6 +2,13 @@
     width: 768px;
     margin: auto;
 
+    &_landing {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 80px;
+    }
+
     &__title {
       margin-bottom: 50px;
       text-align: center;
@@ -113,13 +120,33 @@
   .accordion-block {
     width: 90%;
 
+    &_landing {
+      width: 70%;
+    }
+
     &__title {
       margin-bottom: 25px;
     }
   }
 }
 
+@media (max-width: $md) {
+  .accordion-block {
+    &_landing {
+      width: 85%;
+      margin-bottom: 50px;
+    }
+  }
+}
+
 @media (max-width: $sm) {
+  .accordion-block {
+    &_landing {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+
   .accordion-section {
     &:nth-child(n + 6) {
       display: none;

@@ -171,6 +171,34 @@
         @include AvenirNext-Regular(18px, 1.3);
         color: $charcoal;
     }
+
+    // BOTTOM TEXT
+    &__bottom-block {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    &__bottom-text {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__bottom-block-btn {
+        display: block !important;
+        margin: 0 auto;
+        border-radius: 40px;
+        text-transform: none;
+
+        &::after {
+            top: 25px !important;
+        }
+    }
+
+    &__bottom-block-text {
+        margin-top: 60px;
+        text-align: center;
+    }
 }
 
 @media (max-width: $lg) {
@@ -269,6 +297,20 @@
 
         &__affiliate-text {
             font-size: 16px;
+        }
+
+        // BOTTOM TEXT
+        &__bottom-block {
+            width: 85%;
+            margin-bottom: 30px;
+        }
+
+        &__bottom-text {
+            margin-bottom: 25px;
+        }
+
+        &__bottom-block-text {
+            margin-top: 45px;
         }
     }
 }
@@ -388,6 +430,26 @@
 
         &__affiliate-text {
             font-size: 14px;
+        }
+
+        // BOTTOM TEXT
+        &__bottom-block {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__bottom-text {
+            margin-bottom: 20px;
+        }
+
+        &__bottom-block-text {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+
+        &__bottom-block-btn {
+            width: auto;
+            font-size: 16px !important;
         }
     }
 }
