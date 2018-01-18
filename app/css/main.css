@@ -5569,7 +5569,26 @@ p {
     line-height: 1; }
 
 .profile-tabs-vertical__wrapper {
-  margin-left: 10.8%; }
+  margin-left: 10.8%;
+  margin-right: 8%; }
+
+.view-profile__data {
+  margin-bottom: 19px; }
+
+.view-profile__data-title {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333433;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.view-profile__data-desc {
+  font-size: 16px;
+  color: #6a6a6a; }
+
+.save-profile__btn {
+  margin-top: 10px;
+  text-transform: none; }
 
 .intrinsic-container {
   position: relative;
@@ -6984,6 +7003,9 @@ p {
     text-transform: uppercase; }
     .input__label_small {
       text-transform: none; }
+    .input__label_small-black {
+      text-transform: none;
+      color: #000; }
   .input__field {
     width: 100%;
     -webkit-box-sizing: border-box;

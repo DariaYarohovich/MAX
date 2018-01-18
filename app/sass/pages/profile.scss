@@ -70,4 +70,31 @@
 
 .profile-tabs-vertical__wrapper {
     margin-left: 10.8%;
+    margin-right: 8%;
+}
+
+.view-profile {
+    &__data {
+        margin-bottom: 19px;
+    }
+
+    &__data-title {
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: $charcoal;
+        border-bottom: 1px solid rgba($black, 0.1);
+    }
+
+    &__data-desc { 
+        font-size: 16px;
+        color: #6a6a6a;
+    }
+}
+
+.save-profile {
+    &__btn {
+        margin-top: 10px;
+        text-transform: none;
+    }
 }
