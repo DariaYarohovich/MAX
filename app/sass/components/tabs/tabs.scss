@@ -50,6 +50,37 @@
     color: $dark-grey !important;
 }
 
+// custom styles for tabs in profile page
+.tabs_profile {
+    position: relative;
+
+    &__change-pass {
+        position: absolute;
+        top: 21px; 
+        right: 10%;
+        padding-left: 21px;
+        background: url('../../../img/sales-pages/icons/secure-icon@2x.png') no-repeat left center;
+        background-size: contain;
+
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #888888!important;
+
+        text-decoration: none;
+    }
+
+    & .ui-tabs-tab {
+        &:first-child {
+            margin-left: 30.4%;
+        }
+    }
+
+    & .ui-tabs-panel {
+        min-height: 200px;
+    }
+}
+
 @media (max-width: $sm) {
     .tabs {
         margin-left: -15px;
