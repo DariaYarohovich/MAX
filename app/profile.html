@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Max</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="libs/lity/dist/lity.min.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header header_unlock">
+        <a href="/" class="header__img-block">
+            <img src="img/logos/logo.png" class="header__img">
+        </a>
+
+        <div class="header__user-block">
+            <img src="img/default.jpg" class="header__user-img">
+            <p class="header__user-name">John Doe</p>
+        </div>
+
+        <button class="header__mobile-menu">Mobile menu</button>
+    </header>
+    <div class="wrap">
+        <div class="navigation-wrapper">
+            <section class="navigation">
+                <ul class="navigation__list navigation__list_first">
+                    <li class="navigation__item navigation__item_active"><a href="#">Members Home</a></li>
+                    <li class="navigation__item"><a href="#">Technique Of The Week</a></li>
+                    <li class="navigation__item navigation__item_parent">Practitioner
+                        <ul class="navigation__list navigation__list_second">
+                            <li class="navigation__item"><a href="#">P1</a></li>
+                            <li class="navigation__item"><a href="#">P2</a></li>
+                            <li class="navigation__item  navigation__item_active"><a href="#">P3</a></li>
+                            <li class="navigation__item"><a href="#">P4</a></li>
+                            <li class="navigation__item"><a href="#">P5</a></li>
+                        </ul> 
+                    </li>
+                    <li class="navigation__item navigation__item_parent">Graduates
+                        <ul class="navigation__list navigation__list_second">
+                            <li class="navigation__item"><a href="#">P1</a></li>
+                            <li class="navigation__item"><a href="#">P2</a></li>
+                            <li class="navigation__item"><a href="#">P3</a></li>
+                            <li class="navigation__item"><a href="#">P4</a></li>
+                            <li class="navigation__item"><a href="#">P5</a></li>
+                        </ul> 
+                    </li>
+                    <li class="navigation__item"><a href="#">Subjects</a></li>
+                    <li class="navigation__item"><a href="#">Combat Mindset/mental Training</a></li>
+                    <li class="navigation__item"><a href="#">Masterclass Seminar</a></li>
+                    <li class="navigation__item"><a href="#">Theory And Lectures</a></li>
+                    <li class="navigation__item"><a href="#">Firearms As Non-lethal Weapons</a></li>
+                    <li class="navigation__item"><a href="#">Anti-carjacking And Road Rage</a></li>
+                </ul>
+                <ul class="navigation__list navigation__list_bottom">
+                    <li class="navigation__item"><a href="#">Blog</a></li>
+                    <li class="navigation__item"><a href="#">Forums</a></li>
+                    <li class="navigation__item"><a href="#">KMG Events</a></li>
+                </ul>
+            </section>
+        </div>
+        <section class="content">
+
+            <div class="profile-top">
+                <div class="profile-top__info">
+                    <div class="profile-top__img-wrapper">
+                        <img src="img/sales-pages/eyal@2x.jpg" alt="" class="profile-top__img">
+                    </div>
+                    <div class="profile-top__personal">
+                        <p class="profile-top__text profile-top__text_rank">KMG Rank: P1</p>
+                        <p class="profile-top__text profile-top__text_place">Boulder, CO</p>
+                        <p class="profile-top__text profile-top__text_bd">03/20/75</p>
+                    </div>
+                </div>
+                <h1 class="profile-top__user-name">Michael Matthews</h1>
+            </div>
+            
+            <div class="tabs tabs_profile" id="video-tabs">
+                <a href="#" class="tabs_profile__change-pass">Change Password</a>
+                <ul>
+                    <li><a href="#video-tabs-1">Profile</a></li>
+                    <li><a href="#video-tabs-2">Forum Activity</a></li>
+                    <li><a href="#video-tabs-3">Settings</a></li>
+                </ul>
+                <div class="syllabus" id="video-tabs-1">
+                    <div class="profile-tabs-vertical__wrapper">
+                        <div class="tabs-vertical">
+                            <nav class="tabs-vertical__navigation">
+                                <a>View profile</a>
+                                <a>Edit profile</a>
+                                <a>Change profile photo</a>
+                                <a>Change cover image</a>
+                            </nav>
+                            <div class="tabs-vertical__content">
+                                <p>Content #1</p>
+                            </div>
+                            <div class="tabs-vertical__content">
+                                <p>Content #2</p>
+                            </div>
+                            <div class="tabs-vertical__content">
+                                <p>Content #3</p>
+                            </div>
+                            <div class="tabs-vertical__content">
+                                <p>Content #4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discussion" id="video-tabs-2">
+                    <div class="profile-tabs-vertical__wrapper">
+                        <div class="tabs-vertical">
+                            <nav class="tabs-vertical__navigation">
+                                <a>Messages</a>
+                                <a>Topics</a>
+                            </nav>
+                            <div class="tabs-vertical__content">
+                                <p>Content #1</p>
+                            </div>
+                            <div class="tabs-vertical__content">
+                                <p>Content #2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-videos" id="video-tabs-3">
+                    <div class="profile-tabs-vertical__wrapper">
+                        <div class="tabs-vertical">
+                            <nav class="tabs-vertical__navigation">
+                                <a>Personal info</a>
+                                <a>Subscription Info</a>
+                            </nav>
+                            <div class="tabs-vertical__content">
+                                <p>Content #1</p>
+                            </div>
+                            <div class="tabs-vertical__content">
+                                <p>Content #2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logos/max-logo-dark.png">
+                    <source media="(max-width: 1199px)" srcset="img/logos/logo.png">
+                    <img src="img/logos/logo-footer.png" alt="" class="footer__logo">
+                </picture>
+                <p class="footer__text">© 2017 MaxKravMaga.com All Rights Reserved. Reproduction without permission prohibited. </p>
+            </footer>
+        </section>
+    </div>
+    <div class="navigation-mobile">
+        <div class="navigation-mobile__header">
+            <img src="img/logos/logo.png" alt="" class="navigation-mobile__logo">
+            <button type="button" class="navigation-mobile__close">Close</button>
+        </div>
+        <section class="navigation">
+            <ul class="navigation__list navigation__list_first">
+                <li class="navigation__item navigation__item_active"><a href="#">Members Home</a></li>
+                <li class="navigation__item"><a href="#">Technique Of The Week</a></li>
+                <li class="navigation__item navigation__item_parent">Practitioner
+                    <ul class="navigation__list navigation__list_second">
+                        <li class="navigation__item"><a href="#">P1</a></li>
+                        <li class="navigation__item"><a href="#">P2</a></li>
+                        <li class="navigation__item  navigation__item_active"><a href="#">P3</a></li>
+                        <li class="navigation__item"><a href="#">P4</a></li>
+                        <li class="navigation__item"><a href="#">P5</a></li>
+                    </ul> 
+                </li>
+                <li class="navigation__item navigation__item_parent">Graduates
+                    <ul class="navigation__list navigation__list_second">
+                        <li class="navigation__item"><a href="#">P1</a></li>
+                        <li class="navigation__item"><a href="#">P2</a></li>
+                        <li class="navigation__item"><a href="#">P3</a></li>
+                        <li class="navigation__item"><a href="#">P4</a></li>
+                        <li class="navigation__item"><a href="#">P5</a></li>
+                    </ul> 
+                </li>
+                <li class="navigation__item"><a href="#">Subjects</a></li>
+                <li class="navigation__item"><a href="#">Combat Mindset/mental Training</a></li>
+                <li class="navigation__item"><a href="#">Masterclass Seminar</a></li>
+                <li class="navigation__item"><a href="#">Theory And Lectures</a></li>
+                <li class="navigation__item"><a href="#">Firearms As Non-lethal Weapons</a></li>
+                <li class="navigation__item"><a href="#">Anti-carjacking And Road Rage</a></li>
+            </ul>
+            <ul class="navigation__list navigation__list_bottom">
+                <li class="navigation__item"><a href="#">Blog</a></li>
+                <li class="navigation__item"><a href="#">Forums</a></li>
+                <li class="navigation__item"><a href="#">KMG Events</a></li>
+                <li class="navigation__item"><a href="#">Profile</a></li>
+            </ul>
+        </section>
+    </div>
+    <div class="navigation-mobile__overlay"></div>
+
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $( "#video-tabs" ).tabs({
+            show: { effect: "fade", duration: 600 }
+        });
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

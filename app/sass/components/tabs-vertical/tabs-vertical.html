@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs Vertical Component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/normalize.min.css">
+    <link rel="stylesheet" href="../../../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../fonts/fonts.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+</head>
+
+<body>
+
+        <div class="tabs-vertical">
+            <nav>
+                <a>Tab #1</a>
+                <a>Tab #2</a>
+                <a>Tab #3</a>
+            </nav>
+            <div class="tabs-vertical__content">
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+                <p>Content #1</p>
+            </div>
+            <div class="tabs-vertical__content">
+                <p>Content #2</p>
+            </div>
+            <div class="tabs-vertical__content">
+                <p>Content #3</p>
+            </div>
+        </div>
+                
+
+    <script src="../../../libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../../js/jquery-ui.min.js"></script>
+    <script>
+       $(function() {
+        $('.tabs-vertical nav a').on('click', function() {
+          show_content($(this).index());
+        });
+        
+        show_content(0);
+      
+        function show_content(index) {
+          // Make the content visible
+          $('.tabs-vertical .tabs-vertical__content.visible').removeClass('visible');
+          $('.tabs-vertical .tabs-vertical__content:nth-of-type(' + (index + 1) + ')').addClass('visible');
+      
+          // Set the tab to selected
+          $('.tabs-vertical nav a.selected').removeClass('selected');
+          $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+        }
+      });
+    </script>
+</body>
+
+</html>
