@@ -193,7 +193,7 @@
                                                 <a href="#" class="subscribtion-info__nav-link">Update Billing Info</a>
                                             </li>
                                             <li class="subscribtion-info__nav-item">
-                                                <a href="#" class="subscribtion-info__nav-link">Change Plan</a>
+                                                <a href="#" class="subscribtion-info__nav-link" id="open-min-popup">Change Plan</a>
                                             </li>
                                             <li class="subscribtion-info__nav-item">
                                                 <a href="#" class="subscribtion-info__nav-link">Pause Account</a>
@@ -263,6 +263,22 @@
         </section>
     </div>
     <div class="navigation-mobile__overlay"></div>
+
+    <div class="popup__overlay popup__overlay_dark" id="overlay">
+        <section class="popup__block popup__block_min" id="popup">
+            <h3 class="popup__title">Please Select a New Plan</h3>
+            <div class="popup__select-wrapper">
+                <select class="popup__select">
+                    <option value="Annually">Annually (299$ / year)</option>
+                    <option value="Monthly">Monthly (30$ / month)</option>
+                </select>
+            </div>
+            <div class="popup__button-area">
+                <button class="popup__btn popup__btn_select">Select Plan</button>
+                <button class="popup__btn popup__btn_cancel" id="close-popup-btn">Cancel</button>
+            </div>
+        </section>
+    </div>
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>

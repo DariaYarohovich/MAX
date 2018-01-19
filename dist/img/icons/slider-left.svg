@@ -1,1 +1,19 @@
-<svg width="88" height="97" viewBox="0 0 88 97" xmlns="http://www.w3.org/2000/svg"><title>Group 45</title><g fill="none" fill-rule="evenodd"><path fill="#000" opacity=".6" d="M0 0h88v97H0z"/><path fill="#FFD001" fill-rule="nonzero" d="M53.7 70.4l1.4-1.4-20.4-20.3 20.4-20.3-1.4-1.4L32 48.7z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="97px" viewBox="0 0 88 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 45</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -2809.000000)">
+            <g transform="translate(0.000000, 2809.000000)">
+                <g>
+                    <g>
+                        <rect fill="#000000" opacity="0.599999964" x="0" y="0" width="88" height="97"></rect>
+                        <polygon fill="#FFD001" fill-rule="nonzero" transform="translate(43.550000, 48.700000) scale(-1, 1) translate(-43.550000, -48.700000) " points="33.4 70.4 32 69 52.4 48.7 32 28.4 33.4 27 55.1 48.7"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

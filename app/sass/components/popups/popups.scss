@@ -1,0 +1,127 @@
+.popup {
+    
+    &__block {
+        display: none;
+        position: absolute;
+        z-index: 20;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        box-sizing: border-box;
+        width: 531px;
+
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 32px 54px 0 rgba(0, 0, 0, 0.28);
+
+        &_min {
+            padding: 75px 96px;
+        }
+    }
+
+    &__test-container {
+        width: 100vw;
+        height: 100vh;
+        background-color: lightblue;
+    }
+
+    &__overlay {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        &_dark {
+            background-color: rgba($black, 0.72);
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 29px;
+
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    &__select-wrapper {
+        position: relative;
+        margin-bottom: 28px;
+        width: 94%;
+
+        &::after {
+            content: '';
+            z-index: 1;
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 5px);
+            width: 23px;
+            height: 10px;
+            transform: rotate(45deg);
+            background: url('../../../img/sales-pages/icons/down-icon.svg') no-repeat center;
+            background-size: 23px 10px;
+        }
+    }
+
+    &__select {
+        padding: 15px 17px;
+        width: 100%;
+        font-size: 16px;
+        color: #4c515b;
+
+        border-radius: 3px;
+        border: solid 1px #becbd8;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__button-area {
+        display: flex;
+        justify-content: space-between;
+        width: 94%;
+    }
+
+    &__btn {
+        padding-top: 11px;
+        padding-bottom: 10px;
+
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.75;
+        color: $dark-grey;
+
+        border-radius: 4px;
+        border: none;
+        @include trans(0.3s);
+
+        &_select {
+            width: 58%;
+            background-color: $sunflower-yellow;
+        }
+
+        &_cancel {
+            width: 40%;
+            background-color: #ebebeb;
+        }
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: rgba(115, 94, 0, 0.24) 10px 16px 40px 0;
+            transform: scale(1.007);
+        }
+    }
+}

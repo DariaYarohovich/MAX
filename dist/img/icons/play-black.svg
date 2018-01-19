@@ -1,1 +1,12 @@
-<svg width="6" height="9" viewBox="0 0 6 9" xmlns="http://www.w3.org/2000/svg"><title>Artboard</title><path d="M5.76 4.059c.32.243.32.64 0 .882L.58 8.887c-.32.244-.58.08-.58-.365V.478C0 .033.26-.13.58.113l5.18 3.946z" fill="#25262A" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="9px" viewBox="0 0 6 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#25262A">
+            <path d="M2.55852533,1.73965389 C2.80224425,1.41964995 3.19809989,1.42058113 3.44110959,1.73965389 L7.38696747,6.92058161 C7.63068638,7.24058555 7.467323,7.5 7.02152888,7.5 L-1.02189395,7.5 C-1.46743901,7.5 -1.63034224,7.23965437 -1.38733254,6.92058161 L2.55852533,1.73965389 Z" transform="translate(3.000000, 4.500000) rotate(90.000000) translate(-3.000000, -4.500000) "></path>
+        </g>
+    </g>
+</svg>

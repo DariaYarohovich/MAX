@@ -1,1 +1,12 @@
-<svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><title>Artboard</title><path d="M7.5 0a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15zm.625 8.125H3.122a.621.621 0 0 1-.622-.622v-.007c0-.343.278-.621.622-.621h3.753V1.872c0-.344.278-.622.622-.622h.007c.343 0 .621.278.621.622v6.253z" fill="#E0E0E0" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#E0E0E0">
+            <path d="M7.5,0 C3.358125,0 0,3.358125 0,7.5 C0,11.641875 3.358125,15 7.5,15 C11.641875,15 15,11.641875 15,7.5 C15,3.358125 11.641875,0 7.5,0 Z M8.125,8.125 L3.121875,8.125 C2.778125,8.125 2.5,7.846875 2.5,7.503125 L2.5,7.49625 C2.5,7.153125 2.778125,6.875 3.121875,6.875 L6.875,6.875 L6.875,1.871875 C6.875,1.528125 7.153125,1.25 7.496875,1.25 L7.50375,1.25 C7.846875,1.25 8.125,1.528125 8.125,1.871875 L8.125,8.125 Z"></path>
+        </g>
+    </g>
+</svg>

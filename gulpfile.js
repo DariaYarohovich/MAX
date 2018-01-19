@@ -14,7 +14,8 @@ let gulp = require("gulp"),
 	replace = require("gulp-replace"),
 	sourcemaps = require("gulp-sourcemaps"),
 	concat = require("gulp-concat"),
-	wait = require("gulp-wait");
+	wait = require("gulp-wait"),
+	modifyCssUrls = require('gulp-modify-css-urls');
 
 
 gulp.task("sass", function () {
@@ -33,16 +34,16 @@ gulp.task("sass", function () {
 	.pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task("stylesMove", function () {
+gulp.task("stylesMove", ["sass", "cssMin"], function () {
 	return gulp.src("app/css/*")
         .pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("cssMin", ["stylesMove"], function () {
-	return gulp.src("dist/css/main.css")
+gulp.task("cssMin", function () {
+	return gulp.src("app/css/main.css")
         .pipe(cssnano())
         .pipe(rename({ suffix: ".min" }))
-        .pipe(gulp.dest("dist/css"));
+        .pipe(gulp.dest("app/css"));
 });
 
 gulp.task("browser-sync", function () {
@@ -97,7 +98,7 @@ gulp.task("watch", ["sass", "browser-sync"], function () {
 
 gulp.task("default", ["watch"]);
 
-gulp.task("build", ["clean", "img", "sass", "cssMin", "scriptsMin"], function () {
+gulp.task("build", ["clean", "img", "stylesMove", "scriptsMin"], function () {
 
 	let moveFonts = gulp.src("app/fonts/**/*")
         .pipe(gulp.dest("dist/fonts"));
@@ -115,4 +116,32 @@ gulp.task("build", ["clean", "img", "sass", "cssMin", "scriptsMin"], function ()
 
 	let moveLibs = gulp.src("app/libs/**/*")
         .pipe(gulp.dest("dist/libs"));
+});
+
+gulp.task("easy-build", ["clean", "stylesMove", "scriptsMin"], function () {
+
+	let modifyUrls = gulp.src("dist/css/main.min.css")
+	.pipe(replace("../../../img", "../../img"))
+        .pipe(replace("../../img", "../img"))
+        .pipe(gulp.dest("dist/css"));
+
+	let moveFonts = gulp.src("app/fonts/**/*")
+        .pipe(gulp.dest("dist/fonts"));
+
+	let moveHtml = gulp.src("app/*.html")
+        .pipe(replace("css/main.css", "css/main.min.css"))
+        .pipe(replace("js/scripts.js", "js/scripts.min.js"))
+        .pipe(gulp.dest("dist"));
+
+	let movePhp = gulp.src("app/*.php")
+        .pipe(gulp.dest("dist"));
+
+	let moveVideo = gulp.src("app/video/*")
+        .pipe(gulp.dest("dist/video"));
+
+	let moveLibs = gulp.src("app/libs/**/*")
+	.pipe(gulp.dest("dist/libs"));
+	
+	let moveImgs = gulp.src("app/img/**/*")
+	.pipe(gulp.dest("dist/img"));
 });

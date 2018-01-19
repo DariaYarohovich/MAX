@@ -203,3 +203,78 @@
         overlay.addEventListener("click", closeSideBar);
     }
 }();
+
+// accordion
+$(document).ready(function () {
+    function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+
+    $('.accordion-section-title').click(function (e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+
+        if ($(e.target).is('.active')) {
+            close_accordion_section();
+        } else {
+            close_accordion_section();
+
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+        }
+        e.preventDefault();
+    });
+});
+
+//text truncate
+jQuery(document).ready(function ($) {
+
+    if ($(document).width() < 768) {
+        $(".review__text").dotdotdot({});
+    }
+});
+
+// tabs vertical 
+$(function () {
+    $('.tabs-vertical nav a').on('click', function () {
+        show_content($(this).index());
+    });
+
+    show_content(0);
+
+    function show_content(index) {
+        // Make the content visible
+        $('.tabs-vertical .tabs-vertical__content.visible').removeClass('visible');
+        $('.tabs-vertical .tabs-vertical__content:nth-of-type(' + (index + 1) + ')').addClass('visible');
+
+        // Set the tab to selected
+        $('.tabs-vertical nav a.selected').removeClass('selected');
+        $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+    }
+});
+
+// min popup
+$(function () {
+    $('#open-min-popup').click(function () {
+        event.preventDefault();
+        $('#overlay').fadeIn(400);
+        $('#popup').fadeIn(400);
+    });
+
+    $('#overlay').click(function () {
+        $('#overlay').fadeOut(500);
+        $('#popup').fadeOut(500);
+    });
+
+    $('#close-min-popup').click(function () {
+        $('#overlay').fadeOut(500);
+        $('#popup').fadeOut(500);
+    });
+
+    $(".popup__select").click(function () {
+        event.stopImmediatePropagation();
+    });
+});

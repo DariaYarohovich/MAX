@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Popup simple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/normalize.min.css">
+    <link rel="stylesheet" href="../../../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../fonts/fonts.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+</head>
+
+<body>
+
+    <div class="popup__test-container">
+            <button id="open-min-popup">Open min popup</button>
+
+            <div class="popup__overlay popup__overlay_dark" id="overlay">
+                <section class="popup__block popup__block_min" id="popup">
+                    <h3 class="popup__title">Please Select a New Plan</h3>
+                    <div class="popup__select-wrapper">
+                        <select class="popup__select">
+                            <option value="Annually">Annually (299$ / year)</option>
+                            <option value="Monthly">Monthly (30$ / month)</option>
+                        </select>
+                    </div>
+                    <div class="popup__button-area">
+                        <button class="popup__btn popup__btn_select">Select Plan</button>
+                        <button class="popup__btn popup__btn_cancel" id="close-min-popup">Cancel</button>
+                    </div>
+                </section>
+            </div>
+    </div>
+
+    <script src="../../../libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../../js/jquery-ui.min.js"></script>
+    <script>
+        $('#open-min-popup').click( function() {
+            event.preventDefault();
+            $('#overlay').fadeIn(400);
+            $('#popup').fadeIn(400);
+        });
+
+        $('#overlay').click(function () {
+            $('#overlay').fadeOut(500);
+            $('#popup').fadeOut(500);
+        });
+
+        $('#close-min-popup').click(function () {
+            $('#overlay').fadeOut(500);
+            $('#popup').fadeOut(500);
+        });
+
+        $(".popup__select").click( function() {
+            event.stopImmediatePropagation();
+        });
+    </script>
+</body>
+
+</html>

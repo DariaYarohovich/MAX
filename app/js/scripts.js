@@ -240,3 +240,26 @@ jQuery(document).ready(function( $ ) {
       $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
     }
   });
+
+  // min popup
+  $(function() {
+    $('#open-min-popup').click( function() {
+        event.preventDefault();
+        $('#overlay').fadeIn(400);
+        $('#popup').fadeIn(400);
+    });
+
+    $('#overlay').click(function () {
+        $('#overlay').fadeOut(500);
+        $('#popup').fadeOut(500);
+    });
+
+    $('#close-min-popup').click(function () {
+        $('#overlay').fadeOut(500);
+        $('#popup').fadeOut(500);
+    });
+
+    $(".popup__select").click( function() {
+        event.stopImmediatePropagation();
+    });
+  });

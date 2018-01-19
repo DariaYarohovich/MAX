@@ -1,1 +1,17 @@
-<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Artboard</title><path d="M0 0h6v6H0zm0 8h6v6H0zm8-8h6v6H8zm0 8h6v6H8z" fill="#E0E0E0" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#E0E0E0">
+            <g>
+                <rect x="0" y="0" width="6" height="6"></rect>
+                <rect x="0" y="8" width="6" height="6"></rect>
+                <rect x="8" y="0" width="6" height="6"></rect>
+                <rect x="8" y="8" width="6" height="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
