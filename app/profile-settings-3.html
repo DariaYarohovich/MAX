@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Profile Max</title>
+    <title>Profile Settings 3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -98,25 +98,8 @@
                             <div class="tabs-vertical__content">
                                <div class="view-profile">
                                    <div class="view-profile__data">
-                                       <p class="view-profile__data-title">Favorite Quote</p>
-                                       <p class="view-profile__data-desc">Life is good…</p>
+                                       <p class="view-profile__data-title">For checking settings state 3, please go to 'settings -> subscribtion info'</p>
                                    </div>
-                                   <div class="view-profile__data">
-                                        <p class="view-profile__data-title">Bio</p>
-                                        <p class="view-profile__data-desc">Defending against a result of stick attack directed towards the leg or the knee area. Like in the regular technique against the baseball swing from the side bursting forward, heel toe, you turn the body and burst forward strongly. If you manage to see that the attack is low, at the last moment you can lift your front hand, absorb the attack on the leg, thigh, and grab the hand holding the weapon, or the weapon itself. Counter attack as early as possible with the rear hand, and then create distance by moving away, or pushing the opponent backwards.</p>
-                                    </div>
-                                    <div class="view-profile__data">
-                                        <p class="view-profile__data-title">Occupation</p>
-                                        <p class="view-profile__data-desc">Trainer</p>
-                                    </div>
-                                    <div class="view-profile__data">
-                                        <p class="view-profile__data-title">Krav Maga Experience</p>
-                                        <p class="view-profile__data-desc">1 - 5 years</p>
-                                    </div>
-                                    <div class="view-profile__data">
-                                        <p class="view-profile__data-title">Martial Arts Experience</p>
-                                        <p class="view-profile__data-desc">None</p>
-                                    </div>    
                                </div>
                             </div>
                             <div class="tabs-vertical__content">
@@ -174,17 +157,13 @@
                             <div class="tabs-vertical__content">
                                 <div class="subscribtion-info">
                                     <div class="subscribtion-info__content">
-                                        <div class="textarea">
-                                            <label class="textarea__label textarea__label_small-black">Membership</label>
-                                            <textarea class="textarea__field" placeholder="Quarterly cus_BuA3TR1DdZoW2H" disabled></textarea>
-                                        </div>
                                         <div class="input">
-                                            <label class="input__label input__label_small-black">Subscription</label>
-                                            <input class="input__field" type="text" placeholder="Enabled" disabled>
-                                        </div>
-                                        <div class="input">
-                                            <label class="input__label input__label_small-black">Active</label>
-                                            <input class="input__field input__field_green" type="text" placeholder="Yes" disabled>
+                                            <label class="input__label input__label_small-black">Update your Credit Card information below</label>
+                                            <div class="card-info">
+                                                <input type="text" class="card-info__input card-info__input_number" placeholder="Credit Card Number">
+                                                <input type="text" class="card-info__input card-info__input_date" placeholder="MM / YY">
+                                                <input type="text" class="card-info__input card-info__input_cvc" placeholder="CVC" maxlength="3">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="subscribtion-info__nav">
@@ -266,9 +245,25 @@
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="libs/cleave/cleave.min.js"></script>
     <script>
         $( "#video-tabs" ).tabs({
             show: { effect: "fade", duration: 600 }
+        });
+
+        // masks for credit card 
+        var cleaveCardNumber = new Cleave('.card-info__input_number', {
+            creditCard: true
+        });
+
+        var cleaveCardDate = new Cleave('.card-info__input_date', {
+            date: true,
+            datePattern: ['m', 'y']
+        });
+
+        var cleaveCardCVC = new Cleave('.card-info__input_cvc', {
+            blocks: [3],
+            uppercase: true
         });
     </script>
     <script src="js/scripts.js"></script>

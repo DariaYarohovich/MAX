@@ -30,6 +30,17 @@
         &::placeholder {
             color: rgba($brownish-grey-two, 0.5);
         }
+
+        &:disabled {
+            background-color: #f7f7f7;
+        }
+
+        &_green {
+            &::placeholder {
+                color: #7ed321;
+                font-weight: bold;
+            }
+        }
     }
 
     &__warn {
@@ -54,6 +65,39 @@
 
     &_cvc {
         width: 30%;
+    }
+}
+
+.card-info {
+    display: flex;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    color: rgba($brownish-grey-two, 0.7);
+    font-size: 16px;
+
+    border-radius: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+
+    &__input {
+        border: none;
+
+        &_number {
+            box-sizing: border-box;
+            padding-left: 43px;
+            padding-right: 10px;
+            width: 74%;
+            background: url('../../../img/sales-pages/icons/credit-card.svg') no-repeat 13px center;
+            background-size: contain;
+        }
+
+        &_date {
+            width: 18%;
+        }
+
+        &_cvc {
+            width: 18%;
+        }
     }
 }
 

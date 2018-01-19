@@ -98,3 +98,57 @@
         text-transform: none;
     }
 }
+
+.subscribtion-info {
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+        margin-top: 30px;
+        width: 70%;
+    }
+
+    &__nav {
+        box-sizing: border-box;
+        width: 22%;
+    }
+
+    &__nav-list {
+        margin: 0;
+        padding: 0;
+        padding-left: 14px;
+        border-left: 1px solid rgba($black, 0.1);
+        list-style-type: none;
+    }
+
+    &__nav-link {
+        font-size: 14px;
+        line-height: 2.43;
+        color: $dark-grey;
+    }
+}
+
+.alert-profile {
+    margin-bottom: 32px;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    border: 1px solid $white-two;
+    border-radius: 3px;
+    @include AvenirNext-Regular(16px, 1);
+    color: $brownish-grey-two;
+
+    &_success {
+        color: $dark-grey;
+        background-color: #c9f797;
+        border: solid 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+@media (max-width: $md) {
+    .alert-profile {
+        font-size: 16px;
+    }
+}

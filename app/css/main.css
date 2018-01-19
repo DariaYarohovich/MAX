@@ -5590,6 +5590,56 @@ p {
   margin-top: 10px;
   text-transform: none; }
 
+.subscribtion-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .subscribtion-info__content {
+    margin-top: 30px;
+    width: 70%; }
+  .subscribtion-info__nav {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 22%; }
+  .subscribtion-info__nav-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    list-style-type: none; }
+  .subscribtion-info__nav-link {
+    font-size: 14px;
+    line-height: 2.43;
+    color: #25262a; }
+
+.alert-profile {
+  margin-bottom: 32px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 15px;
+  border: 1px solid #eaeaea;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "AvenirNext";
+  font-weight: 400;
+  color: #6a6a6a; }
+  .alert-profile_success {
+    color: #25262a;
+    background-color: #c9f797;
+    border: solid 1px rgba(0, 0, 0, 0.1); }
+
+@media (max-width: 1023px) {
+  .alert-profile {
+    font-size: 16px; } }
+
 .intrinsic-container {
   position: relative;
   height: 0;
@@ -7027,6 +7077,20 @@ p {
       color: rgba(106, 106, 106, 0.5); }
     .input__field::placeholder {
       color: rgba(106, 106, 106, 0.5); }
+    .input__field:disabled {
+      background-color: #f7f7f7; }
+    .input__field_green::-webkit-input-placeholder {
+      color: #7ed321;
+      font-weight: bold; }
+    .input__field_green::-moz-placeholder {
+      color: #7ed321;
+      font-weight: bold; }
+    .input__field_green:-ms-input-placeholder {
+      color: #7ed321;
+      font-weight: bold; }
+    .input__field_green::placeholder {
+      color: #7ed321;
+      font-weight: bold; }
   .input__warn {
     display: block;
     margin-top: 7px;
@@ -7050,6 +7114,33 @@ p {
     width: 65%; }
   .input_cvc {
     width: 30%; }
+
+.card-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  color: rgba(106, 106, 106, 0.7);
+  font-size: 16px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: solid 1px rgba(0, 0, 0, 0.1); }
+  .card-info__input {
+    border: none; }
+    .card-info__input_number {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding-left: 43px;
+      padding-right: 10px;
+      width: 74%;
+      background: url("../../../img/sales-pages/icons/credit-card.svg") no-repeat 13px center;
+      background-size: contain; }
+    .card-info__input_date {
+      width: 18%; }
+    .card-info__input_cvc {
+      width: 18%; }
 
 @media (max-width: 1023px) {
   .input__label {
@@ -8612,7 +8703,56 @@ p {
 .tabs-vertical__content p {
   padding-bottom: 2px; }
 
-.tabs-vertical__content p:last-of-type {
+.tabs-vertical__content p:last-child {
   padding-bottom: 0px; }
+
+.textarea {
+  margin-bottom: 20px; }
+  .textarea__label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1;
+    font-family: "AvenirNext";
+    font-weight: bold;
+    color: #6a6a6a;
+    text-transform: uppercase; }
+    .textarea__label_small {
+      text-transform: none; }
+    .textarea__label_small-black {
+      text-transform: none;
+      color: #000; }
+  .textarea__field {
+    width: 100%;
+    min-height: 64px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 12px 15px;
+    border: 1px solid #eaeaea;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    font-size: 18px;
+    line-height: 1;
+    font-family: "AvenirNext";
+    font-weight: 400;
+    color: #6a6a6a; }
+    .textarea__field::-webkit-input-placeholder {
+      color: rgba(106, 106, 106, 0.5); }
+    .textarea__field::-moz-placeholder {
+      color: rgba(106, 106, 106, 0.5); }
+    .textarea__field:-ms-input-placeholder {
+      color: rgba(106, 106, 106, 0.5); }
+    .textarea__field::placeholder {
+      color: rgba(106, 106, 106, 0.5); }
+    .textarea__field:disabled {
+      background-color: #f7f7f7; }
+
+@media (max-width: 1023px) {
+  .textarea__label {
+    font-size: 12px; }
+    .textarea__label_small {
+      font-size: 14px; }
+  .textarea__field {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=main.css.map */
