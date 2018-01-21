@@ -99,6 +99,10 @@
                                <div class="view-profile">
                                    <div class="view-profile__data">
                                        <p class="view-profile__data-title">For checking settings state 3, please go to 'settings -> subscribtion info'</p>
+
+                                       <p class="view-profile__data-title">For opening modal window 'Account Expired', please push the button below</p>
+
+                                       <button id="open-big-popup">Open modal</button>
                                    </div>
                                </div>
                             </div>
@@ -242,6 +246,65 @@
         </section>
     </div>
     <div class="navigation-mobile__overlay"></div>
+
+    <div class="popup__overlay popup__overlay_blur" id="overlay-blur"></div>
+    <section class="popup" id="popup-expired">
+        <div class="popup__with-caption">
+            <div class="popup__block popup__block_max">
+                <h3 class="popup__title popup__title_close-to-desc">Hi Mike! Your Account Has Expired</h3>
+                <p class="popup__desc">Re-activate your account by selecting the plan of your choice below and get instant access!</p>
+                <div class="popup__plan-wrapper">
+                    <div class="plan plan_popup">
+                        <div class="plan__switch">
+                            <p class="plan__switch-btn" id="switch-btn-mountly">Monthly</p>
+                            <p class="plan__switch-btn plan__switch-btn_active" id="switch-btn-annually">Annually</p>
+                        </div>
+                        <div class="plan__item plan__item_month">
+                            <p class="plan__item-name">Monthly plan</p>
+                            <div class="sum sum_centered">
+                                <span class="sum__currency sum__currency_30">$</span>
+                                <span class="sum__amount sum__amount_68">59</span>
+                                <span class="sum__period sum__period_22">/year</span>
+                            </div>
+                            <p class="plan__item-desc">Billed monthly</p>
+                            <button class="btn plan__item-btn">Renew account</button>
+                        </div>
+                        <div class="plan__item plan__item_large plan__item_year plan__item">
+                            <div class="discount-mark discount-mark_plan">
+                                <p class="discount-mark__block discount-mark__block_yellow">SAVE 60%</p>
+                                <p class="discount-mark__block">MOST POPULAR</p>
+                            </div>
+                            <p class="plan__item-name">Annual savings plan</p>
+                            <div class="sum sum_centered">
+                                <span class="sum__currency sum__currency_30">$</span>
+                                <span class="sum__amount sum__amount_68">25</span>
+                                <span class="sum__period sum__period_22">/year</span>
+                            </div>
+                            <p class="plan__item-desc">Billed monthly</p>
+                            <button class="btn plan__item-btn plan__item-btn_yellow">
+                                <span>
+                                    Renew account
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popup__icons-block">
+                        <p class="popup__icon popup__icon_1">Established in 2010</p>
+                        <p class="popup__icon popup__icon_2">98% Member Retention</p>
+                        <p class="popup__icon popup__icon_3">Members From 27 Coun</p>
+                        <p class="popup__icon popup__icon_4">Instant access to al</p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-caption" id="close-big-popup">
+                <p class="popup-caption__title">30 Day Money Back Guarantee</p>
+                <p class="popup-caption__desc">If you are not satisfied with my program for any reason you will get your money back in full - no questions asked. You have my personal garuantee. </p>
+                <p class="popup-caption__author">Eyal Yanilov,</p>
+                <p class="popup-caption__position">Founder of MaxKravMaga.com</p>
+                <img src="img/sales-pages/signature-white@2x.png" alt="signature" class="popup-caption__signature">
+            </div>
+        </div>
+    </section>
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>

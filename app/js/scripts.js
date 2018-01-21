@@ -241,8 +241,8 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-  // min popup
   $(function() {
+    // min popup
     $('#open-min-popup').click( function() {
         event.preventDefault();
         $('#overlay').fadeIn(400);
@@ -261,5 +261,37 @@ jQuery(document).ready(function( $ ) {
 
     $(".popup__select").click( function() {
         event.stopImmediatePropagation();
+    });
+
+    // big popup
+    $('#open-big-popup').click( function() {
+        event.preventDefault();
+        $('#overlay-blur').fadeIn(400);
+        $('#popup-expired').fadeIn(400);
+    });
+
+    $('#overlay-blur').click(function () {
+        $('#overlay-blur').fadeOut(500);
+        $('#popup-expired').fadeOut(500);
+    });
+
+    $('#close-big-popup').click(function () {
+        $('#overlay-blur').fadeOut(500);
+        $('#popup-expired').fadeOut(500);
+    });
+
+    //price switcher 
+    $('#switch-btn-mountly').click( function() {
+        $('#switch-btn-mountly').addClass('plan__switch-btn_active');
+        $('#switch-btn-annually').removeClass('plan__switch-btn_active');
+        $('.plan__item_year').fadeOut(0);
+        $('.plan__item_month').fadeIn(400);
+    });
+
+    $('#switch-btn-annually').click( function() {
+        $('#switch-btn-annually').addClass('plan__switch-btn_active');
+        $('#switch-btn-mountly ').removeClass('plan__switch-btn_active');
+        $('.plan__item_month').fadeOut(0);
+        $('.plan__item_year').fadeIn(400);
     });
   });

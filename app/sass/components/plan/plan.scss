@@ -71,7 +71,7 @@
         @include trans(0.2s);
 
         &_yellow {
-            padding-right: 60px;
+            padding-right: 40px;
             background-color: $sunflower-yellow;
             border-color: $sunflower-yellow;
             @include shadow;
@@ -94,6 +94,34 @@
             height: 85px;
             background-image: url('../img/sales-pages/7-months-free.svg');
             background-repeat: no-repeat;
+        }
+    }
+
+    // styles for plan block in popup
+    &_popup {
+        margin-bottom: 98px;
+
+        & .plan__item {
+            width: 280px;
+        }
+
+        & .plan__item_year {
+            &::after {
+                content: none;
+            }
+        }
+
+        & .discount-mark {
+            position: relative;
+            top: -26px;
+
+            &__block {
+                background: white;
+            }
+
+            &__block_yellow {
+                background: #ffd001;
+            }
         }
     }
 }
@@ -155,6 +183,7 @@
                 &_active {
                     background-color: $white;
                     color: $dark-grey;
+                    transition: all 0.4s ease;
                 }
             }
 
@@ -174,6 +203,18 @@
     
             &::after {
                 display: none;
+            }
+        }
+
+        &_popup {
+            & .plan__item {
+                width: 100%; 
+            }
+
+            & .plan__switch {
+                &::after {
+                    content: none;
+                }
             }
         }
     }

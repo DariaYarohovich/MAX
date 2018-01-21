@@ -1,18 +1,21 @@
 .popup {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__with-caption {
+        display: flex;
+        align-items: center;
+    }
     
     &__block {
-        display: none;
-        position: absolute;
-        z-index: 20;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
         display: flex;
         flex-flow: column;
         align-items: center;
         box-sizing: border-box;
-        width: 531px;
 
         border-radius: 20px;
         background-color: #ffffff;
@@ -20,6 +23,13 @@
 
         &_min {
             padding: 75px 96px;
+            width: 531px;
+        }
+
+        &_max {
+            padding: 50px;
+            padding-bottom: 30px;
+            width: 647px;
         }
     }
 
@@ -41,6 +51,11 @@
         &_dark {
             background-color: rgba($black, 0.72);
         }
+
+        &_blur {
+            background: rgba(0, 0, 0, 0.4);
+            filter: blur(10px);
+        }
     }
 
     &__title {
@@ -50,6 +65,10 @@
         text-align: center;
         font-size: 28px;
         font-weight: bold;
+
+        &_close-to-desc {
+            margin-bottom: 10px;
+        }
     }
 
     &__select-wrapper {
@@ -122,6 +141,107 @@
             cursor: pointer;
             box-shadow: rgba(115, 94, 0, 0.24) 10px 16px 40px 0;
             transform: scale(1.007);
+        }
+    }
+
+    &__icons-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        padding-top: 60px;
+        width: 18%;
+
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 40px auto;
+
+        &_1 {
+            background-image: url('../../../img/sales-pages/icons/shield-icon.svg');
+            background-size: 48px auto;
+        }
+
+        &_2 {
+            background-image: url('../../../img/sales-pages/icons/stars-icon.svg');
+            background-position: center 16px;
+            background-size: 69px auto;
+        }
+
+        &_3 {
+            background-image: url('../../../img/sales-pages/icons/globe-icon.svg');
+            background-size: 55px auto;
+        }
+
+        &_4 {
+            background-image: url('../../../img/sales-pages/icons/lightening-icon.svg');
+            background-size: 39px auto;
+        }
+    }
+}
+
+.popup-caption {
+    padding: 25px;
+    width: 248px;
+    color: #fff;
+    font-size: 16px;
+
+    &__title {
+        margin-bottom: 14px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__desc {
+        margin-bottom: 19px;
+    }
+
+    &__author {
+        font-weight: bold;
+    }
+
+    &__position {
+        margin-bottom: 14px;
+    }
+
+    &__signature {
+        width: 69.6px;
+        height: 57px;
+    }
+}
+
+@media(max-width: $md) {
+    .popup-caption {
+        display: none;
+    }
+}
+
+@media(max-width: $sm) {
+    .popup {
+        width: 95%;
+
+        &__block {
+            &_min {
+                padding: 25px 10px;
+                width: 100%;
+            }
+
+            &_max {
+                padding: 25px 10px;
+                width: 100%;
+            }
+        }
+
+        &__with-caption {
+            display: block;
+        }
+
+        &__title {
+            font-size: 22px;
         }
     }
 }
