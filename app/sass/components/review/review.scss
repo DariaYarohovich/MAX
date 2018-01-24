@@ -1,7 +1,21 @@
 .review {
+    position: relative;
+    padding-top: 60px;
     width: 80%;
     margin: 0 auto;
     color: $charcoal;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 360px;
+        height: 25px;
+        background: url('../../../img/sales-pages/section17-handwritten.svg') no-repeat center;
+        background-size: contain;
+    }
 
     &_pricing {
         margin-top: 90px;

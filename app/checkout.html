@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> 
 </head>
 
 <body>
@@ -20,6 +20,7 @@
             <img src="img/logos/logo.png" class="header__img">
         </a>
         <img src="img/logos/kmg-logo.png" alt="" class="header__right-logo">
+        <button class="header__mobile-menu">Mobile menu</button>
     </header>
     <div class="wrap">
         <section class="content content_common">
@@ -159,11 +160,39 @@
             </footer>
         </section>
     </div>
+    <div class="navigation-mobile">
+        <div class="navigation-mobile__header">
+            <img src="img/logos/logo.png" alt="" class="navigation-mobile__logo">
+            <button type="button" class="navigation-mobile__close">Close</button>
+        </div>
+        <section class="navigation">
+            <ul class="navigation__list navigation__list_first">
+                <li class="navigation__item navigation__item_active"><a href="#">Login</a></li>
+                <li class="navigation__item"><a href="#">Signup</a></li>
+                <li class="navigation__item"><a href="#">About</a></li>
+                <li class="navigation__item"><a href="#">Profile</a></li>
+            </ul>
+        </section>
+    </div>
+    <div class="navigation-mobile__overlay"></div>
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="libs/swiper/dist/js/swiper.min.js"></script>
     <script src="js/scripts.js"></script>
+
+    <script src="libs/dotdotdot/jquery.dotdotdot.js"></script>
+    <script>
+    //text truncate in reviews
+        jQuery(document).ready(function( $ ) {
+
+        if ($(document).width() < 768 ) {
+            $(".review__text").dotdotdot({
+                
+            });
+        }
+        });
+    </script>
 </body>
 
 </html>

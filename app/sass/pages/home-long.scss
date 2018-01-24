@@ -1,8 +1,10 @@
 .home-long-top {
     position: relative;
-    min-height: 700px;
+    min-height: 630px;
     padding: 40px 0;
     overflow: hidden;
+    background: url('../../img/sales-pages/section1-hero.jpg') no-repeat center;
+    background-size: cover;
 
     &__text-block {
         display: inline-block;
@@ -35,9 +37,30 @@
 
     &__img {
         position: absolute;
+        z-index: 2;
         top: 42px;
-        left: calc(50% + 100px); 
-        height: 600px;
+        left: calc(50% + 0px);
+        height: 685px;
+    }
+
+    &__bottom-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100px;
+        //     background: #fff;
+        //     transform: skewY(-4deg) translate(0, 0);
+        // }
     }
 
     &__img-mobile {
@@ -88,6 +111,7 @@
     padding-bottom: 75px;
 
     &__top {
+        position: relative;
         display: flex;
         justify-content: space-between;
         margin-bottom: 66px;
@@ -103,6 +127,8 @@
 
     &__photo {
         position: relative;
+        z-index: 2;
+        right: -53px;
         width: 643px;
         height: 398px;
         background: url('../../img/photos/home-long-stat__photo.png') no-repeat center;
@@ -147,6 +173,16 @@
         color: $gunmetal;
     }
 
+    &__yellow-line {
+        position: absolute;
+        z-index: 0;
+        bottom: 87px;
+        right: -135.5px;
+        width: 480px;
+        height: 80px;
+        background-image: linear-gradient(114deg, #ffc401, #ffd901);
+    }
+
     &__mobile-stat {
         display: none;
     }
@@ -159,12 +195,26 @@
 .who-is { 
     padding-top: 63px;
     padding-bottom: 70px;
-    
-    background: #ffd901; // temporary
+    background-image: linear-gradient(to left, #ffc401, #ffd901);
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__img-wrapper {
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 3px;
+            right: -609px;
+            width: 670px;
+            height: 75px;
+            background: url('../../img/sales-pages/section3-quote.svg') no-repeat center;
+            background-size: contain;
+        }
     }
 
     &__img {
@@ -172,6 +222,7 @@
         margin-right: 44.5px;
         width: 347px;
         height: 456px;
+        box-shadow: 20px 33px 45px 0 rgba(0, 0, 0, 0.46);
     }
 
     &__title {
@@ -220,6 +271,12 @@
                 right: 0;
             }
         }
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: -40px;
+        right: 20px;
     }
 
     &__img {
@@ -325,9 +382,8 @@
 }
 
 .videos-line {
-    padding-top: 72px;
     padding-bottom: 17px;
-    background: url('../../img/videos-line__img.png') no-repeat center calc(100% - 200px);
+    background: url('../../img/sales-pages/section8-thumbnails.jpg') no-repeat center calc(100% - 200px);
     background-size: contain;
 
     &__wrapper {
@@ -473,11 +529,10 @@
     }
 
     &__img {
-        width: 1027px;
-        height: 633px;
-        margin-bottom: -20px;
-        margin-right: -130px;
-        margin-left: -130px;
+        width: 1127px;
+        margin-bottom: -135px;
+        margin-right: -188px;
+        margin-left: -188px;
     }
 
     &__desc {
@@ -620,7 +675,7 @@
         font-size: 12px;
         text-transform: uppercase;
         font-weight: bold;
-        line-height: 2.33;
+        line-height: 1.7;
         color: #e0e0e0;
 
         background-repeat: no-repeat;
@@ -850,6 +905,7 @@
     &__yellow-box-text {
         margin-bottom: 22px;
         width: 65%;
+        font-size: 22px;
         text-align: center;
         color: $charcoal;
 
@@ -1001,9 +1057,23 @@
     }
 
     &__bg-receiver-text {
+        position: relative;
         font-size: 28px;
         line-height: 1.35;
         color: $dark-grey;
+
+        &_arrow {
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -23px;
+                right: calc(50% + 87px);
+                width: 48px;
+                height: 55px;
+                background: url('../../img/sales-pages/section15-arrow.svg') no-repeat center;
+                background-size: contain;
+            }
+        }
     }
 
     &__colorful { 
@@ -1048,7 +1118,7 @@
             color: #fff;
 
             & b {
-                border-bottom: 1px solid $sunflower-yellow;
+                border-bottom: 2px solid $sunflower-yellow;
             }
         }
 
@@ -1072,7 +1142,7 @@
         #{$this}__bg {
             padding-top: 100px;
             background-image: url('../../img/sales-pages/devices-and-boxes/carjacking-set@2x.png');
-            background-position: calc(50% - 125px) 14px
+            background-position: calc(50% - 165px) 14px
         }
 
         #{$this}__top {
@@ -1265,13 +1335,13 @@
     color: #fff;
 
     &__gun-block {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
     }
 
     &__gun-img-wrapper {
-        width: 48%;
+        width: 52%;
     }
 
     &__gun-img {
@@ -1326,7 +1396,7 @@
 
     &__marked {
         font-weight: bold;
-        border-bottom: 1px solid $sunflower-yellow;
+        border-bottom: 2px solid $sunflower-yellow;
     }
 }
 
@@ -1399,15 +1469,27 @@
         }
 
         &__photo {
-            margin-right: -25px;
-            width: 570px;
+            margin-right: 0;
+            width: 540px;
             height: 353px;
+            right: -39px;
+        }
+
+        &__yellow-line {
+            bottom: 90px;
+            right: -5vw;
         }
     }
 
     .who-is {
         padding-top: 60px;
         padding-bottom: 90px;
+
+        &__img-wrapper {
+            &::after {
+                bottom: -57px;
+            }
+        }
 
         &__img {
             margin-right: 24px;
@@ -1554,7 +1636,7 @@
             width: 690px;
     
             &_second {
-                padding-top: 50px;
+                padding-top: 100px;
             }
         }
     
@@ -1730,7 +1812,7 @@
     
         &__bg {
             background-size: 900px;
-            background-position: calc(50% - 87px) 242px;
+            background-position: calc(50% - 87px) 259px;
         }
 
         &__title {
@@ -1766,6 +1848,12 @@
     
         &__bg-receiver-text {
             font-size: 22px;
+
+            &_arrow {
+                &::after {
+                    content: none;
+                }
+            }
         }
 
         &__photo-line {
@@ -1794,7 +1882,7 @@
 
             #{$this}__bg {
                 padding-top: 80px;
-                background-size: 850px;
+                background-size:769px;
                 background-position: calc(50% - 80px) 0px;
             }
     
@@ -1826,7 +1914,7 @@
             margin-bottom: 60px;
     
             #{$this}__bg {
-                background-position: calc(50% + 155px) 138px;
+                background-position: calc(50% + 155px) 192px;
             }
     
             #{$this}__top {
@@ -2014,25 +2102,37 @@
         }
 
         &__title {
-            width: 276px;
+            width: 295px;
             margin-top: 19px;
         }
 
         &__photo {
             width: 450px;
             height: 280px;
+            right: -30px;
 
             &::after {
                 content: none;
             }
         }
 
+        &__yellow-line {
+            width: 250px;
+        }
 
     }
 
     .who-is {
         padding-top: 38px;
         padding-bottom: 127px;
+
+        &__img-wrapper {
+            &::after {
+                right: -353px;
+                width: 400px;
+                height: 50px;
+            }
+        }
 
         &__img {
             margin-right: 44px;
@@ -2610,6 +2710,10 @@
             display: none;
         }
 
+        &__yellow-line {
+            display: none;
+        }
+
         &__mobile-stat {
             display: flex;
             flex-grow: 1;
@@ -2665,6 +2769,15 @@
         &__wrapper {
             flex-flow: column;
             align-items: center;
+        }
+
+        &__img-wrapper {
+            &::after {
+                right: -8px;
+                bottom: -169px;
+                width: 280px;
+                height: 50px;
+            }
         }
 
         &__img {

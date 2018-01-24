@@ -75,6 +75,9 @@
     &__btn-top {
         display: inline-block;
         padding: 19px 39px;
+        text-transform: none;
+        font-weight: 600;
+        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
     }
 
     &__img {

@@ -14,6 +14,7 @@
         border-radius: 4px;
         background-color: rgba($sunflower-yellow, 0.1);
         border: 1px solid $sunflower-yellow;
+        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.06);
     }
 
     &__content {
@@ -45,6 +46,7 @@
 
         img {
             width: 100%;
+            height: calc(100% + 10px);
             margin-top: -10px;
             margin-left: -10px;
         }
@@ -102,7 +104,7 @@
 
     &__marked {
         font-weight: bold;
-        border-bottom: 1px solid $sunflower-yellow;
+        border-bottom: 2px solid $sunflower-yellow;
     }
 }
 

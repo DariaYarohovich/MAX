@@ -211,17 +211,6 @@ $(document).ready(function() {
     });
 });
 
-//text truncate
-jQuery(document).ready(function( $ ) {
-
-    if ($(document).width() < 768 ) {
-        $(".review__text").dotdotdot({
-            
-        });
-    }
- 
- });
-
  // tabs vertical 
  $(function() {
     $('.tabs-vertical nav a').on('click', function() {
