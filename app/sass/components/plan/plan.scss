@@ -31,6 +31,8 @@
         }
 
         &-btn {
+            padding: 18px;
+            
             span {
                 position: relative;
 
@@ -66,7 +68,7 @@
         min-width: 75%;
         background-color: transparent;
         border: 1px solid $white-five;
-        font-size: 18px;
+        font-size: 20px;
         text-transform: none;
         @include trans(0.2s);
 
@@ -94,6 +96,14 @@
             height: 85px;
             background-image: url('../img/sales-pages/7-months-free.svg');
             background-repeat: no-repeat;
+        }
+
+        &-bottom {
+            &::after {
+                background-image: url('../img/sales-pages/pricing-quote.svg');
+                right: 200px;
+                bottom: -110px;
+            }
         }
     }
 
@@ -129,16 +139,32 @@
 @media (max-width: $md) {
     .plan {
         margin-bottom: 50px;
+
+        &_margin-bottom-long {
+            margin-bottom: 110px;
+        }
     
         &__item {
            width: auto;
            flex-grow: 1;
+
+           &-btn {
+            padding: 15px;
+           }
         }
 
         &__item_year {
     
             &::after {
                 right: 0;
+            }
+
+            &-bottom {
+                &::after {
+                    bottom: -85px;
+                    right: 20px;
+                    transform: rotate(-10deg);
+                }
             }
         }
     }
@@ -157,15 +183,21 @@
         &__item {
            width: 100%;
            margin: 0;
+           padding: 23px 29px;
+           padding-top: 35px;
 
            &_large {
-               padding-top: 35px;
-               background-color: rgba($sunflower-yellow, 0.1);
+               background-color: rgba($sunflower-yellow, 0.12);
            }
 
            &_month {
                display: none;
            }
+        }
+
+        &__item-desc {
+            margin-top: 18px;
+            margin-bottom: 23px;
         }
 
         &__switch {

@@ -181,7 +181,7 @@
         width: 100%;
 
         &::before {
-            width: 100%;
+            width: 280px;
         }
 
         &_pricing {
@@ -207,10 +207,6 @@
             box-sizing: border-box;
             height: 120px;
             overflow: hidden;
-        }
-
-        &__author {
-            justify-content: flex-start;
         }
 
         &__author-img {

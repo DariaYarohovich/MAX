@@ -270,17 +270,21 @@ $(document).ready(function() {
     });
 
     //price switcher 
-    $('#switch-btn-mountly').click( function() {
-        $('#switch-btn-mountly').addClass('plan__switch-btn_active');
-        $('#switch-btn-annually').removeClass('plan__switch-btn_active');
-        $('.plan__item_year').fadeOut(0);
-        $('.plan__item_month').fadeIn(400);
+    $('.switch-btn-mountly').click( function($event) {
+        var planWrap = $($event.target).closest('.plan');
+
+        $(planWrap).find('.switch-btn-mountly').addClass('plan__switch-btn_active');
+        $(planWrap).find('.switch-btn-annually').removeClass('plan__switch-btn_active');
+        $(planWrap).find('.plan__item_year').fadeOut(0);
+        $(planWrap).find('.plan__item_month').fadeIn(400);
     });
 
-    $('#switch-btn-annually').click( function() {
-        $('#switch-btn-annually').addClass('plan__switch-btn_active');
-        $('#switch-btn-mountly ').removeClass('plan__switch-btn_active');
-        $('.plan__item_month').fadeOut(0);
-        $('.plan__item_year').fadeIn(400);
+    $('.switch-btn-annually').click( function($event) {
+        var planWrap = $($event.target).closest('.plan');
+
+        $(planWrap).find('.switch-btn-annually').addClass('plan__switch-btn_active');
+        $(planWrap).find('.switch-btn-mountly ').removeClass('plan__switch-btn_active');
+        $(planWrap).find('.plan__item_month').fadeOut(0);
+        $(planWrap).find('.plan__item_year').fadeIn(400);
     });
   });

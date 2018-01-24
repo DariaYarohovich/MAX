@@ -1,6 +1,7 @@
 .checkout {
     display: flex;
     justify-content: space-between;
+    padding-top: 65px;
 
     &__form-wrap {
         width: 63%;
@@ -55,6 +56,11 @@
         border-top: 1px solid $white-two;
     }
 
+    &__setting-desc {
+        display: flex;
+        align-items: center;
+    }
+
     &__setting-name {
         @include AvenirNext-Regular(18px);
         color: $dark;
@@ -100,15 +106,21 @@
     }
 
     &__payment-systems {
+        width: 160px;
         margin-top: 20px;
+        margin-left: auto;
         text-align: end;
+
+        img {
+            width: 100%;
+        }
     }
 }
 
 // RIGHT PART
 .block-border {
     margin-bottom: 35px;
-    padding: 35px;
+    padding: 35px 30px;
     border-radius: 4px;
     @include shadowBlock;
 
@@ -123,6 +135,10 @@
 
 //ACCESS
 .checkout {
+    &__access {
+        overflow: hidden;
+    }
+
     &__access-title {
         @include AvenirNext-Bold(18px, 1.2);
         color: $dark-grey;
@@ -138,27 +154,30 @@
     &__access-adv-item {
         display: flex;
         align-items: center;
-        width: 48%;
+        width: 49%;
         margin-bottom: 20px;
-        padding-left: 60px;
+        padding-left: 65px;
         box-sizing: border-box;
         background-image: url('../../img/icons/group-69.png');
         background-repeat: no-repeat;
-        background-position: 0 center;
-        background-size: 53px auto;
+        background-position: 3px center;
+        background-size: 56px 68px;
 
         &_2 {
             background-image: url('../../img/sales-pages/icons/globe-icon.svg');
+            background-size: 56px 61px;
         }
 
         &_3 {
             background-image: url('../../img/sales-pages/icons/stars-icon.svg');
             background-size: 60px auto;
+            background-position: 0 center;
         }
 
         &_4 {
             background-image: url('../../img/sales-pages/icons/lightening-icon.svg');
-            background-size: auto 85%;
+            background-size: 32px 52px;
+            background-position: 16px center;
         }
 
         &:last-child,
@@ -175,8 +194,8 @@
     }
 
     &__access-img {
-        margin-left: -35px;
-        margin-right: -25px;
+        margin-left: -65px;
+        margin-right: -89px;
 
         img {
             width: 100%;
@@ -245,13 +264,20 @@
                 top: 3px;
             }
         }
+
+        &__access-img {
+            margin-right: -76px;
+        }
     }
 
     // RIGHT PART
+    .block-border {
+        padding: 25px;
+    }
     .checkout {
         &__access-adv-item {
             width: 100%;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             padding-left: 70px;
             background-size: 49px auto;
 
@@ -264,7 +290,7 @@
             }
             
             &:nth-last-child(2) {
-                margin-bottom: 15px;
+                margin-bottom: 5px;
             }
 
             span {
@@ -298,6 +324,7 @@
 @media (max-width: $md) {
     .checkout {
         flex-wrap: wrap;
+        padding-top: 55px;
 
         h1 {
             text-align: center;
@@ -335,6 +362,7 @@
 
 @media (max-width: $sm) {
     .checkout {
+        padding-top: 30px;
 
         h1 {
             text-align: left;

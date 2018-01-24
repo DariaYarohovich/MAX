@@ -43,11 +43,14 @@
         align-self: flex-end;
 
         &_22 {
+            margin-left: -5px;
             font-size: 22px;
         }
     }
 
     &__amount {
+        line-height: 0.9;
+
         &_yellow {
             @include AvenirNext-Bold(34px);
             color: $sunflower-yellow;
@@ -55,6 +58,7 @@
 
         &_68 {
             font-size: 69px;
+            line-height: 0.9;
         }
     }
 }
