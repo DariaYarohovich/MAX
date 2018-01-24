@@ -180,6 +180,10 @@
     .review {
         width: 100%;
 
+        &::before {
+            width: 280px;
+        }
+
         &_pricing {
             margin-top: 60px;
             margin-bottom: 25px;
@@ -203,10 +207,6 @@
             box-sizing: border-box;
             height: 120px;
             overflow: hidden;
-        }
-
-        &__author {
-            justify-content: flex-start;
         }
 
         &__author-img {
