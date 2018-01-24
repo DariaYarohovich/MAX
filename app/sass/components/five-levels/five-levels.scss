@@ -178,6 +178,8 @@
         position: relative;
         z-index: -1;
         margin-bottom: -160px;
+        border-bottom: solid 5px $sunflower-yellow;
+        box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
 
         &__content {
             padding-bottom: 0;

@@ -180,6 +180,10 @@
     .review {
         width: 100%;
 
+        &::before {
+            width: 100%;
+        }
+
         &_pricing {
             margin-top: 60px;
             margin-bottom: 25px;

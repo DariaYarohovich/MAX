@@ -149,6 +149,10 @@
         flex-wrap: wrap;
         margin-bottom: 20px;
         padding-bottom: 0;
+
+        &_margin-bottom-long {
+            margin-bottom: 35px;
+        }
     
         &__item {
            width: 100%;

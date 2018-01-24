@@ -2010,6 +2010,7 @@
         padding: 0;
         padding-top: 37px;
         text-align: center;
+        background-position: center -32px;
 
         &__text-block {
             width: 100%;
@@ -2022,9 +2023,9 @@
         }
 
         &__desc {
-            width: 468px;
+            width: 420px;
             margin: auto;
-            margin-bottom: 452px;
+            margin-bottom: 420px;
         }
 
         &__img {
@@ -2040,6 +2041,10 @@
             height: 65px;
             padding: 0;
             line-height: 65px;
+        }
+
+        &__bottom-line {
+            display: none;
         }
     }
 
@@ -2109,7 +2114,7 @@
         &__photo {
             width: 450px;
             height: 280px;
-            right: -30px;
+            right: 0;
 
             &::after {
                 content: none;
@@ -2118,13 +2123,14 @@
 
         &__yellow-line {
             width: 250px;
+            right: -3.5vw;
         }
 
     }
 
     .who-is {
         padding-top: 38px;
-        padding-bottom: 127px;
+        padding-bottom: 110px;
 
         &__img-wrapper {
             &::after {
@@ -2143,11 +2149,15 @@
         &__title {
             margin-bottom: 18px;
         }
+
+        &__desc {
+            font-size: 16px;
+        }
     }
 
     .more-things {
         padding-top: 53px;
-        padding-bottom: 25px;
+        padding-bottom: 44px;
 
         &__text {
             margin-right: 23px;
@@ -2156,6 +2166,11 @@
         &__img {
             width: 224px;
             height: 323px;
+        }
+
+        &__arrow {
+            bottom: -16px;
+            right: 6px;
         }
 
         &__title {
@@ -2284,7 +2299,7 @@
         &__wrapper {
  
             &_second {
-                padding-top: 50px;
+                padding-top: 65px;
                 width: 483px;
             }
         }
@@ -2309,9 +2324,9 @@
         }
     
         &__img {
-            margin: 0;
-            margin-bottom: -30px;
-            width: 100%;
+            margin: 0 -25px;
+            margin-bottom: -97px;
+            width: calc(100% + 50px);
             height: auto;
         }
     
@@ -2458,6 +2473,10 @@
     
         &__yellow-box-text {
             width: 95%;
+        }
+
+        &__device-img-wrapper {
+            bottom: 0;
         }
     }
 
@@ -2641,8 +2660,8 @@
 
         &__img-mobile {
             display: block;
-            margin: 0 auto 20px;
-            width: 90%;
+            margin: 0 auto 10px;
+            width: 100%;
         }
 
         &__btn {
@@ -2668,7 +2687,12 @@
 
     .home-long-stat {
         padding-bottom: 0;
-        background: rgba(0, 0, 0, 0.64);
+        background: url('../../img/sales-pages/section2-background-mobile.jpg') no-repeat center;
+        background-size: cover;
+
+        &__bg {
+            background: rgba(0, 0, 0, 0.64);
+        }
 
         &__title {
             padding: 0;
@@ -2756,8 +2780,8 @@
         &__mobile-yellow {
             display: block;
             height: 53px;
-            background: $sunflower-yellow url('../../img/arrows/and-growing-weekly.svg') no-repeat center -4px;
-            background-size: 180px 45px;
+            background: $sunflower-yellow url('../../img/sales-pages/section2-handwritten-mobile.svg') no-repeat center -4px;
+            background-size: 180px 57px;
         }
     }
 
@@ -2767,16 +2791,18 @@
         background: #fff;
 
         &__wrapper {
-            flex-flow: column;
+            flex-flow: column-reverse;
             align-items: center;
         }
 
         &__img-wrapper {
             &::after {
-                right: -8px;
-                bottom: -169px;
+                right: 50%;
+                bottom: -94px;
                 width: 280px;
-                height: 50px;
+                height: 80px;
+                background: url('../../img/sales-pages/section3-handwritten-mobile.svg') no-repeat center;
+                transform: translate(50%, 0);
             }
         }
 
@@ -2837,6 +2863,13 @@
             height: auto;
             padding: 0;
             margin-top: -20px;
+        }
+
+        &__arrow {
+            bottom: -60px;
+            right: 50%;
+            transform: translate(50%, 0);
+            width: 60%;
         }
 
         &__text {
@@ -2931,7 +2964,7 @@
     }
 
     .videos-line {
-        padding: 37px 0;
+        padding: 0;
         background: none;
 
         &__wrapper {
@@ -3027,6 +3060,12 @@
             margin-bottom: 29px;
             font-size: 16px;
         }
+
+        &__img {
+            margin: 0;
+            margin-bottom: -48px;
+            width: 100%;
+        }
     
         &__desc {
            display: none;
@@ -3077,7 +3116,7 @@
         }
     
         &__img-area {
-            width: 200px;
+            width: 70%;
         }
     
         &__img {
@@ -3122,15 +3161,38 @@
         &__wrapper {
             display: flex;
             justify-content: space-around;
+            width: 280px;
+            margin: 0 auto;
         }
 
         &__level {
+            position: relative;
             display: flex;
             flex-flow: column;
             align-items: center;
             justify-content: flex-end;
             width: 20%;
             border-right: none;
+
+            &:nth-child(1) {
+                z-index: 5;
+            }
+
+            &:nth-child(2) {
+                z-index: 4;
+            }
+
+            &:nth-child(3) {
+                z-index: 3;
+            }
+
+            &:nth-child(4) {
+                z-index: 2;
+            }
+
+            &:nth-child(5) {
+                z-index: 1;
+            }
         }
 
         &__level-title {
@@ -3322,6 +3384,10 @@
             width: 92%;
             font-size: 24px;
         }
+
+        &__bg-receiver {
+            min-height: 32px;
+        }
     
         &__bg-receiver-content {
             width: 100%;
@@ -3487,7 +3553,7 @@
 
     .bonus-inner-fourth {
         padding-top: 25px;
-        padding-bottom: 30px;
+        padding-bottom: 5px;
 
         &__gun-block {
             flex-flow: column-reverse;
@@ -3510,6 +3576,7 @@
     .home-long-mobile {
         &__wrapper {
             display: flex;
+            padding-top: 50px;
         }
 
         &__btn {
@@ -3520,7 +3587,12 @@
             padding-bottom: 21px;
             box-sizing: border-box;
             width: 90%;
+
+            font-weight: 600;
             text-align: center;
+
+            text-transform: none;
+            box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
         }
     }
 }
