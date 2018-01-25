@@ -2,6 +2,7 @@
     position: relative;
     min-height: 630px;
     padding: 40px 0;
+    padding-bottom: 50px;
     overflow: hidden;
     background: url('../../img/sales-pages/section1-hero.jpg') no-repeat center;
     background-size: cover;
@@ -23,6 +24,8 @@
     &__btn {
         text-transform: none;
         font-size: 20px;
+        box-shadow: 0 12px 24px 0 rgba(225, 183, 0, 0.34);
+        font-weight: 600;
     
         &::after {
             right: 13px;
@@ -45,22 +48,13 @@
 
     &__bottom-line {
         position: absolute;
+        z-index: 1;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 100px;
+        height: 251px;
         background: #fff;
-        
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     width: 100%;
-        //     height: 100px;
-        //     background: #fff;
-        //     transform: skewY(-4deg) translate(0, 0);
-        // }
+        transform: skewY(-3deg) translate(0, 40%);
     }
 
     &__img-mobile {
@@ -69,7 +63,7 @@
 }
 
 .home-long-quote {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 60px;
 
     &__wrapper {
@@ -275,7 +269,7 @@
 
     &__arrow {
         position: absolute;
-        bottom: -40px;
+        bottom: -60px;
         right: 20px;
     }
 
@@ -891,6 +885,37 @@
             height: 1px;
             background-color: $sunflower-yellow;
         }
+
+        &_no-lines {
+            &::after {
+                content: none;
+            }
+        }
+
+        & span {
+            display: inline-block;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 24.5px;
+                left: -47px;
+                width: 60px;
+                height: 1px;
+                background-color: $sunflower-yellow;
+                transform: rotate(-28deg);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 38px;
+                left: -223px;
+                width: 180px;
+                height: 1px;
+                background-color: $sunflower-yellow;
+            }
+        }
     }
 
     &__yellow-box {
@@ -1408,7 +1433,7 @@
 
 @media (max-width: $lg) {
     .home-long-top {
-        min-height: 500px;
+        min-height: 380px;
         padding-top: 80px;
         padding-bottom: 20px;
 
@@ -1432,6 +1457,10 @@
         &__img {
             left: calc(50% + 22px);
             height: 450px;
+        }
+
+        &__bottom-line {
+            height: 150px;
         }
     }
 
@@ -1506,6 +1535,10 @@
     .more-things {
         padding-top: 83px;
         padding-bottom: 90px;
+
+        &__arrow {
+            bottom: -40px;
+        }
 
         &__text {
             margin-right: 30.5px;
@@ -2169,8 +2202,9 @@
         }
 
         &__arrow {
-            bottom: -16px;
-            right: 6px;
+            bottom: 0px;
+            right: 37px;
+            width: 200px;
         }
 
         &__title {
@@ -3343,11 +3377,12 @@
         &::after {
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: -4px;
             left: 0;
             width: 100%;
             height: 25px;
-            //here will be background picture 
+            background: url('../../img/sales-pages/pricing-bonuses-arrow.svg') no-repeat center;
+            background-size: contain;
         }        
     }
 

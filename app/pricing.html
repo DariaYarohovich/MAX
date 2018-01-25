@@ -13,8 +13,6 @@
 </head>
 
 <body>
-
-
     <header class="header header_lock">
         <a href="/" class="header__img-block">
             <img src="img/logos/logo.png" class="header__img">
@@ -28,7 +26,7 @@
         <section class="content content_common">
 
             <div class="get-access">
-                <div class="get-access__img">
+                <div class="get-access__img get-access__img_top">
                     <picture>
                         <source media="(max-width: 1023px)" srcset="img/sales-pages/devices-and-boxes/digital-access-hero.png">
                         <img src="img/sales-pages/devices-and-boxes/complete-set@2x.jpg" alt="Complete set">
@@ -389,8 +387,6 @@
                             then go and teach their students. For students here in the UK, MaxKravMaga has become a widely
                             popular training tool which they use to prepare for level grading as well as to sharpen up on
                             techniques on a day to day basis.”
-                            <a class='more' href='#'>+ Show more</a>
-                            <a class='less' href='#'>- Show less</a>
                         </p>
                         <div class="review__author">
                             <img class="review__author-img" src="img/sales-pages/testimonials-photo.jpg">
@@ -539,8 +535,8 @@
     <section class="footer-links">
         <div class="footer-links__navigation-area">
             <div class="footer-links__column">
-                <a href="#" class="footer-links__main-link">About</a>
-                <div class="footer-links__aux-links-area">
+                <a href="#accordion-1-footer" class="footer-links__main-link">About</a>
+                <div id="accordion-1-footer" class="footer-links__aux-links-area">
                     <a href="#" class="footer-links__aux-link">Link 1</a>
                     <a href="#" class="footer-links__aux-link">Link 2</a>
                     <a href="#" class="footer-links__aux-link">Link 3</a>
@@ -548,8 +544,8 @@
                 </div>
             </div>
             <div class="footer-links__column">
-                <a href="#" class="footer-links__main-link">Product</a>
-                <div class="footer-links__aux-links-area">
+                <a href="#accordion-2-footer" class="footer-links__main-link">Product</a>
+                <div id="accordion-2-footer" class="footer-links__aux-links-area">
                     <a href="#" class="footer-links__aux-link">Link 1</a>
                     <a href="#" class="footer-links__aux-link">Link 2</a>
                     <a href="#" class="footer-links__aux-link">Link 3</a>
@@ -557,8 +553,8 @@
                 </div>
             </div>
             <div class="footer-links__column">
-                <a href="#" class="footer-links__main-link">Latest from Eyal</a>
-                <div class="footer-links__aux-links-area">
+                <a href="#accordion-3-footer" class="footer-links__main-link">Latest from Eyal</a>
+                <div id="accordion-3-footer" class="footer-links__aux-links-area">
                     <a href="#" class="footer-links__aux-link">Link 1</a>
                     <a href="#" class="footer-links__aux-link">Link 2</a>
                     <a href="#" class="footer-links__aux-link">Link 3</a>
@@ -566,8 +562,8 @@
                 </div>
             </div>
             <div class="footer-links__column">
-                <a href="#" class="footer-links__main-link">Support</a>
-                <div class="footer-links__aux-links-area">
+                <a href="#accordion-4-footer" class="footer-links__main-link">Support</a>
+                <div id="accordion-4-footer" class="footer-links__aux-links-area">
                     <a href="#" class="footer-links__aux-link">Link 1</a>
                     <a href="#" class="footer-links__aux-link">Link 2</a>
                     <a href="#" class="footer-links__aux-link">Link 3</a>
@@ -615,6 +611,21 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="libs/swiper/dist/js/swiper.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="libs/readmore/readmore.min.js"></script>
+    <script>
+        $(window).on("resize", function () {
+            if ($(window).width() < 767) {
+                $('.review__text').readmore({
+                    speed: 75,
+                    collapsedHeight: 125,
+                    lessLink: '<a class="review__link" href="#">- Read less</a>',
+                    moreLink: '<a class="review__link" href="#">+ Read more</a>'
+                });
+            } else {
+                $('.review__text').readmore('destroy');
+            }
+        }).resize();
+    </script> 
 </body>
 
 </html>

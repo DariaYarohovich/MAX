@@ -161,7 +161,6 @@
   .footer-links {
     padding-top: 13px;
     padding-bottom: 6px;
-    display: none;
 
     &__offer {
       display: none;
@@ -169,6 +168,7 @@
 
     &__navigation-area {
       flex-direction: column;
+      padding-top: 0;
     }
 
     &__column {

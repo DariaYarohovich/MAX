@@ -5,10 +5,10 @@
 
     &__header {
         height: 190px;
-        background-image: url('../img/sales-pages/eyal-serious-bg.jpg');
-        background-repeat: no-repeat;
-        background-position: 1px 20%;
-        background-size: cover;
+        background: 
+        url('../img/sales-pages/forums-title.png') no-repeat 24.5% center,
+        url('../img/sales-pages/eyal-serious-bg.jpg') no-repeat left 20%;
+        background-size: 342px auto, cover;
     }
 
     &__row {

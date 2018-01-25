@@ -34,10 +34,10 @@
 
     &__text {
         margin-bottom: 20px;
-        @include AvenirNext-Regular(18px, 1.2);
+        @include AvenirNext-Regular(18px, 1.44);
 
         &_bold {
-            @include AvenirNext-Bold(18px, 1.2);
+            @include AvenirNext-Bold(18px, 1.44);
         }
     }
 
@@ -131,6 +131,11 @@
                 text-align: right;
             }
         }
+
+        &__text {
+            font-size: 16px;
+            line-height: 1.35;
+        }
     }
 }
 
@@ -166,6 +171,10 @@
         &__text {
             font-size: 16px;
             line-height: 1.35;
+
+            &_tablet-hidden {
+                display: none;
+            }
         }
     }
 

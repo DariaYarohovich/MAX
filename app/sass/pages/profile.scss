@@ -43,17 +43,18 @@
         background-repeat: no-repeat;
 
         &_rank {
-            background-image: url('../../img/icons/play-black.svg');
-            background-size: 20px 17px;
+            background-image: url('../../img/sales-pages/icons/rank.png');
+            background-size: 17px 23px;
         }
 
         &_place {
-            background-image: url('../../img/icons/play-black.svg');
-            background-size: 20px 17px;
+            background-image: url('../../img/sales-pages/icons/pin.png');
+            background-size: 11px 17px;
+            background-position: 3px;
         }
 
         &_bd {
-            background-image: url('../../img/icons/play-black.svg');
+            background-image: url('../../img/sales-pages/icons/birthday.png');
             background-size: 20px 17px;
         }
     }

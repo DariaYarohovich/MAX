@@ -53,8 +53,8 @@
         }
 
         &_blur {
-            background: rgba(0, 0, 0, 0.4);
-            filter: blur(10px);
+            background: url('../../../img/sales-pages/background-blurred.jpg') no-repeat center;
+            background-size: cover;
         }
     }
 

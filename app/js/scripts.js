@@ -288,3 +288,29 @@ $(document).ready(function() {
         $(planWrap).find('.plan__item_year').fadeIn(400);
     });
   });
+
+  // footer accordion 
+
+$(document).ready(function() {
+    function close_accordion_section() {
+      $('.footer-links__column .footer-links__main-link').removeClass('active');
+      $('.footer-links__column .footer-links__aux-links-area').slideUp(300).removeClass('open');
+    }
+  
+    $('.footer-links__main-link').click(function(e) {
+      // Grab current anchor value
+      var currentAttrValue = $(this).attr('href');
+  
+      if ($(e.target).is('.active')) {
+        close_accordion_section();
+      } else {
+        close_accordion_section();
+  
+        // Add active class to section title
+        $(this).addClass('active');
+        // Open up the hidden content panel
+        $('.footer-links__column ' + currentAttrValue).slideDown(300).addClass('open');
+      }
+      e.preventDefault();
+    });
+});

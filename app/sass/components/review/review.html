@@ -74,6 +74,22 @@
 
     </div>
 
+<script src="../../../libs/jquery/dist/jquery.min.js"></script>    
+<script src="../../../libs/readmore/readmore.min.js"></script>
+<script>
+    $(window).on("resize", function () {
+        if ($(window).width() < 767) {
+            $('.review__text').readmore({
+                speed: 75,
+                collapsedHeight: 125,
+                lessLink: '<a class="review__link" href="#">- Read less</a>',
+                moreLink: '<a class="review__link" href="#">+ Read more</a>'
+            });
+        } else {
+            $('.review__text').readmore('destroy');
+        }
+    }).resize();
+</script>    
 </body>
 
 </html>

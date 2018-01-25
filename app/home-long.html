@@ -822,13 +822,12 @@
                                 <img src="img/sales-pages/devices-and-boxes/technique-of-the-week-device@2x.png" alt="" class="phone__device-img">
                             </div>
                             <div class="phone__device-desc">
-                                <p class="phone__device-desc-phrase">New content added on a bi-weekly basis</p>
+                                <p class="phone__device-desc-phrase phone__device-desc-phrase_no-lines"><span>New content added on a bi-weekly basis</span></p>
                                 <p class="phone__device-desc-phrase">Technique breakdowns</p>
                                 <p class="phone__device-desc-phrase">Correction of common mistakes to techniques</p>
                                 <p class="phone__device-desc-phrase">Key points that are most overlooked</p>
-                                <p class="phone__device-desc-phrase">Rationale and reasoning behind many techniques that will help you get a better grasp and
-                                    understanding
-                                </p>
+                                <p class="phone__device-desc-phrase phone__device-desc-phrase_no-lines"><span>Rationale and reasoning behind many techniques that will help you get a better grasp and
+                                    understanding</span></p>
                                 <p class="phone__device-desc-phrase">Improvements to training methods</p>
                             </div>
                         </div>
@@ -1562,18 +1561,21 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="libs/swiper/dist/js/swiper.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="libs/dotdotdot/jquery.dotdotdot.js"></script>
+    <script src="libs/readmore/readmore.min.js"></script>
     <script>
-    //text truncate in reviews
-        jQuery(document).ready(function( $ ) {
-
-        if ($(document).width() < 768 ) {
-            $(".review__text").dotdotdot({
-                
-            });
-        }
-        });
-    </script>
+        $(window).on("resize", function () {
+            if ($(window).width() < 767) {
+                $('.review__text').readmore({
+                    speed: 75,
+                    collapsedHeight: 125,
+                    lessLink: '<a class="review__link" href="#">- Read less</a>',
+                    moreLink: '<a class="review__link" href="#">+ Read more</a>'
+                });
+            } else {
+                $('.review__text').readmore('destroy');
+            }
+        }).resize();
+    </script>    
 </body>
 
 </html>
