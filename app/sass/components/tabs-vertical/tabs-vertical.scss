@@ -10,12 +10,13 @@
     flex-wrap: wrap;
     flex-flow: column;
     align-items: stretch;
-    width: 186px;
+    width: 200px;
 }
 
 .tabs-vertical nav.tabs-vertical__navigation {
     margin-top: 175px;
     margin-bottom: 30px;
+    margin-right: 35px;
 }
 
 
@@ -30,7 +31,7 @@
     text-transform: uppercase;
     color: $dark-grey;
     cursor: pointer;
-
+    text-decoration: none;
     border-bottom: 1px solid rgba($black, 0.1);
 
     &:last-child {
@@ -58,10 +59,10 @@
     box-sizing: border-box;
     padding: 20px 0px;
     color: #6C5D5D;
-    width: 0px;
+    width: calc(100% - 235px);
     height: 100%;
     overflow: hidden;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.1s linear 0s;
   }
   

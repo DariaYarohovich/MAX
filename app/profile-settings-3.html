@@ -79,85 +79,28 @@
                 <h1 class="profile-top__user-name">Michael Matthews</h1>
             </div>
             
-            <div class="tabs tabs_profile" id="video-tabs">
-                <a href="#" class="tabs_profile__change-pass">Change Password</a>
-                <ul>
-                    <li><a href="#video-tabs-1">Profile</a></li>
-                    <li><a href="#video-tabs-2">Forum Activity</a></li>
-                    <li><a href="#video-tabs-3">Settings</a></li>
+            <div class="profile-content">
+                <ul class="profile-content__list">
+                    <li class="profile-content__item">
+                        <a class="profile-content__item-link" href="#">Profile</a>
+                    </li>
+                    <li class="profile-content__item">
+                        <a class="profile-content__item-link" href="#">Forum Activity</a>
+                    </li>
+                    <li class="profile-content__item">
+                        <a class="profile-content__item-link  profile-content__item-link_active" href="#">Settings</a>
+                    </li>
+                    <li class="profile-content__item profile-content__item_last">
+                        <a href="#" class="profile-content__item-link profile-content__change-pass">Change Password</a>
+                    </li>
                 </ul>
-                <div class="syllabus" id="video-tabs-1">
+                <div class="syllabus">
                     <div class="profile-tabs-vertical__wrapper">
                         <div class="tabs-vertical">
                             <nav class="tabs-vertical__navigation">
-                                <a>View profile</a>
-                                <a>Edit profile</a>
-                                <a>Change profile photo</a>
-                                <a>Change cover image</a>
+                                <a href="#">Personal info</a>
+                                <a href="#" class="selected">Subscription info</a>
                             </nav>
-                            <div class="tabs-vertical__content">
-                               <div class="view-profile">
-                                   <div class="view-profile__data">
-                                       <p class="view-profile__data-title">For checking settings state 3, please go to 'settings -> subscribtion info'</p>
-
-                                       <p class="view-profile__data-title">For opening modal window 'Account Expired', please push the button below</p>
-
-                                       <button id="open-big-popup">Open modal</button>
-                                   </div>
-                               </div>
-                            </div>
-                            <div class="tabs-vertical__content">
-                                <p>Content #2</p>
-                            </div>
-                            <div class="tabs-vertical__content">
-                                <p>Content #3</p>
-                            </div>
-                            <div class="tabs-vertical__content">
-                                <p>Content #4</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="discussion" id="video-tabs-2">
-                    <div class="profile-tabs-vertical__wrapper">
-                        <div class="tabs-vertical">
-                            <nav class="tabs-vertical__navigation">
-                                <a>Messages</a>
-                                <a>Topics</a>
-                            </nav>
-                            <div class="tabs-vertical__content">
-                                <p>Content #1</p>
-                            </div>
-                            <div class="tabs-vertical__content">
-                                <p>Content #2</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="add-videos" id="video-tabs-3">
-                    <div class="profile-tabs-vertical__wrapper">
-                        <div class="tabs-vertical">
-                            <nav class="tabs-vertical__navigation">
-                                <a>Personal info</a>
-                                <a>Subscription Info</a>
-                            </nav>
-                            <div class="tabs-vertical__content">
-                                <form action="#" method="POST">
-                                    <div class="input">
-                                        <label class="input__label input__label_small-black">First name</label>
-                                        <input class="input__field" type="text" placeholder="Michael" autofocus="">
-                                    </div>
-                                    <div class="input">
-                                        <label class="input__label input__label_small-black">Last name name</label>
-                                        <input class="input__field" type="text" placeholder="Matthews">
-                                    </div>
-                                    <div class="input">
-                                        <label class="input__label input__label_small-black">Email name</label>
-                                        <input class="input__field" type="text" placeholder="aaa@aaa.xom">
-                                    </div>
-                                    <button class="save-profile__btn btn">Save profile</button>
-                                </form>
-                            </div>
                             <div class="tabs-vertical__content">
                                 <div class="subscribtion-info">
                                     <div class="subscribtion-info__content">
@@ -247,73 +190,28 @@
     </div>
     <div class="navigation-mobile__overlay"></div>
 
-    <div class="popup__overlay popup__overlay_blur" id="overlay-blur"></div>
-    <section class="popup" id="popup-expired">
-        <div class="popup__with-caption">
-            <div class="popup__block popup__block_max">
-                <h3 class="popup__title popup__title_close-to-desc">Hi Mike! Your Account Has Expired</h3>
-                <p class="popup__desc">Re-activate your account by selecting the plan of your choice below and get instant access!</p>
-                <div class="popup__plan-wrapper">
-                    <div class="plan plan_popup">
-                        <div class="plan__switch">
-                            <p class="plan__switch-btn" id="switch-btn-mountly">Monthly</p>
-                            <p class="plan__switch-btn plan__switch-btn_active" id="switch-btn-annually">Annually</p>
-                        </div>
-                        <div class="plan__item plan__item_month">
-                            <p class="plan__item-name">Monthly plan</p>
-                            <div class="sum sum_centered">
-                                <span class="sum__currency sum__currency_30">$</span>
-                                <span class="sum__amount sum__amount_68">59</span>
-                                <span class="sum__period sum__period_22">/year</span>
-                            </div>
-                            <p class="plan__item-desc">Billed monthly</p>
-                            <button class="btn plan__item-btn">Renew account</button>
-                        </div>
-                        <div class="plan__item plan__item_large plan__item_year plan__item">
-                            <div class="discount-mark discount-mark_plan">
-                                <p class="discount-mark__block discount-mark__block_yellow">SAVE 60%</p>
-                                <p class="discount-mark__block">MOST POPULAR</p>
-                            </div>
-                            <p class="plan__item-name">Annual savings plan</p>
-                            <div class="sum sum_centered">
-                                <span class="sum__currency sum__currency_30">$</span>
-                                <span class="sum__amount sum__amount_68">25</span>
-                                <span class="sum__period sum__period_22">/year</span>
-                            </div>
-                            <p class="plan__item-desc">Billed monthly</p>
-                            <button class="btn plan__item-btn plan__item-btn_yellow">
-                                <span>
-                                    Renew account
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="popup__icons-block">
-                        <p class="popup__icon popup__icon_1">Established in 2010</p>
-                        <p class="popup__icon popup__icon_2">98% Member Retention</p>
-                        <p class="popup__icon popup__icon_3">Members From 27 Coun</p>
-                        <p class="popup__icon popup__icon_4">Instant access to al</p>
-                    </div>
+    <div class="popup__overlay popup__overlay_dark" id="overlay">
+        <section class="popup" id="popup">
+            <div class="popup__block popup__block_min">
+                <h3 class="popup__title">Please Select a New Plan</h3>
+                <div class="popup__select-wrapper">
+                    <select class="popup__select">
+                        <option value="Annually">Annually (299$ / year)</option>
+                        <option value="Monthly">Monthly (30$ / month)</option>
+                    </select>
+                </div>
+                <div class="popup__button-area">
+                    <button class="popup__btn popup__btn_select">Select Plan</button>
+                    <button class="popup__btn popup__btn_cancel" id="close-popup-btn">Cancel</button>
                 </div>
             </div>
-            <div class="popup-caption" id="close-big-popup">
-                <p class="popup-caption__title">30 Day Money Back Guarantee</p>
-                <p class="popup-caption__desc">If you are not satisfied with my program for any reason you will get your money back in full - no questions asked. You have my personal garuantee. </p>
-                <p class="popup-caption__author">Eyal Yanilov,</p>
-                <p class="popup-caption__position">Founder of MaxKravMaga.com</p>
-                <img src="img/sales-pages/signature-white@2x.png" alt="signature" class="popup-caption__signature">
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="libs/cleave/cleave.min.js"></script>
     <script>
-        $( "#video-tabs" ).tabs({
-            show: { effect: "fade", duration: 600 }
-        });
-
         // masks for credit card 
         var cleaveCardNumber = new Cleave('.card-info__input_number', {
             creditCard: true
@@ -329,7 +227,6 @@
             uppercase: true
         });
     </script>
-    <script src="js/scripts.js"></script>
 </body>
 
 </html>

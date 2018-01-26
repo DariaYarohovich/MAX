@@ -78,7 +78,7 @@
     padding-top: 53px;
     padding-bottom: 10px;
     flex-grow: 1;
-    background: url('../img/photos/footer-syllabus.png') no-repeat 234px center;
+    background: url('../img/photos/footer-syllabus.png') no-repeat 234px 37px;
     background-size: auto 185px;
   }
 
@@ -119,7 +119,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $md) {
   .footer-links {
     flex-wrap: wrap;
 

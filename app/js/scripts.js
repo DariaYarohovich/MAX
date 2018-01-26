@@ -211,25 +211,6 @@ $(document).ready(function() {
     });
 });
 
- // tabs vertical 
- $(function() {
-    $('.tabs-vertical nav a').on('click', function() {
-      show_content($(this).index());
-    });
-    
-    show_content(0);
-  
-    function show_content(index) {
-      // Make the content visible
-      $('.tabs-vertical .tabs-vertical__content.visible').removeClass('visible');
-      $('.tabs-vertical .tabs-vertical__content:nth-of-type(' + (index + 1) + ')').addClass('visible');
-  
-      // Set the tab to selected
-      $('.tabs-vertical nav a.selected').removeClass('selected');
-      $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
-    }
-  });
-
   $(function() {
     // min popup
     $('#open-min-popup').click( function() {
@@ -290,7 +271,6 @@ $(document).ready(function() {
   });
 
   // footer accordion 
-
 $(document).ready(function() {
     function close_accordion_section() {
       $('.footer-links__column .footer-links__main-link').removeClass('active');

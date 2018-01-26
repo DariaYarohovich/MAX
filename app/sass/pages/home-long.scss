@@ -186,12 +186,45 @@
     }
 }
 
-.who-is { 
+.who-is {
+    position: relative; 
     padding-top: 63px;
     padding-bottom: 70px;
-    background-image: linear-gradient(to left, #ffc401, #ffd901);
+    overflow: hidden;
+
+    &__yellow-bg {
+        position: absolute;
+        top: 0;
+        right: -75px;
+        width: 76%;
+        height: 100%;
+        background-image: linear-gradient(to left, #ffc401, #ffd901);
+        transform: skewX(14deg);
+    }
+
+    &__dark-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background: url('../../img/sales-pages/blackbelt@2x.jpg') no-repeat center;
+        background-size: cover;
+        filter: grayscale(100%);
+    }
+
+    &__img-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        background-size: cover;
+    }
 
     &__wrapper {
+        position: relative;
         display: flex;
         justify-content: space-between;
     }
@@ -2156,18 +2189,23 @@
 
         &__yellow-line {
             width: 250px;
-            right: -3.5vw;
+            right: -3.4vw;
         }
 
     }
 
     .who-is {
         padding-top: 38px;
-        padding-bottom: 110px;
+        padding-bottom: 63px;
+
+        &__yellow-bg {
+            width: 85%;
+        }
 
         &__img-wrapper {
             &::after {
                 right: -353px;
+                bottom: -39px;
                 width: 400px;
                 height: 50px;
             }
@@ -2823,6 +2861,14 @@
         padding-top: 26px;
         padding-bottom: 107px;
         background: #fff;
+
+        &__yellow-bg {
+            display: none;
+        }
+
+        &__dark-bg {
+            display: none;
+        }
 
         &__wrapper {
             flex-flow: column-reverse;

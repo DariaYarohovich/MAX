@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Profile Settings 4</title>
+    <title>Profile Settings 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -104,27 +104,17 @@
                             <div class="tabs-vertical__content">
                                 <div class="subscribtion-info">
                                     <div class="subscribtion-info__content">
-                                        <div class="alert-profile alert-profile_success">You successfully resumed your subscription.</div>
-                                
                                         <div class="textarea">
                                             <label class="textarea__label textarea__label_small-black">Membership</label>
                                             <textarea class="textarea__field" placeholder="Quarterly cus_BuA3TR1DdZoW2H" disabled></textarea>
                                         </div>
-                                        <div class="textarea">
-                                            <label class="textarea__label textarea__label_small-black">Subscription</label>
-                                            <textarea class="textarea__field" placeholder="Enabled, $135 / 3 months, Next Billing: December 8, 2017" disabled></textarea>
+                                        <div class="input">
+                                            <label class="input__label input__label_small-black">Subscription</label>
+                                            <input class="input__field" type="text" placeholder="Enabled" disabled>
                                         </div>
                                         <div class="input">
                                             <label class="input__label input__label_small-black">Active</label>
                                             <input class="input__field input__field_green" type="text" placeholder="Yes" disabled>
-                                        </div>
-                                            <div class="input">
-                                            <label class="input__label input__label_small-black">Created</label>
-                                            <input class="input__field" type="text" placeholder="December 7, 2017" disabled>
-                                        </div>
-                                        <div class="input">
-                                            <label class="input__label input__label_small-black">Card EXP.</label>
-                                            <input class="input__field" type="text" placeholder="11-2012" disabled>
                                         </div>
                                     </div>
                                     <div class="subscribtion-info__nav">
@@ -133,7 +123,7 @@
                                                 <a href="#" class="subscribtion-info__nav-link">Update Billing Info</a>
                                             </li>
                                             <li class="subscribtion-info__nav-item">
-                                                <a href="#" class="subscribtion-info__nav-link">Change Plan</a>
+                                                <a href="#" class="subscribtion-info__nav-link" id="open-min-popup">Change Plan</a>
                                             </li>
                                             <li class="subscribtion-info__nav-item">
                                                 <a href="#" class="subscribtion-info__nav-link">Pause Account</a>

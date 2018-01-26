@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Profile Settings 4</title>
+    <title>Profile New</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -82,13 +82,13 @@
             <div class="profile-content">
                 <ul class="profile-content__list">
                     <li class="profile-content__item">
-                        <a class="profile-content__item-link" href="#">Profile</a>
+                        <a class="profile-content__item-link profile-content__item-link_active" href="#">Profile</a>
                     </li>
                     <li class="profile-content__item">
                         <a class="profile-content__item-link" href="#">Forum Activity</a>
                     </li>
                     <li class="profile-content__item">
-                        <a class="profile-content__item-link  profile-content__item-link_active" href="#">Settings</a>
+                        <a class="profile-content__item-link" href="#">Settings</a>
                     </li>
                     <li class="profile-content__item profile-content__item_last">
                         <a href="#" class="profile-content__item-link profile-content__change-pass">Change Password</a>
@@ -98,52 +98,34 @@
                     <div class="profile-tabs-vertical__wrapper">
                         <div class="tabs-vertical">
                             <nav class="tabs-vertical__navigation">
-                                <a href="#">Personal info</a>
-                                <a href="#" class="selected">Subscription info</a>
+                                <a href="#" class="selected">View profile</a>
+                                <a href="#">Edit profile</a>
+                                <a href="#">Change profile photo</a>
+                                <a href="#">Change cover image</a>
                             </nav>
                             <div class="tabs-vertical__content">
-                                <div class="subscribtion-info">
-                                    <div class="subscribtion-info__content">
-                                        <div class="alert-profile alert-profile_success">You successfully resumed your subscription.</div>
-                                
-                                        <div class="textarea">
-                                            <label class="textarea__label textarea__label_small-black">Membership</label>
-                                            <textarea class="textarea__field" placeholder="Quarterly cus_BuA3TR1DdZoW2H" disabled></textarea>
-                                        </div>
-                                        <div class="textarea">
-                                            <label class="textarea__label textarea__label_small-black">Subscription</label>
-                                            <textarea class="textarea__field" placeholder="Enabled, $135 / 3 months, Next Billing: December 8, 2017" disabled></textarea>
-                                        </div>
-                                        <div class="input">
-                                            <label class="input__label input__label_small-black">Active</label>
-                                            <input class="input__field input__field_green" type="text" placeholder="Yes" disabled>
-                                        </div>
-                                            <div class="input">
-                                            <label class="input__label input__label_small-black">Created</label>
-                                            <input class="input__field" type="text" placeholder="December 7, 2017" disabled>
-                                        </div>
-                                        <div class="input">
-                                            <label class="input__label input__label_small-black">Card EXP.</label>
-                                            <input class="input__field" type="text" placeholder="11-2012" disabled>
-                                        </div>
+                               <div class="view-profile">
+                                   <div class="view-profile__data">
+                                       <p class="view-profile__data-title">Favorite Quote</p>
+                                       <p class="view-profile__data-desc">Life is good…</p>
+                                   </div>
+                                   <div class="view-profile__data">
+                                        <p class="view-profile__data-title">Bio</p>
+                                        <p class="view-profile__data-desc">Defending against a result of stick attack directed towards the leg or the knee area. Like in the regular technique against the baseball swing from the side bursting forward, heel toe, you turn the body and burst forward strongly. If you manage to see that the attack is low, at the last moment you can lift your front hand, absorb the attack on the leg, thigh, and grab the hand holding the weapon, or the weapon itself. Counter attack as early as possible with the rear hand, and then create distance by moving away, or pushing the opponent backwards.</p>
                                     </div>
-                                    <div class="subscribtion-info__nav">
-                                        <ul class="subscribtion-info__nav-list">
-                                            <li class="subscribtion-info__nav-item">
-                                                <a href="#" class="subscribtion-info__nav-link">Update Billing Info</a>
-                                            </li>
-                                            <li class="subscribtion-info__nav-item">
-                                                <a href="#" class="subscribtion-info__nav-link">Change Plan</a>
-                                            </li>
-                                            <li class="subscribtion-info__nav-item">
-                                                <a href="#" class="subscribtion-info__nav-link">Pause Account</a>
-                                            </li>
-                                            <li class="subscribtion-info__nav-item">
-                                                <a href="#" class="subscribtion-info__nav-link">Cancel Account</a>
-                                            </li>
-                                        </ul>
+                                    <div class="view-profile__data">
+                                        <p class="view-profile__data-title">Occupation</p>
+                                        <p class="view-profile__data-desc">Trainer</p>
                                     </div>
-                                </div>
+                                    <div class="view-profile__data">
+                                        <p class="view-profile__data-title">Krav Maga Experience</p>
+                                        <p class="view-profile__data-desc">1 - 5 years</p>
+                                    </div>
+                                    <div class="view-profile__data">
+                                        <p class="view-profile__data-title">Martial Arts Experience</p>
+                                        <p class="view-profile__data-desc">None</p>
+                                    </div>    
+                               </div>
                             </div>
                         </div>
                     </div>
@@ -223,6 +205,12 @@
     </div>
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $( "#video-tabs" ).tabs({
+            show: { effect: "fade", duration: 600 }
+        });
+    </script>
     <script src="js/scripts.js"></script>
 </body>
 

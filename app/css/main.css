@@ -629,7 +629,7 @@ p {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    background: url("../img/photos/footer-syllabus.png") no-repeat 234px center;
+    background: url("../img/photos/footer-syllabus.png") no-repeat 234px 37px;
     background-size: auto 185px; }
   .footer-links__offer-desc {
     margin-bottom: 15px;
@@ -657,7 +657,7 @@ p {
     width: 23%;
     margin-right: 2%; } }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .footer-links {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -2110,12 +2110,42 @@ p {
     display: none; }
 
 .who-is {
+  position: relative;
   padding-top: 63px;
   padding-bottom: 70px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#ffc401), to(#ffd901));
-  background-image: -webkit-linear-gradient(right, #ffc401, #ffd901);
-  background-image: linear-gradient(to left, #ffc401, #ffd901); }
+  overflow: hidden; }
+  .who-is__yellow-bg {
+    position: absolute;
+    top: 0;
+    right: -75px;
+    width: 76%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, right top, left top, from(#ffc401), to(#ffd901));
+    background-image: -webkit-linear-gradient(right, #ffc401, #ffd901);
+    background-image: linear-gradient(to left, #ffc401, #ffd901);
+    -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+            transform: skewX(14deg); }
+  .who-is__dark-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: url("../../img/sales-pages/blackbelt@2x.jpg") no-repeat center;
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
+  .who-is__img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    background-size: cover; }
   .who-is__wrapper {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3721,12 +3751,15 @@ p {
         content: none; }
     .home-long-stat__yellow-line {
       width: 250px;
-      right: -3.5vw; }
+      right: -3.4vw; }
   .who-is {
     padding-top: 38px;
-    padding-bottom: 110px; }
+    padding-bottom: 63px; }
+    .who-is__yellow-bg {
+      width: 85%; }
     .who-is__img-wrapper::after {
       right: -353px;
+      bottom: -39px;
       width: 400px;
       height: 50px; }
     .who-is__img {
@@ -4143,6 +4176,10 @@ p {
     padding-top: 26px;
     padding-bottom: 107px;
     background: #fff; }
+    .who-is__yellow-bg {
+      display: none; }
+    .who-is__dark-bg {
+      display: none; }
     .who-is__wrapper {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
@@ -5818,6 +5855,56 @@ p {
     font-size: 28px;
     line-height: 1; }
 
+.profile-content {
+  position: relative; }
+  .profile-content__list {
+    margin: 0;
+    padding-left: -webkit-calc(10.8% + 235px);
+    padding-left: calc(10.8% + 235px);
+    padding-right: 8%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    border-bottom: solid 1px rgba(151, 151, 151, 0.18); }
+  .profile-content__item_last {
+    margin-left: auto; }
+  .profile-content__item-link {
+    display: inline-block;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    margin-right: 48px;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #888888;
+    text-decoration: none; }
+    .profile-content__item-link_active {
+      position: relative;
+      color: #25262a; }
+      .profile-content__item-link_active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-image: -webkit-linear-gradient(358deg, #ffe259, #ffa751);
+        background-image: linear-gradient(92deg, #ffe259, #ffa751); }
+  .profile-content__change-pass {
+    margin-right: 0 !important;
+    padding-right: 0;
+    padding-left: 20px;
+    background: url("../../../img/sales-pages/icons/password.svg") no-repeat left center;
+    background-size: 14px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #888888 !important;
+    text-decoration: none; }
+
 .profile-tabs-vertical__wrapper {
   margin-left: 10.8%;
   margin-right: 8%; }
@@ -5888,7 +5975,25 @@ p {
 
 @media (max-width: 1023px) {
   .alert-profile {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .profile-top {
+    height: 279px;
+    background-position: center top; }
+    .profile-top__info {
+      bottom: -184px;
+      margin-left: 3%; }
+  .profile-tabs-vertical__wrapper {
+    margin: 0 3%; }
+  .profile-content__list {
+    padding-left: -webkit-calc(3% + 235px);
+    padding-left: calc(3% + 235px);
+    padding-right: 3%; }
+  .profile-content__item-link {
+    margin-right: 20px; }
+  .subscribtion-info__nav {
+    width: 27%; }
+  .subscribtion-info__nav-list {
+    padding-left: 10px; } }
 
 .intrinsic-container {
   position: relative;
@@ -6391,18 +6496,6 @@ p {
 
 .tabs_profile {
   position: relative; }
-  .tabs_profile__change-pass {
-    position: absolute;
-    top: 21px;
-    right: 10%;
-    padding-left: 21px;
-    background: url("../../../img/sales-pages/icons/secure-icon@2x.png") no-repeat left center;
-    background-size: contain;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    color: #888888 !important;
-    text-decoration: none; }
   .tabs_profile .ui-tabs-tab:first-child {
     margin-left: 30.4%; }
   .tabs_profile .ui-tabs-panel {
@@ -7424,7 +7517,9 @@ p {
     .input__label_small {
       font-size: 14px; }
   .input__field {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .card-info__input_date {
+    width: 25%; } }
 
 @media (max-width: 767px) {
   .input__label-add {
@@ -9151,11 +9246,12 @@ p {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  width: 186px; }
+  width: 200px; }
 
 .tabs-vertical nav.tabs-vertical__navigation {
   margin-top: 175px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-right: 35px; }
 
 .tabs-vertical nav a {
   position: relative;
@@ -9166,6 +9262,7 @@ p {
   text-transform: uppercase;
   color: #25262a;
   cursor: pointer;
+  text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .tabs-vertical nav a:last-child {
     border-bottom: none; }
@@ -9191,10 +9288,11 @@ p {
           box-sizing: border-box;
   padding: 20px 0px;
   color: #6C5D5D;
-  width: 0px;
+  width: -webkit-calc(100% - 235px);
+  width: calc(100% - 235px);
   height: 100%;
   overflow: hidden;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.1s linear 0s;
   transition: opacity 0.1s linear 0s; }
 

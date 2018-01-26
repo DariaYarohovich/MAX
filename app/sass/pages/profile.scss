@@ -69,6 +69,68 @@
     }
 }
 
+.profile-content {
+    position: relative;
+
+    &__list {
+        margin: 0;
+        padding-left: calc(10.8% + 235px);
+        padding-right: 8%;
+        display: flex;
+        list-style: none;
+        border-bottom: solid 1px transparentize($color: #979797, $amount: 0.82);
+    }
+
+    &__item {
+        &_last {
+            margin-left: auto;
+        }
+    }
+
+    &__item-link {
+        display: inline-block;
+        padding-top: 18px;
+        padding-bottom: 12px;
+        margin-right: 48px;
+        line-height: 19px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        color: #888888;
+        text-decoration: none;
+
+        &_active {
+            position: relative;
+            color: $dark-grey;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-image: linear-gradient(92deg, #ffe259, #ffa751);
+            }
+        }
+    }
+    
+    &__change-pass {
+        margin-right: 0!important;
+        padding-right: 0;
+        padding-left: 20px;
+        background: url('../../../img/sales-pages/icons/password.svg') no-repeat left center;
+        background-size: 14px 20px;
+
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #888888!important;
+
+        text-decoration: none;
+    }
+}
+
 .profile-tabs-vertical__wrapper {
     margin-left: 10.8%;
     margin-right: 8%;
@@ -151,5 +213,40 @@
 @media (max-width: $md) {
     .alert-profile {
         font-size: 16px;
+    }
+
+    .profile-top {
+        height: 279px;
+        background-position: center top;
+
+        &__info {
+            bottom: -184px;
+            margin-left: 3%;
+        }
+    }
+
+    .profile-tabs-vertical__wrapper {
+        margin: 0 3%;
+    }
+
+    .profile-content {
+        &__list {
+            padding-left: calc(3% + 235px);
+            padding-right: 3%;
+        }
+
+        &__item-link {
+            margin-right: 20px;
+        }
+    }
+
+    .subscribtion-info {
+        &__nav {
+            width: 27%;
+        }
+
+        &__nav-list {
+            padding-left: 10px;
+        }
     }
 }
