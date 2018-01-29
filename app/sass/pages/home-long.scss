@@ -101,6 +101,7 @@
 }
 
 .home-long-stat {
+    position: relative;
     padding-top: 70px;
     padding-bottom: 75px;
 
@@ -170,9 +171,9 @@
     &__yellow-line {
         position: absolute;
         z-index: 0;
-        bottom: 87px;
-        right: -135.5px;
-        width: 480px;
+        top: 27%;
+        right: 0;
+        width: 27%;
         height: 80px;
         background-image: linear-gradient(114deg, #ffc401, #ffd901);
     }
@@ -1125,7 +1126,7 @@
                 content: '';
                 position: absolute;
                 bottom: -23px;
-                right: calc(50% + 87px);
+                right: calc(50% - 68px);
                 width: 48px;
                 height: 55px;
                 background: url('../../img/sales-pages/section15-arrow.svg') no-repeat center;
@@ -1538,8 +1539,7 @@
         }
 
         &__yellow-line {
-            bottom: 90px;
-            right: -5vw;
+            top: 21%;
         }
     }
 
@@ -2188,8 +2188,7 @@
         }
 
         &__yellow-line {
-            width: 250px;
-            right: -3.4vw;
+            top: 10%;
         }
 
     }
@@ -3158,7 +3157,7 @@
     
     .level-program {
         &_covering {
-            margin-bottom: -40px;
+            margin-bottom: -20vw;
         }
     
         &__wrapper {
@@ -3213,7 +3212,7 @@
 
         &__mobile-yellow-top {
             display: block;
-            height: 30px;
+            height: 20vw;
             background-color: $sunflower-yellow;
         }
 
@@ -3557,7 +3556,7 @@
     .bonus-inner-second {
         position: relative;
         padding-top: 25px;
-        padding-bottom: 30px;
+        padding-bottom: 0;
 
         &::after {
             content: '';
@@ -3565,7 +3564,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 60px;
+            height: 89px;
             background: #fff;
         }
 
@@ -3583,14 +3582,15 @@
             position: relative;
             z-index: 2;
             display: block;
-            width: 100%;
+            width: 280px;
+            margin: 0 auto;
         }
     }
 
     .bonus-inner-third {
         position: relative;
         padding-top: 25px;
-        padding-bottom: 30px;
+        padding-bottom: 0;
 
         &::after {
             content: '';
@@ -3598,7 +3598,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 60px;
+            height: 89px;
             background: #fff;
         }
 
@@ -3628,7 +3628,8 @@
             z-index: 2;
             display: block;
             margin-top: 16px;
-            width: 100%;
+            width: 280px;
+            margin: 0 auto;
         }
     }
 
@@ -3642,7 +3643,8 @@
         }
 
         &__gun-img-wrapper {
-            width: 100%;
+            width: 280px;
+            margin: 0 auto;
         }
 
         &__text-block {

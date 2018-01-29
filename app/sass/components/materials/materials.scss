@@ -154,6 +154,16 @@
         &__title {
             margin-bottom: 30px;
         }
+
+        &__item-img {
+            height: auto;
+            margin-bottom: 10px;
+
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 }
 

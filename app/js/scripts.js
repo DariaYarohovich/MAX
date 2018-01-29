@@ -176,9 +176,10 @@
         }
 
         openBtn.addEventListener("click", () => {
-            mobileMenu.classList.add("navigation-mobile_opened");
-            overlay.classList.add("navigation-mobile__overlay_opened");
             body.style = "overflow: hidden";
+            overlay.classList.add("navigation-mobile__overlay_opened");
+            mobileMenu.classList.add("navigation-mobile_opened");
+
         });
 
         closeBtn.addEventListener("click", closeSideBar);

@@ -45,7 +45,7 @@
     margin-right: 0;
     padding-top: 53px;
     padding-bottom: 10px;
-    flex-grow: 2;
+    flex-grow: 1.7;
     display: flex;
     justify-content: space-between;
 
@@ -115,6 +115,14 @@
     &__column {
       width: 23%;
       margin-right: 2%;
+    }
+
+    &__offer {
+      background-position: 179px 37px;
+    }
+
+    &__offer-desc {
+      width: 185px;
     }
   }
 }

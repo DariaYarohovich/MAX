@@ -226,11 +226,12 @@
   }
 
   .navigation {
+    position: relative;
+    top: 0;
+    bottom: 0;
     padding: 0;
     height: calc(100% - 78px);
     width: 40%;
-    top: 79px;
-    bottom: 0;
     &__list{
       &_first {
         border-left: none;
