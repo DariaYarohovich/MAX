@@ -10,6 +10,7 @@
     &__text-block {
         display: inline-block;
         width: 557px;
+        margin-top: 30px;
     }
 
     &__title {
@@ -26,7 +27,7 @@
         font-size: 20px;
         box-shadow: 0 12px 24px 0 rgba(225, 183, 0, 0.34);
         font-weight: 600;
-    
+
         &::after {
             right: 13px;
         }
@@ -71,7 +72,7 @@
         justify-content: center;
         margin: 0 auto;
     }
-    
+
     &__img {
         width: 285px;
         height: 285px;
@@ -188,7 +189,7 @@
 }
 
 .who-is {
-    position: relative; 
+    position: relative;
     padding-top: 63px;
     padding-bottom: 70px;
     overflow: hidden;
@@ -232,7 +233,7 @@
 
     &__img-wrapper {
         position: relative;
-        
+
         &::after {
             content: '';
             position: absolute;
@@ -324,7 +325,7 @@
         font-size: 20px;
         color: #4d5059;
         @include square();
-        
+
         &::before {
             top: 7px;
         }
@@ -991,7 +992,7 @@
         font-style: italic;
         color: $charcoal;
     }
-    
+
     &__yellow-box-name {
         font-weight: bold;
     }
@@ -1057,7 +1058,7 @@
 
         & span {
             position: relative;
-            
+
             &::after {
                 content: '';
                 position: absolute;
@@ -1135,7 +1136,7 @@
         }
     }
 
-    &__colorful { 
+    &__colorful {
         background-color: $dark-grey;
     }
 
@@ -1222,7 +1223,7 @@
             width: 100%;
             text-align: center;
             margin-top: 95px;
-            
+
         }
 
         #{$this}__bg-receiver-text {
@@ -1238,7 +1239,7 @@
             background-size: cover;
         }
     }
-    
+
     &_fourth {
         margin-bottom: 76px;
 
@@ -1407,7 +1408,7 @@
         width: 100%;
     }
 
-    &__text-block { 
+    &__text-block {
         width: 46%;
     }
 
@@ -1473,6 +1474,7 @@
 
         &__text-block {
             width: 458px;
+            margin-top: 0;
         }
 
         &__title {
@@ -1586,32 +1588,32 @@
     .two-cats {
         padding-top: 53px;
         padding-bottom: 40px;
-    
+
         &__title {
             margin: 0 auto 14px;
             width: 100%;
             text-align: center;
         }
-    
+
         &__desc {
             margin: 0 auto 70px;
             width: 64%;
             text-align: center;
             font-size: 22px;
         }
-    
+
         &__img-wrapper {
             width: 42%;
         }
-    
+
         &__img {
             width: 100%;
         }
-    
+
         &__cat-text {
             width: 44%;
         }
-    
+
         &__cat-title {
             margin-top: 30px;
             margin-bottom: 1em;
@@ -1619,7 +1621,7 @@
             font-weight: bold;
             @include square();
         }
-    
+
         &__cat-desc {
             font-size: 18px;
         }
@@ -1630,20 +1632,20 @@
         padding-bottom: 25px;
         background: url('../../img/videos-line__img.png') no-repeat center calc(100% - 136px);
         background-size: contain;
-    
+
         &__text {
             margin-right: 30px;
         }
-    
+
         &__img {
             margin-right: 0;
         }
-    
+
         &__title {
             margin-top: 80px;
             margin-bottom: 14px;
         }
-    
+
         &__desc {
             margin-bottom: 12px;
             font-size: 22px;
@@ -1657,16 +1659,16 @@
         &__img-wrapper {
             margin-left: 0;
         }
-    
+
         &__text {
             width: 49%;
         }
-    
+
         &__title {
             margin-bottom: 18px;
             font-size: 28px;
         }
-    
+
         &__desc {
             margin-bottom: 1em;
             font-size: 18px;
@@ -1676,20 +1678,20 @@
     .dark-quote {
         padding-top: 67px;
         padding-bottom: 99px;
-    
+
         &__wrapper {
             margin-left: 90px;
             width: 580px;
         }
-    
+
         &__desc {
             font-size: 18px;
         }
-    
+
         &__quote {
             font-size: 22px;
         }
-    
+
         &__signature {
             display: none;
         }
@@ -1697,19 +1699,19 @@
 
     .digital-100 {
         padding-bottom: 55px;
-    
+
         &__wrapper {
             width: 690px;
-    
+
             &_second {
                 padding-top: 100px;
             }
         }
-    
+
         &__yellow-wrapper {
             padding-top: 55px;
         }
-    
+
         &__title {
             margin-bottom: 10px;
 
@@ -1717,34 +1719,34 @@
                 display: none;
             }
         }
-    
+
         &__subtitle {
             margin-bottom: 28px;
             font-size: 22px;
         }
-    
+
         &__img {
             margin-right: -100px;
             margin-left: -100px;
             width: calc(100% + 200px);
         }
-    
+
         &__desc {
             font-size: 22px;
         }
-    
+
         &__last-phrase {
             font-size: 22px;
         }
-    
-    
+
+
     }
 
     .level-program {
         &__text-area {
             width: 43%;
         }
-    
+
         &__title {
             margin-top: 70px;
         }
@@ -1754,20 +1756,20 @@
         margin-bottom: 95px;
         padding-top: 38px;
         padding-bottom: 44px;
-    
+
         &__title {
             margin-left: 18px;
             margin-bottom: 28px;
-    
+
             &_reverse {
                 margin-left: calc(100% - 372px);
             }
         }
-    
+
         &__level-title {
             margin-bottom: 29px;
         }
-    
+
         &__level-img {
             margin-bottom: 25px;
             height: 118px;
@@ -1779,7 +1781,7 @@
                 font-size: 13px;
             }
         }
-    
+
         &__yellow-box {
             position: relative;
             bottom: -63px;
@@ -1787,7 +1789,7 @@
             background-color: $sunflower-yellow;
             box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.4);
         }
-    
+
         &__yellow-box-text {
             position: relative;
             width: 80%;
@@ -1795,30 +1797,30 @@
             text-align: center;
             font-size: 18px;
             color: $dark-grey;
-    
+
             &::before {
                 content: none;
             }
         }
     }
-    
+
     .kmg-syllabus {
         padding-top: 0;
         margin-bottom: 50px;
-    
+
         &__wrapper {
             width: 100%;
         }
-    
+
         &__title {
             margin-bottom: 13px;
         }
-    
+
         &__desc {
             margin-bottom: 48px;
             font-size: 22px;
         }
-    
+
         &__type {
             margin-bottom: 29px;
         }
@@ -1827,45 +1829,45 @@
     .phone {
         padding-top: 36px;
         margin-bottom: 60px;
-    
+
         &__title {
             margin: 0 auto;
             margin-bottom: 15px;
             width: 60%;
        }
-    
+
         &__content {
             align-items: flex-start;
         }
-    
+
         &__update {
             margin-top: 52px;
             width: auto;
             color: #fff;
         }
-    
+
         &__update-title {
             margin-bottom: 25px;
         }
-    
+
         &__update-text {
             margin-bottom: 41px;
             font-size: 18px;
         }
-    
+
         &__update-quote {
             padding-left: 40px;
         }
-    
+
         &__device-desc {
             display: none;
         }
-    
+
         &__yellow-box {
             padding-top: 31px;
             padding-bottom: 39px;
         }
-    
+
         &__yellow-box-text {
             width: 70%;
         }
@@ -1875,7 +1877,7 @@
         $this: &;
         padding-top: 60px;
         margin-bottom: 65px;
-    
+
         &__bg {
             background-size: 900px;
             background-position: calc(50% - 87px) 259px;
@@ -1899,11 +1901,11 @@
                 right: -94px;
             }
         }
-    
+
         &__top {
             margin-bottom: 20px;
         }
-    
+
         &__bg-receiver {
             display: flex;
             align-items: center;
@@ -1911,7 +1913,7 @@
             padding-top: 20px;
             padding-bottom: 25px;
         }
-    
+
         &__bg-receiver-text {
             font-size: 22px;
 
@@ -1927,22 +1929,22 @@
             height: 183px;
             width: 100%;
         }
-    
+
         // styles for bonus block modifiers
         &_second {
             margin-bottom: 0;
-    
+
             #{$this}__bg {
                 background-size: 900px;
                 background-position: calc(50% + 120px) 33px;
             }
-    
+
             #{$this}__photo-line {
                 background: url('../../img/sales-pages/masterclass-photos@2x.jpg') no-repeat center;
                 background-size: cover;
             }
         }
-    
+
         &_third {
             margin-bottom: 40px;
 
@@ -1951,54 +1953,54 @@
                 background-size:769px;
                 background-position: calc(50% - 80px) 0px;
             }
-    
+
             #{$this}__top {
                 margin-left: 47%;
                 width: 53%;
             }
-    
+
             #{$this}__bg-receiver-content {
                 margin-top: 33px;
                 margin-bottom: 12px;
                 margin-left: 47%;
                 width: 53%;
             }
-    
+
             #{$this}__bg-receiver-text {
                 color: #fff;
                 text-align: center;
                 font-size: 28px;
             }
-    
+
             #{$this}__photo-line {
                 background: url('../../img/sales-pages/carjacking-photos@2x.jpg') no-repeat center;
                 background-size: cover;
             }
         }
-        
+
         &_fourth {
             margin-bottom: 60px;
-    
+
             #{$this}__bg {
                 background-position: calc(50% + 155px) 192px;
             }
-    
+
             #{$this}__top {
                 margin-right: 42%;
                 width: 56%;
             }
-    
+
             #{$this}__top-text {
                 margin-bottom: 1em;
                 font-size: 18px;
             }
-    
+
             #{$this}__bg-receiver-content {
                 margin-left: 0;
                 margin-right: 42%;
                 width: 56%;
             }
-    
+
             #{$this}__bg-receiver-text {
                 font-size: 28px;
             }
@@ -2248,7 +2250,7 @@
             padding-right: 0;
             margin-bottom: 32px;
         }
-        
+
         &__desc {
             font-size: 16px;
         }
@@ -2256,17 +2258,17 @@
 
     .home-long-quote-two {
         padding: 38px 0;
-    
+
         &__text-container {
             width: 600px;
         }
-    
+
         &__text {
             margin-bottom: 12px;
             padding-left: 20px;
             font-size: 24px;
         }
-    
+
         &__caption {
             font-size: 18px;
         }
@@ -2275,30 +2277,30 @@
     .two-cats {
         padding-top: 35px;
         padding-bottom: 80px;
-    
+
         &__desc {
             margin: 0 auto 55px;
             width: 80%;
             font-size: 18px;
         }
-    
+
         &__img-wrapper {
             width: 50%;
         }
-    
+
         &__img {
             width: 100%;
         }
-    
+
         &__cat-text {
             width: 48%;
         }
-    
+
         &__cat-title {
             margin-top: 0;
             font-size: 18px;
         }
-    
+
         &__cat-desc {
             font-size: 16px;
         }
@@ -2307,26 +2309,26 @@
     .videos-line {
         background: url('../../img/videos-line__img.png') no-repeat center calc(100% - 90px);
         background-size: contain;
-    
+
         &__text {
             margin-right: 50px;
         }
-    
+
         &__img {
             display: block;
             width: 288px;
             height: 480px;
         }
-    
+
         &__title {
             margin-bottom: 7px;
         }
-    
+
         &__desc {
             margin-bottom: 0;
             font-size: 18px;
         }
-    
+
         &__desc-second {
             display: none;
         }
@@ -2336,12 +2338,12 @@
         &__text {
             width: 49%;
         }
-    
+
         &__title {
             margin-bottom: 17vw;
             font-size: 24px;
         }
-    
+
         &__desc {
             margin-left: -70%;
         }
@@ -2350,15 +2352,15 @@
     .dark-quote {
         padding-top: 40px;
         padding-bottom: 72px;
-    
+
         &__wrapper {
             margin-left: 0;
         }
-    
+
         &__desc {
             font-size: 16px;
         }
-    
+
         &__quote {
             font-size: 18px;
         }
@@ -2366,19 +2368,19 @@
 
     .digital-100 {
         padding-bottom: 55px;
-    
+
         &__wrapper {
- 
+
             &_second {
                 padding-top: 65px;
                 width: 483px;
             }
         }
-    
+
         &__yellow-wrapper {
             padding-top: 43px;
         }
-    
+
         &__title {
             margin-bottom: 10px;
             font-size: 34px;
@@ -2387,29 +2389,29 @@
                 display: none;
             }
         }
-    
+
         &__subtitle {
             margin: 0 auto;
             margin-bottom: 35px;
             width: 601px;
         }
-    
+
         &__img {
             margin: 0 -25px;
             margin-bottom: -97px;
             width: calc(100% + 50px);
             height: auto;
         }
-    
+
         &__desc {
             font-size: 18px;
         }
-    
+
         &__last-phrase {
             font-size: 18px;
         }
-    
-    
+
+
     }
 
     .level-program {
@@ -2417,19 +2419,19 @@
         &_covering {
             margin-bottom: -75px;
         }
-  
+
         &__text-area {
             width: 41%;
         }
-    
+
         &__title {
             margin-top: 5px;
         }
-    
+
         &__desc {
             font-size: 18px;
         }
-    
+
         &__desc-list-item {
             font-size: 18px;
             line-height: 1.35;
@@ -2447,7 +2449,7 @@
         &__title {
             margin-left: 0;
             font-size: 18px;
-                
+
             &_reverse {
                 margin-left: calc(100% - 294px);
             }
@@ -2456,7 +2458,7 @@
         &__level-title {
             margin-bottom: 15px;
         }
-    
+
         &__level-img {
             margin-bottom: 15px;
         }
@@ -2464,15 +2466,15 @@
 
     .kmg-syllabus {
         margin-bottom: 15px;
-    
+
         &__wrapper {
             width: 100%;
         }
-    
+
         &__title {
             margin-bottom: 10px;
         }
-    
+
         &__desc {
             width: 60%;
             margin: 0 auto;
@@ -2480,34 +2482,34 @@
             font-size: 18px;
             text-align: center;
         }
-    
+
         &__type {
             display: flex;
             justify-content: space-between;
             flex-flow: column;
             margin-bottom: 55px;
         }
-    
+
         &__type-text {
             width: 100%;
             margin-top: 0;
             margin-bottom: 17px;
             text-align: center;
         }
-    
+
         &__type-title {
             font-size: 18px;
         }
-    
+
         &__type-desc {
             font-size: 16px;
         }
-    
+
         &__type-img-wrapper {
             margin: 0 auto;
             width: 80%;
         }
-    
+
         &__type-img {
             width: 100%;
         }
@@ -2515,33 +2517,33 @@
 
     .phone {
         margin-bottom: 20px;
-    
+
         &__title {
             margin-bottom: 28px;
         }
-    
+
         &__update {
             margin-top: 22px;
         }
-    
+
         &__update-title {
             margin-bottom: 16px;
         }
-    
+
         &__update-text {
             margin-bottom: 25px;
         }
-    
+
         &__update-quote {
             font-size: 24px;
             padding-left: 17px;
         }
-    
+
         &__yellow-box {
             padding-top: 28px;
             padding-bottom: 34px;
         }
-    
+
         &__yellow-box-text {
             width: 95%;
         }
@@ -2556,7 +2558,7 @@
         padding-top: 60px;
         margin-bottom: 30px;
         overflow: hidden;
-    
+
         &__bg {
             display: flex;
             flex-flow: column;
@@ -2568,7 +2570,7 @@
         &__desc {
             width: 85%;
         }
-    
+
         &__top {
             display: none;
         }
@@ -2576,7 +2578,7 @@
         &__top-text {
             display: none;
         }
-    
+
         &__bg-receiver {
             height: auto;
         }
@@ -2585,7 +2587,7 @@
             width: 100%;
             margin: 0;
         }
-    
+
         &__bg-receiver-text {
             display: block;
             margin: 100px auto 10px;
@@ -2596,7 +2598,7 @@
         &__photo-line {
             height: 140px;
         }
-    
+
         // styles for bonus block modifiers
         &_first {
             #{$this}__bg-receiver-text {
@@ -2606,7 +2608,7 @@
 
         &_second {
             margin-bottom: 30px;
-    
+
             #{$this}__bg {
                 min-height: 870px;
                 background-position: calc(50% - 143px) 181px;
@@ -2618,9 +2620,9 @@
                 margin: 0 auto;
                 text-align: center;
             }
-            
+
         }
-    
+
         &_third {
             margin-bottom: 40px;
 
@@ -2635,36 +2637,36 @@
                 margin: 0 auto;
                 text-align: center;
             }
-    
+
             #{$this}__bg-receiver-content {
                 margin-top: 0;
                 margin-bottom: 0;
                 width: 100%;
                 margin: 0;
             }
-    
+
             #{$this}__bg-receiver-text {
                 color: #fff;
                 text-align: center;
                 font-size: 24px;
             }
         }
-        
+
         &_fourth {
             margin-bottom: 30px;
-    
+
             #{$this}__bg {
                 background-size: 850px;
                 background-position: calc(50% - 143px) 135px;
             }
-    
+
             #{$this}__bg-receiver-content {
                 margin-top: 0;
                 margin-bottom: 0;
                 width: 100%;
                 margin: 0;
             }
-    
+
             #{$this}__bg-receiver-text {
                 width: 85%;
                 font-size: 24px;
@@ -2697,12 +2699,12 @@
         &__text {
             width: 49%;
         }
-    
+
         &__title {
             margin-bottom: 85px;
             font-size: 24px;
         }
-    
+
         &__desc {
             margin-left: -70%;
         }
@@ -2812,7 +2814,7 @@
         &__mobile-stat {
             display: flex;
             flex-grow: 1;
-            border-top: solid 1px rgba(255, 255, 255, 0.3);  
+            border-top: solid 1px rgba(255, 255, 255, 0.3);
         }
 
         &__mobile-stat-block {
@@ -2929,7 +2931,7 @@
                 &::before {
                     content: none;
                 }
-    
+
                 &::after {
                     content: none;
                 }
@@ -2960,7 +2962,7 @@
         &__title {
             display: none;
         }
-        
+
         &__desc {
             font-size: 16px;
             color: #fff;
@@ -2973,19 +2975,19 @@
 
     .home-long-quote-two {
         padding: 50px 0 40px 0;
-    
+
         &__text-container {
             box-sizing: border-box;
             width: 100%;
         }
-    
+
         &__text {
             margin-bottom: 22px;
             padding-left: 17px;
             font-size: 18px;
             line-height: 1.22;
         }
-    
+
         &__caption {
             font-size: 14px;
             font-weight: normal;
@@ -3000,12 +3002,12 @@
     .two-cats {
         padding-top: 35px;
         padding-bottom: 0;
-    
+
         &__title {
             margin: 0 auto 20px;
             text-align: left;
         }
-    
+
         &__desc {
             margin: 0 auto 20px;
             width: 100%;
@@ -3018,25 +3020,25 @@
             padding-bottom: 25px;
             margin-bottom: 0;
         }
-    
+
         &__img-wrapper {
             width: 100%;
         }
-    
+
         &__img {
             width: 100%;
         }
-    
+
         &__cat-text {
             width: 100%;
         }
-    
+
         &__cat-title {
             margin-top: 0;
             font-size: 16px;
             color: $dark-grey;
         }
-    
+
         &__cat-desc {
             display: none;
         }
@@ -3049,11 +3051,11 @@
         &__wrapper {
             flex-flow: column;
         }
-    
+
         &__text {
             margin-right: 0;
         }
-    
+
         &__img {
             display: none;
         }
@@ -3062,12 +3064,12 @@
             display: block;
             width: 100%;
         }
-    
+
         &__title {
             margin-top: 0;
             margin-bottom: 23px;
         }
-    
+
         &__desc {
            display: none;
         }
@@ -3076,23 +3078,23 @@
     .skewed-video {
         padding-top: 10px;
         padding-bottom: 20px;
-    
+
         &__wrapper {
             flex-flow: column-reverse;
         }
-    
+
         &__img-wrapper {
             width: 100%;
         }
-    
+
         &__img {
             width: 100%;
         }
-    
+
         &__text {
             width: 100%;
         }
-    
+
         &__title {
             margin-bottom: 18px;
             font-size: 18px;
@@ -3101,7 +3103,7 @@
                 font-weight: normal;
             }
         }
-    
+
         &__desc {
             display: none;
         }
@@ -3113,27 +3115,27 @@
 
     .digital-100 {
         padding-bottom: 20px;
-    
+
         &__wrapper {
             box-sizing: border-box;
             width: 100%;
             margin: 0;
             padding: 0 20px;
-    
+
             &_second {
                 padding-top: 20px;
             }
         }
-    
+
         &__yellow-wrapper {
             padding-top: 20px;
        }
-    
+
         &__title {
             margin-bottom: 10px;
             font-size: 26px;
         }
-    
+
         &__subtitle {
             width: 100%;
             margin-bottom: 29px;
@@ -3145,59 +3147,59 @@
             margin-bottom: -48px;
             width: 100%;
         }
-    
+
         &__desc {
            display: none;
         }
-    
+
         &__last-phrase {
             display: none;
         }
     }
-    
+
     .level-program {
         &_covering {
             margin-bottom: -20vw;
         }
-    
+
         &__wrapper {
             display: flex;
             justify-content: space-between;
             flex-flow: column;
             align-items: center;
-    
+
             &_reverse {
                 flex-flow: column;
             }
         }
-    
+
         &__text-area {
             width: 100%;
         }
-    
+
         &__title {
             padding-bottom: 0;
             margin-bottom: 10px;
             font-size: 24px;
             text-align: center;
-    
+
             &::after {
                 content: none;
             }
         }
-    
+
         &__desc {
             display: none;
         }
-    
+
         &__desc-list-item {
            display: none;
         }
-    
+
         &__img-area {
             width: 70%;
         }
-    
+
         &__img {
             width: 100%;
         }
@@ -3295,12 +3297,12 @@
 
     .kmg-syllabus {
         margin-bottom: 20px;
-    
+
         &__title {
             margin-bottom: 10px;
             text-align: left;
         }
-    
+
         &__desc {
             width: 100%;
             margin-bottom: 20px;
@@ -3308,7 +3310,7 @@
             text-align: left;
             color: $dark;
         }
-    
+
         &__type {
             display: none;
         }
@@ -3388,7 +3390,7 @@
             margin: 0 auto;
             width: 277px;
         }
-        
+
         &__yellow-box-img-wrapper {
             margin-right: 20px;
             width: 56px;
@@ -3428,7 +3430,7 @@
             height: 25px;
             background: url('../../img/sales-pages/pricing-bonuses-arrow.svg') no-repeat center;
             background-size: contain;
-        }        
+        }
     }
 
     .bonus {
@@ -3450,7 +3452,7 @@
                 content: none;
             }
         }
-    
+
         &__bg {
             display: flex;
             flex-flow: column;
@@ -3468,12 +3470,12 @@
         &__bg-receiver {
             min-height: 32px;
         }
-    
+
         &__bg-receiver-content {
             width: 100%;
             margin: 0;
         }
-    
+
         &__bg-receiver-text {
             margin: 0;
         }
@@ -3481,11 +3483,11 @@
         &__photo-line {
             display: none;
         }
-    
+
         // styles for bonus block modifiers
         &_second {
             margin-bottom: 0;
-    
+
             #{$this}__bg {
                 min-height: 462px;
                 background-size: 454px;
@@ -3502,9 +3504,9 @@
             #{$this}__bg-receiver-text {
                 font-size: 0;
             }
-            
+
         }
-    
+
         &_third {
             margin-bottom: 0;
 
@@ -3517,21 +3519,21 @@
             #{$this}__top {
                 width: 92%;
             }
-    
+
             #{$this}__bg-receiver-text {
                 font-size: 0;
             }
         }
-        
+
         &_fourth {
             margin-bottom: 0;
-    
+
             #{$this}__bg {
                 min-height: 396px;
                 background-size: 454px;
                 background-position: calc(50% - 82px) 101px;
             }
-    
+
             #{$this}__bg-receiver-text {
                 font-size: 0;
             }
