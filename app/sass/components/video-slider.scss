@@ -187,6 +187,7 @@
     .video-slider__item {
       padding-top: 80px;
       padding-left: 20px;
+      text-decoration: none;
 
       &:hover {
         &::after {
@@ -306,7 +307,7 @@
       }
 
       & .video-slider__item-title {
-        margin-left: 0;
+        margin-left: 1px;
         padding-left: 15px;
       }
     }

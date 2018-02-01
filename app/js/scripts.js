@@ -53,6 +53,7 @@
 
            collapseBtn.addEventListener("click", (e) => {
             let target = e.target;
+            e.stopPropagation();    
 
             if (collapseArea.style.maxHeight) {
                 collapseArea.style.maxHeight = null;
@@ -214,8 +215,8 @@ $(document).ready(function() {
 
   $(function() {
     // min popup
-    $('#open-min-popup').click( function() {
-        event.preventDefault();
+    $('#open-min-popup').click( function(e) {
+        e.preventDefault();
         $('#overlay').fadeIn(400);
         $('#popup').fadeIn(400);
     });
@@ -230,13 +231,13 @@ $(document).ready(function() {
         $('#popup').fadeOut(500);
     });
 
-    $(".popup__select").click( function() {
-        event.stopImmediatePropagation();
+    $(".popup__select").click( function(e) {
+        e.stopImmediatePropagation();
     });
 
     // big popup
-    $('#open-big-popup').click( function() {
-        event.preventDefault();
+    $('#open-big-popup').click( function(e) {
+        e.preventDefault();
         $('#overlay-blur').fadeIn(400);
         $('#popup-expired').fadeIn(400);
     });

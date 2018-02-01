@@ -87,18 +87,18 @@
                         <fieldset class="checkout__form-block checkout__form-block_yellow">
                             <div class="input">
                                 <label class="input__label input__label_small">Card Number</label>
-                                <input class="input__field" type="number" placeholder="1234 1234 1234 1234">
+                                <input class="input__field card-number-js" type="text" placeholder="1234 1234 1234 1234">
                             </div>
                             <div class="input__wrap">
                                 <div class="input input_exp">
                                     <label class="input__label input__label_small">Expiration Date
                                         <span class="input__label-add">(MM / YY)</span>
                                     </label>
-                                    <input class="input__field" type="text" placeholder="MM / YY">
+                                    <input class="input__field card-date-js" type="text" placeholder="MM / YY">
                                 </div>
                                 <div class="input input_cvc">
                                     <label class="input__label input__label_small">CVC / CVV</label>
-                                    <input class="input__field" type="text" placeholder="123">
+                                    <input class="input__field card-code-js" type="text" placeholder="123">
                                 </div>
                             </div>
                             <button class="btn btn_get-access" type="submit">Get Instant Access</button>
@@ -180,17 +180,21 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="libs/swiper/dist/js/swiper.min.js"></script>
     <script src="js/scripts.js"></script>
-
-    <script src="libs/dotdotdot/jquery.dotdotdot.js"></script>
+    <script src="libs/cleave/cleave.min.js"></script>
     <script>
-    //text truncate in reviews
-        jQuery(document).ready(function( $ ) {
+        // masks for credit card 
+        var cleaveCardNumber = new Cleave('.card-number-js', {
+            creditCard: true
+        });
 
-        if ($(document).width() < 768 ) {
-            $(".review__text").dotdotdot({
-                
-            });
-        }
+        var cleaveCardDate = new Cleave('.card-date-js', {
+            date: true,
+            datePattern: ['m', 'y']
+        });
+
+        var cleaveCardCVC = new Cleave('.card-code-js', {
+            blocks: [3],
+            uppercase: true
         });
     </script>
 </body>

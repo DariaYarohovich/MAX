@@ -235,6 +235,11 @@
 
     &__main {
       flex-direction: column;
+      box-shadow: none;
+
+      &:hover {
+        box-shadow: none;
+      }
     }
 
     &__text-block {
