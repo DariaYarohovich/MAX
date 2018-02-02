@@ -71,7 +71,7 @@
 
 .profile-content {
     position: relative;
-    flex: 1;
+    flex-grow: 1;
 
     &__list {
         margin: 0;
@@ -297,6 +297,7 @@
     }
 
     .profile-content {
+
         &__list {
             padding-left: 3%;
         }

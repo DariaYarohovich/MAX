@@ -76,7 +76,7 @@
 
 @media (max-width: $sm) {
     .tabs-vertical {
-        flex-direction: column;
+        display: block;
 
         &__navigation {
             margin-top: 0;

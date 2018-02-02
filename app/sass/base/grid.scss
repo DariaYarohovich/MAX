@@ -117,6 +117,12 @@
           padding: 20px 15px;
         }
     }
+
+    .content {
+        &_profile {
+            overflow: auto;
+        }
+    }
     
     .wrap {
         margin-top: 78px;

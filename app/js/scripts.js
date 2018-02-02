@@ -1,7 +1,5 @@
-"use strict";
-
-// sideBar submenus
-+(() => {
+//sideBar submenus
+((() => {
     const parentMenuItems = document.querySelectorAll('.navigation__item_parent');
 
     for (let i = 0; i < parentMenuItems.length; i++) {
@@ -18,10 +16,10 @@
             }
         });
     }
-})();
+})());
 
 // videos html5
-+(() => {
+((() => {
     const videoBlocksCaps = document.querySelectorAll(".video-block__cap");
     const videoBlocks = document.getElementsByTagName("video");
 
@@ -39,10 +37,10 @@
             videoBlockCap.style = "display: block";
         });
     }
-})();
+})());
 
 // collapse block
-+(() => {
+((() => {
     const collapseBtns = document.querySelectorAll(".collapse-btn");
     const collapseAreas = document.querySelectorAll(".collapse-area");
 
@@ -80,10 +78,10 @@
         });
        }
     }
-})();
+})());
 
 // Slider
-+(() => {
+((() => {
     const sliderElem = document.querySelector('.video-slider');
 
     if (sliderElem) {
@@ -120,10 +118,10 @@
             videoSlider.slides[videoSlider.activeIndex].classList.add('swiper-slide-active');
         });
     }
-})();
+})());
 
 // Syllabus video blocks hightlight
-+(() => {
+((() => {
     const syllabusBlocks = document.querySelectorAll(".syllabus__item");
 
     for (let i = 0; i < syllabusBlocks.length; i++) {
@@ -142,10 +140,10 @@
             }
         });
     }
-})();
+})());
 
 //to make all mobile footers are dark
-+(() => {
+((() => {
     const toDimmer = () => {
         const footer = document.querySelector(".footer");
         if (document.documentElement.clientWidth < 1200) {
@@ -159,15 +157,17 @@
 
     toDimmer();
     window.addEventListener("resize", () => toDimmer());
-})();
+})());
 
 // mobile menu
-+(() => {
+((() => {
     const openBtn = document.querySelector(".header__mobile-menu");
     const mobileMenu = document.querySelector(".navigation-mobile");
     const overlay = document.querySelector(".navigation-mobile__overlay");
     const body = document.querySelector("body");
     const closeBtn = document.querySelector(".navigation-mobile__close");
+
+    console.log('init elems');
 
     if (openBtn && mobileMenu && overlay && closeBtn) {
         const closeSideBar = () => {
@@ -181,12 +181,13 @@
             overlay.classList.add("navigation-mobile__overlay_opened");
             mobileMenu.classList.add("navigation-mobile_opened");
 
+            console.log('click to button');
         });
 
         closeBtn.addEventListener("click", closeSideBar);
         overlay.addEventListener("click", closeSideBar);
     }
-})();
+})());
 
 // accordion
 $(document).ready(function() {
