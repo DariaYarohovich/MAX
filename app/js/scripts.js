@@ -167,8 +167,6 @@
     const body = document.querySelector("body");
     const closeBtn = document.querySelector(".navigation-mobile__close");
 
-    console.log('init elems');
-
     if (openBtn && mobileMenu && overlay && closeBtn) {
         const closeSideBar = () => {
             mobileMenu.classList.remove("navigation-mobile_opened");
@@ -180,8 +178,6 @@
             body.style = "overflow: hidden";
             overlay.classList.add("navigation-mobile__overlay_opened");
             mobileMenu.classList.add("navigation-mobile_opened");
-
-            console.log('click to button');
         });
 
         closeBtn.addEventListener("click", closeSideBar);

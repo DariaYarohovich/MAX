@@ -30,7 +30,7 @@
   }
 
   &__desc-block {
-    display: none;
+    display: block;
   }
 
   &__desc-title {
@@ -49,6 +49,12 @@
 
     &_cut {
       width: 75%;
+    }
+  }
+
+  &__desc-texts {
+    &.collapse-area {
+      max-height: 180px;
     }
   }
 

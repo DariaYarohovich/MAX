@@ -69,6 +69,7 @@ body {
       top: 0;
       bottom: 0;
       left: 0;
+      padding-top: 10px;
       border-bottom: 1px solid #333433;
       color: #333433;
       font-weight: bold;
@@ -216,7 +217,8 @@ video:hover {
     bottom: 20px;
     font-size: 12px; }
     .btn__subject_video {
-      left: 0; }
+      left: 0;
+      padding-top: 0; }
     .btn__subject_video-cut {
       left: -15px;
       right: -15px;
@@ -1737,7 +1739,7 @@ p {
           margin-bottom: 25px;
           text-align: center; }
   .video-page__desc-block {
-    display: none; }
+    display: block; }
   .video-page__desc-title {
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1754,6 +1756,8 @@ p {
     color: #6a6a6a; }
     .video-page__desc-text_cut {
       width: 75%; }
+  .video-page__desc-texts.collapse-area {
+    max-height: 180px; }
   .video-page_common-video {
     position: relative;
     z-index: 1;
@@ -5135,12 +5139,27 @@ p {
     font-family: "AvenirNext";
     font-weight: 400; }
   .checkout__payment-systems {
-    width: 160px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-top: 20px;
-    margin-left: auto;
-    text-align: end; }
-    .checkout__payment-systems img {
-      width: 100%; }
+    width: 100%; }
+  .checkout__payment-logo {
+    height: 27px;
+    width: auto; }
+    .checkout__payment-logo_stripe {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
 
 .block-border {
   margin-bottom: 35px;

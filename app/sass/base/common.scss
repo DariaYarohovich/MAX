@@ -64,6 +64,7 @@ body {
       top: 0;
       bottom: 0;
       left: 0;
+      padding-top: 10px;
       border-bottom: 1px solid $charcoal;
       color: $charcoal;
       font-weight: bold;
@@ -251,6 +252,7 @@ video {
 
       &_video {
         left: 0;
+        padding-top: 0;
       }
 
       &_video-cut {

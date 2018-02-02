@@ -106,13 +106,22 @@
     }
 
     &__payment-systems {
-        width: 160px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
         margin-top: 20px;
-        margin-left: auto;
-        text-align: end;
+        width: 100%;
+    }
 
-        img {
-            width: 100%;
+    &__payment-logo {
+        height: 27px;
+        width: auto;
+
+        &_stripe {
+            position: absolute;
+            top: 0; 
+            left: 50%;
+            transform: translate(-50%, 0);
         }
     }
 }
